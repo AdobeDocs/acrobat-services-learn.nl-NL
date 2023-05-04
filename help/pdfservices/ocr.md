@@ -8,7 +8,7 @@ thumbnail: KT-6677.jpg
 kt: 6677
 keywords: Hero
 exl-id: 61a9a2d1-94c3-41c2-8f90-a56a938ef245
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: c1937561d607f1eabbc1921d6090858abb13f0d3
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 4%
@@ -30,7 +30,9 @@ In deze zelfstudie wordt uitgelegd hoe u uw eerste OCR-bewerking van de PDF Serv
 Gebruik de onderstaande Aan de slag-zelfstudies om uw API-referenties te maken, voorbeeldbestanden te downloaden en uw omgeving in te stellen.
 
 [Aan de slag met PDF Services API en Java](gettingstartedjava.md)
+
 [Aan de slag met PDF Services API en .Net](gettingstartednet.md)
+
 [Aan de slag met de PDF Services-API en Node.js](createpdffromhtml.md)
 
 ## Het OCR-voorbeeld in de voorbeeldbestanden uitvoeren
