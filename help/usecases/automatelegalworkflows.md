@@ -7,9 +7,9 @@ type: Tutorial
 thumbnail: KT-10202.jpg
 kt: 10202
 exl-id: 2a1752b8-9641-40cc-a0af-1dce6cf49346
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 98dc9f98f660b43d2ca0780b51624bf3be71c853
 workflow-type: tm+mt
-source-wordcount: '2893'
+source-wordcount: '2876'
 ht-degree: 1%
 
 ---
@@ -551,7 +551,7 @@ Nu heb je informatie over die overeenkomst.
   }
 ```
 
-De efficiëntere methode voor het ontvangen van meldingen wanneer updates worden gewijzigd, is via Webhooks, die u meer kunt leren over [hier](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html) en er is een volledige lijst met beschikbare webhookgebeurtenissen beschikbaar [hier](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookevents.html).
+De efficiëntere methode voor het ontvangen van meldingen wanneer updates worden gewijzigd, is via Webhooks, die u meer kunt leren over [hier](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html.
 
 ## Een ondertekend document opslaan
 
