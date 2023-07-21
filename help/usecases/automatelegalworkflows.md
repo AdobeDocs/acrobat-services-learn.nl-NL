@@ -5,9 +5,9 @@ role: Developer
 level: Intermediate
 type: Tutorial
 thumbnail: KT-10202.jpg
-kt: 10202
+jira: KT-10202
 exl-id: 2a1752b8-9641-40cc-a0af-1dce6cf49346
-source-git-commit: 98dc9f98f660b43d2ca0780b51624bf3be71c853
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '2876'
 ht-degree: 1%
@@ -270,7 +270,7 @@ Plaats vervolgens een gegevensveld voor de ondertekenaar die automatisch invult 
 1. Stel het veldtype in op Datum.
 1. Selecteren **[!UICONTROL Adobe Sign-teksttag invoegen]**.
 
-De tag Date die wordt geplaatst, is tamelijk lang: `{{Date 3_es_:signer1:date:format(mm/dd/yyyy):font(size=Auto)}}`. De Acrobat Sign-tekstcode moet op dezelfde regel blijven staan, anders dan de labels voor het genereren van documenten. De `:format()` en `font()` parameters zijn optioneel, dus voor dit scenario kunnen we de tag verkorten tot `{{Date 3_es_:signer1:date}}`.
+De tag Date die wordt geplaatst, is tamelijk lang: `{{Date 3_es_:signer1:date:format(mm/dd/yyyy):font(size=Auto)}}`. De Acrobat Sign-tekstcode moet op dezelfde regel blijven staan. Dit is anders dan de labels voor het genereren van documenten. De `:format()` en `font()` parameters zijn optioneel, dus voor dit scenario kunnen we de tag verkorten tot `{{Date 3_es_:signer1:date}}`.
 
 Herhaal de stappen boven de *Handtekening bedrijf* sectie. Wanneer u dit doet, moet u het veld Ontvangers wijzigen in **Afzender-2** Anders worden alle handtekeningvelden toegewezen aan dezelfde persoon.
 

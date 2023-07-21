@@ -5,9 +5,9 @@ type: Tutorial
 role: Developer
 level: Beginner
 thumbnail: KT-10382.jpg
-kt: 10382
+jira: KT-10382
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 3%
@@ -29,6 +29,7 @@ Bestaande Microsoft Power Automate-gebruikers kunnen [proefgegevens ophalen](htt
 
 >[!IMPORTANT]
 > Als u zich aanmeldt voor een proefversie, moet u een Adobe ID gebruiken en niet een Enterprise ID. Als u geen huidige abonnee bent van de Adobe PDF Services API en u probeert u aan te melden met uw Enterprise ID, krijgt u mogelijk een machtigingsfout omdat uw onderneming u niet heeft gemachtigd om de Adobe PDF Services API te gebruiken. Daarom wordt u aangeraden een gratis persoonlijke Adobe ID te gebruiken.
+>
 
 1. Nadat u zich hebt aangemeld, wordt u gevraagd een naam voor uw nieuwe referenties te selecteren. Voer uw *Referentienaam*.
 1. Schakel het selectievakje in om akkoord te gaan met de voorwaarden voor ontwikkelaars.

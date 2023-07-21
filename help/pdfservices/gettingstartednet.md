@@ -5,10 +5,10 @@ type: Tutorial
 role: Developer
 level: Beginner
 thumbnail: KT-6675.jpg
-kt: 6675
+jira: KT-6675
 keywords: Aanbevolen
 exl-id: 22c59c75-fd99-4467-a6f6-917fb246469a
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -80,6 +80,6 @@ De PDF Services API kan je helpen handmatige processen te elimineren door gemeen
 
 * Verwante artikelen
 
-   [De nieuwe PDF Services API biedt nog meer functies voor documentworkflows](https://community.adobe.com/t5/document-services-apis/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
+  [De nieuwe PDF Services API biedt nog meer functies voor documentworkflows](https://community.adobe.com/t5/document-services-apis/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
-   [Release van juli [!DNL Adobe Acrobat Services]: PDF Embed and PDF Services](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
+  [Release van juli [!DNL Adobe Acrobat Services]: PDF Embed and PDF Services](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)

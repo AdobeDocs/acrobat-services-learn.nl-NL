@@ -5,9 +5,9 @@ role: Developer
 level: Intermediate
 type: Tutorial
 thumbnail: KT-8092.jpg
-kt: 8092
+jira: KT-8092
 exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 0%
@@ -220,7 +220,7 @@ Voor PDF Embed API, hebt u ook een eindpunt nodig dat enkel de inhoud van de PDF
 
 ## De PDF insluiten
 
-Maak nu het eindpunt /job/{id}, dat een sjabloon rendert die de naam bevat van de gevraagde taakpost en een ingesloten PDF.
+Maak nu de /job/{id} eindpunt, dat een sjabloon rendert die de naam van de gevraagde taak en een ingesloten PDF bevat.
 
 ```
 router.get('/job/:id', async function(req, res, next) {
