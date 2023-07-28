@@ -1,13 +1,14 @@
 ---
-title: Student-Teacher Collaboration
+title: Samenwerking tussen studenten en docenten
 description: Leer hoe je een online leerplatform creëert waarmee docenten en studenten eenvoudig resources delen in PDF
 role: Developer
 level: Intermediate
 type: Tutorial
+feature: Use Cases
 thumbnail: KT-8091.jpg
 jira: KT-8091
 exl-id: 570a635c-e539-4afc-a475-ecf576415217
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 0%
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 Onderwijsinstellingen gebruiken PDF-documenten om leermateriaal met studenten te delen. PDF biedt docenten een uitwisselbaar documentformaat.
 
-Integreren [Adobe PDF Services API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) en [Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) in een app bieden docenten en studenten één platform waarop ze kunnen onderwijzen en leren. Uw app kan studenten bijvoorbeeld de mogelijkheid bieden vragen te stellen over hun opdrachten en rapportkaarten en samen te werken aan groepstoewijzingen.
+Integreren [Adobe PDF Services API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) en [Adobe PDF Embed-API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) in een app bieden docenten en studenten één platform waarop ze kunnen onderwijzen en leren. Uw app kan studenten bijvoorbeeld de mogelijkheid bieden vragen te stellen over hun opdrachten en rapportkaarten en samen te werken aan groepstoewijzingen.
 
 Er is een officiële SDK voor Node.js-toepassingen voor toegang tot de PDF Services-API. Zo kunt u documenten zoals Microsoft Word of Microsoft Excel converteren naar PDF. Bovendien kunt u meer geavanceerde bewerkingen uitvoeren, zoals het combineren van meerdere rapporten, het opnieuw rangschikken van pagina&#39;s en het beschermen van PDF. Voor meer informatie kunt u de [productdocumentatie](https://www.adobe.io/apis/documentcloud/dcsdk/).
 
@@ -150,7 +151,7 @@ De studenten zouden het rapport moeten kunnen downloaden of aan het materiaal hi
 
 Een leerplatform moet basisannotaties, opmerkingen en discussies in PDF ondersteunen. PDF Embed API biedt al deze functies. Hiermee wordt ondersteuning voor annotaties geactiveerd met `showAnnotationTools`, zodat docenten en studenten commentaar kunnen geven op de documenten en opmerkingen kunnen archiveren als onderdeel van de PDF.
 
-Als u annotaties in PDF-documenten wilt inschakelen, hoeft u alleen het argument door te geven `showAnnotationTools` : de `previewFile` methode. Hiermee wordt het gereedschap Annotaties weergegeven in de voorvertoning van de PDF. Gebruik dit gereedschap in het menu met de drie puntjes rechtsboven in de voorvertoning.
+Als u annotaties in PDF-documenten wilt inschakelen, hoeft u alleen het argument door te geven `showAnnotationTools` : true voor de `previewFile` methode. Hiermee wordt het gereedschap Annotaties weergegeven in de voorvertoning van de PDF. Gebruik dit gereedschap in het menu met de drie puntjes rechtsboven in de voorvertoning.
 
 ![Schermafbeelding van gereedschappen voor opmerkingen in PDF](assets/edu_4.png)
 
@@ -160,7 +161,7 @@ In de documenten die door docenten zijn geüpload, kunnen studenten tekst marker
 
 In de bovenstaande schermvastlegging is de gebruiker gelabeld &quot;Gast&quot;, maar u kunt profielen voor gebruikers configureren, zoals studenten en docenten.
 
-Wanneer een student een annotatie toepast, geeft de PDF Embed-API een **Opslaan** langs de bovenste banner. Bij opslaan worden de annotaties aan het bestand toegevoegd. Klik **Opslaan** om te zien hoe het bestand wordt opgeslagen met de annotatie die is ingesloten in het rapport.
+Wanneer een student een annotatie toepast, geeft de PDF Embed-API een **Opslaan** langs de bovenste banner. Bij opslaan worden de annotaties aan het bestand toegevoegd. Klik **Opslaan** om te zien hoe het bestand wordt opgeslagen met de annotatie ingesloten in het rapport.
 
 Studenten kunnen annotaties gebruiken om vragen te stellen of hun opmerkingen over het leermateriaal te delen.
 
@@ -194,7 +195,7 @@ Hier volgt een schermvastlegging van webbrowserconsole:
 
 Deze schermopname toont dat de student het toewijzingsbestand heeft geopend, de eerste pagina heeft gelezen — ze hebben niet naar extra pagina&#39;s geschoven of het document heeft maar één pagina — en vervolgens heeft het bestand gedownload. Je kunt deze metrics verzamelen om analyses uit te voeren en het gedrag van je studenten te bestuderen.
 
-Ook [Adobe Analytics](https://business.adobe.com/products/analytics/adobe-analytics.html) is geïntegreerd met de PDF Embed-API. Als u dus een abonnement hebt op de Adobe Analytics-suite, kunt u uw metrics in uw abonnement publiceren. Als u de metrics in Adobe Analytics wilt publiceren, hoeft u uw suite-id alleen door te geven aan de PDF Embed API-constructor. (Let op: u moet uw PDF Embed API-referenties gebruiken, niet uw PDF Services API-referenties).
+Ook: [Adobe Analytics](https://business.adobe.com/products/analytics/adobe-analytics.html) is geïntegreerd met de PDF Embed-API. Als u dus een abonnement hebt op de Adobe Analytics-suite, kunt u uw metrics publiceren in uw abonnement. Als u de metrics in Adobe Analytics wilt publiceren, hoeft u uw suite-id alleen door te geven aan de PDF Embed API-constructor. (Let op: u moet uw PDF Embed API-referenties gebruiken, niet uw PDF Services API-referenties).
 
 Hier volgt een voorbeeldcode die laat zien hoe u de suite-id doorgeeft aan de PDF Embed API-constructor:
 

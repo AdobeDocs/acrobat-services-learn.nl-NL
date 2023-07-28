@@ -4,10 +4,11 @@ description: Leer hoe je een dynamische NDA-PDF maakt voor samenwerking
 role: Developer
 level: Intermediate
 type: Tutorial
+feature: Use Cases
 thumbnail: KT-8098.jpg
 jira: KT-8098
 exl-id: f4ec0182-a46e-43aa-aea3-bf1d19f1a4ec
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1164'
 ht-degree: 3%
@@ -28,7 +29,7 @@ In deze praktische zelfstudie wordt uitgelegd hoe u een speciale Microsoft Word 
 
 ## Relevante API&#39;s en bronnen
 
-Met [!DNL Adobe Acrobat Services]kunt u PDF-documenten direct genereren met behulp van dynamische gegevens. [!DNL Acrobat Services] biedt een reeks PDF-tools, waaronder de API voor het genereren van Adobe-documenten om te automatiseren [NDA-creatie](https://www.adobe.io/apis/documentcloud/dcsdk/nda-creation.html).
+Met [!DNL Adobe Acrobat Services]kunt u PDF-documenten direct genereren met behulp van dynamische gegevens. [!DNL Acrobat Services] biedt een reeks PDF-tools, waaronder de API voor het genereren van Adobe-documenten om te automatiseren [NDA maken](https://www.adobe.io/apis/documentcloud/dcsdk/nda-creation.html).
 
 * [Adobe-API voor documentgeneratie](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
 
@@ -78,7 +79,7 @@ U kunt de [gratis invoegtoepassing voor het genereren van documenten](https://op
 
 Als u de invoegtoepassing hebt geïnstalleerd, vindt u deze op het tabblad Start onder de categorie Adobe. Als u het tabblad wilt openen, selecteert u **Documenten genereren**:
 
-![Schermafbeelding van de invoegtoepassing voor het genereren van documenten in Word](assets/nda_1.png)
+![Schermafbeelding van de invoegtoepassing voor documentgeneratie in Word](assets/nda_1.png)
 
 Binnen het tabblad kunt u het JSON-voorbeelddocument uploaden. Dit document kan een voorbeeld zijn, omdat u het alleen gebruikt om een Microsoft Word-sjabloon te maken.
 
@@ -100,7 +101,7 @@ De volgende sjabloon in een Microsoft Word-bestand:
 
 Dit bestand bevat verschillende tags. Wanneer u het programma uitvoert, worden deze velden gevuld met de leveranciersinformatie.
 
-Tagger voor documentgeneratie kan worden geïntegreerd met Adobe Sign API. Dankzij deze integratie kunt u automatisch Sign-tekstcodes maken, zodat het gegenereerde document ter ondertekening naar Adobe Sign kan worden verzonden.
+Tagger voor het genereren van documenten kan worden geïntegreerd met Adobe Sign API. Dankzij deze integratie kunt u automatisch Sign-tekstcodes maken, zodat het gegenereerde document ter ondertekening naar Adobe Sign kan worden verzonden.
 
 ## NDA genereren voor leveranciers
 
@@ -172,7 +173,7 @@ res.status(500).render("crash", { error: error });
 
 U kunt [de volledige voorbeeldcode](https://github.com/afzaal-ahmad-zeeshan/adobe-docugen-sample) op GitHub.
 
-Deze code gebruikt een JSON-document en de Microsoft Word-sjabloon in de API-aanroep naar de [!DNL Adobe Acrobat Services] SDK. In het antwoord ontvangt u de uitvoer en slaat u deze op in het bestandssysteem van de app. U kunt het gegenereerde document via e-mail doorsturen naar uw klanten of ze met de gratis [Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
+Deze code gebruikt een JSON-document en de Microsoft Word-sjabloon in de API-aanroep naar de [!DNL Adobe Acrobat Services] SDK. In het antwoord ontvangt u de uitvoer en slaat u deze op in het bestandssysteem van de app. U kunt het gegenereerde document via e-mail doorsturen naar uw klanten of ze met de gratis [Adobe PDF Embed-API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
 
 Met deze aanroep wordt het volgende NDA-document gemaakt:
 
@@ -180,7 +181,7 @@ Met deze aanroep wordt het volgende NDA-document gemaakt:
 
 [!DNL Adobe Acrobat Services] API&#39;s voegen inhoud in om een PDF-document te maken. Zonder deze hulpmiddelen, zou u de code kunnen moeten schrijven om de documenten van het Bureau te verwerken en met ruwe PDF dossierformaten te werken. Met behulp van Adobe PDF Services kunt u al deze stappen uitvoeren met één API-aanroep.
 
-Nu gebruiken [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html) om handtekeningen op te vragen bij de NDA&#39;s en het definitieve, ondertekende document aan alle partijen te leveren. Adobe Sign brengt u op de hoogte [met een webhook](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md). Als u luistert naar deze webhook, kunt u de status van de NDA ophalen.
+Nu gebruiken [ADOBE SIGN API](https://www.adobe.io/apis/documentcloud/sign.html) om handtekeningen op te vragen bij de NDA&#39;s en het definitieve, ondertekende document aan alle partijen te leveren. Adobe Sign waarschuwt u [met een webhook](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md). Als u luistert naar deze webhook, kunt u de status van de NDA ophalen.
 
 Voor een nadere uitleg van het Adobe Sign-proces: [raadpleeg de documentatie](https://www.adobe.io/apis/documentcloud/sign/docs.html) of lees dit uitgebreide blogbericht.
 

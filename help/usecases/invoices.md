@@ -4,10 +4,11 @@ description: Leer hoe je automatisch klantfacturen genereert, met een wachtwoord
 role: Developer
 level: Intermediate
 type: Tutorial
+feature: Use Cases
 thumbnail: KT-8145.jpg
 jira: KT-8145
 exl-id: 5871ef8d-be9c-459f-9660-e2c9230a6ceb
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1427'
 ht-degree: 1%
@@ -86,17 +87,17 @@ Als u de JSON-inhoud in de invoegtoepassing hebt geplakt, zoals hierboven is wee
 
 Begin in je Microsoft Word-document met het schrijven van de factuursjabloon. Laat de cursor op de plaats staan waar u dynamische gegevens moet invoegen en selecteer vervolgens de tag in het venster van de invoegtoepassing Adobe. Klikken **Tekst invoegen** Zo kan de invoegtoepassing Adobe Document Generation Tagger de tags genereren en invoegen. Voor personalisatie voegen we de naam en het e-mailadres van de klant in.
 
-Ga nu naar de gegevens die veranderen met elke nieuwe factuur. Selecteer de **Geavanceerd** van de invoegtoepassing. Klik op **Tabellen en lijsten** .
+Ga nu naar de gegevens die veranderen met elke nieuwe factuur. Selecteer de **Gedeeld** van de invoegtoepassing. Als u de beschikbare opties wilt zien om een dynamische tabel te genereren op basis van de producten die een klant heeft besteld, klikt u op **Tabellen en lijsten** .
 
 Selecteren **Volgorde** vanaf de eerste vervolgkeuzelijst. Selecteer in de tweede vervolgkeuzelijst de kolommen voor deze tabel. Selecteer in deze zelfstudie alle drie kolommen voor het object dat de tabel moet renderen.
 
 ![Screenshot van het tabblad Geavanceerde documentgeneratietags](assets/invoices_3.png)
 
-De API voor het genereren van documenten kan ook complexe bewerkingen uitvoeren, zoals het samenvoegen van elementen binnen een array. In het dialoogvenster **Geavanceerd** tab, selecteer **Numerieke berekeningen** en in de **Samenvoeging** selecteert u het veld waarop u de berekening wilt toepassen.
+De API voor het genereren van documenten kan ook complexe bewerkingen uitvoeren, zoals het samenvoegen van elementen binnen een array. In het dialoogvenster **Gedeeld** tab, selecteer **Numerieke berekeningen** en in de **Samenvoeging** selecteert u het veld waarop u de berekening wilt toepassen.
 
 ![Screenshot van de numerieke berekeningen van Tagger voor documentgeneratie](assets/invoices_4.png)
 
-Klik op **Berekening invoegen** om deze tag waar nodig in het document in te voegen. De volgende tekst wordt nu weergegeven in uw Microsoft Word-bestand:
+Klik op de knop **Berekening invoegen** om deze tag waar nodig in het document in te voegen. De volgende tekst wordt nu weergegeven in uw Microsoft Word-bestand:
 
 ![Screenshot van tags in Microsoft Word-document](assets/invoices_5.png)
 
@@ -106,7 +107,7 @@ Dit factuurvoorbeeld bevat klantgegevens, de bestelde producten en het totale ve
 
 Gebruik Adobe PDF Services Node.js Software Development Kit (SDK) om de Microsoft Word- en JSON-documenten te combineren. Maak een Node.js-toepassing om de factuur te maken met behulp van de Document Generation API.
 
-De PDF Services API bevat Document Generation Service, zodat u voor beide dezelfde referenties kunt gebruiken. Geniet van [gratis proefversie van zes maanden](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)en betaal vervolgens slechts USD 0,05 per documenttransactie.
+De PDF Services-API bevat Document Generation Service, zodat u voor beide dezelfde referenties kunt gebruiken. Geniet van [gratis proefversie van zes maanden](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)en betaal vervolgens slechts USD 0,05 per documenttransactie.
 
 Hier volgt de code om de PDF samen te voegen:
 
@@ -175,7 +176,7 @@ Nadat deze code is uitgevoerd, wordt een PDF-document met de dynamisch gegeneree
 
 Deze factuur bevat uw dynamische gegevens uit het JSON-document.
 
-## Facturen met wachtwoord beveiligen
+## Facturen beveiligen met een wachtwoord
 
 Aangezien Danielle de accountant zich zorgen maakt over het wijzigen van de factuur door klanten, kunt u een wachtwoord toepassen om het bewerken te beperken. [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html) U kunt automatisch een wachtwoord toepassen op documenten. Hier gebruikt u Adobe PDF Services SDK om de documenten met een wachtwoord te beveiligen. De code is:
 
@@ -217,7 +218,7 @@ async function applyPassword(password, inputFile, outputFile) {
 }
 ```
 
-Wanneer u deze code gebruikt, wordt uw document beveiligd met een wachtwoord en wordt een nieuwe factuur naar het systeem geüpload. Voor meer informatie over het gebruik van deze code of om deze uit te proberen, raadpleegt u de [codevoorbeeld](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-invoice-generation).
+Wanneer u deze code gebruikt, wordt uw document beveiligd met een wachtwoord en wordt een nieuwe factuur naar het systeem geüpload. Zie voor meer informatie over het gebruik van deze code of om deze uit te proberen de [codevoorbeeld](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-invoice-generation).
 
 Als u klaar bent met de factuur, kunt u deze automatisch naar de klant e-mailen. Er zijn een paar manieren om automatisch uw klanten te e-mailen. De snelste manier is om een e-mail-API van derden te gebruiken in combinatie met een hulpbibliotheek zoals [sendgrid-nodejs](https://github.com/sendgrid/sendgrid-nodejs). Als u al toegang hebt tot een SMTP-server, kunt u ook [nodemailer](https://www.npmjs.com/package/nodemailer) om e-mails te verzenden via SMTP.
 
@@ -227,7 +228,7 @@ In deze praktische zelfstudie hebt u een eenvoudige app gemaakt om Danielle te h
 
 Aangezien Danielle automatisch facturen kan genereren en zich geen zorgen hoeft te maken over het bewerken van facturen door klanten, hoeft ze geen assistent in te huren voor al het handmatige werk. Ze kan haar extra tijd gebruiken om kostenbesparingen te vinden in de te betalen bestanden.
 
-Nu je ziet hoe eenvoudig het is, kun je deze eenvoudige app uitbreiden met andere Adobe-tools om facturen in te sluiten op je website. Zo kunnen klanten hun facturen of saldo op elk gewenst moment bekijken. [Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) is gratis. Je kunt zelfs naar de afdeling Personeelszaken of Verkoop gaan, zodat je hun overeenkomsten kunt automatiseren en elektronische handtekeningen kunt verzamelen.
+Nu je ziet hoe eenvoudig het is, kun je deze eenvoudige app uitbreiden met andere Adobe-tools om facturen in te sluiten op je website. Zo kunnen klanten hun facturen of saldo op elk gewenst moment bekijken. [Adobe PDF Embed-API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) is gratis. Je kunt zelfs naar de afdeling Personeelszaken of Verkoop gaan, zodat je hun overeenkomsten kunt automatiseren en elektronische handtekeningen kunt verzamelen.
 
 Als u alle mogelijkheden wilt verkennen en uw eigen handige toepassing wilt ontwikkelen, maakt u een gratis [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) account om vandaag nog aan de slag te gaan. Profiteer van een gratis proefversie van zes maanden [pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)
 voor slechts USD 0,05 per documenttransactie op het moment dat je bedrijf schaalt.

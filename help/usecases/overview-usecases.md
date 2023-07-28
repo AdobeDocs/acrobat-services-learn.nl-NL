@@ -4,10 +4,11 @@ description: Overzicht pagina voor [!DNL Adobe Acrobat Services] API-gebruiksvoo
 type: Tutorial
 role: Developer
 level: Beginner, Intermediate, Experienced
+feature: Use Cases
 thumbnail: KT-8115.jpg
 jira: KT-8115
 exl-id: 4188897e-f6e6-41ea-be6f-359a3ef0e040
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
@@ -18,9 +19,9 @@ ht-degree: 0%
 
 ![[!DNL Acrobat Services] API Use Case Banner](../assets/usecaseshero.jpg)
 
-## Wat kan [!DNL Adobe Acrobat Services] API&#39;s voor mij?
+## Wat kan de [!DNL Adobe Acrobat Services] API&#39;s voor mij?
 
-Ontdek hoe [!DNL Adobe Acrobat Services] API’s kunnen je bedrijf veranderen met deze praktijkvoorbeelden.
+Ontdek hoe de [!DNL Adobe Acrobat Services] API’s kunnen je bedrijf veranderen met deze praktijkvoorbeelden.
 
 ### [!DNL Acrobat Services] API&#39;s
 
@@ -85,7 +86,7 @@ Ontdek hoe [!DNL Adobe Acrobat Services] API’s kunnen je bedrijf veranderen me
     <div>
     <a href="legal.md"><strong>Juridische contracten beheren</strong></a>
     </div>
-    <em>Leer hoe je automatisch juridische documenten genereert en beschermt met behulp van aangepaste data-invoer</em>
+    <em>Leer hoe je automatisch juridische documenten genereert en beschermt met aangepaste data-invoer</em>
     <br>
   </td>
   <td>
@@ -95,7 +96,7 @@ Ontdek hoe [!DNL Adobe Acrobat Services] API’s kunnen je bedrijf veranderen me
     <div>
     <a href="offer.md"><strong>Brieven van werknemersaanbiedingen beheren</strong></a>
     </div>
-    <em>Lees hoe je een aanbiedingsbrief genereert die ter ondertekening aan een nieuwe medewerker kan worden bezorgd</em>
+    <em>Leer hoe je een aanbiedingsbrief genereert die ter ondertekening aan een nieuwe medewerker kan worden bezorgd</em>
     <br>
   </td>
   <td>
@@ -142,7 +143,7 @@ Ontdek hoe [!DNL Adobe Acrobat Services] API’s kunnen je bedrijf veranderen me
   </td>
   <td>
     <a href="educationcollab.md">
-      <img alt="Student-Teacher Collaboration" src="assets/edu_thumb.png" />
+      <img alt="Samenwerking tussen studenten en docenten" src="assets/edu_thumb.png" />
     </a>
     <div>
     <a href="educationcollab.md"><strong>Samenwerking tussen studenten en docenten</strong></a>

@@ -4,10 +4,11 @@ description: Leer hoe je de werving van medewerkers kunt moderniseren met [!DNL 
 role: Developer
 level: Intermediate
 type: Tutorial
+feature: Use Cases
 thumbnail: KT-10203.jpg
 jira: KT-10203
 exl-id: 0186b3ee-4915-4edd-8c05-1cbf65648239
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1514'
 ht-degree: 1%
@@ -42,7 +43,7 @@ Als met [!DNL Acrobat Services], Acrobat Sign heeft een [gratis proefversie](htt
 
 Laten we eens kijken naar een scenario dat laat zien hoe Adobe kunnen helpen. Wanneer een nieuwe werknemer zich bij een bedrijf aansluit, hebben zij aangepaste informatie nodig die aan hun rol wordt aangepast. Bovendien hebben zij ook bedrijfsbreed materiaal nodig. Tot slot moeten ze de acceptatie van het bedrijfsbeleid aantonen door de documenten te ondertekenen. Laten we dit onderverdelen in concrete stappen:
 
-* Ten eerste is een aangepaste begeleidende brief nodig die de nieuwe werknemer op naam begroet. De brief moet informatie bevatten over de naam, de rol, het salaris en de locatie van de werknemer.
+* Ten eerste is een aangepaste begeleidende brief nodig die de nieuwe werknemer op naam begroet. De brief zou informatie over de naam van de werknemer, de rol, het salaris, en de plaats moeten bevatten.
 * De aangepaste brief moet worden gecombineerd met een PDF die basis, bedrijfsbrede informatie bevat (denk aan diverse het beleid van u, voordelen, enz.)
 * Er moet een definitief document worden opgenomen waarin wordt gevraagd om de handtekening en de datum van de werknemer.
 * Al het bovenstaande moet worden gepresenteerd als één document dat ter ondertekening naar de medewerker wordt gestuurd.
@@ -201,7 +202,7 @@ Dit document kan worden opgeslagen als een PDF en op dezelfde manier als hierbov
 
 De sjabloon kan naar het Acrobat Sign-dashboard worden geüpload en vervolgens voor nieuwe overeenkomsten worden gebruikt. Door de REST-API te gebruiken, kan dit document vervolgens naar de potentiële werknemer worden verzonden om zijn of haar handtekening aan te vragen.
 
-![Screenshot van ondertekend document](assets/onboarding_11.png)
+![Schermafbeelding van ondertekend document](assets/onboarding_11.png)
 
 ## Ervaar het zelf
 

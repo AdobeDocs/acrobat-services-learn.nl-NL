@@ -4,10 +4,11 @@ description: Leer hoe u de Adobe PDF Services-connector kunt gebruiken in Micros
 type: Tutorial
 role: Developer
 level: Beginner
+feature: PDF Services API
 thumbnail: KT-10379.jpg
 kt: 10379
 exl-id: 095b705f-c380-42cc-9329-44ef7de655ee
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1999'
 ht-degree: 2%
@@ -43,7 +44,7 @@ Er zijn twee [voorbeeldbestanden](assets/sample-assets.zip) die u moet uitpakken
 * WordDocument01.docx
 * WordDocument02.docx
 
-### Referenties ophalen
+### Inloggegevens ophalen
 
 Om deze zelfstudie te voltooien, hebt u uw aanmeldingsgegevens nodig die al zijn geconfigureerd in Microsoft Power Automate for Adobe PDF Services. Als u deze stap niet hebt voltooid, raadpleegt u de [instructies hier](https://experienceleague.adobe.com/docs/document-services/tutorials/pdfservices/getting-credentials-power-automate.html).
 
@@ -53,14 +54,14 @@ Om deze zelfstudie te voltooien, hebt u uw aanmeldingsgegevens nodig die al zijn
 
 In dit deel maakt u een nieuwe flow in [Microsoft Power Automate](https://flow.microsoft.com) met een instant flow kunt u parameters toevoegen, bestanden ophalen van OneDrive en omzetten in PDF.
 
-1. Navigeren naar [Microsoft Power Automate](https://flow.microsoft.com) en meld u aan met uw referenties.
+1. Navigeer naar [Microsoft Power Automate](https://flow.microsoft.com) en meld u aan met uw referenties.
 1. Selecteer in het zijpaneel de optie **[!UICONTROL Maken]**.
 
    ![Knop Maken](assets/createButtonPowerAutomate.png)
 
 1. Selecteren **[!UICONTROL Directe flow]**.
 1. Geef uw flow een naam.
-1. Onder *Kiezen hoe deze flow wordt geactiveerd* selecteert u **[!UICONTROL Handmatig een flow triggeren]**.
+1. Onder *Kiezen hoe deze flow wordt geactiveerd* selecteert u **[!UICONTROL Handmatig een flow activeren]**.
 1. Selecteer **[!UICONTROL Maken]**.
 
 ### Bestandsinhoud ophalen van bestanden
@@ -69,7 +70,7 @@ Vervolgens haalt u de bestandsinhoud op van de voorbeeldbestanden.
 
 >[!PREREQUISITES]
 >
->Als u de [voorbeeldbestanden](assets/sample-assets.zip) in OneDrive uitpakken en uploaden.
+>Als u de [voorbeeldbestanden](assets/sample-assets.zip) in OneDrive, decomprimeer ze en upload ze.
 
 
 1. In [Power Automate](https://flow.microsoft.com)selecteert u **[!UICONTROL + Nieuwe stap]**.
@@ -80,9 +81,9 @@ Vervolgens haalt u de bestandsinhoud op van de voorbeeldbestanden.
 
    ![Bestandsinhoud ophalen OneDrive-actie in Microsoft Power Automate](assets/getFileContentOneDrive.png)
 
-### Bestand omzetten in PDF
+### Bestand converteren naar PDF
 
-Nu u de bestandsinhoud hebt, kunt u het document omzetten in PDF.
+Nu u de bestandsinhoud hebt, kunt u het document converteren naar PDF.
 
 1. In [Power Automate](https://flow.microsoft.com)selecteert u **[!UICONTROL + Nieuwe stap]**.
 1. Zoeken naar *Adobe PDF Services* in de zoekbalk.
@@ -90,7 +91,7 @@ Nu u de bestandsinhoud hebt, kunt u het document omzetten in PDF.
 1. Zoeken naar *Word naar PDF converteren* in de zoekbalk.
 1. In **[!UICONTROL Bestandsnaam]** geeft u het bestand de gewenste naam, maar het moet eindigen met *.docx*. Deze extensie is nodig voor het converteren van documenten van Word naar PDF.
 1. Plaats de cursor in het **[!UICONTROL Bestandsinhoud]** veld.
-1. Met de **[!UICONTROL Dynamische inhoud]** selecteren **[!UICONTROL Bestandsinhoud]**.
+1. Met de **[!UICONTROL Dynamische inhoud]** deelvenster selecteert u **[!UICONTROL Bestandsinhoud]**.
 
    ![Word-naar-PDF-actie converteren in Microsoft Power Automate](assets/convertWordToPDFActionPowerAutomate.png)
 
@@ -110,7 +111,7 @@ Nadat het document is gegenereerd, slaat u het bestand weer op in OneDrive.
 
 ### Stroom uitproberen
 
-1. Selecteer in de linkerbovenhoek de optie **[!UICONTROL Naamloos]** om de naam van de flow te wijzigen.
+1. Selecteer in de linkerbovenhoek **[!UICONTROL Naamloos]** om de naam van de flow te wijzigen.
 1. Selecteer **[!UICONTROL Opslaan]**.
 1. Selecteren **[!UICONTROL Testen]**.
 1. Selecteren **[!UICONTROL Handmatig]** en dan **[!UICONTROL Opslaan en testen]**.
@@ -119,7 +120,7 @@ Nadat het document is gegenereerd, slaat u het bestand weer op in OneDrive.
 
 In de map OneDrive ziet u nu de omgezette PDF.
 
-![Geselecteerd geconverteerd PDF-document in OneDrive](assets/selectedGeneratedFileInOneDrive.png)
+![Geselecteerd omgezet PDF-document in OneDrive](assets/selectedGeneratedFileInOneDrive.png)
 
 ## Deel 2: Een dynamisch document genereren op basis van een sjabloon
 
@@ -133,7 +134,7 @@ Openen *WordDocument02_.docx* van uw voorbeeldbestanden in OneDrive. Het Word-do
 
 Als u dynamische gegevens in het document wilt opnemen, moet u een paar parameters voor de trigger maken om naar waarden te vragen.
 
-1. Selecteer **[!UICONTROL Handmatig een flow triggeren]** om de actie uit te breiden.
+1. Selecteer **[!UICONTROL Handmatig een flow activeren]** om de actie uit te breiden.
 1. Selecteren **[!UICONTROL Een invoer toevoegen]**.
 1. Selecteren **[!UICONTROL Tekst]**.
 1. Geef het veld een naam *Voornaam*.
@@ -185,18 +186,17 @@ Kopieer de JSON-gegevens hieronder naar de **Gegevens samenvoegen** veld:
    ![Document met gegevenscodes genereren in JSON](assets/generateDocumentJSONAction.png)
 
 1. Herhaal stap 7-8 voor de **[!UICONTROL LastName]** en **[!UICONTROL Salary]** velden.
-1. In het dialoogvenster **[!UICONTROL Inhoud sjabloonbestand]** veld gebruiken **[!UICONTROL Dynamische inhoud]** paneel om het **[!UICONTROL Bestandsinhoud]** waarde uit de *Bestandsinhoud ophalen* stap.
+1. In het dialoogvenster **[!UICONTROL Inhoud sjabloonbestand]** veld gebruiken **[!UICONTROL Dynamische inhoud]** paneel om in te voegen **[!UICONTROL Bestandsinhoud]** waarde uit de *Bestandsinhoud ophalen* stap.
 
 ![Genereer een document van de Word-sjabloonactie in Power Automated met alle waarden voltooid](assets/generateDocumentJSONActionCompleted.png)
 
 >[!TIP]
 >
->De *Document genereren op basis van Word-sjabloon* handeling maakt gebruik van Adobe-API voor het genereren van documenten. Hier volgen een paar bronnen voor meer informatie over het maken van sjablonen:
+>De *Document genereren op basis van Word-sjabloon* handeling maakt gebruik van Adobe-API voor documentgeneratie. Hier volgen een paar bronnen voor meer informatie over het maken van sjablonen:
 >
->* [Meer informatie over het genereren van Adobe-documenten](https://developer.adobe.com/document-services/apis/doc-generation/)
+>* [Meer informatie over Adobe-documentgeneratie](https://developer.adobe.com/document-services/apis/doc-generation/)
 >* [Tagger voor het genereren van Adobe-documenten voor Microsoft Word](https://appsource.microsoft.com/en-US/product/office/WA200002654)
 >* [Adobe Documentgeneratie API-documentatie](https://developer.adobe.com/document-services/docs/overview/document-generation-api/)
-
 
 ### Sla het bestand op in OneDrive
 
@@ -225,7 +225,7 @@ Nadat het document is gegenereerd, kunt u het bestand weer opslaan in OneDrive.
 In de map OneDrive ziet u nu een PDF die uit het Word-document is gegenereerd. Wanneer u het PDF-document opent in OneDrive, ziet u dat de gegevens worden samengevoegd met de tekstlabellocaties.
 
 
-## Deel 3: PDF in één combineren
+## Deel 3: PDF combineren tot één
 
 Nu u een Word-document hebt gegenereerd en omgezet in een PDF, bestaat het volgende onderdeel uit het combineren van meerdere PDF-documenten.
 
@@ -240,9 +240,9 @@ Nu u een Word-document hebt gegenereerd en omgezet in een PDF, bestaat het volge
 1. Selecteren **[!UICONTROL Adobe PDF Services]**.
 1. Selecteer de **[!UICONTROL PDF samenvoegen]** handeling.
 1. In het dialoogvenster **[!UICONTROL PDF-bestandsnaam samenvoegen]** in, voert u de gewenste bestandsnaam in (bijv.*combinedDocument.pdf*).
-1. In het dialoogvenster **[!UICONTROL Bestandsinhoud -1]** veld gebruiken **[!UICONTROL Dynamische inhoud]** paneel om het *Inhoud PDF-bestand* waarde uit de **[!UICONTROL Word naar PDF converteren]** stap.
-1. Als u het volgende document wilt toevoegen, selecteert u **+ [!UICONTROL nieuw item toevoegen]**.
-1. In het dialoogvenster **[!UICONTROL Bestandsinhoud - 2]** veld gebruiken **[!UICONTROL Dynamische inhoud]** paneel om het **[!UICONTROL Inhoud uitvoerbestand]** waarde uit de *Document genereren op basis van Word-sjabloon* stap.
+1. In het dialoogvenster **[!UICONTROL Bestandsinhoud -1]** veld gebruiken **[!UICONTROL Dynamische inhoud]** paneel om in te voegen *Inhoud PDF-bestand* waarde uit de **[!UICONTROL Word naar PDF converteren]** stap.
+1. Selecteer **+ [!UICONTROL nieuw item toevoegen]**.
+1. In het dialoogvenster **[!UICONTROL Bestandsinhoud - 2]** veld gebruiken **[!UICONTROL Dynamische inhoud]** paneel om in te voegen **[!UICONTROL Inhoud uitvoerbestand]** waarde uit de *Document genereren op basis van Word-sjabloon* stap.
 
 ![PDF samenvoegen in Microsoft Power Automate](assets/mergePDFAction.png)
 
@@ -257,7 +257,7 @@ Nadat het document is gecombineerd, kunt u het weer opslaan in OneDrive.
 1. Selecteren **[!UICONTROL Bestand maken]**.
 1. In het dialoogvenster **[!UICONTROL Mappad]** selecteert u het mappictogram om op te geven waar u het bestand in OneDrive wilt opslaan.
 1. In het dialoogvenster **[!UICONTROL Bestandsnaam]** de naam van het bestand in. Aangezien de uitvoer een PDF is, moet uw bestandsnaam eindigen op .pdf.
-1. In het dialoogvenster **[!UICONTROL Bestandsinhoud]** veld, gebruiken **[!UICONTROL Dynamische inhoud]** paneel om het *Inhoud PDF-bestand* waarde uit de **[!UICONTROL PDF samenvoegen]** stap.
+1. In het dialoogvenster **[!UICONTROL Bestandsinhoud]** veld, gebruiken **[!UICONTROL Dynamische inhoud]** paneel om in te voegen *Inhoud PDF-bestand* waarde uit de **[!UICONTROL PDF samenvoegen]** stap.
 
    ![Stroom in Microsoft Power Automate-overzicht](assets/flowOverviewSavedMergedDocument.png)
 
@@ -288,14 +288,14 @@ Nadat u het document hebt gegenereerd, kunt u het beschermen tegen bewerking doo
 1. Selecteer de **[!UICONTROL Protect PDF van weergave]** handeling.
 1. In het dialoogvenster **[!UICONTROL Bestandsnaam]** , stelt u de naam in op uw gewenste naam, zolang deze eindigt met de extensie .pdf.
 1. Stel de **[!UICONTROL Wachtwoord]** aan uw opgegeven wachtwoord toe om het document te openen.
-1. In het dialoogvenster **[!UICONTROL Bestandsinhoud]** veld gebruiken **[!UICONTROL Dynamische inhoud]** paneel om het *Inhoud PDF-bestand* waarde uit de **[!UICONTROL PDF samenvoegen]** stap.
+1. In het dialoogvenster **[!UICONTROL Bestandsinhoud]** veld gebruiken **[!UICONTROL Dynamische inhoud]** paneel om in te voegen *Inhoud PDF-bestand* waarde uit de **[!UICONTROL PDF samenvoegen]** stap.
 
 ### Opslaan naar OneDrive bijwerken
 
 Als het document is beveiligd, kunt u het bestand weer opslaan in OneDrive. In dit voorbeeld werkt u het bestaande **Bestand 3 maken** actie met een nieuwe *Bestandsinhoud* waarde.
 
 1. Selecteer de cursor in het dialoogvenster **[!UICONTROL Bestandsinhoud]** in het veld **[!UICONTROL Bestand 3 maken]** handeling.
-1. Gebruik de **[!UICONTROL Dynamische inhoud]** paneel om het *Inhoud PDF-bestand* waarde uit de **Protect PDF van weergave** stap.
+1. Gebruik de **[!UICONTROL Dynamische inhoud]** paneel om in te voegen *Inhoud PDF-bestand* waarde uit de **Protect PDF van weergave** stap.
 
 ### Stroom uitproberen
 

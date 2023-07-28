@@ -4,10 +4,11 @@ description: Leer hoe u PDF-rapporten voor klanten kunt genereren op uw website
 role: Developer
 level: Intermediate
 type: Tutorial
+feature: Use Cases
 thumbnail: KT-8093.jpg
 jira: KT-8093
 exl-id: 2f2bf1c2-1b33-4eee-9fd2-5d0b77e6b0a9
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 1%
@@ -160,7 +161,7 @@ Hier is de uitvoer PDF:
 
 ![Screenshot van algemeen rapport](assets/report_6.png)
 
-Klanten kunnen meerdere bestanden selecteren om een gecombineerd rapport te genereren. Wanneer de klant meer dan één document selecteert, voert u twee bewerkingen uit: de eerste maakt voor elk document een gedeeltelijke PDF en de tweede combineert deze in één PDF-rapport.
+Klanten kunnen meerdere bestanden selecteren om een gecombineerd rapport te genereren. Wanneer de klant meer dan één document selecteert, voert u twee bewerkingen uit: de eerste maakt een gedeeltelijke PDF voor elk document en de tweede combineert deze in één PDF-rapport.
 
 ```
 async function combinePdf(pdfs, outputPdf) {
@@ -218,4 +219,4 @@ Deze hands=on tutorial ging door hoe te om PDF Services API te gebruiken om klan
 
 Deze Adobe-toepassing helpt uw [social media dashboard klanten](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html) U kunt de rapporten die ze nodig hebben ontvangen en delen zonder dat u zich zorgen hoeft te maken of alle ontvangers Microsoft Office of andere software op hun apparaat hebben geïnstalleerd. U kunt dezelfde technieken gebruiken in uw eigen toepassing om uw gebruikers te helpen documenten weer te geven, te combineren en te downloaden. Of check Adobe uit met vele andere API’s om handtekeningen toe te voegen en bij te houden en nog veel meer.
 
-claimen gratis uw [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) en creëer vervolgens aansprekende rapportageervaringen voor je medewerkers en klanten. Geniet van je gratis account gedurende zes maanden [pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) naarmate je marketingactiviteiten toenemen, is er slechts \$0,05 per documenttransactie.
+Ga aan de slag met uw gratis [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) en creëer vervolgens aansprekende rapportageervaringen voor je medewerkers en klanten. Geniet van je gratis account gedurende zes maanden [pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) naarmate je marketingactiviteiten toenemen, is er slechts \$0,05 per documenttransactie.

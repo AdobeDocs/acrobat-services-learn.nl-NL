@@ -3,7 +3,8 @@ user-guide-title: "[!DNL Adobe Acrobat Services]"
 breadcrumb-title: "[!DNL Acrobat Services]"
 user-guide-description: Meer informatie over [!DNL Adobe Acrobat Services]
 solution: Acrobat Services
-source-git-commit: 264941900ac1e4778923645cef97a796b0213030
+feature-set: Acrobat Services
+source-git-commit: a43d53151702b9f689815d03226470ab9c44eb77
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 7%
@@ -20,13 +21,13 @@ ht-degree: 7%
    + [Maak je eerste flow in Microsoft Power Automate](pdfservices/create-workflow-power-automate.md)
    + [PDF maken van HTML](pdfservices/createpdffromhtml.md)
    + [PDF Services-API gebruiken om PDF naar Word, PowerPoint en meer te exporteren](pdfservices/exportpdf.md)
-   + [Aan de slag met Adobe PDF Services API en Java](pdfservices/gettingstartedjava.md)
+   + [Aan de slag met de Adobe PDF Services-API en Java](pdfservices/gettingstartedjava.md)
    + [Aan de slag met Adobe PDF Services API en .Net](pdfservices/gettingstartednet.md)
    + [Adobe PDF Services API gebruiken voor OCR-PDF-bestanden](pdfservices/ocr.md)
 + API voor documentgeneratie {#docgen}
    + [Overzicht](docgen/overview-docgen.md)
    + Sjablonen maken {#docgentemplates}
-      + [Overzicht van de tagger voor het genereren van Adobe-documenten](docgen/taggeroverview.md)
+      + [Overzicht van de Adobe-generatietag voor documenten](docgen/taggeroverview.md)
       + [Tekstlabels toevoegen](docgen/taggeraddtexttags.md)
       + [Afbeeldingstags toevoegen](docgen/taggeraddimagetags.md)
       + [Tabellen en lijstcodes toevoegen](docgen/taggertables.md)

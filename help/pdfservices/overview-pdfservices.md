@@ -4,10 +4,11 @@ description: Overzichtspagina voor Adobe PDF Services API-zelfstudies
 type: Tutorial
 role: Developer
 level: Beginner, Intermediate, Experienced
+feature: PDF Services API
 thumbnail: KT-8116.jpg
 jira: KT-8116
 exl-id: 81410fe4-7a2c-43a9-b497-b7423f9821ec
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
@@ -37,7 +38,7 @@ ht-degree: 0%
     <div>
    <a href="getting-credentials-power-automate.md"><strong>Referenties ophalen voor [!DNL Microsoft Power Automate]</strong></a>
     </div>
-    <em>Leer hoe je gebruikersgegevens kunt ophalen om te gaan gebruiken of te triggeren [!DNL Adobe PDF Services]</em>
+    <em>Leer hoe je aanmeldingsgegevens ophaalt om te gaan werken of te testen [!DNL Adobe PDF Services]</em>
     <br>
   </td>
   <td>
@@ -69,15 +70,15 @@ ht-degree: 0%
     <div>
    <a href="exportpdf.md"><strong>Hefboomwerking [!DNL PDF Services API] om PDF te exporteren naar [!DNL Word], [!DNL PowerPoint], en meer</strong></a>
     </div>
-    <em>Leer hoe u de [!DNL PDF Services API] Exporteer de bewerking met behulp van voorbeeldbestanden voor Node.js-, Java- en .Net-talen</em>
+    <em>Leer hoe u de [!DNL PDF Services API] Exporteer de bewerking met voorbeeldbestanden voor Node.js-, Java- en .Net-talen</em>
     <br>
   </td>
    <td>
    <a href="gettingstartedjava.md">
-      <img alt="Aan de slag met Adobe PDF Services API en Java" src="assets/PDFServices_GettingStartedJAVA_thumb.jpg" />
+      <img alt="Aan de slag met de Adobe PDF Services-API en Java" src="assets/PDFServices_GettingStartedJAVA_thumb.jpg" />
    </a>
     <div>
-   <a href="gettingstartedjava.md"><strong>Aan de slag met Adobe PDF Services API en Java</strong></a>
+   <a href="gettingstartedjava.md"><strong>Aan de slag met de Adobe PDF Services-API en Java</strong></a>
     </div>
     <em>Ontwikkelaars kunnen binnen een paar minuten aan de slag met de gebruiksklare voorbeeldbestanden voor toegang tot alle beschikbare webservices</em>
     <br>

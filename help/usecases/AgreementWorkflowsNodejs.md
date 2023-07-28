@@ -4,11 +4,12 @@ description: "[!DNL Adobe Acrobat Services] API's integreren eenvoudig PDF-mogel
 type: Tutorial
 role: Developer
 level: Beginner
+feature: Use Cases
 thumbnail: KT-7473.jpg
 jira: KT-7473
 keywords: Aanbevolen
 exl-id: 44a03420-e963-472b-aeb8-290422c8d767
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '2182'
 ht-degree: 1%
@@ -51,7 +52,7 @@ Voer een naam voor de toepassing in en schakel het selectievakje in *Een geperso
 
 Selecteren *Node.js* voor het toepassingstype en klik op *Referenties maken*.
 
-Een paar minuten later begint een .zip-bestand te downloaden met een voorbeeldproject met uw referenties. Het pakket Node.js voor [!DNL Acrobat Services] is reeds inbegrepen als deel van de code van het steekproefproject.
+Een paar minuten later begint een .zip-bestand te downloaden met een voorbeeldproject met uw referenties. Het pakket Node.js voor [!DNL Acrobat Services] is al opgenomen als onderdeel van de voorbeeldprojectcode.
 
 ![Afbeelding van PDF Services API-referenties selecteren](assets/AWNjs_2.png)
 
@@ -75,7 +76,7 @@ Download de code (zonder uw ingesloten referenties) van [GitHub](https://github.
 }
 ```
 
-Voor uw eigen toepassing moet u het bestand met de persoonlijke sleutel en de aanmeldingsgegevens naar de bron van uw toepassing kopiëren.
+Voor uw eigen toepassing moet u het bestand met de persoonlijke sleutel en de aanmeldingsgegevens naar de toepassingsbron kopiëren.
 
 U moet het pakket Node.js installeren voor [!DNL Acrobat Services]. Gebruik de volgende opdracht om het pakket te installeren:
 
@@ -231,7 +232,7 @@ htmlToPDFOperation.execute(executionContext)
 });
 ```
 
-De functie `setCustomOptions` geeft andere PDF-instellingen op, zoals de paginagrootte. Hier kunt u zien dat de functie het paginaformaat instelt op 11,5 x 11 inch:
+De functie `setCustomOptions` geeft andere PDF-instellingen op, zoals het paginaformaat. Hier kunt u zien dat de functie het paginaformaat instelt op 11,5 x 11 inch:
 
 ```
 const setCustomOptions = (htmlToPDFOperation) => {    
@@ -311,7 +312,7 @@ U kunt verschillende opties in- en uitschakelen en direct zien hoe ze worden ger
 
 Zodra een document klaar is, kunt u digitale handtekeningen toevoegen voor goedkeuring met behulp van Adobe Sign. Deze functionaliteit werkt iets anders dan de functionaliteit die u tot nu toe hebt gebruikt. Voor digitale handtekeningen moet een toepassing zijn geconfigureerd om OAuth te gebruiken voor gebruikersverificatie.
 
-De eerste stap bij het instellen van uw toepassing is: [registreer uw toepassing](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md) om OAuth voor Adobe Sign te gebruiken. Navigeer na aanmelding naar het scherm om toepassingen te maken door op *Account* en open vervolgens de *Adobe Sign API* en klik op *API-toepassingen* om de lijst met geregistreerde toepassingen te openen.
+De eerste stap bij het instellen van uw toepassing is: [registreer uw toepassing](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md) om OAuth voor Adobe Sign te gebruiken. Navigeer na aanmelding naar het scherm om toepassingen te maken door op *Account* en open vervolgens de *ADOBE SIGN API* en klik op *API-toepassingen* om de lijst met geregistreerde toepassingen te openen.
 
 ![Afbeelding van de eerste stap bij het registreren van uw toepassing](assets/AWNjs_9.png)
 
@@ -329,9 +330,9 @@ Nadat de toepassing is gemaakt, kunt u deze selecteren in de lijst en klikken op
 http://localhost:3000/signed-in 
 ```
 
-Het proces voor het verkrijgen van een token met OAuth is standaard. Uw toepassing leidt een gebruiker naar een URL om zich aan te melden. Nadat de gebruiker zich heeft aangemeld, wordt deze teruggeleid naar de toepassing met aanvullende informatie in de queryparameters van de pagina.
+Het proces voor het verkrijgen van een token met OAuth is standaard. Uw toepassing leidt een gebruiker naar een URL voor het aanmelden. Nadat de gebruiker zich heeft aangemeld, wordt deze teruggeleid naar de toepassing met aanvullende informatie in de queryparameters van de pagina.
 
-Voor de aanmeldings-URL moet uw toepassing uw client-id doorgeven, de URL omleiden en een lijst met de vereiste bereiken.
+Voor de aanmeldings-URL moet uw toepassing uw client-id doorgeven, de URL omleiden en een lijst met de vereiste bereiken opgeven.
 
 Het patroon voor de URL ziet er als volgt uit:
 
@@ -367,7 +368,7 @@ request.post(requestURL, {form: { }
 });
 ```
 
-Als een document een handtekening vereist, moet het document eerst worden geüpload. Uw toepassing kan het document uploaden naar de `api_access_point` waarde die is ontvangen tijdens het aanvragen van de OAUTH-token. Het eindpunt is `/api/rest/v6/transientDocuments`. De aanvraaggegevens zien er als volgt uit:
+Als een document een handtekening vereist, moet het document eerst worden geüpload. Uw toepassing kan het document uploaden naar `api_access_point` waarde die is ontvangen tijdens het aanvragen van de OAUTH-token. Het eindpunt is `/api/rest/v6/transientDocuments`. De aanvraaggegevens zien er als volgt uit:
 
 ```
 POST /api/rest/v6/transientDocuments HTTP/1.1
@@ -437,7 +438,7 @@ Als de ondertekenaars vergeten te ondertekenen en een andere e-mail met een meld
 
 Als u wilt verzoeken de herinnering te verzenden, moet u eerst een JSON-object maken waarin de aanvraag wordt beschreven. Voor het minimale object is een lijst met de deelnemers-id&#39;s en een status voor de herinnering nodig (&quot;ACTIEF&quot;, &quot;COMPLETE&quot; of &quot;GEANNULEERD&quot;).
 
-Het verzoek kan eventueel aanvullende informatie bevatten, zoals een waarde voor &quot;opmerking&quot; die aan de gebruiker wordt weergegeven. Of een vertraging (in uren) om te wachten tot de herinnering is verzonden (in `firstReminderDelay`) en een herinneringsfrequentie (in het veld &quot;frequentie&quot;), waarmee waarden zoals DAILY_UNTIL_SIGNED, EVERY_THIRD_DAY_UNTIL_SIGNED of WEEKLY_UNTIL_SIGNED worden geaccepteerd.
+De aanvraag kan eventueel aanvullende informatie bevatten, zoals een waarde voor &quot;opmerking&quot; die aan de gebruiker wordt weergegeven. Of een vertraging (in uren) om te wachten tot de herinnering is verzonden (in `firstReminderDelay`) en een herinneringsfrequentie (in het veld &quot;frequentie&quot;), waarmee waarden zoals DAILY_UNTIL_SIGNED, EVERY_THIRD_DAY_UNTIL_SIGNED of WEEKLY_UNTIL_SIGNED worden geaccepteerd.
 
 ```
 var requestBody = {
@@ -472,7 +473,7 @@ U kunt ook de Adobe Sign API gebruiken om webformulieren te maken. Met webformul
 
 ![Afbeelding van webformulier in het scherm Adobe Sign Manage](assets/AWNjs_14.png)
 
-Als u een webformulier wilt maken, gebruikt u het formulier `transientDocumentId`. Bepaal de titel van het formulier en de status om het te initialiseren.
+Gebruik het formulier om een webformulier te maken `transientDocumentId`. Bepaal de titel van het formulier en de status om het te initialiseren.
 
 ```
 var requestBody = {

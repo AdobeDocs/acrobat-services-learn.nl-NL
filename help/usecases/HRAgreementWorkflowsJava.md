@@ -4,10 +4,11 @@ description: "[!DNL Adobe Acrobat Services] API's kunnen eenvoudig PDF-mogelijkh
 type: Tutorial
 role: Developer
 level: Intermediate
+feature: Use Cases
 thumbnail: KT-7474.jpg
 jira: KT-7474
 exl-id: add4cc5c-06e3-4ceb-930b-e8c9eda5ca1f
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1899'
 ht-degree: 2%
@@ -201,11 +202,11 @@ Voor het renderen van dynamische inhoud wordt de Thymeleaf-engine voor sjabloonr
 
 Genereer nu het PDF-document met het virtuele contract door geselecteerde velden dynamisch in te vullen na het weergeven van het formulier met persoonlijke gegevens. In het bijzonder moet u de persoonsgegevens in het vooraf gemaakte contract invullen.
 
-Voor het gemak hebt u hier alleen een header, een subheader en een tekenreeksconstante bij het lezen: &quot;Dit contract is voorbereid voor \&lt;full name=&quot;&quot; of=&quot;&quot; the=&quot;&quot; person=&quot;&quot;>&quot;.
+Voor het gemak heb je hier alleen een header, een subheader en een tekenreeksconstante die lezen: &quot;Dit contract is voorbereid voor \&lt;full name=&quot;&quot; of=&quot;&quot; the=&quot;&quot; person=&quot;&quot;>&quot;.
 
 Om dit doel te bereiken, begin met Adobe [Een PDF maken van Dynamic HTML](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-dynamic-html) voorbeeld. Door die voorbeeldcode te analyseren, zie je dat het proces van dynamische veldpopulatie van HTML als volgt werkt.
 
-Eerst moet u de pagina HTML voorbereiden, die statische en dynamische inhoud bevat. Het dynamische deel wordt bijgewerkt met behulp van JavaScript. Met de PDF Services-API wordt het JSON-object namelijk in uw HTML geïnjecteerd.
+Eerst moet u de pagina HTML voorbereiden, die statische en dynamische inhoud bevat. Het dynamische deel wordt bijgewerkt met behulp van JavaScript. Met de PDF Services-API wordt het JSON-object in uw HTML ingebracht.
 
 Vervolgens haalt u de JSON-eigenschappen op met behulp van de JavaScript-functie die wordt aangeroepen wanneer het HTML-document wordt geladen. Deze JavaScript-functie werkt de geselecteerde DOM-elementen bij. Hier is het voorbeeld dat het span-element vult en de gegevens van de persoon bevat (zie src\\main\\resources\\contract\\index.html van de bijbehorende code):
 
@@ -263,11 +264,11 @@ Laten we eens kijken hoe de `CreateContract` de methode werkt (hieronder vindt u
 
 * `LOGGER`, van log4j, om informatie over uitzonderingen te zuiveren
 
-* `contractFilePath`, met daarin het bestandspad naar de gegenereerde PDF
+* `contractFilePath`met het bestandspad naar de gegenereerde PDF
 
 De `CreateContract` stelt de referenties in en maakt de PDF van HTML. Als u de gegevens van de persoon in het contract wilt doorgeven en invullen, gebruikt u de opdracht `setCustomOptionsAndPersonData` helper. Met deze methode haalt u de gegevens van de persoon op uit het formulier en verzendt u deze vervolgens naar de gegenereerde PDF via het JSON-object dat hierboven wordt uitgelegd.
 
-Ook `setCustomOptionsAndPersonData` toont hoe u de weergave van de PDF kunt bepalen door de kop- en voettekst uit te schakelen. Als deze stappen zijn voltooid, slaat u het PDF-bestand op in output/contract.pdf en verwijdert u uiteindelijk het eerder gegenereerde bestand.
+Ook: `setCustomOptionsAndPersonData` toont hoe u de weergave van de PDF kunt bepalen door de kop- en voettekst uit te schakelen. Als deze stappen zijn voltooid, slaat u het PDF-bestand op in output/contract.pdf en verwijdert u uiteindelijk het eerder gegenereerde bestand.
 
 ```
 private static final Logger LOGGER = LoggerFactory.getLogger(PersonController.class);
@@ -389,13 +390,13 @@ Als de overeenkomst klaar is, kan Adobe Sign digitale handtekeningen toevoegen d
 
 Als u een verificatietoken wilt verkrijgen, moet u verschillende stappen uitvoeren:
 
-Eerst registreert u een [ontwikkelaarsaccount](https://acrobat.adobe.com/nl/nl/sign/developer-form.html).
+Eerst registreert u een [ontwikkelingsaccount](https://acrobat.adobe.com/nl/nl/sign/developer-form.html).
 
 Maak de CLIENT-toepassing in het dialoogvenster [Adobe Sign Portal](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 
 Configureer OAuth voor de toepassing zoals beschreven [hier](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) en [hier](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp). Noteer de client-ID en het clientgeheim. Vervolgens kunt u `https://www.google.com` als de Redirect URI en de volgende bereiken:
 
-* user_login: zelf
+* user_login: self
 
 * agreement_read: account
 
@@ -412,7 +413,7 @@ https://secure.eu1.adobesign.com/public/oauth?redirect_uri=https://www.google.co
 &scope=user_login:self+agreement_read:account+agreement_write:account+agreement_send:account
 ```
 
-Typ de bovenstaande URL in uw webbrowser. U wordt omgeleid naar google.com en de code wordt weergegeven in de adresbalk als code=\&lt;your_code>, bijvoorbeeld:
+Typ de bovenstaande URL in uw webbrowser. U wordt omgeleid naar google.com en de code wordt in de adresbalk weergegeven als code=\&lt;your_code>, bijvoorbeeld:
 
 ```
 https://www.google.com/?code=<YOUR_CODE>&api_access_point=https://api.eu1.adobesign.com/&web_access_point=https://secure.eu1.adobesign.com%2F
@@ -474,7 +475,7 @@ Als u dit pakket wilt integreren met uw toepassing, moet u de code klonen. Maak 
 
 * target/lib/swagger-annotations-1.5.15.jar
 
-In IntelliJ IDEA, kunt u die dossiers als gebiedsdelen toevoegen gebruikend *Projectstructuur* (Bestands-/projectstructuur).
+In IntelliJ IDEA, kunt u die dossiers als gebiedsdelen toevoegen gebruikend *Projectstructuur* (Bestand/projectstructuur).
 
 ## De PDF ter ondertekening verzenden
 
@@ -537,7 +538,7 @@ TransientDocumentResponse response = transientDocumentsApi.createTransientDocume
 String transientDocumentId = response.getTransientDocumentId();
 ```
 
-Vervolgens moet u een overeenkomst maken. Gebruik hiervoor het bestand contract.pdf en stel de overeenkomststatus in op IN_PROCESS om het bestand onmiddellijk te verzenden. U kiest ook de elektronische handtekening:
+Vervolgens moet u een overeenkomst maken. Gebruik hiervoor het bestand contract.pdf en stel de overeenkomststatus in op IN_PROCESS om het bestand onmiddellijk te verzenden. U kunt ook de elektronische handtekening kiezen:
 
 ```
 // Create AgreementCreationInfo
@@ -600,4 +601,4 @@ Zoals u kunt zien, kunt u met de snelstartfunctie een eenvoudig webformulier imp
 
 In het volgende voorbeeld kunt u ontvangers van formulieren maken die op afstand en veilig kunnen ondertekenen. Als je meerdere handtekeningen nodig hebt, kun je zelfs automatisch formulieren doorsturen naar een reeks personen in een workflow. Je werknemersonboarding is verbeterd en je HR-afdeling zal van je houden.
 
-Uitchecken [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) om vandaag nog een groot aantal PDF-mogelijkheden aan uw toepassingen toe te voegen.
+Uitchecken [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) om een groot aantal PDF-mogelijkheden aan uw toepassingen toe te voegen.

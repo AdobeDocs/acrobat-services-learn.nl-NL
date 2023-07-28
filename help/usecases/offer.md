@@ -1,13 +1,14 @@
 ---
 title: Brieven werknemersaanbieding beheren
-description: Lees hoe je een aanbiedingsbrief genereert die ter ondertekening aan een nieuwe medewerker kan worden bezorgd
+description: Leer hoe je een aanbiedingsbrief genereert die ter ondertekening aan een nieuwe medewerker kan worden bezorgd
 role: Developer
 level: Intermediate
 type: Tutorial
+feature: Use Cases
 thumbnail: KT-8096.jpg
 jira: KT-8096
 exl-id: 92f955f0-add5-4570-aa3a-ea63055dadb2
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1794'
 ht-degree: 2%
@@ -42,17 +43,17 @@ Dit hands-on leerprogramma loopt door vestiging een Uitdrukkelijke project van d
 
 Als u de API voor het genereren van Adobe-documenten wilt gebruiken in Node.js, gaat u naar de [API voor documentgeneratie](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) om uw account te openen of u aan te melden voor een nieuwe account. Uw account is [gratis voor zes maanden, vervolgens betaal naar keuze](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) voor slechts USD 0,05 per documenttransactie, zodat je deze zonder risico kunt uitproberen en vervolgens alleen betalen wanneer je bedrijf groeit.
 
-Nadat u zich hebt aangemeld bij het [Adobe Developer Console](https://console.adobe.io/), klik op **[!UICONTROL Nieuw project maken]**. Het project heeft standaard de naam &quot;Project 1&quot;. Klik op **[!UICONTROL Project bewerken]** en wijzig de naam in &quot;Offer Letter Generator&quot;. In het midden van het scherm is een **[!UICONTROL Aan de slag met uw nieuwe project]** sectie. Ga als volgt te werk om de beveiliging van uw project in te schakelen:
+Na aanmelding bij de [Adobe Developer Console](https://console.adobe.io/), klik op **[!UICONTROL Nieuw project maken]**. Het project heeft standaard de naam &quot;Project 1&quot;. Klik op de knop **[!UICONTROL Project bewerken]** en wijzig de naam in &quot;Offer Letter Generator&quot;. In het midden van het scherm is een **[!UICONTROL Aan de slag met uw nieuwe project]** sectie. Ga als volgt te werk om de beveiliging van uw project in te schakelen:
 
-Klikken **API toevoegen**. U ziet een aantal API&#39;s waaruit u kunt kiezen. In het dialoogvenster **[!UICONTROL Filteren op product]** sectie, selecteren **[!UICONTROL Document Cloud]** en klik vervolgens op **[!UICONTROL Volgende]**.
+Klikken **API toevoegen**. U ziet een aantal API&#39;s waaruit u kunt kiezen. In het dialoogvenster **[!UICONTROL Filteren op product]** sectie, selecteert u **[!UICONTROL Document Cloud]** en klik vervolgens op **[!UICONTROL Volgende]**.
 
 Genereer nu aanmeldingsgegevens voor toegang tot de API. De referenties hebben de vorm van een JSON-webtoken ([JWT](https://jwt.io/)): een open standaard voor veilige communicatie. Als u bekend bent met JWT en al sleutels hebt gegenereerd, kunt u hier uw openbare sleutel uploaden. U kunt ook doorgaan door **Optie 1** om Adobe de sleutels voor u te laten genereren.
 
 ![Screenshot van het genereren van referenties](assets/offer_1.png)
 
-Klik op **[!UICONTROL Hoofdpaar genereren]** knop. U kunt een bestand config.zip downloaden. Pak het archiefbestand uit. Het bevat twee bestanden: certificate_pub.crt en private.key. Zorg ervoor dat deze gegevens beveiligd blijven, aangezien deze uw persoonlijke gegevens bevatten en kunnen worden gebruikt om onbetrouwbare documenten te genereren als u er geen controle over hebt.
+Klik op de knop **[!UICONTROL Hoofdpaar genereren]** knop. U kunt een bestand config.zip downloaden. Pak het archiefbestand uit. Het bevat twee bestanden: certificate_pub.crt en private.key. Zorg ervoor dat deze gegevens beveiligd blijven, aangezien deze uw persoonlijke gegevens bevatten en kunnen worden gebruikt om onbetrouwbare documenten te genereren als u er geen controle over hebt.
 
-Klik op **[!UICONTROL Volgende]**. Nee, hiermee wordt toegang tot de PDF Generation API ingeschakeld. Op de **[!UICONTROL Productprofielen selecteren]** scherm, controleren **[!UICONTROL Enterprise PDF Services Developer]** en klik op de knop **[!UICONTROL geconfigureerde API opslaan]** knop. U kunt nu beginnen met het gebruik van de API.
+Klik op **[!UICONTROL Volgende]**. Nee, hiermee wordt toegang tot de PDF Generation API ingeschakeld. Op de **[!UICONTROL Productprofielen selecteren]** scherm, controleren **[!UICONTROL Enterprise PDF Services Developer]** en klik op de knop **[!UICONTROL geconfigureerde API opslaan]** knop. U kunt nu de API gaan gebruiken.
 
 ## Het project opzetten
 
@@ -92,7 +93,7 @@ Net als voorheen wordt de sectie voor afhankelijkheden van package.json overeenk
 
 ## Een aanbiedingsbriefsjabloon maken
 
-Maak nu in de hoofdmap van het project een bestand met de naam &quot;app.js&quot;. Laten we daar de volgende startcode in zetten:
+Maak nu in de hoofdmap van het project het bestand &quot;app.js&quot;. Laten we daar de volgende startcode in zetten:
 
 ```
 const express = require('express');
@@ -162,7 +163,7 @@ Het bericht &#39;Kandidaataanbiedingsbrief-app luistert op poort 8000&#39; moet 
 
 ![Screenshot van webformulier](assets/offer_2.png)
 
-U ziet dat het formulier naar zichzelf is gepost. Als u gegevens invult en op **Letter genereren** u zou de volgende informatie op de console moeten zien:
+U ziet dat het formulier zichzelf plaatst. Als u gegevens invult en op **Letter genereren** u zou de volgende informatie op de console moeten zien:
 
 ```
 Got body: { firstname: 'John',
@@ -237,7 +238,7 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-Er is veel code om uit te pakken. Laten we eerst het belangrijkste deel nemen: de `documentMergeOperation`. In deze sectie kunt u uw JSON-gegevens samenvoegen met een Word-documentsjabloon. U kunt de [voorbeeld op de Adobe-site](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade) ter referentie, maar laten we je eigen eenvoudige voorbeeld maken. Open Word en maak een nieuw leeg document. Je kunt het zo aanpassen als je wilt, maar in ieder geval iets als dit:
+Er moet veel code uitpakken. Laten we eerst het hoofdgedeelte nemen: de `documentMergeOperation`. In deze sectie kunt u uw JSON-gegevens samenvoegen met een Word-documentsjabloon. U kunt de [voorbeeld op de Adobe-site](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade) ter referentie, maar laten we je eigen eenvoudige voorbeeld maken. Open Word en maak een nieuw leeg document. Je kunt het zo aanpassen als je wilt, maar in ieder geval iets als dit:
 
 Beste X,
 
@@ -251,7 +252,7 @@ Klik in uw OfferLetter-Template op de nieuwe **Documenten genereren** knop. Er w
 
 ![Screenshot van letter en code](assets/offer_3.png)
 
-Klik op **Labels genereren** knop. U krijgt een vervolgkeuzemenu met codes die u in de juiste punten in het document wilt invoegen. Markeer de eerste X in het document en selecteer **[!UICONTROL voornaam]**. Klikken **[!UICONTROL Tekst invoegen]** en &quot;Beste X,&quot; wordt gewijzigd in &quot;Beste ```{{`offer_letter`.firstname}}```,&quot;. Dit label is de juiste indeling voor `documentMergeOperation`. Voeg de resterende drie tags toe aan de juiste Xs. Vergeet niet OfferLetter-template.docx op te slaan. Het moet er als volgt uitzien:
+Klik op de knop **Labels genereren** knop. U krijgt een vervolgkeuzemenu met codes die u in de juiste punten in het document wilt invoegen. Markeer de eerste X in het document en selecteer **[!UICONTROL firstname]**. Klikken **[!UICONTROL Tekst invoegen]** en &quot;Beste X,&quot; wordt gewijzigd in &quot;Beste ```{{`offer_letter`.firstname}}```,&quot;. Dit label is de juiste indeling voor `documentMergeOperation`. Voeg de resterende drie tags toe aan de juiste Xs. Vergeet niet OfferLetter-template.docx op te slaan. Het moet er als volgt uitzien:
 
 Beste ```{{`offer_letter`.firstname}} {{`offer_letter`.lastname}}```,
 

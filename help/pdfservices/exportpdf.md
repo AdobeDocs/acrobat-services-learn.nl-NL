@@ -4,10 +4,11 @@ description: Leer hoe u de PDF Services API-exportbewerking uitvoert met behulp 
 type: Tutorial
 role: Developer
 level: Intermediate
+feature: PDF Services API
 thumbnail: KT-6674.jpg
 kt: 6674
 exl-id: 55f5b04e-0249-47d9-9131-2f9ec01db7e8
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 5%
@@ -38,9 +39,9 @@ Gebruik de onderstaande Aan de slag-zelfstudies om uw API-referenties te maken, 
 
 [Aan de slag met PDF Services API en .Net](gettingstartednet.md)
 
-[Aan de slag met de PDF Services-API en Node.js](createpdffromhtml.md)
+[Aan de slag met PDF Services API en Node.js](createpdffromhtml.md)
 
-## Stap 2: Export-pdf-bewerking uitvoeren met behulp van voorbeeldbestanden
+## Stap 2: De bewerking PDF exporteren uitvoeren met behulp van de voorbeeldbestanden
 
 **Java**
 
@@ -88,7 +89,7 @@ Uw PDF wordt gemaakt op de locatie die in de uitvoer is aangegeven. Dit is stand
 
 ## Definitieve gedachten
 
-U hebt nu een werkvoorbeeld dat u in uw bestaande toepassingen kunt importeren om een concepttest te starten. In elke voorbeelddirectory ziet u nog een voorbeeld om PDF-bestanden te exporteren naar de afbeeldingsindeling. Met dezelfde stappen hierboven kunt u dat voorbeeld ook uitvoeren. Als u een andere indeling wilt gebruiken, kunt u de code bijwerken naar de gewenste nieuwe indeling:
+U moet nu een werkvoorbeeld hebben dat in uw bestaande toepassingen kan worden geïmporteerd om een concepttest te starten. In elke voorbeelddirectory ziet u nog een voorbeeld om PDF-bestanden te exporteren naar de afbeeldingsindeling. Met dezelfde stappen hierboven kunt u dat voorbeeld ook uitvoeren. Als u een andere indeling wilt gebruiken, kunt u de code bijwerken naar de gewenste nieuwe indeling:
 
 SupportedTargetFormats.PPTX
 

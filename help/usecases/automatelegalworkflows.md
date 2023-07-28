@@ -4,10 +4,11 @@ description: Leer hoe je juridische workflows automatiseert met voorwaardelijke 
 role: Developer
 level: Intermediate
 type: Tutorial
+feature: Use Cases
 thumbnail: KT-10202.jpg
 jira: KT-10202
 exl-id: 2a1752b8-9641-40cc-a0af-1dce6cf49346
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '2876'
 ht-degree: 1%
@@ -39,7 +40,7 @@ Er wordt een bestand naar uw computer gedownload met een ZIP-bestand met de voor
 
    ![Schermafbeelding van referenties](assets/automatelegal_2.png)
 
-1. Selecteren **[!UICONTROL Microsoft Word-invoegtoepassing ophalen]** of ga naar [AppSource](https://appsource.microsoft.com/en-cy/product/office/WA200002654) om te installeren.
+1. Selecteren **[!UICONTROL Microsoft Word-invoegtoepassing ophalen]** of ga naar [AppSource](https://appsource.microsoft.com/en-cy/product/office/WA200002654) installeren.
 
    >[!NOTE]
    >
@@ -94,7 +95,7 @@ In dit scenario wordt een document met voorwaarden gebruikt, dat kan worden gedo
 
    ![Screenshot van document- en JSON-gegevens](assets/automatelegal_4.png)
 
-Navigeer naar de *Tagger voor documentgeneratie* om codes in het document te plaatsen.
+Ga naar de *Tagger voor documentgeneratie* om codes in het document te plaatsen.
 
 ## De bedrijfsnaam invoegen
 
@@ -118,7 +119,7 @@ Hiermee wordt een tag met de naam `{{company.name}}` omdat de tag zich onder dat
 }
 ```
 
-Herhaal deze stap in de openingssectie voor de tekst KLANT. Herhalen **stappen 1-4**, waarbij CUSTOMER wordt vervangen door &quot;naam&quot; onder klant. De uitvoer moet `{{customer.name}}`, die aangeeft dat de tekst afkomstig is uit het object customer.
+Herhaal deze stap in de openingssectie voor de tekst KLANT. Herhalen **stappen 1-4**, waarbij CUSTOMER wordt vervangen door &quot;naam&quot; onder klant. De uitvoer moet `{{customer.name}}`, die aangeeft dat de tekst afkomstig is van onder het klantobject.
 
 Met de API voor het genereren van Adobe-documenten kunt u ook codes toevoegen aan uw kop- en voetteksten en aan het einde van de tijd waarin de titels voor de-handtekeningen moeten worden geplaatst.
 
@@ -151,7 +152,7 @@ Direct in Microsoft Word kunt u een voorvertoning van het gegenereerde document 
 1. In *Tagger voor documentgeneratie* selecteert u **[!UICONTROL Document genereren]**.
 1. De eerste keer dat u wordt gevraagd u aan te melden bij uw Adobe ID. Selecteren **[!UICONTROL Aanmelden]** en vult de aanmeldingsgegevens in.
 
-   ![Screenshot van de knop Generate document](assets/automatelegal_10.png)
+   ![Screenshot van de selectie van knop Document genereren](assets/automatelegal_10.png)
 
 1. Selecteren **[!UICONTROL Document weergeven]**.
 
@@ -173,20 +174,20 @@ In deze volgende sectie stelt u op basis van bepaalde criteria voor invoergegeve
 
    ![Screenshot van de tag Voorwaardelijk gedeelte](assets/automatelegal_15.png)
 
-1. In *[!UICONTROL Tagger voor documentgeneratie]* selecteert u **[!UICONTROL Geavanceerd]**.
+1. In *[!UICONTROL Tagger voor documentgeneratie]* selecteert u **[!UICONTROL Gedeeld]**.
 1. Uitbreiden **[!UICONTROL Voorwaardelijke inhoud]**.
 1. In *[!UICONTROL Records selecteren]* veld, zoeken en selecteren **[!UICONTROL customer.state]**.
 1. In *[!UICONTROL Operator selecteren]* veld, selecteren **=**.
 1. In *[!UICONTROL Waarde]* veld, type *CA*.
 1. Selecteren **[!UICONTROL Voorwaarde invoegen]**.
 
-De sectie bevat nu enkele tags die voorwaardelijke sectietags worden genoemd. Als u de labels hebt toegevoegd, is mogelijk de code voor de voorwaardelijke sectie toegevoegd als een genummerde regel. U kunt dit verwijderen door een backspacing voor de tag te maken. Als u dit niet doet, worden de items genummerd alsof de tag er niet was toen het document werd gegenereerd. De sectie die voorwaardelijk is, eindigt met de `{% end-section %}` tag.
+De sectie bevat nu enkele tags die voorwaardelijke sectietags worden genoemd. Als u de labels hebt toegevoegd, is mogelijk de code voor de voorwaardelijke sectie toegevoegd als een genummerde regel. U kunt dit verwijderen door een backspacing voor de tag te maken. Als u dit niet doet, worden de items genummerd alsof de tag er niet was toen het document werd gegenereerd. De sectie die voorwaardelijk is, eindigt met de `{% end-section %}` -tag.
 
 ![Screenshot van de tag Voorwaardelijk gedeelte](assets/automatelegal_16.png)
 
-**Stap 1-7 herhalen** voor de *Washington Disclosure* sectie, vervangen van de *CA* waarde met *WA* om aan te geven dat de sectie alleen wordt weergegeven als de staat van de klant Washington is.
+**Stap 1-7 herhalen** voor de *Washington Disclosure* sectie, vervangen van *CA* waarde met *WA* om aan te geven dat de sectie alleen wordt weergegeven als de staat van de klant Washington is.
 
-![Screenshot van de voorwaardelijk-sectietag voor WA](assets/automatelegal_17.png)
+![Screenshot van de voorwaardelijke sectietag voor WA](assets/automatelegal_17.png)
 
 ## Testen met voorwaardelijke secties
 
@@ -204,7 +205,7 @@ Om te testen of het malplaatje correct gedraagt wanneer de klant in de staat van
 
 1. In *Tagger voor documentgeneratie* selecteert u **[!UICONTROL Invoergegevens bewerken]**.
 
-   ![Schermafbeelding van de Tagger voor het genereren van documenten](assets/automatelegal_20.png)
+   ![Schermafbeelding van de Tagger voor documentgeneratie](assets/automatelegal_20.png)
 
 1. Selecteren **[!UICONTROL Bewerken]**.
 
@@ -224,7 +225,7 @@ U ziet dat het document alleen de sectie met de staat Washington bevat.
 Net als voorwaardelijke secties kunt u ook specifieke zinnen hebben die worden opgenomen wanneer aan bepaalde voorwaarden wordt voldaan. In dit voorbeeld verschilt het retourbeleid tussen Californië en Washington.
 
 1. Selecteer in sectie 3.1 de eerste zin &quot;Bij aankoop in de staat Washington moet er binnen 30 dagen na de oorspronkelijke transactie een via MAIL worden geretourneerd voor een volledige terugbetaling.&quot;
-1. In *[!UICONTROL Tagger voor documentgeneratie]* selecteert u **[!UICONTROL Geavanceerd]**.
+1. In *[!UICONTROL Tagger voor documentgeneratie]* selecteert u **[!UICONTROL Gedeeld]**.
 1. Uitbreiden **[!UICONTROL Voorwaardelijke inhoud]**.
 1. Onder *[!UICONTROL Inhoudstype]* selecteert u **[!UICONTROL Woorden]**.
 1. In *[!UICONTROL Records selecteren]* veld, zoeken en selecteren **[!UICONTROL customer.state]**.
@@ -246,7 +247,7 @@ Met Acrobat Sign kunt u overeenkomsten ter ondertekening verzenden of insluiten 
    ![Screenshot van waar de handtekening moet komen](assets/automatelegal_24.png)
 
 1. In *[!UICONTROL Tagger voor documentgeneratie]* selecteert u **[!UICONTROL Adobe Sign]**.
-1. In *[!UICONTROL Aantal ontvangers opgeven]* het aantal ontvangers instellen (in dit voorbeeld wordt 2 gebruikt).
+1. In *[!UICONTROL Geef het aantal ontvangers op]* het aantal ontvangers instellen (in dit voorbeeld wordt 2 gebruikt).
 1. In *[!UICONTROL Ontvangers]* veld, selecteren **[!UICONTROL Afzender-1]**.
 1. In *[!UICONTROL Veld]* tekst, selecteren **[!UICONTROL Handtekening]**.
 1. Selecteren **[!UICONTROL Adobe Sign-teksttag invoegen]**.
@@ -270,7 +271,7 @@ Plaats vervolgens een gegevensveld voor de ondertekenaar die automatisch invult 
 1. Stel het veldtype in op Datum.
 1. Selecteren **[!UICONTROL Adobe Sign-teksttag invoegen]**.
 
-De tag Date die wordt geplaatst, is tamelijk lang: `{{Date 3_es_:signer1:date:format(mm/dd/yyyy):font(size=Auto)}}`. De Acrobat Sign-tekstcode moet op dezelfde regel blijven staan. Dit is anders dan de labels voor het genereren van documenten. De `:format()` en `font()` parameters zijn optioneel, dus voor dit scenario kunnen we de tag verkorten tot `{{Date 3_es_:signer1:date}}`.
+De tag Date die wordt geplaatst, is tamelijk lang: `{{Date 3_es_:signer1:date:format(mm/dd/yyyy):font(size=Auto)}}`. De Acrobat Sign-tekstcode moet op dezelfde regel blijven staan, anders dan de labels voor het genereren van documenten. De `:format()` en `font()` parameters zijn optioneel, dus voor dit scenario kunnen we de tag verkorten tot `{{Date 3_es_:signer1:date}}`.
 
 Herhaal de stappen boven de *Handtekening bedrijf* sectie. Wanneer u dit doet, moet u het veld Ontvangers wijzigen in **Afzender-2** Anders worden alle handtekeningvelden toegewezen aan dezelfde persoon.
 
@@ -334,7 +335,7 @@ Open het pdfservices-node-sdk-samples-master-bestand dat u hebt gedownload bij h
 
 1. Vervangen `<JSON FILE>` met de naam van het JSON-bestand in /resources.
 1. Vervangen `<INSERT DOCX>` met de naam van het DOCX-bestand.
-1. Als u wilt uitvoeren, gebruikt u **[!UICONTROL Terminal]** om knooppunt uit te voeren `generate-salesOrder.js`.
+1. Als u wilt uitvoeren, gebruikt u **[!UICONTROL Terminal]** knooppunt uitvoeren `generate-salesOrder.js`.
 
 Het uitvoerbestand bevindt zich in de /uitvoermap met het document dat correct is gegenereerd.
 
@@ -419,7 +420,7 @@ Leer vervolgens hoe u hetzelfde scenario kunt uitvoeren via REST API-documentati
 
 ## Referenties ophalen
 
-1. Navigeren naar [Acrobat Sign REST-documentatie](https://secure.na1.adobesign.com/public/docs/restapi/v6).
+1. Navigeer naar [Acrobat Sign REST-documentatie](https://secure.na1.adobesign.com/public/docs/restapi/v6).
 1. Uitbreiden *transientDocuments* en de [POST/transientDocuments](https://benprojecteddemo.na1.adobesign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument).
 1. Selecteren **[!UICONTROL OAUTH ACCESS-TOKEN]**.
 
@@ -438,9 +439,9 @@ Als u meer wilt weten over het maken van een machtigingstoken voor Acrobat Sign,
 
 Aangezien de machtigingstoken uit de vorige stappen is toegevoegd, moet u een document uploaden om de API-aanroep te maken:
 
-1. In *Bestand* het PDF-document uploaden dat in de vorige stappen is gegenereerd.
+1. In *Bestand* -veld, uploadt u het PDF-document dat in de vorige stappen is gegenereerd.
 
-   ![Screenshot van de uploadlocatie van PDF](assets/automatelegal_37.png)
+   ![Screenshot van de uploadlocatie PDF](assets/automatelegal_37.png)
 
 1. Selecteren **[!UICONTROL Probeer het uit!]**.
 1. In **[!UICONTROL Antwoordhoofdtekst]**, kopieert u de *transientDocumentId* waarde.
@@ -573,12 +574,12 @@ Als het document bijvoorbeeld geen handtekening heeft, biedt de Adobe PDF Servic
 
 * Document beveiligen met een wachtwoord
 * PDF comprimeren als er grote afbeeldingen zijn
-* Als u meer wilt weten over andere beschikbare handelingen, bekijkt u de scripts in de map /src in de voorbeeldbestanden voor de Adobe PDF Services-API. U kunt ook meer leren door de documentatie van de verschillende handelingen te bekijken die kunnen worden gebruikt.
+* Als u meer wilt weten over andere beschikbare handelingen, bekijkt u de scripts in de map /src in de voorbeeldbestanden voor de Adobe PDF Services API. U kunt ook meer leren door de documentatie van de verschillende handelingen te bekijken die kunnen worden gebruikt.
 
 Bovendien biedt Acrobat Sign verschillende extra functies, zoals:
 
 * Ondertekeningservaring insluiten in een toepassing
-* Methoden voor identiteitsverificatie toevoegen voor ondertekenaars
+* Verificatiemethoden voor ondertekenaars toevoegen
 * Instellingen voor e-mailmeldingen configureren
 * Afzonderlijke documenten downloaden als onderdeel van een overeenkomst
 

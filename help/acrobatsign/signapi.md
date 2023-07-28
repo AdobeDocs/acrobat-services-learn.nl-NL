@@ -4,10 +4,11 @@ description: Leer hoe u de Acrobat Sign API in uw toepassing opneemt om handteke
 role: Developer
 level: Intermediate
 type: Tutorial
+feature: Acrobat Sign API
 thumbnail: KT-8089.jpg
 jira: KT-8089
 exl-id: ae1cd9db-9f00-4129-a2a1-ceff1c899a83
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 2%
@@ -18,19 +19,19 @@ ht-degree: 2%
 
 ![Hoofdlettergebruik hoofdbanner gebruiken](assets/UseCaseStartedHero.jpg)
 
-[Acrobat Sign API](https://www.adobe.io/apis/documentcloud/sign.html) is een fantastische manier om de manier waarop u ondertekende overeenkomsten beheert te verbeteren. Ontwikkelaars kunnen hun systemen eenvoudig integreren met de Sign-API, die een betrouwbare, eenvoudige manier biedt om documenten te uploaden, deze ter ondertekening te verzenden, herinneringen te verzenden en e-handtekeningen te verzamelen.
+[ACROBAT SIGN API](https://www.adobe.io/apis/documentcloud/sign.html) is een fantastische manier om de manier waarop u ondertekende overeenkomsten beheert te verbeteren. Ontwikkelaars kunnen hun systemen eenvoudig integreren met de Sign-API, die een betrouwbare, eenvoudige manier biedt om documenten te uploaden, deze ter ondertekening te verzenden, herinneringen te verzenden en e-handtekeningen te verzamelen.
 
 ## Wat je kunt leren
 
-In deze praktische zelfstudie wordt uitgelegd hoe ontwikkelaars Sign API kunnen gebruiken om toepassingen en workflows te verbeteren die zijn gemaakt met [!DNL Adobe Acrobat Services]. [!DNL Acrobat Services] include [Adobe PDF Services API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html), [Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/viesdk) (gratis), en [Adobe-API voor documentgeneratie](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html).
+In deze praktische zelfstudie wordt uitgelegd hoe ontwikkelaars Sign API kunnen gebruiken om toepassingen en workflows te verbeteren die zijn gemaakt met [!DNL Adobe Acrobat Services]. [!DNL Acrobat Services] include [Adobe PDF Services API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html), [Adobe PDF Embed-API](https://www.adobe.io/apis/documentcloud/viesdk) (gratis), en [Adobe-API voor documentgeneratie](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html).
 
 Leer meer bepaald hoe u de Acrobat Sign API in uw toepassing opneemt om handtekeningen en andere informatie te verzamelen, zoals werknemersinformatie op een verzekeringsformulier. Algemene stappen met vereenvoudigde HTTP-aanvragen en -reacties worden gebruikt. U kunt deze verzoeken in uw favoriete taal implementeren. U kunt een PDF maken met een combinatie van [[!DNL Acrobat Services] API&#39;s](https://www.adobe.io/apis/documentcloud/dcsdk/), uploadt u deze naar de Sign-API als een [voorbijgaand](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) documenten te verzenden en handtekeningen van eindgebruikers aan te vragen met de overeenkomst of [widget](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) workflow.
 
 ## Een PDF-document maken
 
-Maak eerst een Microsoft Word-sjabloon en sla deze op als een PDF. U kunt de pijplijn ook automatiseren met de API voor het genereren van documenten om een sjabloon te uploaden dat in Word is gemaakt en vervolgens een PDF-document te genereren. De API voor het genereren van documenten maakt deel uit van [!DNL Acrobat Services], [gratis voor zes maanden en vervolgens &#39;pay-as-you-go&#39; voor slechts USD 0,05 per documenttransactie](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html).
+Maak eerst een Microsoft Word-sjabloon en sla deze op als een PDF. U kunt de pijplijn ook automatiseren met de API voor het genereren van documenten om een sjabloon te uploaden dat in Word is gemaakt en vervolgens een PDF-document te genereren. De API voor documentgeneratie maakt deel uit van [!DNL Acrobat Services], [gratis voor zes maanden en vervolgens &#39;pay-as-you-go&#39; voor slechts USD 0,05 per documenttransactie](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html).
 
-In dit voorbeeld is de sjabloon slechts een eenvoudig document met een paar ondertekenaarsvelden die moeten worden ingevuld. Geef de velden nu een naam en voeg later de daadwerkelijke velden in deze zelfstudie in.
+In dit voorbeeld is de sjabloon slechts een eenvoudig document met een paar ondertekenaarsvelden die u kunt invullen. Geef de velden nu een naam en voeg later de daadwerkelijke velden in deze zelfstudie in.
 
 ![Screenshot van het verzekeringsformulier met een paar velden](assets/GSASAPI_1.png)
 
@@ -92,7 +93,7 @@ Bovendien kan uw toepassing een callback-URL opgeven die door Acrobat Sign wordt
 
 Webformulieren (voorheen ondertekeningswidgets genoemd) zijn gehoste documenten die iedereen die toegang heeft, kan ondertekenen. Voorbeelden van webformulieren zijn aanmeldingsformulieren, afstandsverklaringen en andere documenten die veel mensen online openen en ondertekenen.
 
-Als u een nieuw webformulier wilt maken met de Sign-API, moet u eerst een tijdelijk document uploaden. Het verzoek van de POST aan de `/widgets` het eindpunt gebruikt het teruggekeerde `transientDocumentId` .
+Als u een nieuw webformulier wilt maken met de Sign-API, moet u eerst een tijdelijk document uploaden. Het verzoek van de POST aan `/widgets` het eindpunt gebruikt het teruggekeerde `transientDocumentId` .
 
 In dit voorbeeld is het webformulier `ACTIVE`, maar u kunt het maken in een van de volgende drie statussen:
 
@@ -189,7 +190,7 @@ Dit formulier is een PDF-document dat gebruikers kunnen invullen. U moet de edit
 
 In het document hierboven worden de velden nog niet weergegeven. Ze worden toegevoegd tijdens het definiëren van de velden die de informatie van de ondertekenaar en hun grootte en positie verzamelen.
 
-Ga nu naar de [Webformulieren](https://secure.na4.adobesign.com/public/agreements/#agreement_type=webform) op de pagina &quot;Uw overeenkomsten&quot; en zoek naar het formulier dat u hebt gemaakt.
+Ga nu naar de [Webformulieren](https://secure.na4.adobesign.com/public/agreements/#agreement_type=webform) op de pagina &quot;Uw overeenkomsten&quot; en het formulier dat u hebt gemaakt.
 
 ![Screenshot van het Acrobat Sign-beheertabblad](assets/GSASAPI_2.png)
 
@@ -207,11 +208,11 @@ Met de editor kunt u tekst- en handtekeningvelden slepen en neerzetten. Nadat u 
 
 Nadat u het webformulier hebt voltooid, moet u het verzenden, zodat gebruikers het kunnen invullen en ondertekenen. Nadat u het formulier hebt opgeslagen, kunt u de URL en de ingesloten code weergeven en kopiëren.
 
-**URL van webformulier kopiëren**: Gebruik deze URL om gebruikers naar een gehoste versie van deze overeenkomst te sturen voor revisie en ondertekening. Bijvoorbeeld:
+**URL van webformulier kopiëren**: gebruik deze URL om gebruikers naar een gehoste versie van deze overeenkomst te sturen voor revisie en ondertekening. Bijvoorbeeld:
 
 [https://secure.na4.adobesign.com/public/esignWidget?wid=CBFCIBAA3...babw\*](https://secure.na4.adobesign.com/public/esignWidget?wid=CBFCIBAA3AAABLblqZhCndYscuKcDMPiVfQlpaGPb-5D7ebE9NUTQ6x6jK7PIs8HCtTzr3HOx8U6D5qqbabw*)
 
-**Insluitcode webformulier kopiëren**: U kunt de overeenkomst toevoegen aan uw website door deze code te kopiëren en in uw HTML te plakken.
+**Insluitcode webformulier kopiëren**: voeg de overeenkomst toe aan uw website door deze code te kopiëren en in uw HTML te plakken.
 
 Bijvoorbeeld:
 
@@ -328,7 +329,7 @@ Als u een overeenkomststatus wilt wijzigen, gebruikt u de opdracht `PUT /agreeme
 
 De `participantSetsInfo` eigenschap hierboven bevat e-mails van personen die geacht worden deel te nemen aan de overeenkomst en welke actie zij uitvoeren (ondertekenen, goedkeuren, erkennen, enzovoort). In het bovenstaande voorbeeld is er slechts één deelnemer: de ondertekenaar. Schriftelijke handtekeningen zijn beperkt tot vier per document.
 
-Wanneer u een overeenkomst maakt, verzendt Adobe deze in tegenstelling tot webformulieren automatisch ter ondertekening. Het eindpunt retourneert de unieke id van de overeenkomst.
+Wanneer u een overeenkomst maakt, verzendt Adobe deze, in tegenstelling tot webformulieren, automatisch ter ondertekening. Het eindpunt retourneert de unieke id van de overeenkomst.
 
 
 ```

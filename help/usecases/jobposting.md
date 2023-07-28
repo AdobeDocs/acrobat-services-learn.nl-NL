@@ -5,9 +5,10 @@ role: Developer
 level: Intermediate
 type: Tutorial
 thumbnail: KT-8092.jpg
+feature: Use Cases
 jira: KT-8092
 exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 0%
@@ -20,13 +21,13 @@ ht-degree: 0%
 
 Als u een website met meerdere gebruikers beheert, is het van cruciaal belang dat u een ervaring ontwerpt die iedereen een soepele ervaring biedt.
 
-Stel het volgende scenario voor: je hebt een website waar werkgevers [taakposten uploaden](https://www.adobe.io/apis/documentcloud/dcsdk/job-posting.html). Voor werkzoekenden is het handig om alle documenten met betrekking tot een post eenvoudig in een consistent formaat weer te geven. Het is echter handig voor werkgevers om informatie toe te voegen in elke bestandsindeling die ze hebben. Als u beide soorten gebruikers gebruiksvriendelijkheid wilt bieden, kunt u alle geüploade documenten automatisch converteren naar PDF en deze insluiten in het posten.
+Stel je het volgende scenario voor: je hebt een website die werkgevers toestaat om [taakposten uploaden](https://www.adobe.io/apis/documentcloud/dcsdk/job-posting.html). Voor werkzoekenden is het handig om alle documenten met betrekking tot een post eenvoudig in een consistent formaat weer te geven. Het is echter handig voor werkgevers om informatie toe te voegen in elke bestandsindeling die ze hebben. Als u beide soorten gebruikers gebruiksvriendelijkheid wilt bieden, kunt u alle geüploade documenten automatisch converteren naar PDF en deze insluiten in het posten.
 
 ## Wat je kunt leren
 
-Dit hands-on leerprogramma loopt door een voorbeeld Node.js dat gebruikt [!DNL Adobe Acrobat Services] en [Node.js SDK](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk) om deze mogelijkheden toe te voegen aan een site voor het posten van taken. Zo ontstaat een website die gemakkelijker te gebruiken is en die zowel voor werkgevers als voor werkzoekenden aantrekkelijker is. Hier is het [voltooid](https://github.com/contentlab-io/adobe_job_posting) [projectcode](https://github.com/contentlab-io/adobe_job_posting)voor het geval u mee wilt doen terwijl u leest.
+Dit hands-on leerprogramma loopt door een voorbeeld Node.js dat gebruikt [!DNL Adobe Acrobat Services] en zijn [Node.js SDK](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk) om deze mogelijkheden toe te voegen aan een site voor het posten van taken. Zo ontstaat een website die gemakkelijker te gebruiken is en die zowel voor werkgevers als voor werkzoekenden aantrekkelijker is. Hier is het [voltooid](https://github.com/contentlab-io/adobe_job_posting) [projectcode](https://github.com/contentlab-io/adobe_job_posting)voor het geval u mee wilt doen terwijl u leest.
 
-Stel om te beginnen een eenvoudige, op Express gebaseerde Node.js-webtoepassing in. [Express](https://expressjs.com/) is een minimalistisch webtoepassingsframework dat functies biedt zoals routering en sjablonen. De code voor de toepassing is beschikbaar op [GitHub](https://github.com/contentlab-io/adobe_job_posting). Installeer ook de [PostSQL-database](https://www.postgresql.org/) en stel deze in om de PDF op te slaan.
+Stel om te beginnen een eenvoudige, op Express gebaseerde Node.js-webtoepassing in. [Express](https://expressjs.com/) is een minimalistisch webtoepassingsframework dat functies biedt zoals routering en sjablonen. De code voor de toepassing is beschikbaar op [GitHub](https://github.com/contentlab-io/adobe_job_posting). Installeer ook de [PostSQL-database](https://www.postgresql.org/) en de PDF opslaan.
 
 ## Relevant [!DNL Acrobat Services] API&#39;s
 
@@ -36,7 +37,7 @@ Stel om te beginnen een eenvoudige, op Express gebaseerde Node.js-webtoepassing 
 
 ## Adobe API-referenties maken
 
-Eerst moet u [referenties maken](https://www.adobe.com/go/dcsdks_credentials) voor Adobe PDF Embed API (gratis) en Adobe PDF Services API (vervolgens gratis voor zes maanden) [pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) voor slechts \$0,05 per documenttransactie). Selecteer de optie &#39;Voorbeeld van gepersonaliseerde code maken&#39; bij het maken van referenties voor de PDF Services-API. Sla het ZIP-bestand op en extraheer pdftools-api-credentials.json en private.key naar de hoofdmap van uw Node.js Express-project.
+Eerst moet u [referenties maken](https://www.adobe.com/go/dcsdks_credentials) voor Adobe PDF Embed API (gratis) en Adobe PDF Services API (vervolgens gratis voor zes maanden) [pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) voor slechts \$0,05 per documenttransactie). Als u referenties maakt voor de PDF Services-API, selecteert u de optie &quot;Voorbeeld van gepersonaliseerde code maken&quot;. Sla het ZIP-bestand op en extraheer pdftools-api-credentials.json en private.key naar de hoofdmap van uw Node.js Express-project.
 
 U hebt ook een API-sleutel nodig voor de vrij beschikbare Embed-API. Van [Projecten](https://console.adobe.io/projects), ga naar het project dat u hebt gemaakt. Klik vervolgens op **Toevoegen aan project** en selecteer **API**. Tot slot klikt u op **PDF Embed-API**.
 
@@ -251,7 +252,7 @@ Maak in de map views/ een bestand job.jade met deze inhoud:
     script(src='/javascripts/embed-pdf.js')
 ```
 
-Het eerste script is Adobe View SDK, waarmee u de PDF eenvoudig kunt insluiten. Het tweede script is een in-line één-liner die de waarde van window.embedUrl aan URL van de PDF plaatst die door de Uitdrukkelijke routemanager wordt verstrekt. Maak zelf het derde script:
+Het eerste script is Adobe View SDK, waarmee u de PDF eenvoudig kunt insluiten. Het tweede script is een in-line één-liner die de waarde van window.embedUrl aan URL van de PDF plaatst die door de Uitdrukkelijke routemanager wordt verstrekt. Maak het derde script zelf als volgt:
 
 ```
   document.addEventListener("adobe_dc_view_sdk.ready", function () {

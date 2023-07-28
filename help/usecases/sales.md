@@ -4,10 +4,11 @@ description: Leer hoe je een efficiënte workflow bouwt om verkoopvoorstellen te
 role: Developer
 level: Intermediate
 type: Tutorial
+feature: Use Cases
 thumbnail: KT-8099.jpg
 jira: KT-8099
 exl-id: 219c70de-fec1-4946-b10e-8ab5812562ef
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 2%
@@ -20,7 +21,7 @@ ht-degree: 2%
 
 Verkoopvoorstellen vormen de eerste stap in het traject van een bedrijf naar klantenwerving. Net als bij alles, zijn de eerste impressies het laatst. Dus je eerste interactie met klanten stelt hun verwachtingen voor je bedrijf in. Uw voorstel moet beknopt, accuraat en handig zijn.
 
-Contracten en voorstellen bevatten verschillende soorten gegevens binnen hun documentstructuur. Ze bevatten zowel dynamische gegevens (naam van de client, aantal aanhalingstekens, enzovoort) als statische gegevens (vaste tekst, zoals vaste mogelijkheden, teamprofielen en standaardvoorwaarden voor SOW). Het creëren van malplaatjedocumenten, zoals verkoopvoorstellen, impliceert vaak monotone taken, zoals manueel het vervangen van projectdetails in een boilerplate malplaatje. In deze zelfstudie gebruikt u dynamische gegevens en workflows om een efficiënt proces te bouwen voor [voorstellen voor verkoopvoorstellen maken](https://www.adobe.io/apis/documentcloud/dcsdk/sales-proposals-and-contracts.html).
+Contracten en voorstellen bevatten verschillende soorten gegevens binnen hun documentstructuur. Ze bevatten zowel dynamische gegevens (naam van de client, aantal aanhalingstekens, enzovoort) als statische gegevens (vaste tekst, zoals vaste mogelijkheden, teamprofielen en standaardvoorwaarden voor SOW). Het creëren van malplaatjedocumenten, zoals verkoopvoorstellen, impliceert vaak monotone taken, zoals manueel het vervangen van projectdetails in een boilerplate malplaatje. In deze zelfstudie gebruikt u dynamische gegevens en workflows om een efficiënt proces te bouwen voor [voorstellen voor verkoopvoorstellen](https://www.adobe.io/apis/documentcloud/dcsdk/sales-proposals-and-contracts.html).
 
 ## Wat je kunt leren
 
@@ -46,7 +47,7 @@ In deze praktische zelfstudie leert u hoe u dynamische gegevens en workflows kun
 
 Nu u de gereedschappen hebt geïnstalleerd, kunt u beginnen met het oplossen van het probleem. De voorstellen hebben zowel statische inhoud als dynamische inhoud die uniek is voor elke klant. Er treden knelpunten op omdat beide soorten gegevens noodzakelijk zijn telkens wanneer u een voorstel doet. Het is tijdrovend om de statische tekst in te voeren, zodat u deze gaat automatiseren en alleen handmatig met de dynamische gegevens van elke client gaat werken.
 
-Maak eerst een formulier voor het vastleggen van gegevens in [Microsoft Forms](https://www.office.com/launch/forms?auth=1) (of de voorkeursfunctie voor het maken van formulieren). Dit formulier is bedoeld voor de dynamische gegevens van klanten die worden toegevoegd aan een verkoopvoorstel. Vul dit formulier in met vragen om de benodigde gegevens van klanten op te halen, bijvoorbeeld bedrijfsnaam, datum, adres, projectbereik, prijzen en aanvullende opmerkingen. Gebruik deze [formulier](https://forms.office.com/Pages/ShareFormPage.aspx id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__rtiGj5UNElTR0pCQ09ZNkJRUlowSjVQWDNYUEg2RC4u&amp;sharetoken=1AJe MavBAzzxuISRKmUy). Het doel is dat potentiële klanten het formulier invullen en vervolgens hun reacties exporteren als JSON-bestanden, die worden doorgegeven aan het volgende gedeelte van uw workflow.
+Maak eerst een formulier voor het vastleggen van gegevens in [Microsoft Forms](https://www.office.com/launch/forms?auth=1) (of de voorkeursfunctie voor het maken van formulieren). Dit formulier is bedoeld voor de dynamische gegevens van klanten die worden toegevoegd aan een verkoopvoorstel. Vul dit formulier in met vragen om de benodigde gegevens van klanten op te halen, bijvoorbeeld bedrijfsnaam, datum, adres, projectbereik, prijzen en aanvullende opmerkingen. Om uw te bouwen, gebruik dit [formulier](https://forms.office.com/Pages/ShareFormPage.aspx id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__rtiGj5UNElTR0pCQ09ZNkJRUlowSjVQWDNYUEg2RC4u&amp;sharetoken=1AJe MavBAzzxuISRKmUy) Het doel is dat potentiële klanten het formulier invullen en vervolgens hun reacties exporteren als JSON-bestanden, die worden doorgegeven aan het volgende gedeelte van uw workflow.
 
 In sommige formulierbuilders kunt u gegevens alleen exporteren als CSV-bestanden. Het kan dus handig zijn om [converteren](http://csvjson.com/csv2json) het gegenereerde CSV-bestand in een JSON-bestand.
 
@@ -58,9 +59,9 @@ U kunt dit doen door tags te gebruiken. Tags zijn gebruiksvriendelijke tekenreek
 
 ## Tags gebruiken
 
-Open uw verkoopvoorstelsjabloon en selecteer de **Invoegen** tabblad. In het dialoogvenster **Invoegtoepassingen** groep, selecteert u **Invoegtoepassingen ophalen**. Selecteer vervolgens **Invoegtoepassing voor het genereren van Adobe-documenten** om toe te voegen. Als het document is toegevoegd, ziet u de markering voor documentgeneratie op het tabblad **Home** in de **Adobe** groep.
+Open uw verkoopvoorstelsjabloon en selecteer de **Invoegen** tabblad. In het dialoogvenster **Invoegtoepassingen** groep, selecteren **Invoegtoepassingen ophalen**. Selecteer vervolgens **Adobe Invoegtoepassing voor documentgeneratie** toevoegen. Als het document is toegevoegd, ziet u de markering voor documentgeneratie op het tabblad **Home** in de **Adobe** groep.
 
-Op de **Home** in de **Adobe** groep, selecteert u **Documenten genereren** om het document te gaan coderen. Een nuttige demonstratievideo wordt weergegeven in een deelvenster aan de rechterkant van het venster.
+Op de **Home** in de **Adobe** groep, selecteren **Documenten genereren** om het document te gaan coderen. Een nuttige demonstratievideo wordt weergegeven in een deelvenster aan de rechterkant van het venster.
 
 ![Screenshot van de invoegtoepassing Document Tagger in Word](assets/sales_1.png)
 
@@ -136,7 +137,7 @@ console.log('Exception encountered while executing operation', err);
 
 Deze code haalt uw JSON-bestand op van het Microsoft-formulier met behulp van de tags die u hebt gemaakt met [!DNL Acrobat Services]. Vervolgens worden de gegevens samengevoegd met de sjabloon voor het verkoopvoorstel die u in Microsoft Word hebt gemaakt om een gloednieuwe PDF te genereren. De PDF wordt opgeslagen in het nieuwe bestand./uitvoermap.
 
-De code gebruikt ook [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html) beide ondernemingen het gegenereerde verkoopvoorstel laten ondertekenen. Lees dit blogbericht voor een gedetailleerde uitleg van deze API.
+De code gebruikt ook [ADOBE SIGN API](https://www.adobe.io/apis/documentcloud/sign.html) beide ondernemingen het gegenereerde verkoopvoorstel laten ondertekenen. Lees dit blogbericht voor een gedetailleerde uitleg van deze API.
 
 ## Volgende stappen
 
@@ -144,4 +145,4 @@ Je begon met een inefficiënt, vervelend proces dat automatisering nodig had. Je
 
 Met Microsoft Forms kreeg je kritieke data van je klanten die in hun unieke voorstellen zouden komen. U hebt een sjabloon voor een verkoopvoorstel gemaakt in Microsoft Word om de statische tekst op te geven die u niet telkens opnieuw wilt maken. Daarna hebt u [!DNL Acrobat Services] API&#39;s om data uit het formulier en de sjabloon samen te voegen om een PDF voor verkoopvoorstellen voor je klanten op een efficiëntere manier te maken.
 
-Deze praktische zelfstudie is slechts een glimp van wat er mogelijk is met deze API&#39;s. Ga voor meer oplossingen naar de [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) APIs-pagina. Al deze tools zijn zes maanden gratis. Vervolgens betaalt u slechts USD 0,05 per documenttransactie op de [pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) plannen, zodat je alleen betaalt zoals je team je verkooppijplijn nog meer uitzicht biedt.
+Deze praktische zelfstudie is slechts een glimp van wat er mogelijk is met deze API&#39;s. Ga naar de [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) APIs-pagina. Al deze tools zijn zes maanden gratis. Vervolgens betaalt u slechts USD 0,05 per documenttransactie op de [pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) plannen, zodat je alleen betaalt zoals je team je verkooppijplijn nog meer uitzicht biedt.

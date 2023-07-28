@@ -4,10 +4,11 @@ description: Leer hoe je de verkoop versnelt door documentervaringen te integrer
 role: Developer
 level: Intermediate
 type: Tutorial
+feature: Use Cases
 thumbnail: KT-10222.jpg
 jira: KT-10222
 exl-id: 9430748f-9e2a-405f-acac-94b08ad7a5e3
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1755'
 ht-degree: 0%
@@ -43,7 +44,7 @@ Er wordt een bestand naar uw computer gedownload met een ZIP-bestand met de voor
 
    ![Schermafbeelding van referenties](assets/accsales_2.png)
 
-1. Selecteren **[!UICONTROL Microsoft Word-invoegtoepassing ophalen]** of ga naar [AppSource](https://appsource.microsoft.com/en-cy/product/office/WA200002654) om te installeren.
+1. Selecteren **[!UICONTROL Microsoft Word-invoegtoepassing ophalen]** of ga naar [AppSource](https://appsource.microsoft.com/en-cy/product/office/WA200002654) installeren.
 
    >[!NOTE]
    >
@@ -109,7 +110,7 @@ Als u gegevens uit een specifiek gegevenssysteem haalt, moet u die gegevens uitv
 
 ## Basiscodes toevoegen aan uw document
 
-Dit scenario gebruikt een document van de Orde van de Verkoop, dat kan worden gedownload [hier](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/SalesOrder/Exercise/SalesOrder_Base.docx?raw=true).
+Dit scenario gebruikt een document van de Orde van de Verkoop, dat kan downloaden [hier](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/SalesOrder/Exercise/SalesOrder_Base.docx?raw=true).
 
 ![Screenshot van document met voorbeeldverkooporders](assets/accsales_3.png)
 
@@ -129,7 +130,7 @@ Navigeer vervolgens naar het deelvenster Tags voor het genereren van documenten 
 
    ![Screenshot van het invoegen van tag](assets/accsales_5.png)
 
-   Tijdens dit proces wordt een tag met de naam {{company.name}} omdat de tag zich onder het pad in de JSON bevindt.
+   Dit proces plaatst een tag genaamd {{company.name}} omdat de tag zich onder het pad in de JSON bevindt.
 
    ```
    {
@@ -148,7 +149,7 @@ Herhaal deze handelingen voor enkele extra tags in het document, zoals STREET AD
 
 Direct in Microsoft Word kunt u een voorvertoning van het gegenereerde document weergeven op basis van de JSON-voorbeeldgegevens.
 
-1. In het dialoogvenster *Tagger voor documentgeneratie* selecteren **[!UICONTROL Document genereren]**. De eerste keer dat u wordt gevraagd u aan te melden bij uw Adobe ID. Selecteren **[!UICONTROL Aanmelden]** en vult de aanmeldingsgegevens in.
+1. In het dialoogvenster *Tagger voor documentgeneratie* deelvenster selecteert u **[!UICONTROL Document genereren]**. De eerste keer dat u wordt gevraagd u aan te melden bij uw Adobe ID. Selecteren **[!UICONTROL Aanmelden]** en vult de aanmeldingsgegevens in.
 
    ![Screenshot van hoe u een voorvertoning van het gegenereerde document kunt bekijken](assets/accsales_6.png)
 
@@ -169,7 +170,7 @@ U kunt de labels in het document zien die zijn vervangen door de gegevens uit de
 In dit volgende scenario voegt u een lijst met producten toe aan een tabel in het document.
 
 1. Plaats de cursor op de plaats waar de tabel moet worden geplaatst.
-1. In het dialoogvenster *Tagger voor documentgeneratie* selecteren **[!UICONTROL Geavanceerd]**.
+1. In het dialoogvenster *Tagger voor documentgeneratie* deelvenster selecteert u **[!UICONTROL Gedeeld]**.
 1. Uitbreiden **[!UICONTROL Tabellen en lijsten]**.
 1. In het dialoogvenster *Tabelrecords* veld, selecteren *referencesOrder*, dat is een array die alle productitems opsomt.
 1. Typ in het veld Kolomrecords selecteren de tekst die u wilt opnemen *beschrijving* en *totalPaymentDue.price* veld.
@@ -183,7 +184,7 @@ Bewerk de tabel om deze aan te passen aan stijlen, grootten en andere parameters
 
 Met numerieke berekeningen kunt u sommen en andere berekeningen berekenen op basis van een verzameling gegevens, zoals een array. In dit scenario voegt u een veld toe om het subtotaal te berekenen.
 
-1. Selecteer de *$ 0,00* naast de titel van het subtotaal.
+1. Selecteer de *$ 0,00* naast de subtitel.
 1. In het dialoogvenster *[!UICONTROL Tagger voor documentgeneratie]* deelvenster, uitvouwen **[!UICONTROL Numerieke berekeningen]**.
 1. Onder *[!UICONTROL Type berekening selecteren]* kiest u **[!UICONTROL Samenvoeging]**.
 1. Onder *[!UICONTROL Tekst selecteren]* kiest u **[!UICONTROL Som]**.
@@ -206,12 +207,12 @@ Berekent de prijs en vermenigvuldigt met 1,08 om het subtotaal plus belasting te
 
 Met voorwaardelijke secties kunt u alleen een zin of alinea opnemen als aan een bepaalde voorwaarde is voldaan. In dit scenario wordt alleen een sectie opgenomen als deze overeenkomt met een bepaalde status.
 
-1. Zoek in het document de sectie met de naam *CALIFORNIA PRIVACY-INSTRUCTIES*.
+1. Zoek in het document naar de sectie met de naam *CALIFORNIA PRIVACY-INSTRUCTIES*.
 1. Selecteer de sectie met de cursor.
 
    ![Schermafbeelding van selectie](assets/accsales_11.png)
 
-1. In het dialoogvenster *[!UICONTROL Tagger voor documentgeneratie]* selecteert u **[!UICONTROL Geavanceerd]**.
+1. In het dialoogvenster *[!UICONTROL Tagger voor documentgeneratie]* selecteert u **[!UICONTROL Gedeeld]**.
 1. Uitbreiden **[!UICONTROL Voorwaardelijke inhoud]**.
 1. In het dialoogvenster *[!UICONTROL Records selecteren]* veld, zoeken en selecteren **[!UICONTROL customer.address.state]**.
 1. In het dialoogvenster *[!UICONTROL Operator selecteren]* veld, selecteren **=**.
@@ -229,18 +230,18 @@ Met de API voor het genereren van documenten kunt u afbeeldingen dynamisch invoe
 Afbeeldingen kunnen via een URL worden doorgegeven in de gegevens- of base64-inhoud. In dit voorbeeld wordt een URL gebruikt.
 
 1. Plaats de cursor op de plaats waar u een afbeelding wilt invoegen.
-1. In het dialoogvenster *[!UICONTROL Tagger voor documentgeneratie]* selecteren **[!UICONTROL Geavanceerd]**.
+1. In het dialoogvenster *[!UICONTROL Tagger voor documentgeneratie]* deelvenster selecteert u **[!UICONTROL Gedeeld]**.
 1. Uitbreiden **[!UICONTROL Afbeeldingen]**.
-1. In het dialoogvenster *[!UICONTROL Labels selecteren]* veld, kies **[!UICONTROL logo]**.
-1. In het dialoogvenster *[!UICONTROL Optionele alternatieve tekst]* veld, een beschrijving geven (bijv. logo). Hierbij wordt een tijdelijke aanduiding voor afbeeldingen ingevoegd die er als volgt uitziet:
+1. In het dialoogvenster *[!UICONTROL Labels selecteren]* veld, kiest u **[!UICONTROL logo]**.
+1. In het dialoogvenster *[!UICONTROL Optionele alternatieve tekst]* veld, een beschrijving geven (bijvoorbeeld logo). Hierbij wordt een tijdelijke aanduiding voor afbeeldingen ingevoegd die er als volgt uitziet:
 
-   ![Screenshot van voorlopige afbeelding](assets/accsales_12.png)
+   ![Schermafbeelding van voorlopige afbeelding](assets/accsales_12.png)
 
 U wilt de afbeelding echter dynamisch instellen voor een afbeelding die zich al in de lay-out bevindt. Dat kunt u als volgt doen:
 
 1. Klik met de rechtermuisknop op de ingevoegde voorlopige afbeelding.
 
-   ![Screenshot van voorlopige afbeelding](assets/accsales_13.png)
+   ![Schermafbeelding van voorlopige afbeelding](assets/accsales_13.png)
 
 1. Selecteren **[!UICONTROL Alt-tekst bewerken]**.
 1. Kopieer in het deelvenster de tekst die er als volgt uitziet:
@@ -260,8 +261,8 @@ Met Adobe Acrobat Sign kunt u elektronische handtekeningen vastleggen op uw docu
 
 1. Navigeer naar de plaats waar een handtekening is vereist in het voorbeelddocument.
 1. Plaats de cursor op de plaats waar de handtekening nodig is.
-1. In het dialoogvenster *[!UICONTROL Tagger voor het genereren van Adobe-documenten]* selecteren **[!UICONTROL Adobe Sign]**.
-1. In het dialoogvenster *[!UICONTROL Aantal ontvangers opgeven]* -veld, stelt u het aantal ontvangers in (in dit voorbeeld is het één).
+1. In het dialoogvenster *[!UICONTROL Tagger voor het genereren van Adobe-documenten]* deelvenster selecteert u **[!UICONTROL Adobe Sign]**.
+1. In het dialoogvenster *[!UICONTROL Geef het aantal ontvangers op]* -veld, stelt u het aantal ontvangers in (in dit voorbeeld is het er één).
 1. In het dialoogvenster *[!UICONTROL Ontvangers]* veld, selecteren **[!UICONTROL Afzender-1]**.
 1. In het dialoogvenster *[!UICONTROL Veld]* tekst, selecteren **[!UICONTROL Handtekening]**.
 1. Selecteren **[!UICONTROL Adobe Sign-teksttag invoegen]**.
@@ -367,7 +368,7 @@ Wil je meer leren? Bekijk enkele aanvullende manieren om te gebruiken [!DNL Adob
 * Meer zelfstudies op Adobe Experience League bekijken
 * Gebruik de voorbeeldscripts in de map /src om te zien hoe u PDF kunt gebruiken
 * Volg [Adobe Tech Blog](https://medium.com/adobetech/tagged/adobe-document-cloud) voor de nieuwste tips en trucs
-* Abonneren op [Papierclips (de maandelijkse live stream)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) voor meer informatie over automatiseren met [!DNL Adobe Acrobat Services]. =======
+* Abonneren op [Papierclips (de maandelijkse live stream)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) voor meer informatie over automatiseren met [!DNL Adobe Acrobat Services]. ======
 * Meer informatie van [documentatie](https://developer.adobe.com/document-services/docs/overview/)
 * Meer zelfstudies op Adobe Experience League bekijken
 * Gebruik de voorbeeldscripts in de map /src om te zien hoe u PDF kunt gebruiken

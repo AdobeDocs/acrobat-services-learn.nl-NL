@@ -7,7 +7,7 @@ level: Intermediate
 thumbnail: KT-7487.jpg
 jira: KT-7487
 exl-id: 64ffdacb-d6cb-43e7-ad10-bbd8afc0dbf4
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1496'
 ht-degree: 0%
@@ -38,10 +38,10 @@ Plaatst uw organisatie PDF op uw website? Leer hoe u de Adobe PDF Embed API kunt
   </td>
   <td>
    <a href="controlpdfexperience.md#part3">
-      <img alt="Deel 3: Toegang tot API&apos;s van Analytics" src="assets/ControlPDFPart3_thumb.png" />
+      <img alt="Deel 3: Toegang tot API&apos;s voor Analytics" src="assets/ControlPDFPart3_thumb.png" />
    </a>
     <div>
-    <a href="controlpdfexperience.md#part3"><strong>Deel 3: Toegang tot API's van Analytics</strong></a>
+    <a href="controlpdfexperience.md#part3"><strong>Deel 3: Toegang tot API's voor Analytics</strong></a>
     </div>
   </td>
   <td>
@@ -72,14 +72,14 @@ In deel 1 leert u hoe u aan de slag kunt gaan met alles wat u nodig hebt voor on
 * Visual Studio Code
 * GitHub
 
-### Referenties ophalen
+### Inloggegevens ophalen
 
 1. Ga naar de [Adobe.io-website](https://www.adobe.io/).
 1. Klikken **[!UICONTROL Meer informatie]** onder Maak aansprekende documentervaringen.
 
    ![Screenshot van de knop Meer informatie](assets/ControlPDF_1.png)
 
-   Hiermee gaat u naar de [!DNL Adobe Acrobat Services] startpagina.
+   Hiermee gaat u naar de [!DNL Adobe Acrobat Services] homepage.
 
 1. Klikken **[!UICONTROL Aan de slag]** in de navigatiebalk.
 
@@ -101,7 +101,7 @@ In deel 1 leert u hoe u aan de slag kunt gaan met alles wat u nodig hebt voor on
 
    Op de laatste pagina van de wizard vindt u de gegevens van de clientreferenties. Laat dit venster open zodat u er weer naar kunt terugkeren en de client-id (API-sleutel) voor later gebruik kunt kopiëren.
 
-1. Klikken **[!UICONTROL Documentatie weergeven]** voor meer informatie over het gebruik van deze API in de documentatie.
+1. Klikken **[!UICONTROL Documentatie weergeven]** voor meer informatie over het gebruik van deze API.
 
    ![Screenshot van knop met aanmeldingsgegevens maken](assets/ControlPDF_4.png)
 
@@ -123,7 +123,7 @@ We hebben code gemaakt die je kunt gebruiken. Terwijl u uw eigen code kunt gebru
 
 1. Klikken **[!UICONTROL Demo uitproberen]**.
 
-   Er verschijnt een nieuw venster met de ontwikkelaarssandbox voor de PDF Embed-API.
+   Er verschijnt een nieuw venster met de ontwikkelaarssandbox voor PDF Embed API.
 
    ![Screenshot van de demo van Try](assets/ControlPDF_8.png)
 
@@ -139,7 +139,7 @@ We hebben code gemaakt die je kunt gebruiken. Terwijl u uw eigen code kunt gebru
 
 1. Uitschakelen **[!UICONTROL Downloaden]** PDF.
 1. Klikken **[!UICONTROL Code genereren]** om de codevoorvertoning weer te geven.
-1. Kopiëren **[!UICONTROL Client-id]** in het venster Clientreferenties uit deel 1.
+1. Kopie **[!UICONTROL Client-id]** in het venster Clientreferenties uit deel 1.
 
    ![Screenshot van client-id](assets/ControlPDF_11.png)
 
@@ -161,7 +161,7 @@ We hebben code gemaakt die je kunt gebruiken. Terwijl u uw eigen code kunt gebru
 
 1. Ga naar uw code-editor en open de **[!UICONTROL Web]** -> **[!UICONTROL oefening]** -> **[!UICONTROL index.html]** bestand.
 
-1. Plak de scriptcode in de `<head>` van het bestand op regel 18 onder de opmerking waarin staat: **TAAK: UITOEFENING 1: INVOEGEN, API-SCRIPTTAG**.
+1. Plak de scriptcode in de `<head>` van het bestand op regel 18 onder de opmerking waarin staat: **TAAK: UITOEFENEN 1: INVOEGEN, API-SCRIPTTAG INVOEGEN**.
 
    ![Screenshot van waar scriptcode moet worden geplakt](assets/ControlPDF_13.png)
 
@@ -175,7 +175,7 @@ We hebben code gemaakt die je kunt gebruiken. Terwijl u uw eigen code kunt gebru
 
 1. Ga naar uw code-editor en open de **[!UICONTROL Web]** -> **[!UICONTROL oefening]** -> **[!UICONTROL index.html]** bestand opnieuw.
 
-1. Plak de `<div>` code in de `<body>` van het bestand op regel 67 onder de opmerking die **TAAK: UITOEFENING 1: API-CODE VOOR PDF INSLUITEN INVOEGEN**.
+1. Plak de `<div>` code in de `<body>` van het bestand op regel 67 onder de opmerking die **TAAK: UITOEFENEN 1: API-CODE PDF INVOEGEN**.
 
    ![Screenshot van waar code moet worden geplakt](assets/ControlPDF_15.png)
 
@@ -195,7 +195,7 @@ We hebben code gemaakt die je kunt gebruiken. Terwijl u uw eigen code kunt gebru
 
 1. Ga naar uw code-editor en open de **[!UICONTROL Web]** -> **[!UICONTROL oefening]** -> **[!UICONTROL index.html]** bestand opnieuw.
 
-1. Plak de `<script>` code in de `<body>` van het bestand op regel 68 onder de `<div>` tag.
+1. Plak de `<script>` code in de `<body>` van het bestand op regel 68 onder de `<div>` -tag.
 
 1. Regel 70 van hetzelfde wijzigen **index.html** bestand om de clientID-variabele op te nemen die eerder is gemaakt.
 
@@ -209,7 +209,7 @@ We hebben code gemaakt die je kunt gebruiken. Terwijl u uw eigen code kunt gebru
 
    U moet de technische whitepaper weergeven in de modus Volledig venster van uw browser.
 
-## Deel 3: Toegang tot API&#39;s van Analytics {#part3}
+## Deel 3: Toegang tot API&#39;s voor Analytics {#part3}
 
 Nu u een webpagina hebt gemaakt met PDF Embed API-rendering voor een PDF, kunt u in deel 3 nu onderzoeken hoe u JavaScript-gebeurtenissen kunt gebruiken om analyses te meten om te begrijpen hoe gebruikers PDF gebruiken.
 
@@ -217,7 +217,7 @@ Nu u een webpagina hebt gemaakt met PDF Embed API-rendering voor een PDF, kunt u
 
 Er zijn veel verschillende JavaScript-gebeurtenissen beschikbaar als onderdeel van de PDF Embed-API. U hebt vanuit [!DNL Adobe Acrobat Services] documentatie.
 
-1. Navigeer naar de [documentatie](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html) site.
+1. Ga naar de [documentatie](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html) site.
 1. Bekijk de verschillende gebeurtenistypen die beschikbaar zijn als onderdeel van de API. Deze zijn handig als referentie en zijn ook handig voor toekomstige projecten.
 
    ![Screenshot van referentiegids](assets/ControlPDF_17.png)
@@ -260,7 +260,7 @@ Er zijn veel verschillende JavaScript-gebeurtenissen beschikbaar als onderdeel v
 
 Nu u de gebeurtenissen hebt die aan console.log worden uitgevoerd, laten we het gedrag veranderen op basis van welke gebeurtenissen. Om dit te doen, zult u een schakelaarvoorbeeld gebruiken.
 
-1. Navigeren naar **snippets/eventsSwitch.js** en kopieert u de inhoud van het bestand in de zelfstudiecode.
+1. Navigeer naar **snippets/eventsSwitch.js** en kopieert u de inhoud van het bestand in de zelfstudiecode.
 
    ![Screenshot van waar code moet worden gekopieerd](assets/ControlPDF_22.png)
 
@@ -268,7 +268,7 @@ Nu u de gebeurtenissen hebt die aan console.log worden uitgevoerd, laten we het 
 
    ![Screenshot van waar code moet worden geplakt](assets/ControlPDF_23.png)
 
-1. Bevestig dat de consoleoutput correct wanneer de pagina wordt geladen en u met de Kijker van de PDF werkt.
+1. Bevestig dat de consoleoutput correct wanneer de pagina wordt geladen en u met de PDF Kijker in wisselwerking staat.
 
 ### Adobe Analytics
 
@@ -278,7 +278,7 @@ Als u Adobe Analytics-ondersteuning wilt toevoegen aan uw viewer, kunt u de inst
 >
 >Adobe Analytics moet al op de pagina in de koptekst zijn geladen.
 
-Navigeer naar de [Adobe Analytics-documentatie](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtodata.html#adobe-analytics) en bekijk of Adobe Analytics al op uw webpagina is ingeschakeld. Volg de instructies om een rapportsuite in te stellen.
+Ga naar de [Adobe Analytics-documentatie](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtodata.html#adobe-analytics) en bekijk of Adobe Analytics al op uw webpagina is ingeschakeld. Volg de instructies om een rapportsuite in te stellen.
 
 ### Google Analytics
 
@@ -286,7 +286,7 @@ Navigeer naar de [Adobe Analytics-documentatie](https://www.adobe.com/devnet-doc
 
 Adobe PDF Embed API biedt kant-en-klare integratie met Adobe Analytics. Omdat alle gebeurtenissen echter beschikbaar zijn als JavaScript-gebeurtenissen, is het mogelijk om met Google Analytics te integreren door PDF-gebeurtenissen vast te leggen en de functie ga() te gebruiken om de gebeurtenis toe te voegen aan Adobe Analytics.
 
-1. Navigeren naar **snippets/eventsSwitchGA.js** om te zien hoe je kunt integreren met Google Analytics.
+1. Navigeer naar **snippets/eventsSwitchGA.js** om te zien hoe je kunt integreren met Google Analytics.
 1. Bekijk en gebruik deze code als voorbeeld als uw webpagina wordt bijgehouden met Adobe Analytics en al is ingesloten op de webpagina.
 
    ![Screenshot van Adobe Analytics-code](assets/ControlPDF_25.png)

@@ -4,10 +4,11 @@ description: Leer hoe u een workflow voor documentrevisie en goedkeuring bouwt v
 type: Tutorial
 role: Developer
 level: Intermediate
+feature: Use Cases
 thumbnail: KT-8094.jpg
 jira: KT-8094
 exl-id: d704620f-d06a-4714-9d09-3624ac0fcd3a
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 0%
@@ -50,7 +51,7 @@ De toepassing heeft de volgende functies:
 
 ## Adobe API-referenties maken
 
-Voordat u de code start, moet u [referenties maken](https://www.adobe.com/go/dcsdks_credentials) voor Adobe PDF Embed API en Adobe PDF Services API. PDF Embed API is gratis. De PDF Services API is zes maanden gratis, dan kunt u overschakelen op een [pay-as-you-go-lidmaatschap](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) bij slechts \$0.05 per documenttransactie.
+Voordat u de code start, moet u [referenties maken](https://www.adobe.com/go/dcsdks_credentials) voor Adobe PDF Embed API en Adobe PDF Services API. PDF Insluiter-API is gratis. De PDF Services API is zes maanden gratis, dan kunt u overschakelen op een [pay-as-you-go-lidmaatschap](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) bij slechts \$0.05 per documenttransactie.
 
 Selecteer bij het maken van gebruikersgegevens voor de PDF Services-API de optie **Een gepersonaliseerd codevoorbeeld maken** en selecteer Node.js voor de taal. Sla het ZIP-bestand op en extraheer pdftools-api-credentials.json en private.key naar de hoofdmap van uw Node.js Express-project.
 
@@ -100,7 +101,7 @@ Nu ben je klaar om mee te werken [!DNL Acrobat Services] API&#39;s.
 
 Voor het eerste deel van de documentworkflow moet de eindgebruiker documenten uploaden om te delen. Om dit mogelijk te maken, voegt u een uploadfunctie toe en consolideert u de verschillende documentbestandsindelingen in PDF om ze voor te bereiden op het revisieproces.
 
-Maak eerst een functie om documenten om te zetten in PDF op basis van de [voorbeeldfragment voor PDF Services API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html). In dit voorbeeld worden ook fragmenten weergegeven voor vele andere essentiële functies, zoals OCR (optische tekenherkenning), wachtwoordbeveiliging en -verwijdering en compressie.
+Maak eerst een functie om documenten om te zetten in PDF op basis van de [voorbeeldfragment voor PDF Services API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html). In dit voorbeeld worden ook fragmenten weergegeven voor vele andere essentiële functies, zoals OCR (optische tekenherkenning), wachtwoordbeveiliging en -verwijdering, en compressie.
 
 ```
 function fileToPDF( filename, outputFilename, callback ) {
@@ -128,7 +129,7 @@ U kunt deze functie nu gebruiken om PDF te maken van geüploade documenten.
 
 Vervolgens heeft de server een bestandsupload-eindpunt op de webserver nodig om de documenten te ontvangen en te verwerken.
 
-Maak eerst een map in een uploadmap en noem deze map &#39;concepten&#39;. U slaat de geüploade bestanden en de omgezette PDF-bestanden hier op. Volgende, run `npm install express-fileupload` om de Express-FileUpload-module te installeren en de middleware toe te voegen aan Express in uw code:
+Maak eerst een map in een uploadmap en geef deze de naam &quot;concepten&quot;. U slaat de geüploade bestanden en de omgezette PDF-bestanden hier op. Volgende, run `npm install express-fileupload` om de Express-FileUpload-module te installeren en de middleware toe te voegen aan Express in uw code:
 
 ```
 const fileUpload = require( "express-fileupload" );
@@ -329,7 +330,7 @@ Uw profiel identificeert u als een specifieke gebruiker wanneer u geüploade doc
 
 ## Documentfeedback opslaan
 
-Nadat een gebruiker opmerkingen heeft gemaakt over een document, klikt hij of zij op **Opslaan.** Standaard klikt u op **Opslaan** downloadt het bijgewerkte PDF-bestand. Wijzig deze handeling om het huidige PDF-bestand op de server bij te werken.
+Nadat een gebruiker opmerkingen heeft gemaakt over een document, klikt hij op **Opslaan.** Standaard klikt u op **Opslaan** downloadt het bijgewerkte PDF-bestand. Wijzig deze handeling om het huidige PDF-bestand op de server bij te werken.
 
 Voeg een `/save` naar de servercode die het PDF-bestand in de map uploads/concepten overschrijft:
 
@@ -382,7 +383,7 @@ Registreer een callback van de weergave PDF voor SAVE_API die de inhoud uploadt 
   );
 ```
 
-Opmerkingen en annotaties op de conceptdocumenten worden nu opgeslagen op de server. U kunt [meer informatie over callbacks](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows) passen in uw workflow. Bijvoorbeeld: [statuscallbacks](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback) Help bestandconflicten te verwerken als meerdere personen hetzelfde document gelijktijdig willen bekijken en er opmerkingen aan willen toevoegen.
+Opmerkingen en annotaties op de conceptdocumenten worden nu opgeslagen op de server. U kunt [meer informatie over callbacks](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows) passen in uw workflow. Bijvoorbeeld: [statuscallbacks](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback) Help bestandconflicten te verwerken als meerdere personen hetzelfde document gelijktijdig willen reviseren en er opmerkingen aan willen toevoegen.
 
 In de laatste stap combineert u alle bewerkte documenten in één PDF-bestand met behulp van de PDF Services API.
 

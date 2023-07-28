@@ -4,11 +4,12 @@ description: Ontwikkelaars kunnen binnen een paar minuten aan de slag met de geb
 type: Tutorial
 role: Developer
 level: Beginner
+feature: PDF Services API
 thumbnail: KT-6675.jpg
 jira: KT-6675
 keywords: Aanbevolen
 exl-id: 22c59c75-fd99-4467-a6f6-917fb246469a
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -41,10 +42,10 @@ Kies vervolgens Node.js als uw taal om de specifieke voorbeelden Node.js te ontv
 
 U ontvangt een ZIP-bestand dat u kunt downloaden met de naam PDFToolsSDK-.NetSamples.zip en dat u kunt opslaan in uw lokale bestandssysteem.
 
-## Stap 2: Stel uw .Net-omgeving in en voer de voorbeeldcode uit
+## Stap 2: Opstelling uw milieu .Net en stel de steekproefcode in werking
 
 1. Download en installeer de [.Net SDK](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/install)
-1. Het gedownloade **[!UICONTROL PDFToolsSDK-.NetSamples.zip]** en decomprimeer de inhoud
+1. Het gedownloade **[!UICONTROL PDFToolsSDK-.NetSamples.zip]** en de inhoud uitpakken
 1. cd naar de hoofdmap van de samples **[!UICONTROL adobe-DC.PDFTools.SDK.NET.Samples]**
 1. Voer vanuit de hoofdmap samples uit `dotnet build`
 

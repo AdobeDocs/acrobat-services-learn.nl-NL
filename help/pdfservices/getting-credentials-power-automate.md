@@ -4,10 +4,11 @@ description: Leer hoe u gebruikersgegevens kunt ophalen om Adobe PDF Services te
 type: Tutorial
 role: Developer
 level: Beginner
+feature: PDF Services API
 thumbnail: KT-10382.jpg
 jira: KT-10382
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 3%
@@ -86,7 +87,7 @@ U kunt nu Adobe PDF Services gebruiken in Microsoft Power Automate.
 
 Als u al aanmeldingsgegevens hebt gemaakt en de gedownloade gegevens hebt misplaatst, kunt u deze opnieuw ophalen in [Adobe Developer Console](https://developer.adobe.com/console).
 
-1. Nadat u zich hebt aangemeld bij [Adobe Developer Console](https://developer.adobe.com/console), zoekt u eerst uw project en selecteert u het.
+1. Na aanmelding bij [Adobe Developer Console](https://developer.adobe.com/console), zoekt u eerst uw project en selecteert u het.
 1. In het linkermenu onder *Referenties* selecteert u **Serviceaccount (JWT)**:
 
    ![Bestaande referenties](assets/credentials_7.png)
@@ -99,7 +100,7 @@ Helaas kunt u de vorige persoonlijke sleutel niet downloaden, maar u kunt de kno
 
 Als u bestaande Adobe PDF Services API-referenties hebt gegenereerd op basis van [!DNL Adobe Acrobat Services] met Microsoft Power Automate. Als u een SDK hebt gedownload terwijl u zich aanmeldde, werden uw bestaande referenties weergegeven in de vorm van een JSON-bestand met waarschijnlijk de naam `pdfservices-api-credentials.json`. Dat JSON-bestand bevat de vijf sleutels die nodig zijn om uw verbindingsgegevens te maken. Kopieer elke waarde van het JSON-bestand naar het corresponderende verbindingsveld.
 
-De waarde van uw persoonlijke sleutel komt uit een tweede bestand met de naam `private.key`.
+Uw persoonlijke sleutelwaarde komt uit een tweede dossier genoemd `private.key`.
 
 U kunt de waarden ook ophalen uit Adobe Developer Console zoals hierboven is beschreven.
 
@@ -122,7 +123,7 @@ Ga dieper in op het creëren van je eerste Microsoft Power Automated-flow met [!
 Hier volgt een lijst met aanvullende bronnen om u meer te helpen:
 
 * Eerst zijn er de Adobe PDF Services Power Automate-documenten: <https://docs.microsoft.com/en-us/connectors/adobepdftools/>. Deze bronnen vormen een aanvulling op wat je hier hebt geleerd.
-* Hebt u voorbeelden nodig? U kunt een groot aantal [Automatiseer sjablonen](https://powerautomate.microsoft.com/en-us/connectors/details/shared_adobepdftools/adobe-pdf-services/) het demonstreren van de PDF Services.
-* Onze live video-inhoud, [Papierclips](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF), bevat ook video&#39;s waarin het gebruik van Power Automate wordt gedemonstreerd.
+* Hebt u voorbeelden nodig? U kunt talloze [Automatiseer sjablonen](https://powerautomate.microsoft.com/en-us/connectors/details/shared_adobepdftools/adobe-pdf-services/) het demonstreren van de PDF Services.
+* Onze live video-inhoud, [Papierclips](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF), bevat ook video&#39;s over het gebruik van Power Automate.
 * De [Adobe Tech Blog](https://medium.com/adobetech/tagged/microsoft-power-automate) heeft veel artikelen over werken met Power Automate.
 * Tot slot ben zeker om de kern te raadplegen [PDF Services](https://developer.adobe.com/document-services/docs/overview/) ook documentatie.

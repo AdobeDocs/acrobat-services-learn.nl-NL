@@ -4,17 +4,18 @@ description: Ontwikkelaars kunnen binnen een paar minuten aan de slag met de geb
 type: Tutorial
 role: Developer
 level: Beginner
+feature: PDF Services API
 thumbnail: KT-6676.jpg
 kt: 6676
 exl-id: 4a8f2119-c464-496b-bdc8-35dd387bef25
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
 
 ---
 
-# Aan de slag met Adobe PDF Services API en Java
+# Aan de slag met de Adobe PDF Services-API en Java
 
 ![PDF-hoofdafbeelding maken](assets/GettingStartedJava_hero.jpg)
 
@@ -40,7 +41,7 @@ Kies vervolgens Java als uw taal voor het ontvangen van de Java-specifieke voorb
 
 U ontvangt een ZIP-bestand dat u kunt downloaden met de naam PDFToolsSDK-JavaSamples.zip en dat u kunt opslaan in uw lokale bestandssysteem.
 
-## Stap 2: Uw Java-omgeving instellen
+## Stap 2: uw Java-omgeving instellen
 
 1. Installeren [Java 8 of hoger](https://www.oracle.com/java/technologies/javase-downloads.html) als je dat nog niet hebt gedaan.
 1. Uitvoeren `javac -version` om uw installatie te verifiëren.
@@ -50,7 +51,7 @@ U ontvangt een ZIP-bestand dat u kunt downloaden met de naam PDFToolsSDK-JavaSam
 De gepersonaliseerde steekproeven verstrekken alles van kant-en-klare steekproefcode, een ingebed credentiedossier, en pre-gevormde verbindingen aan gebiedsdelen.
 
 1. Downloaden [het voorbeeldproject](https://github.com/adobe/pdftools-java-sdk-samples).
-1. Bouw het voorbeeldproject met Maven: mvn: schone installatie.
+1. Bouw het voorbeeldproject met Maven: mvn schone installatie.
 1. Test de steekproefcode op de bevellijn of in uw aangewezen winde.
 
 ## Definitieve gedachten
@@ -69,6 +70,6 @@ De PDF Services API kan je helpen handmatige processen te elimineren door gemeen
 
 * Verwante artikelen
 
-   [De nieuwe PDF Services API biedt nog meer functies voor documentworkflows](https://community.adobe.com/t5/document-services-apis/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
+  [De nieuwe PDF Services API biedt nog meer functies voor documentworkflows](https://community.adobe.com/t5/document-services-apis/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
-   [Release van juli [!DNL Adobe Acrobat Services]: PDF Embed and PDF Services](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
+  [Release van juli [!DNL Adobe Acrobat Services]: PDF Embed and PDF Services](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)

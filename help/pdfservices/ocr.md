@@ -4,11 +4,12 @@ description: Met OCR (optische tekenherkenning) kun je gescande PDF ontgrendelen
 type: Tutorial
 role: Developer
 level: Beginner
+feature: PDF Services API
 thumbnail: KT-6677.jpg
 jira: KT-6677
 keywords: Hero
 exl-id: 61a9a2d1-94c3-41c2-8f90-a56a938ef245
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 4%
@@ -25,7 +26,7 @@ Ontwikkelaars kunnen binnen een paar minuten aan de slag met de voorbeeldbestand
 
 In deze zelfstudie wordt uitgelegd hoe u uw eerste OCR-bewerking van de PDF Services-API uitvoert met behulp van voorbeeldbestanden voor Node.js, Java en .Net-talen.
 
-## Stap 1: Uw referenties maken en uw omgeving instellen
+## Stap 1: Maak uw referenties en stel uw omgeving in
 
 Gebruik de onderstaande Aan de slag-zelfstudies om uw API-referenties te maken, voorbeeldbestanden te downloaden en uw omgeving in te stellen.
 
@@ -33,15 +34,15 @@ Gebruik de onderstaande Aan de slag-zelfstudies om uw API-referenties te maken, 
 
 [Aan de slag met PDF Services API en .Net](gettingstartednet.md)
 
-[Aan de slag met de PDF Services-API en Node.js](createpdffromhtml.md)
+[Aan de slag met PDF Services API en Node.js](createpdffromhtml.md)
 
 ## Het OCR-voorbeeld in de voorbeeldbestanden uitvoeren
 
-Bij onze OCR-bewerking is standaard de Engelse landinstelling mogelijk, maar ook ondersteuning voor Duits, Frans, Deens en [overige talen](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#ocr-with-explicit-language). De standaardlandinstelling is &#39;en-us&#39;.
+Bij onze OCR-bewerking is standaard de Engelse landinstelling mogelijk, maar ook ondersteuning voor Duits, Frans, Deens en [overige talen](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#ocr-with-explicit-language). De standaardwaarde is &#39;en-us&#39;.
 
 Wanneer u opties doorgeeft met OCR-bewerking, inclusief een specifieke landinstelling, accepteert de methode ook de parameter &#39;type&#39; met twee opties:
 
-* SEARCHABLE_IMAGE: Hiermee wijzigt u de oorspronkelijke afbeelding tijdens het opschoonproces (deselecteert u deze bijvoorbeeld) voordat een onzichtbare tekstlaag eroverheen wordt geplaatst. Dit type verwijdert ongewenste artefacten en kan in sommige gevallen leiden tot een beter leesbaar document.
+* SEARCHABLE_IMAGE: Hiermee wijzigt u de oorspronkelijke afbeelding tijdens het opschoonproces (bijvoorbeeld heft u de schuintrekking op) voordat u er een onzichtbare tekstlaag op plaatst. Dit type verwijdert ongewenste artefacten en kan in sommige gevallen leiden tot een beter leesbaar document.
 
 * SEARCHABLE_IMAGE_EXACT: Hiermee zorgt u ervoor dat de tekst doorzoekbaar en selecteerbaar is. Met deze optie behoudt u de oorspronkelijke afbeelding en plaatst u er een onzichtbare tekstlaag overheen. Aanbevolen voor gevallen waarin een maximale getrouwheid van de oorspronkelijke afbeelding is vereist.
 

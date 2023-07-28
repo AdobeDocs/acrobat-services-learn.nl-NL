@@ -4,10 +4,11 @@ description: Leer hoe u ingesloten PDF-documenten in webpagina's kunt weergeven 
 role: Developer
 level: Intermediate
 type: Tutorial
+feature: Use Cases
 thumbnail: KT-8090.jpg
 jira: KT-8090
 exl-id: 3aa9aa40-a23c-409c-bc0b-31645fa01b40
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1903'
 ht-degree: 0%
@@ -18,14 +19,14 @@ ht-degree: 0%
 
 ![Hoofdlettergebruik hoofdbanner gebruiken](assets/UseCaseDigitalHero.jpg)
 
-Elektronische documenten zijn overal — in feite zijn er waarschijnlijk [biljoenen PDF](https://itextpdf.com/en/blog/technical-notes/do-you-know-how-many-pdf-documents-exist-world) wereldwijd, en dat aantal stijgt elke dag. Door een PDF-viewer in uw webpagina&#39;s in te sluiten, kunnen gebruikers documenten weergeven zonder uw HTML en CSS opnieuw te ontwerpen of de toegang tot uw website te belemmeren.
+Elektronische documenten zijn overal — er zijn waarschijnlijk [biljoenen PDF](https://itextpdf.com/en/blog/technical-notes/do-you-know-how-many-pdf-documents-exist-world) wereldwijd, en dat aantal stijgt elke dag. Door een PDF-viewer in uw webpagina&#39;s in te sluiten, kunnen gebruikers documenten weergeven zonder uw HTML en CSS opnieuw te ontwerpen of de toegang tot uw website te belemmeren.
 
 Laten we een populair scenario onderzoeken. Een bedrijfspost [whitepapers op hun website](https://www.adobe.io/apis/documentcloud/dcsdk/digital-content-publishing.html)
 om context te bieden voor hun apps en services. De marketeer van de website wil beter begrijpen hoe gebruikers omgaan met hun op PDF gebaseerde content en deze integreren met hun webpagina en merk. Ze hebben besloten de whitepapers te publiceren als [gekleurde inhoud](https://whatis.techtarget.com/definition/gated-content-ungated-content#:~:text=Gated%20content%20is%20online%20materials,about%20their%20jobs%20and%20organizations.), bepaalt wie ze kan downloaden.
 
 ## Wat je kunt leren
 
-Leer in deze praktische zelfstudie hoe u ingesloten PDF-documenten op webpagina&#39;s kunt weergeven met [Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html), gratis en gebruiksvriendelijk. Deze voorbeelden maken gebruik van JavaScript, Node.js, Express.js, HTML en CSS. U kunt de volledige projectcode bekijken op [GitHub](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1).
+Leer in deze praktische zelfstudie hoe u ingesloten PDF-documenten op webpagina&#39;s kunt weergeven met [Adobe PDF Embed-API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html), die gratis en gebruiksvriendelijk is. Deze voorbeelden maken gebruik van JavaScript, Node.js, Express.js, HTML en CSS. U kunt de volledige projectcode bekijken op [GitHub](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1).
 
 ## Relevante API&#39;s en bronnen
 
@@ -47,7 +48,7 @@ Om een project Node.js met een minimale structuur van de Webtoepassing gemakkeli
 npm install express-generator -g
 ```
 
-Maak vervolgens de nieuwe Express-app met de naam pdf-app, die u kiest als weergave-engine.
+Maak vervolgens de nieuwe Express-app met de naam pdf-app en kies als weergave-engine.
 
 ```
 express pdf-app --view=ejs
@@ -141,9 +142,9 @@ Selecteren **PDF Embed-API** en typ vervolgens uw aanmeldingsnaam en toepassings
 
 ![Screenshot van het maken van nieuwe referenties voor PDF Embed API](assets/ddp_6.png)
 
-Klik op **Referenties maken** om uw aanmeldingsgegevens voor de PDF te openen en de client-id (API KEY) op te halen.
+Klik op de knop **Referenties maken** om uw aanmeldingsgegevens voor de PDF te openen en de client-id (API KEY) op te halen.
 
-![Screenshot van hoe nieuwe referenties te kopiëren](assets/ddp_7.png)
+![Screenshot van hoe u nieuwe referenties kopieert](assets/ddp_7.png)
 
 Maak in uw Node.js-project een bestand met de naam .ENV in de hoofdmap van de toepassing en declareer de omgevingsvariabele voor uw PDF Embed Client ID met de waarde van de API KEY-referentie uit de vorige stap.
 
@@ -151,7 +152,7 @@ Maak in uw Node.js-project een bestand met de naam .ENV in de hoofdmap van de to
 PDF_EMBED_CLIENT_ID=**********************************************
 ```
 
-Later gebruikt u deze client-id om toegang te krijgen tot de PDF Embed-API. Installeer het dotenv-pakket voor toegang tot deze omgevingsvariabele met behulp van Node.js-code.
+Later gebruikt u deze client-id voor toegang tot de PDF Embed-API. Installeer het dotenv-pakket voor toegang tot deze omgevingsvariabele met behulp van Node.js-code.
 
 ```
 npm install dotenv
@@ -175,9 +176,9 @@ In het linkerdeelvenster kunt u de insluitmodus kiezen die het best aansluit bij
 
 * **Container in grootte**: de PDF wordt weergegeven binnen de webpagina, één pagina tegelijk, in een div met beperkte grootte
 
-* **Inline**: de volledige PDF wordt weergegeven in een div-element binnen de webpagina
+* **In-line**: de volledige PDF wordt weergegeven in een div-element binnen de webpagina
 
-* **Lichtbak**: de PDF wordt als een laag boven op uw webpagina weergegeven
+* **Lichtbak**: de PDF wordt weergegeven als een laag boven op uw webpagina
 
 Het wordt aanbevolen de insluitmodus in de regel te gebruiken voor witboeken en de codegenerator later om een PDF in de toepassing in te sluiten.
 
@@ -265,7 +266,7 @@ var indexRouter = require('./routes/index');
 var inLineRouter = require('./routes/in-line');
 ```
 
-Voeg vervolgens deze code toe na app.use(&#39;/&#39;, indexRouter); om de in-lijn in te bedden wijze mening met zijn router te associëren:
+Dan voeg deze code na app.use (&#39;/&#39;, indexRouter) toe; om de in-lijn in te bedden wijze mening met zijn router te associëren:
 
 ```
 app.use('/', indexRouter);
@@ -292,11 +293,11 @@ res.render('in-line', { title: paper.title, paper: paper });
 module.exports = router;
 ```
 
-Kijk opnieuw naar de [live demo](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) om PDF Embed-API-code automatisch te genereren. Klikken **Inline** in het linkerdeelvenster:
+Kijk opnieuw naar de [live demo](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) om PDF Embed-API-code automatisch te genereren. Klikken **In-line** in het linkerdeelvenster:
 
 ![Screenshot van live PDF Embed API-demo](assets/ddp_8.png)
 
-Klikken **Code genereren** om de HTML-code te zien die is vereist voor het weergeven van een viewer voor container in grootte PDF.
+Klikken **Code genereren** om de HTML-code te zien die is vereist voor het weergeven van een viewer voor de PDF van een container in grootte.
 
 ![Screenshot van codevoorvertoning](assets/ddp_9.png)
 
@@ -556,6 +557,6 @@ Als u deze workflow samenbrengt, helpt het [hypothetische marketeer](https://www
 
 Als je een Angular of React ontwikkelaar bent, kun je je best doen [extra monsters](https://github.com/adobe/pdf-embed-api-samples) PDF Embed API integreren met React- en Angular-projecten.
 
-Met Adobe kun je je complete klantervaring opbouwen met innovatieve oplossingen. Uitchecken [Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/viesdk) gratis. Om te ontdekken wat je nog meer kunt doen, probeer je de Adobe PDF Services API met [pay-as-you-gopr](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)[ijsvorming](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html).
+Met Adobe kun je je complete klantervaring opbouwen met innovatieve oplossingen. Uitchecken [Adobe PDF Embed-API](https://www.adobe.io/apis/documentcloud/viesdk) gratis. Om te ontdekken wat je nog meer kunt doen, probeer je de Adobe PDF Services API met [pay-as-you-gopr](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)[ijsvorming](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html).
 
 [Aan de slag](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) met [!DNL Adobe Acrobat Services] API&#39;s van vandaag.
