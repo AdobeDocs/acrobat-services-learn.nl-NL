@@ -1,13 +1,14 @@
 ---
 title: Beheer je online PDF-ervaring en verzamel Analytics
 description: In deze praktische zelfstudie leert u hoe u de Adobe PDF Embed-API kunt gebruiken om het uiterlijk te beheren, samenwerking in te schakelen en analytics te verzamelen over de interactie van de gebruiker met de PDF, inclusief de tijd die op een pagina is doorgebracht en zoekacties
-type: Tutorial
+feature: PDF Embed API
 role: Developer
 level: Intermediate
-thumbnail: KT-7487.jpg
+type: Tutorial
 jira: KT-7487
+thumbnail: KT-7487.jpg
 exl-id: 64ffdacb-d6cb-43e7-ad10-bbd8afc0dbf4
-source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
+source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
 source-wordcount: '1496'
 ht-degree: 0%

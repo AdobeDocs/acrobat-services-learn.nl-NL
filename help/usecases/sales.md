@@ -1,14 +1,14 @@
 ---
 title: Verkoopvoorstellen en contracten beheren
 description: Leer hoe je een efficiënte workflow bouwt om verkoopvoorstellen te automatiseren en te vereenvoudigen
+feature: Use Cases
 role: Developer
 level: Intermediate
 type: Tutorial
-feature: Use Cases
-thumbnail: KT-8099.jpg
 jira: KT-8099
+thumbnail: KT-8099.jpg
 exl-id: 219c70de-fec1-4946-b10e-8ab5812562ef
-source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
+source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 2%

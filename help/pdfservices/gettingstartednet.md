@@ -1,15 +1,15 @@
 ---
 title: Aan de slag met Adobe PDF Services API en .NET
 description: Ontwikkelaars kunnen binnen een paar minuten aan de slag met de gebruiksklare voorbeeldbestanden voor toegang tot alle beschikbare webservices
-type: Tutorial
+feature: PDF Services API
 role: Developer
 level: Beginner
-feature: PDF Services API
-thumbnail: KT-6675.jpg
+type: Tutorial
 jira: KT-6675
+thumbnail: KT-6675.jpg
 keywords: Aanbevolen
 exl-id: 22c59c75-fd99-4467-a6f6-917fb246469a
-source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
+source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
