@@ -5,7 +5,9 @@ user-guide-description: Meer informatie over [!DNL Adobe Acrobat Services]
 solution: Acrobat Services
 feature-set: Acrobat Services
 feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation API
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+role: Developer
+level: Beginner, Intermediate, Experienced
+source-git-commit: 382518232e804a5a64504bead419e6b822df42c0
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 7%
@@ -28,7 +30,7 @@ ht-degree: 7%
 + API voor documentgeneratie {#docgen}
    + [Overzicht](docgen/overview-docgen.md)
    + Sjablonen maken {#docgentemplates}
-      + [Overzicht van de Adobe-generatietag voor documenten](docgen/taggeroverview.md)
+      + [Overzicht van de Adobe voor het genereren van documenten](docgen/taggeroverview.md)
       + [Tekstlabels toevoegen](docgen/taggeraddtexttags.md)
       + [Afbeeldingstags toevoegen](docgen/taggeraddimagetags.md)
       + [Tabellen en lijstcodes toevoegen](docgen/taggertables.md)
