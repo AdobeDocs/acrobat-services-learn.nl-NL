@@ -1,5 +1,5 @@
 ---
-title: Adobe PDF Embed API Tutorials
+title: Adobe PDF Embed API-Tutorials
 description: Overzichtspagina voor Adobe PDF Embed API
 feature: PDF Embed API
 role: Developer
@@ -8,16 +8,14 @@ type: Tutorial
 jira: KT-8117
 thumbnail: KT-8117.jpg
 exl-id: 2fef89cf-640d-4ff4-9282-070bce8bba78
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
 
 # Zelfstudies voor Adobe PDF Embed API
-
-![API-banner PDF insluiten](../assets/pdfembedhero.jpg)
 
 De PDF Embed-API is een gratis JavaScript-API voor het insluiten van hifi-PDF, het inschakelen van samenwerking en het bekijken van analyses.
 

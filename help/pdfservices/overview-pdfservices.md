@@ -1,5 +1,5 @@
 ---
-title: Adobe PDF Services API Tutorials
+title: Adobe PDF Services API-Tutorials
 description: Overzichtspagina voor Adobe PDF Services API-zelfstudies
 feature: PDF Services API
 role: Developer
@@ -8,16 +8,14 @@ type: Tutorial
 jira: KT-8116
 thumbnail: KT-8116.jpg
 exl-id: 81410fe4-7a2c-43a9-b497-b7423f9821ec
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
 
 # Adobe PDF Services API-zelfstudies
-
-![PDF Services API Banner](../assets/pdfserviceshero.jpg)
 
 <table style="table-layout:fixed">
 <tr>
@@ -28,7 +26,7 @@ ht-degree: 0%
     <div>
    <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/pdf-services-api.html"><strong>Inleiding tot PDF Services API</strong></a>
     </div>
-    <em>Adobe Services API biedt ontwikkelaars de mogelijkheid om data te combineren, te exporteren en te extraheren uit PDF met krachtige en flexibele cloudgebaseerde API’s</em>
+    <em>Met de PDF Services-API van Adobe kunnen ontwikkelaars via krachtige en flexibele cloudgebaseerde API's gegevens maken, combineren, exporteren en extraheren uit PDF</em>
     <br>
   </td>
   <td>

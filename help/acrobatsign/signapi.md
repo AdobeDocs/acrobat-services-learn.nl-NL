@@ -8,16 +8,14 @@ type: Tutorial
 jira: KT-8089
 thumbnail: KT-8089.jpg
 exl-id: ae1cd9db-9f00-4129-a2a1-ceff1c899a83
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: 2f01f306f5d13bfbaa61442e0e7a89537a62c33c
 workflow-type: tm+mt
-source-wordcount: '2058'
+source-wordcount: '2054'
 ht-degree: 2%
 
 ---
 
 # Aan de slag met de Adobe Sign API
-
-![Hoofdlettergebruik hoofdbanner gebruiken](assets/UseCaseStartedHero.jpg)
 
 [ACROBAT SIGN API](https://www.adobe.io/apis/documentcloud/sign.html) is een fantastische manier om de manier waarop u ondertekende overeenkomsten beheert te verbeteren. Ontwikkelaars kunnen hun systemen eenvoudig integreren met de Sign-API, die een betrouwbare, eenvoudige manier biedt om documenten te uploaden, deze ter ondertekening te verzenden, herinneringen te verzenden en e-handtekeningen te verzamelen.
 
@@ -39,7 +37,7 @@ In dit voorbeeld is de sjabloon slechts een eenvoudig document met een paar onde
 
 Voordat u gaat werken met de Sign-API, [een gratis ontwikkelaarsaccount maken](https://acrobat.adobe.com/ca/en/sign/developer-form.html) om de API te openen, test u de documentuitwisseling en -uitvoering en test u de e-mailfunctie.
 
-Adobe verspreidt de Acrobat Sign API over de hele wereld in veel implementaties, genaamd &#39;shards&#39;. Elk shard dient de account van een klant, zoals NA1, NA2, NA3, EU1, JP1, AU1, IN1 en andere. De shard-namen komen overeen met geografische locaties. Deze shards vormen de basis-URI (toegangspunten) van de API-eindpunten.
+Adobe verspreidt de Acrobat Sign API over de hele wereld in veel implementaties die ‘shards’ worden genoemd. Elk shard dient de account van een klant, zoals NA1, NA2, NA3, EU1, JP1, AU1, IN1 en andere. De shard-namen komen overeen met geografische locaties. Deze shards vormen de basis-URI (toegangspunten) van de API-eindpunten.
 
 Als u toegang wilt tot de Sign-API, moet u eerst het juiste toegangspunt voor uw account vinden. Dit kan api.na1.adobesign.com, api.na4.adobesign.com, api.eu1.adobesign.com of andere zijn, afhankelijk van uw locatie.
 
@@ -240,7 +238,7 @@ Vervolgens ondertekent uw gebruiker het document met een eerder opgeslagen handt
 
 ![Schermafbeelding van handtekening](assets/GSASAPI_10.png)
 
-Wanneer de gebruiker klikt **Toepassen**, instrueert Adobe hen om hun e-mail te openen en de handtekening te bevestigen. De handtekening blijft in behandeling totdat de bevestiging is ontvangen.
+Wanneer de gebruiker klikt **Toepassen**, geeft de Adobe hun de opdracht hun e-mail te openen en de handtekening te bevestigen. De handtekening blijft in behandeling totdat de bevestiging is ontvangen.
 
 ![Screenshot van nog een stap](assets/GSASAPI_11.png)
 
@@ -329,7 +327,7 @@ Als u een overeenkomststatus wilt wijzigen, gebruikt u de opdracht `PUT /agreeme
 
 De `participantSetsInfo` eigenschap hierboven bevat e-mails van personen die geacht worden deel te nemen aan de overeenkomst en welke actie zij uitvoeren (ondertekenen, goedkeuren, erkennen, enzovoort). In het bovenstaande voorbeeld is er slechts één deelnemer: de ondertekenaar. Schriftelijke handtekeningen zijn beperkt tot vier per document.
 
-Wanneer u een overeenkomst maakt, verzendt Adobe deze, in tegenstelling tot webformulieren, automatisch ter ondertekening. Het eindpunt retourneert de unieke id van de overeenkomst.
+Wanneer u een overeenkomst maakt, verzendt de Adobe deze, in tegenstelling tot webformulieren, automatisch ter ondertekening. Het eindpunt retourneert de unieke id van de overeenkomst.
 
 
 ```

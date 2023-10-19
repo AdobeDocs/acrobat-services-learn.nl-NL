@@ -8,17 +8,15 @@ type: Tutorial
 jira: 7480
 thumbnail: KT-7480.jpg
 exl-id: 519a41a2-33af-4022-8919-2cb69995c46c
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
 
 
 # Zelfstudies voor API voor het genereren van documenten
-
-![Documentgeneratie-API-banner](../assets/docgenhero.jpg)
 
 Met de API voor het genereren van documenten maakt u PDF- en Word-documenten van Word-sjablonen en JSON-gegevens.
 
@@ -34,12 +32,12 @@ De API voor het genereren van documenten accepteert een documentsjabloon (met sj
 <tr>
  <td>
    <a href="taggeroverview.md">
-      <img alt="Overzicht van de Adobe-generatietag voor documenten" src="assets/Taggeroverview_thumb.png" />
+      <img alt="Overzicht van de Adobe voor het genereren van documenten" src="assets/Taggeroverview_thumb.png" />
    </a>
     <div>
-   <a href="taggeroverview.md"><strong>Overzicht van de Adobe-generatietag voor documenten</strong></a>
+   <a href="taggeroverview.md"><strong>Overzicht van de Adobe voor het genereren van documenten</strong></a>
     </div>
-    <em>Bekijk een overzicht van de Adobe-markering voor documentgeneratie die is ontworpen voor gebruik met de Adobe-API voor documentgeneratie</em>
+    <em>Bekijk een overzicht van de Adobe Document Generation Tagger die is ontworpen voor gebruik met de Adobe Document Generation API</em>
     <br>
   </td>
   <td>
@@ -49,7 +47,7 @@ De API voor het genereren van documenten accepteert een documentsjabloon (met sj
     <div>
    <a href="taggeraddtexttags.md"><strong>Tekstlabels toevoegen</strong></a>
     </div>
-    <em>Leer hoe u tekstcodes toevoegt aan Microsoft Word-sjablonen met behulp van Adobe Document Generation Tagger voor gebruik met de Adobe Document Generation API</em>
+    <em>Leer hoe u tekstcodes toevoegt aan Microsoft Word-sjablonen met behulp van Adobe Document Generation Tagger voor gebruik met Adobe Document Generation API</em>
     <br>
   </td>
   <td>
@@ -69,7 +67,7 @@ De API voor het genereren van documenten accepteert een documentsjabloon (met sj
     <div>
    <a href="taggertables.md"><strong>Tabellen en lijstcodes toevoegen</strong></a>
     </div>
-    <em>Leer hoe u tabellen en lijstcodes toevoegt aan Microsoft Word-sjablonen met behulp van Adobe Document Generation Tagger om dynamisch tabel- of lijstrijen toe te voegen op basis van gegevens met behulp van de Adobe Document Generation API</em>
+    <em>Leer hoe u tabellen en lijstcodes toevoegt aan Microsoft Word-sjablonen met behulp van Adobe Document Generation Tagger om dynamisch tabel- of lijstrijen toe te voegen op basis van gegevens met behulp van Adobe Document Generation API</em>
     <br>
   </td>
 </tr>
@@ -91,7 +89,7 @@ De API voor het genereren van documenten accepteert een documentsjabloon (met sj
     <div>
    <a href="taggerconditional.md"><strong>Voorwaardelijke inhoud instellen</strong></a>
     </div>
-    <em>Leer hoe u secties in Microsoft Word-sjablonen instelt met behulp van Adobe Document Generation Tagger, zodat u secties van een document dynamisch kunt opnemen of uitsluiten op basis van gegevens met behulp van de API voor het genereren van Adobe-documenten</em>
+    <em>Leer hoe u secties in Microsoft Word-sjablonen instelt met behulp van Adobe Document Generation Tagger, zodat u secties van een document dynamisch kunt opnemen of uitsluiten op basis van gegevens met behulp van de API voor het genereren van Adoben</em>
     <br>
   </td>
   <td>
