@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-7482
 thumbnail: KT-7482.jpg
 exl-id: 3bdc2610-d497-4a54-afc0-8b8baa234960
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: 558bd677d3b357a98488ada9dda1054bb21b81af
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1204'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ De PDF-indeling kan echter lastig zijn om te verwerken en te automatiseren, voor
 
 ## Wat je kunt leren
 
-Leer in deze praktische zelfstudie hoe u [!DNL Adobe Acrobat Services] API&#39;s voor [!DNL Java Spring Boot] toepassingen. U maakt een MVC-app (model-view-controller) die inhoud uit PDF-documenten extraheert, deze omzet in andere gegevensindelingen zoals Excel, meerdere PDF combineert en de bronnen beschermt met een wachtwoord. In deze zelfstudie wordt uitgelegd hoe u PDF-documenten verwerkt en op uw websites weergeeft met de Adobe [PDF Embed-API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
+Leer in deze praktische zelfstudie hoe u [!DNL Adobe Acrobat Services] API&#39;s voor [!DNL Java Spring Boot] toepassingen. U maakt een MVC-app (model-view-controller) die inhoud uit PDF-documenten extraheert, deze omzet in andere gegevensindelingen zoals Excel, meerdere PDF combineert en de bronnen beschermt met een wachtwoord. In deze zelfstudie wordt uitgelegd hoe u PDF-documenten verwerkt en op uw websites weergeeft met behulp van de Adobe [PDF Embed-API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
 
 ## Relevante API&#39;s en bronnen
 
@@ -37,7 +37,7 @@ Leer in deze praktische zelfstudie hoe u [!DNL Adobe Acrobat Services] API&#39;s
 
 ## Instellen
 
-[!DNL Adobe Acrobat Services] gebruikt een authentificatiesysteem om middeltoegang te controleren. Als u toegang wilt tot de services, moet u een API-sleutel aanvragen bij Adobe voor uw organisatie of toepassing. Als u een API-sleutel hebt, gaat u verder naar de volgende sectie. Ga naar [Aan de slag](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) in de [!DNL Acrobat Services] site. U kunt een sleutel maken met behulp van hun gratis proefversie, die 1000 documenttransacties biedt die u maximaal zes maanden kunt gebruiken.
+[!DNL Adobe Acrobat Services] gebruikt een authentificatiesysteem om middeltoegang te controleren. Als u toegang wilt tot de services, moet u een API-sleutel aanvragen bij de Adobe voor uw organisatie of toepassing. Als u een API-sleutel hebt, gaat u verder naar de volgende sectie. Ga naar [Aan de slag](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) in de [!DNL Acrobat Services] site. U kunt een sleutel maken met behulp van hun gratis proefversie, die 1000 documenttransacties biedt die u maximaal zes maanden kunt gebruiken.
 
 Als u deze zelfstudie wilt volgen, hebt u twee sets API-sleutels nodig:
 
@@ -49,7 +49,7 @@ Kopieer na het aanmaken van de referenties de PDF Services API en de persoonlijk
 
 ![Screenshot van de directory-locatie voor PDF Services API-referenties](assets/FAWJ_1.png)
 
-Om de logboekdiensten te vormen, bezoek [Adobe-documentatie](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=services) en scrol naar de sectie Logging.
+Om de logboekdiensten te vormen, bezoek [Documentatie Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=services) en scrol naar de sectie Logging.
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ Al deze voorbeelden zijn beschikbaar in het dialoogvenster [GitHub-voorbeelden](
 
 Volgende, in [!DNL Spring Boot]kunt u een bestand ophalen met behulp van het tekenreekspad of de stream waarin het bestand wordt geüpload. Elke bewerking die u uitvoert, moet worden geïnitialiseerd en er moet een invoerbestandspad worden ingesteld. Voor deze zelfstudie gebruikt u de openbaar beschikbare PDF-rapporten van [Blackrock](https://www.blackrock.com/us/individual/products/investment-funds). U kunt elke andere bron gebruiken, inclusief uw eigen rapporten.
 
-Begin door het [FileRef](https://opensource.adobe.com/pdfservices-java-sdk-samples/apidocs/latest/com/adobe/pdfservices/operation/io/FileRef.html) uit het bestand. Voor het gemak, concentreer op de dossiers door weg van het Koord. Hieronder maakt u een bewerking voor het omzetten van een bestand in uw pad van PDF naar Excel:
+Eerst legt u het FileRef-object van het bestand vast. Voor het gemak, concentreer op de dossiers door weg van het Koord. Hieronder maakt u een bewerking voor het omzetten van een bestand in uw pad van PDF naar Excel:
 
 ```
 ExecutionContext executionContext = ExecutionContext.create(credentials);
@@ -143,7 +143,7 @@ try {
 
 Deze code produceert een document van de PDF van het rapport in het formaat van Excel.
 
-Voordat u deze PDF aan uw klanten levert, kunt u deze met een wachtwoord beveiligen. Maak een andere bewerking die deze beveiliging voor u afhandelt, [ProtectPDFOperation](https://opensource.adobe.com/pdfservices-java-sdk-samples/apidocs/latest/com/adobe/pdfservices/operation/pdfops/ProtectPDFOperation.html)en vervolgens [ProtectPDFOptions](https://opensource.adobe.com/pdfservices-java-sdk-samples/apidocs/latest/com/adobe/pdfservices/operation/pdfops/options/protectpdf/package-summary.html) om het wachtwoord aan het document toe te voegen.
+Voordat u deze PDF aan uw klanten levert, kunt u deze met een wachtwoord beveiligen. Maak een andere bewerking die deze beveiliging voor u afhandelt, ProtectPDFOperation, en gebruik vervolgens ProtectPDFOptions om het wachtwoord aan het document toe te voegen.
 
 ```
 ProtectPDFOptions options = ProtectPDFOptions.passwordProtectOptionsBuilder()
