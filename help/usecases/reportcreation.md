@@ -8,22 +8,22 @@ type: Tutorial
 jira: KT-8093
 thumbnail: KT-8093.jpg
 exl-id: 2f2bf1c2-1b33-4eee-9fd2-5d0b77e6b0a9
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c74a36116349490af29e66fd81ad59c93174c258
 workflow-type: tm+mt
-source-wordcount: '1346'
-ht-degree: 1%
+source-wordcount: '1292'
+ht-degree: 0%
 
 ---
 
 # Rapport maken en bewerken
 
-![Hoofdlettergebruik hoofdbanner gebruiken](assets/UseCaseReportHero.jpg)
+![ Hoofdletterbanner van het Gebruik ](assets/UseCaseReportHero.jpg)
 
-Financiële, educatieve, marketing- en andere industrieën gebruiken PDF om data te delen met hun klanten en stakeholders. Met PDF kun je eenvoudig rijke documenten met tabellen, afbeeldingen en interactieve content delen in een indeling die iedereen kan bekijken. [!DNL Adobe Acrobat Services] Met API&#39;s kunnen deze bedrijven deelbare PDF-rapporten genereren van Microsoft Word, Microsoft Excel, afbeeldingen en andere verschillende documentindelingen.
+Financiële, educatieve, marketing- en andere industrieën gebruiken PDF om data te delen met hun klanten en stakeholders. Met PDF kun je eenvoudig rijke documenten met tabellen, afbeeldingen en interactieve content delen in een indeling die iedereen kan bekijken. Met API&#39;s van [!DNL Adobe Acrobat Services] kunnen deze bedrijven deelbare PDF-rapporten genereren vanuit Microsoft Word, Microsoft Excel, afbeeldingen en andere verschillende documentindelingen.
 
-Zeg je [een bedrijf voor het volgen van sociale media runnen](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html). Je klanten melden zich aan bij een met een wachtwoord beveiligd deel van je site om hun campagneanalytics te bekijken. Vaak willen ze deze statistieken delen met hun leidinggevenden, aandeelhouders, donoren of andere belanghebbenden. Downloadbare PDF-documenten zijn een fantastische manier voor je klanten om getallen, grafieken en meer te delen.
+Zeg u [ in werking stelt een sociaal media volgend bedrijf ](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html). Je klanten melden zich aan bij een met een wachtwoord beveiligd deel van je site om hun campagneanalytics te bekijken. Vaak willen ze deze statistieken delen met hun leidinggevenden, aandeelhouders, donoren of andere belanghebbenden. Downloadbare PDF-documenten zijn een fantastische manier voor je klanten om getallen, grafieken en meer te delen.
 
-Door [PDF Services API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) in je website kun je onderweg PDF-rapporten genereren voor elke klant. Je kunt PDF maken en deze vervolgens combineren in één handig rapport dat je klanten kunnen downloaden en doorgeven aan hun stakeholders.
+Door [ de Diensten API van de PDF ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) in uw website op te nemen, kunt u PDF rapporten voor elke klant onderweg produceren. Je kunt PDF maken en deze vervolgens combineren in één handig rapport dat je klanten kunnen downloaden en doorgeven aan hun stakeholders.
 
 ## Wat je kunt leren
 
@@ -31,9 +31,9 @@ In deze praktische zelfstudie leert u hoe u PDF Services SDK kunt gebruiken in e
 
 ## Relevante API&#39;s en bronnen
 
-* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [ de Diensten API van de PDF ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [PDF Embed-API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [ PDF bedt API ](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html) in
 
 ## Campaign meldt het dashboard voor klanten
 
@@ -43,9 +43,9 @@ In deze praktische zelfstudie leert u hoe u PDF Services SDK kunt gebruiken in e
 
 Hier hebt u een basistoepassing Express.js die een gebied van klantenrapporten en een beheerdersectie heeft. Deze toepassing kan rapporten weergeven voor social-mediacampagnes. Zo kunt u bijvoorbeeld zien hoe vaak op een advertentie wordt geklikt.
 
-![Screenshot van hoe je gepersonaliseerde rapporten krijgt](assets/report_1.png)
+![ Schermafbeelding van hoe te om gepersonaliseerde rapporten ](assets/report_1.png) te krijgen
 
-U kunt dit project downloaden van de [GitHub-repository](https://github.com/afzaal-ahmad-zeeshan/express-adobe-pdf-tools).
+U kunt dit project van de [ bewaarplaats GitHub ](https://github.com/afzaal-ahmad-zeeshan/express-adobe-pdf-tools) downloaden.
 
 Laten we nu onderzoeken hoe we de rapporten publiceren.
 
@@ -53,9 +53,9 @@ Laten we nu onderzoeken hoe we de rapporten publiceren.
 
 Om het eenvoudig te houden, gebruik je hier alleen het uploaden en verwerken van bestanden op basis van het systeem. In Express.js kunt u de fs-module gebruiken om alle beschikbare bestanden in een directory weer te geven.
 
-Schakel op dezelfde pagina de beheerder in om rapportbestanden naar de server te uploaden, zodat klanten deze kunnen zien. Deze bestanden kunnen verschillende indelingen hebben, zoals Microsoft Word, Microsoft Excel, HTML en [andere gegevensindelingen]https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf) inclusief afbeeldingsbestanden. De beheerpagina ziet er als volgt uit:
+Schakel op dezelfde pagina de beheerder in om rapportbestanden naar de server te uploaden, zodat klanten deze kunnen zien. Deze dossiers kunnen in vele verschillende formaten, zoals Microsoft Word, Microsoft Excel, HTML, en [ andere gegevensformaten ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf) met inbegrip van grafiekdossiers zijn. De beheerpagina ziet er als volgt uit:
 
-![Screenshot van beheerfunctie](assets/report_2.png)
+![ Screenshot van het vermogen Admin ](assets/report_2.png)
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Aan de gebruikerszijde hebt u een formulier waarmee klanten de documenten kunnen
 
 Voor een geavanceerdere gebruikersinterface kunt u hier ook een voorvertoning van het rapport weergeven.
 
-![Screenshot van de klantencapaciteit](assets/report_3.png)
+![ Screenshot van klantenvermogen ](assets/report_3.png)
 
 ## Een PDF-rapport genereren
 
@@ -92,11 +92,11 @@ Gebruik de PDF Services SDK om de PDF-rapporten te maken op basis van uw gegeven
 $ npm install --save @adobe/documentservices-pdftools-node-sdk
 ```
 
-Voordat u begint, moet u API-referenties hebben, [vrij van Adobe](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred). Gebruik uw [!DNL Acrobat Services] account [gratis voor zes maanden, vervolgens betaal naar keuze](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) voor slechts \$0.05 per documenttransactie.
+Alvorens te beginnen, moet u API geloofsbrieven hebben, [ vrij van Adobe ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred). Gebruik uw [!DNL Acrobat Services] rekening [ vrij voor zes maanden dan betaal-als-u-gaat ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) voor enkel \$0.05 per documenttransactie.
 
 Download het archiefbestand en extraheer het JSON-bestand voor referenties en de persoonlijke sleutel. In het voorbeeldproject plaatst u het bestand in de map src.
 
-![Screenshot van map src](assets/report_4.png)
+![ Screenshot van src folder ](assets/report_4.png)
 
 Nu u de aanmeldingsgegevens hebt ingesteld, kunt u de conversietaak PDF schrijven. Voor deze demonstratie moet u twee bewerkingen uitvoeren in de toepassing:
 
@@ -131,11 +131,11 @@ console.log('Exception encountered while executing operation', err);
 
 In de bovenstaande code leest u de referenties en maakt u de uitvoeringscontext. PDF Services SDK vereist de uitvoeringscontext om uw verzoeken te verifiëren.
 
-Vervolgens voert u de bewerking PDF maken uit, waarmee u de Raw-documenten omzet in de PDF-indeling. Tot slot gebruikt u de `outputPdf` om het rapport PDF te kopiëren. In het codevoorbeeld vindt u deze code onder het bestand src/helpers/pdf.js. Verderop in deze zelfstudie importeert u de module PDF en roept u deze methode aan.
+Vervolgens voert u de bewerking PDF maken uit, waarmee u de Raw-documenten omzet in de PDF-indeling. Tot slot gebruikt u de parameter `outputPdf` om het rapport PDF te kopiëren. In het codevoorbeeld vindt u deze code onder het bestand src/helpers/pdf.js. Verderop in deze zelfstudie importeert u de module PDF en roept u deze methode aan.
 
 Zoals in de vorige sectie is aangetoond, kunnen uw klanten naar de volgende pagina gaan om de rapporten te selecteren die zij in PDF willen omzetten:
 
-![Screenshot van de klantencapaciteit](assets/report_3.png)
+![ Screenshot van klantenvermogen ](assets/report_3.png)
 
 Wanneer een klant een of meer van deze rapporten selecteert, maakt u het PDF-bestand.
 
@@ -155,11 +155,11 @@ res.status(500).render("crash", { error: error });
 
 Deze code maakt een rapport en deelt de download-URL met de klant. Hier is de uitvoerwebpagina:
 
-![Screenshot van downloadscherm van klant](assets/report_5.png)
+![ Schermafbeelding van het scherm van de klantendownload ](assets/report_5.png)
 
 Hier is de uitvoer PDF:
 
-![Screenshot van algemeen rapport](assets/report_6.png)
+![ Screenshot van generiek rapport ](assets/report_6.png)
 
 Klanten kunnen meerdere bestanden selecteren om een gecombineerd rapport te genereren. Wanneer de klant meer dan één document selecteert, voert u twee bewerkingen uit: de eerste maakt een gedeeltelijke PDF voor elk document en de tweede combineert deze in één PDF-rapport.
 
@@ -209,7 +209,7 @@ res.status(500).render("crash", { error: error });
 }
 ```
 
-Deze code genereert een gecompileerd rapport voor meerdere invoerdocumenten. De enige toegevoegde functie is de `combinePdf` methode die een lijst met padnamen voor PDF-bestanden opneemt en één uitvoerpad met PDF retourneert.
+Deze code genereert een gecompileerd rapport voor meerdere invoerdocumenten. De enige toegevoegde functie is de `combinePdf` -methode die een lijst maakt met padnamen voor PDF-bestanden en één uitvoerpad-PDF retourneert.
 
 Je klanten van het dashboard voor social media kunnen nu relevante rapporten van hun account selecteren en deze downloaden als één handige PDF. Met dit dashboard kunnen ze het management en andere stakeholders laten zien, het succes van hun campagnes met data, tabellen en grafieken in een universeel, eenvoudig te openen indeling.
 
@@ -217,6 +217,6 @@ Je klanten van het dashboard voor social media kunnen nu relevante rapporten van
 
 Deze hands=on tutorial ging door hoe te om PDF Services API te gebruiken om klanten te helpen relevante rapporten als makkelijk te delen PDF downloaden. U hebt een Node.js-toepassing gemaakt om de kracht van de PDF Services-API voor PDF-rapportage en -leesservices weer te geven. De toepassing laat zien hoe uw klanten één rapportdocument downloaden of meerdere documenten combineren en samenvoegen tot één PDF-rapport.
 
-Deze Adobe-toepassing helpt uw [social media dashboard klanten](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html) U kunt de rapporten die ze nodig hebben ontvangen en delen zonder dat u zich zorgen hoeft te maken of alle ontvangers Microsoft Office of andere software op hun apparaat hebben geïnstalleerd. U kunt dezelfde technieken gebruiken in uw eigen toepassing om uw gebruikers te helpen documenten weer te geven, te combineren en te downloaden. Of check Adobe uit met vele andere API’s om handtekeningen toe te voegen en bij te houden en nog veel meer.
+Deze Adobe-aangedreven toepassing helpt uw [ klanten van het sociale media dashboard ](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html) en deelt de rapporten die zij hebben nodig, zonder zich het zorgen te maken als de ontvangers allemaal Microsoft Office of andere software hebben die op hun apparaat wordt geïnstalleerd. U kunt dezelfde technieken gebruiken in uw eigen toepassing om uw gebruikers te helpen documenten weer te geven, te combineren en te downloaden. Of bekijk de vele andere API’s van de Adobe om handtekeningen toe te voegen en bij te houden, en nog veel meer.
 
-Ga aan de slag met uw gratis [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) en creëer vervolgens aansprekende rapportageervaringen voor je medewerkers en klanten. Geniet van je gratis account gedurende zes maanden [pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) naarmate je marketingactiviteiten toenemen, is er slechts \$0,05 per documenttransactie.
+Om aan de slag te gaan, claimt u uw gratis [[!DNL Adobe Acrobat Services] ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) -account en creëert u vervolgens aansprekende rapportage-ervaringen voor uw werknemers en klanten. Geniet van uw rekening voor zes maanden toen [ betaal-als-u-gaat ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) aangezien uw marketinginspanningen, enkel \$0.05 per documenttransactie uitbreiden.
