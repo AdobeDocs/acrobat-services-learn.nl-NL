@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8115
 thumbnail: KT-8115.jpg
 exl-id: 4188897e-f6e6-41ea-be6f-359a3ef0e040
-source-git-commit: 5758b11b0c47719de250c34eed3c5dbe0b655f03
+source-git-commit: ad13c28a0c218fc0027afc02445e5ed532c2340d
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%
@@ -152,31 +152,31 @@ Leer hoe de [!DNL Adobe Acrobat Services] API&#39;s uw bedrijf kunnen veranderen
 </tr>
 <tr>
   <td>
-    <a href="agreementworkflowsnodejs-bubba.md">
+    <a href="agreementworkflowsnodejs.md">
       <img alt="Overeenkomstworkflows in Node.js" src="assets/AWNjs_thumb.png" />
     </a>
     <div>
-    <a href="agreementworkflowsnodejs-bubba.md"><strong> werkschema's van de Overeenkomst in Node.js </strong></a>
+    <a href="agreementworkflowsnodejs.md"><strong> werkschema's van de Overeenkomst in Node.js </strong></a>
     </div>
     <em>[!DNL Adobe Acrobat Services] API's kunnen eenvoudig PDF-mogelijkheden opnemen in uw webtoepassingen </em>
     <br>
   </td>
   <td>
-    <a href="hragreementworkflowsjava-bubba.md">
+    <a href="hragreementworkflowsjava.md">
       <img alt="HR-documentworkflows in Java" src="assets/HRWJ_thumb.png" />
     </a>
     <div>
-    <a href="hragreementworkflowsjava-bubba.md"><strong> de documentworkflows van HR in Java </strong></a>
+    <a href="hragreementworkflowsjava.md"><strong> de documentworkflows van HR in Java </strong></a>
     </div>
     <em>[!DNL Adobe Acrobat Services] API's kunnen eenvoudig PDF-mogelijkheden opnemen in uw HR-webtoepassingen </em>
     <br>
   </td>
   <td>
-    <a href="financeworkflowsjava-bubba.md">
+    <a href="financeworkflowsjava.md">
       <img alt="Workflows voor financiële documenten beheren in Java" src="assets/FAWJ_thumb.png" />
     </a>
     <div>
-    <a href="financeworkflowsjava-bubba.md"><strong> het leiden van financiële documentworkflows in Java </strong></a>
+    <a href="financeworkflowsjava.md"><strong> het leiden van financiële documentworkflows in Java </strong></a>
     </div>
     <em>[!DNL Adobe Acrobat Services] verstrekt alle noodzakelijke hulpmiddelen, de diensten, en de eigenschappen om gegevens te verwerken en uit PDF financiële documenten te halen </em>
     <br>
