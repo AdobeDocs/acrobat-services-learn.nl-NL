@@ -1,14 +1,14 @@
 ---
 user-guide-title: "[!DNL Adobe Acrobat Services]"
 breadcrumb-title: "[!DNL Acrobat Services]"
-user-guide-description: Meer informatie over [!DNL Adobe Acrobat Services]
+user-guide-description: Meer informatie over  [!DNL Adobe Acrobat Services]
 solution: Acrobat Services
 feature-set: Acrobat Services
 feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation API, PDF Accessibility Auto-Tag API, PDF Electronic Seal API, PDF Extract API
 role: Developer
 level: Beginner, Intermediate, Experienced
 auto-video-transcripts: true
-source-git-commit: 255a2425fcde4443d8502a92aa0274fac30f7279
+source-git-commit: 5758b11b0c47719de250c34eed3c5dbe0b655f03
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 3%
@@ -19,7 +19,7 @@ ht-degree: 3%
 # [!DNL Adobe Acrobat Services] API-Tutorials {#tutorials}
 
 + [Overzicht](overview.md)
-+ PDF Services API {#pdfservices}
++ PDF Services-API {#pdfservices}
    + [Overzicht](pdfservices/overview-pdfservices.md)
    + [Referenties ophalen voor Microsoft Power Automate](pdfservices/getting-credentials-power-automate.md)
    + [Maak je eerste flow in Microsoft Power Automate](pdfservices/create-workflow-power-automate.md)
@@ -28,7 +28,7 @@ ht-degree: 3%
    + [Aan de slag met de Adobe PDF Services-API en Java](pdfservices/gettingstartedjava.md)
    + [Aan de slag met Adobe PDF Services API en .Net](pdfservices/gettingstartednet.md)
    + [Adobe PDF Services API gebruiken voor OCR-PDF-bestanden](pdfservices/ocr.md)
-+ API voor documentgeneratie {#docgen}
++ API voor het genereren van documenten {#docgen}
    + [Overzicht](docgen/overview-docgen.md)
    + [Automatisch documenten genereren](docgen/automate-doc-gen.md)
    + Sjablonen maken {#docgentemplates}
@@ -38,19 +38,19 @@ ht-degree: 3%
       + [Tabellen en lijstcodes toevoegen](docgen/taggertables.md)
       + [Numerieke berekeningscodes instellen](docgen/taggercalculations.md)
       + [Voorwaardelijke inhoud instellen](docgen/taggerconditional.md)
-+ API voor automatische tag van PDF-toegankelijkheid {#pdfaccessibility}
++ Automatische API voor toegankelijkheid PDF {#pdfaccessibility}
    + [Overzicht](pdfaccessibility/overview-accessibility.md)
    + [Documenten automatisch labelen voor toegankelijkheid](pdfaccessibility/automatically-add-tags.md)
-+ PDF Extract-API {#pdfextract}
++ API voor PDF extraheren {#pdfextract}
    + [Overzicht](pdfextract/overview-extract.md)
    + [Automatisch content extraheren](pdfextract/automate-content-extraction.md)
 + PDF Electronic Seal API {#eseal}
    + [Overzicht](pdfelectronicseal/overview-electronic-seal.md)
    + [Automatisch elektronisch zegel toepassen](pdfelectronicseal/automatically-apply-electronic-seal.md)
-+ PDF Embed-API {#pdfembed}
++ API voor insluiten van PDF {#pdfembed}
    + [Overzicht](pdfembed/overview-embed.md)
    + [Beheer je online PDF-ervaring en verzamel analytics](pdfembed/controlpdfexperience.md)
-+ ACROBAT SIGN API {#acrobatsign}
++ Acrobat Sign API {#acrobatsign}
    + [Overzicht](acrobatsign/overview-sign.md)
    + [Aan de slag met de Adobe Sign API](acrobatsign/signapi.md)
    + OEM/Embedded Partner {#oem}
@@ -73,9 +73,9 @@ ht-degree: 3%
    + [Rapport maken en bewerken](usecases/reportcreation.md)
    + [Taak posten](usecases/jobposting.md)
    + [Samenwerking tussen studenten en docenten](usecases/educationcollab.md)
-   + [Overeenkomstworkflows in Node.js](usecases/AgreementWorkflowsNodejs.md)
-   + [HR-documentworkflows in Java](usecases/HRAgreementWorkflowsJava.md)
-   + [Workflows voor financiële documenten beheren in Java](usecases/FinanceWorkflowsJava.md)
+   + [Overeenkomstworkflows in Node.js](usecases/agreementworkflowsnodejs-bubba.md)
+   + [HR-documentworkflows in Java](usecases/hragreementworkflowsjava-bubba.md)
+   + [Workflows voor financiële documenten beheren in Java](usecases/financeworkflowsjava-bubba.md)
    + [Facturen verwerken](usecases/invoices.md)
    + [Digitale publicatie van documenten](usecases/ddppdfembedapi.md)
 
