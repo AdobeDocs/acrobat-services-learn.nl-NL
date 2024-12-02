@@ -1,6 +1,6 @@
 ---
 title: Workflows voor financiële documenten beheren in Java
-description: "[!DNL Adobe Acrobat Services] biedt alle benodigde gereedschappen, services en functies voor het verwerken en extraheren van gegevens uit financiële PDF-documenten"
+description: '[!DNL Adobe Acrobat Services] biedt alle benodigde gereedschappen, services en functies voor het verwerken en extraheren van gegevens uit financiële PDF-documenten'
 feature: Use Cases
 role: Developer
 level: Intermediate

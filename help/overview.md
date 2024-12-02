@@ -1,6 +1,6 @@
 ---
-title: "[!DNL Adobe Acrobat Services] API-Tutorials"
-description: Overzicht pagina voor [!DNL Adobe Acrobat Services]
+title: '[!DNL Adobe Acrobat Services] API-Tutorials'
+description: Overzicht pagina voor  [!DNL Adobe Acrobat Services]
 feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation API, PDF Electronic Seal API, PDF Extract API, PDF Accessibility Auto-Tag API
 role: Developer
 level: Beginner, Intermediate, Experienced
@@ -26,7 +26,7 @@ ht-degree: 2%
 * [!DNL Adobe PDF Extract API]
 * [!DNL Adobe PDF Accessibility Auto-Tag API]
 
-De laatste twee API&#39;s en hun SDK&#39;s zijn gebundeld in [!DNL Adobe PDF Services API] als onderdeel van een betaald aanbod. [!DNL PDF Embed API] is een gratis aanbieding. Deze API&#39;s automatiseren het genereren, manipuleren en transformeren van documentinhoud via een reeks moderne cloudgebaseerde webservices. Ze helpen je om eenvoudigere, snellere en merkgebonden ervaringen te bieden, zodat je de gebruikersinteractie met je documenten kunt beheren, workflows voor PDF kunt stroomlijnen en gebruik en behoud kunt bevorderen. Deze tutorials helpen je om sneller eenvoudige, snellere, merkgebonden ervaringen te bieden met de [!DNL Adobe Acrobat Services] API&#39;s.
+De laatstgenoemde twee API&#39;s en hun SDK&#39;s zijn gebundeld in [!DNL Adobe PDF Services API] als onderdeel van een betaalde aanbieding. [!DNL PDF Embed API] is een gratis aanbieding. Deze API&#39;s automatiseren het genereren, manipuleren en transformeren van documentinhoud via een reeks moderne cloudgebaseerde webservices. Ze helpen je om eenvoudigere, snellere en merkgebonden ervaringen te bieden, zodat je de gebruikersinteractie met je documenten kunt beheren, workflows voor PDF kunt stroomlijnen en gebruik en behoud kunt bevorderen. Deze zelfstudies helpen u om sneller eenvoudige, snellere merkgebonden ervaringen te bieden met de [!DNL Adobe Acrobat Services] API&#39;s.
 
 <table style="table-layout:fixed">
 <tr>

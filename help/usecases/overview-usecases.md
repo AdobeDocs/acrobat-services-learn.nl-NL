@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Adobe Acrobat Services] API-gebruiksvoorbeelden"
+title: '[!DNL Adobe Acrobat Services] API-gebruiksscenario''s'
 description: De pagina van het overzicht voor  [!DNL Adobe Acrobat Services]  API gebruiksgevallen
 feature: Use Cases
 role: Developer
