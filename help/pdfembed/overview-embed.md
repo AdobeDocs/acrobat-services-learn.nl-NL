@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-8117
 thumbnail: KT-8117.jpg
 exl-id: 2fef89cf-640d-4ff4-9282-070bce8bba78
-source-git-commit: 5b505cc0dfb066e1b5c95698cc10a0b68086f015
+source-git-commit: 794a87a86a5e75803f86faa5db3fcdce2bcec79a
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '160'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 0%
 # Zelfstudies voor Adobe PDF Embed API
 
 De PDF Embed-API is een gratis JavaScript-API voor het insluiten van hifi-PDF, het inschakelen van samenwerking en het bekijken van analyses.
-
 
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -40,7 +39,7 @@ De PDF Embed-API is een gratis JavaScript-API voor het insluiten van hifi-PDF, h
                     <p class="is-size-6">Leer hoe u de Adobe PDF Embed API kunt gebruiken om het uiterlijk te beheren, samenwerking in te schakelen en analytics te verzamelen over de interactie van de gebruiker met PDF, inclusief de tijd die op een pagina is doorgebracht en zoekacties</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Controle </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Lees </span>
                 </a>
             </div>
         </div>
@@ -49,9 +48,8 @@ De PDF Embed-API is een gratis JavaScript-API voor het insluiten van hifi-PDF, h
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-embed-api"
-target = "_self" title="PDF op het web als een pro" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/media_17a03bc364d9d4b68dc970c4d1680c81f187acfb0.png?width=400&format=webply&optimize=medium" alt="PDF op het web als een pro"
+                    <a href="https://experienceleague.adobe.com/en/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-embed-api" title="PDF op het web als een pro" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/337602/?quality=12&hidetitle=true&format=jpeg&nocache=1736799089651" alt="PDF op het web als een pro"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -59,13 +57,11 @@ target = "_self" title="PDF op het web als een pro" target="_blank" rel="referre
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-embed-api"
-target = "_self" target="_blank" rel="referrer" title="PDF op het web als een pro"> PDF van de Rechthoek op het Web als pro </a>
+                        <a href="https://experienceleague.adobe.com/en/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-embed-api" target="_self" rel="referrer" title="PDF op het web als een pro"> PDF van de Rechthoek op het Web als pro </a>
                     </p>
-                    <p class="is-size-6">Leer hoe u de gratis Adobe PDF Embed-API kunt gebruiken om het gebruik van PDF op uw website te vereenvoudigen</p>
+                    <p class="is-size-6">Kijk hoe u de gratis Adobe PDF Embed-API kunt gebruiken om het gebruik van PDF in uw website te vereenvoudigen</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-embed-api"
-target = "_self" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/en/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-embed-api" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Controle </span>
                 </a>
             </div>
