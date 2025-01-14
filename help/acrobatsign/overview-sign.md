@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-11079
 thumbnail: KT-11079.jpg
 exl-id: 79603883-26cd-439c-9cfd-6178c4544b93
-source-git-commit: 63c4b6979a4aaa6698ee00264c4ef59ed6b16148
+source-git-commit: 3df27690c677d8ad51e8f26ea95b5da12694f89a
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '305'
 ht-degree: 6%
 
 ---
@@ -51,9 +51,9 @@ Met Acrobat Sign API&#39;s kunt u apps maken en de gebruikersinterface en functi
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
 
-## Acrobat Sign Embed Quick Start Guide
+## Handleiding Snel starten voor Acrobat Sign insluiten
 
-Leer hoe u de OEM-versie van Acrobat Sign kunt insluiten in uw toepassing. Deze handleiding is speciaal ontworpen voor OEM-partners die een ondertekeningsproces in hun toepassing bouwen en insluiten.
+Leer hoe u de OEM-versie van Acrobat Sign gaat insluiten in uw toepassing. Deze handleiding is speciaal ontworpen voor OEM-partners die een ondertekeningsproces in hun toepassing bouwen en insluiten.
 
 
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
