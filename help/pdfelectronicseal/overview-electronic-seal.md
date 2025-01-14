@@ -7,9 +7,9 @@ level: Beginner, Intermediate, Experienced
 type: Tutorial
 jira: KT-15330
 exl-id: 74198c86-505b-4321-923e-0079e3d767cd
-source-git-commit: 9235b07277fe642adebc00fade4c10245d4b04bf
+source-git-commit: 0f62890207722245f33be41ad4c77ba68bf7a0fc
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '115'
 ht-degree: 0%
 
 ---
@@ -18,33 +18,43 @@ ht-degree: 0%
 
 De Adobe PDF Electronic Seal API past een elektronische zegel op schaal toe op documenten met behulp van een certificaat dat door bepaalde TSP&#39;s (Trust Service Providers) is uitgegeven op [ Approved Trust List (AATL) van de Adobe ](https://helpx.adobe.com/nl/acrobat/kb/approved-trust-list1.html). Met de elektronische zegel kunt u de identiteit en integriteit van documenten verifiëren. Dit kan worden gebruikt om documenten op schaal elektronisch te verzegelen en is inbegrepen bij de PDF Services API.
 
+<!-- Comment -->
+<!-- CARDS
 
-<table style="table-layout:fixed">
-<tr>
-  <td>
-    <a href="automatically-apply-electronic-seal.md">
-      <img alt="Automatisch een elektronisch zegel toepassen" src="assets/automatically-apply-seal.png" />
-    </a>
-    <div>
-      <a href="automatically-apply-electronic-seal.md"><strong> pas automatisch een elektronische verzegeling toe </strong></a>
-      </div>
-      Leer hoe u een onvervalsbaar elektronisch zegel kunt toepassen op PDF op schaal
-      <br>
-  </td>
- <td>
-       <img alt="Spacer" src="../assets/WhiteBanner_Placeholder.png">
-       <div>
-       <br>
- </td>
- <td>
-       <img alt="Spacer" src="../assets/WhiteBanner_Placeholder.png">
-       <div>
-       <br>
- </td>
- <td>
-       <img alt="Spacer" src="../assets/WhiteBanner_Placeholder.png">
-       <div>
-       <br>
- </td>
-</tr>
-</table>
+* https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal
+  {target = _self}
+  {title = Automatically apply an electronic seal}
+  {description = Learn how to apply a tamper-evident electronic seal to PDFs at scale}
+  {image = https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/media_1c3d300ec38133fdf7b4f8eb7c16d560e8a776e5c.png?width=400&format=webply&optimize=medium}
+  {cta = Watch}
+
+-->
+<!-- End Comment -->
+
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Automatically apply an electronic seal">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal" title="Automatisch een elektronisch zegel toepassen" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/media_1c3d300ec38133fdf7b4f8eb7c16d560e8a776e5c.png?width=400&format=webply&optimize=medium" alt="Automatisch een elektronisch zegel toepassen"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal" target="_self" rel="referrer" title="Automatisch een elektronisch zegel toepassen"> pas automatisch een elektronische verzegeling toe </a>
+                    </p>
+                    <p class="is-size-6">Leer hoe u een onvervalsbaar elektronisch zegel kunt toepassen op PDF op schaal</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Controle </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
