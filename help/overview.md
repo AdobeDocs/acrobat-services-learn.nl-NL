@@ -8,10 +8,10 @@ jira: KT-7463
 type: Tutorial
 thumbnail: KT-7463.jpg
 exl-id: c73feb77-4057-42fd-831c-a5004c7637c1
-source-git-commit: 63c4b6979a4aaa6698ee00264c4ef59ed6b16148
+source-git-commit: 9235b07277fe642adebc00fade4c10245d4b04bf
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 2%
+source-wordcount: '245'
+ht-degree: 1%
 
 ---
 
@@ -28,192 +28,89 @@ ht-degree: 2%
 
 De laatstgenoemde twee API&#39;s en hun SDK&#39;s zijn gebundeld in [!DNL Adobe PDF Services API] als onderdeel van een betaalde aanbieding. [!DNL PDF Embed API] is een gratis aanbieding. Deze API&#39;s automatiseren het genereren, manipuleren en transformeren van documentinhoud via een reeks moderne cloudgebaseerde webservices. Ze helpen je om eenvoudigere, snellere en merkgebonden ervaringen te bieden, zodat je de gebruikersinteractie met je documenten kunt beheren, workflows voor PDF kunt stroomlijnen en gebruik en behoud kunt bevorderen. Deze zelfstudies helpen u om sneller eenvoudige, snellere merkgebonden ervaringen te bieden met de [!DNL Adobe Acrobat Services] API&#39;s.
 
-
-<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
-<div class="columns">
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="PDF Services API">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/overview-pdfservices" title="PDF Services API" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/media_102ca9e2c2f5213fdf7b873a65a3a91cf830eeef6.png?width=400&format=webply&optimize=medium" alt="PDF Services API"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/overview-pdfservices" target="_self" rel="referrer" title="PDF Services API"> de Diensten API van de PDF </a>
-                    </p>
-                    <p class="is-size-6">PDF-API's met SDK's voor node.js, .Net en Java voor het maken, converteren, OCR-PDF en meer</p>
-                </div>
-                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/overview-pdfservices" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> doorblader leerprogramma's </span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Document Generation API">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/overview-docgen" title="API voor documentgeneratie" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/media_18303c2093ffca150db01a9263e1f69e9a473fefb.png?width=400&format=webply&optimize=medium" alt="API voor documentgeneratie"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/overview-docgen" target="_self" rel="referrer" title="API voor documentgeneratie"> de Generatie API van het Document </a>
-                    </p>
-                    <p class="is-size-6">PDF- en Word-documenten genereren op basis van Word-sjablonen en JSON-gegevens</p>
-                </div>
-                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/overview-docgen" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> doorblader leerprogramma's </span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="PDF Accessibility Auto-tag API">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfaccessibility/overview-accessibility" title="Automatische tag-API voor toegankelijkheid PDF" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/media_1c7b90c86c3839ad63000ddeba9f4a8d7634bc636.png?width=400&format=webply&optimize=medium" alt="Automatische tag-API voor toegankelijkheid PDF"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfaccessibility/overview-accessibility" target="_self" rel="referrer" title="Automatische tag-API voor toegankelijkheid PDF"> PDF Toegankelijkheid autom-markering API </a>
-                    </p>
-                    <p class="is-size-6">Met deze API, die door AI wordt aangestuurd, worden documenten automatisch gelabeld, waardoor het gemakkelijk is om PDF-toegankelijkheid te schalen</p>
-                </div>
-                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfaccessibility/overview-accessibility" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> doorblader leerprogramma's </span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="PDF Extract API">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfextract/overview-extract" title="PDF Extract-API" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/media_1ab96ca88135bdc4696e4b9989a466e307eb51e16.png?width=400&format=webply&optimize=medium" alt="PDF Extract-API"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfextract/overview-extract" target="_self" rel="referrer" title="PDF Extract-API"> PDF Extraheren API </a>
-                    </p>
-                    <p class="is-size-6">Ontgrendel de structuur- en inhoudselementen van elke PDF met een webservice die wordt aangestuurd door machine learning van Adobe Sensi</p>
-                </div>
-                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfextract/overview-extract" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> doorblader leerprogramma's </span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="PDF Electronic Seal API">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/overview-electronic-seal" title="PDF Electronic Seal API" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/media_1594422d61129727af314dc0a278d28f4a3fae668.png?width=400&format=webply&optimize=medium" alt="PDF Electronic Seal API"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/overview-electronic-seal" target="_self" rel="referrer" title="PDF Electronic Seal API"> PDF Electronic Seal API </a>
-                    </p>
-                    <p class="is-size-6">Leer hoe u een onvervalsbaar elektronisch zegel kunt toepassen op PDF op schaal</p>
-                </div>
-                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/overview-electronic-seal" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> doorblader leerprogramma's </span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="PDF Embed API">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/overview-embed" title="PDF Embed-API" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/media_19f55204de64437cfa879cab9680a4267254b76a6.png?width=400&format=webply&optimize=medium" alt="PDF Embed-API"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/overview-embed" target="_self" rel="referrer" title="PDF Embed-API"> PDF bedt API </a> in
-                    </p>
-                    <p class="is-size-6">Gratis Javascript API voor het insluiten van hifi-PDF, het inschakelen van samenwerking en het bekijken van analytics</p>
-                </div>
-                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/overview-embed" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> doorblader leerprogramma's </span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Acrobat Sign API">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/overview-sign" title="Acrobat Sign- API" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/media_147c2a8bdff039762f0f8e30a71917775c154ffa0.png?width=400&format=webply&optimize=medium" alt="Acrobat Sign- API"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/overview-sign" target="_self" rel="referrer" title="Acrobat Sign- API"> Acrobat Sign API </a>
-                    </p>
-                    <p class="is-size-6">Integreer elektronische handtekeningen in je platform of applicatie</p>
-                </div>
-                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/overview-sign" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> doorblader leerprogramma's </span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Acrobat Services API Use Cases">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/overview-usecases" title="Gebruiksscenario&apos;s Acrobat Services API" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/media_1c4ff4e0452d8e2f0c673f0978f66e41013818bee.png?width=400&format=webply&optimize=medium" alt="Gebruiksscenario&apos;s Acrobat Services API"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        </a> Gevallen van het Gebruik van de Diensten van Acrobat API <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/overview-usecases" target="_self" rel="referrer" title="Gebruiksscenario&apos;s Acrobat Services API">
-                    </p>
-                    <p class="is-size-6">Verschillende gebruiksscenario's voor de Acrobat Services API</p>
-                </div>
-                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/overview-usecases" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> doorblader leerprogramma's </span>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+<table style="table-layout:fixed">
+<tr>
+  <td>
+    <a href="pdfservices/overview-pdfservices.md">
+      <img alt="PDF Services API" src="assets/pdfservicescard.png" />
+    </a>
+    <div>
+      <a href="pdfservices/overview-pdfservices.md"><strong> de Diensten API van de PDF </strong></a>
+      </div>
+      PDF-API's met SDK's voor node.js, .Net en Java voor het maken, converteren, OCR-PDF en meer
+      <br>
+  </td>
+  <td>
+    <a href="docgen/overview-docgen.md">
+      <img alt="API voor documentgeneratie" src="assets/docgencard.png" />
+    </a>
+    <div>
+      <a href="docgen/overview-docgen.md"><strong> de Generatie API van het Document </strong></a>
+      </div>
+      PDF- en Word-documenten genereren op basis van Word-sjablonen en JSON-gegevens
+      <br>
+  </td>  
+  <td>
+    <a href="pdfaccessibility/overview-accessibility.md">
+      <img alt="Automatische tag-API voor toegankelijkheid PDF" src="assets/PDFAccessibility.png" />
+    </a>
+    <div>
+      <a href="pdfaccessibility/overview-accessibility.md"><strong> PDF Toegankelijkheid autom-markering API </strong></a>
+      </div>
+      Met deze API, die door AI wordt aangestuurd, worden documenten automatisch gelabeld, waardoor het gemakkelijk is om PDF-toegankelijkheid te schalen
+      <br>
+  </td>
+  <td>
+    <a href="pdfaccessibility/overview-accessibility.md">
+      <img alt="PDF Extract-API" src="assets/PDFAccessibility.png" />
+    </a>
+     <div>
+      <a href="pdfaccessibility/overview-accessibility.md"><strong> PDF Extraheren API </strong></a>
+      </div>
+      Ontgrendel de structuur- en inhoudselementen van elke PDF met een webservice die wordt aangestuurd door machine learning van Adobe Sensi
+      <br>
+  </td>
+</tr>
+<tr>
+  <td>
+    <a href="pdfelectronicseal/overview-electronic-seal.md">
+      <img alt="PDF Electronic Seal API" src="assets/PDFElectronicSeal.png" />
+    </a>
+    <div>
+      <a href="pdfelectronicseal/overview-electronic-seal.md"><strong> PDF Electronic Seal API </strong></a>
+      </div>
+      Leer hoe u een onvervalsbaar elektronisch zegel kunt toepassen op PDF op schaal
+      <br>
+  </td>
+  <td>
+    <a href="pdfembed/overview-embed.md">
+      <img alt="PDF Embed-API" src="assets/pdfembedcard.png" />
+    </a>
+    <div>
+      <a href="pdfembed/overview-embed.md"><strong> PDF bedt API </strong></a> in
+      </div>
+      Gratis Javascript API voor het insluiten van hifi-PDF, het inschakelen van samenwerking en het bekijken van analytics
+      <br>
+  </td>
+  <td>
+    <a href="acrobatsign/overview-sign.md">
+      <img alt="Acrobat Sign- API" src="assets/acrobatsigncard.png" />
+    </a>
+    <div>
+      <a href="acrobatsign/overview-sign.md"><strong> Acrobat Sign API </strong></a>
+      </div>
+      Integreer elektronische handtekeningen in je platform of applicatie
+      <br>
+  </td>
+   <td>
+    <a href="usecases/overview-usecases.md">
+      <img alt="Gebruiksscenario&apos;s Acrobat Services API" src="assets/usecasescard.png" />
+    </a>
+    <div>
+      </strong></a> Gevallen van het Gebruik van de Diensten van Acrobat API <a href="usecases/overview-usecases.md"><strong>
+      </div>
+      Verschillende gebruiksscenario's voor de Acrobat Services API
+      <br>
+  </td>
+</tr>
+</table>
