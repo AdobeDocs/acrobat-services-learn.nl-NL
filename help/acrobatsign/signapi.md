@@ -8,34 +8,34 @@ type: Tutorial
 jira: KT-8089
 thumbnail: KT-8089.jpg
 exl-id: ae1cd9db-9f00-4129-a2a1-ceff1c899a83
-source-git-commit: 2f01f306f5d13bfbaa61442e0e7a89537a62c33c
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
-source-wordcount: '2054'
-ht-degree: 2%
+source-wordcount: '1906'
+ht-degree: 0%
 
 ---
 
 # Aan de slag met de Adobe Sign API
 
-[ACROBAT SIGN API](https://www.adobe.io/apis/documentcloud/sign.html) is een fantastische manier om de manier waarop u ondertekende overeenkomsten beheert te verbeteren. Ontwikkelaars kunnen hun systemen eenvoudig integreren met de Sign-API, die een betrouwbare, eenvoudige manier biedt om documenten te uploaden, deze ter ondertekening te verzenden, herinneringen te verzenden en e-handtekeningen te verzamelen.
+[ Acrobat Sign API ](https://developer.adobe.com/adobesign-api/) is een grote manier om de manier te verbeteren u ondertekende overeenkomsten beheert. Ontwikkelaars kunnen hun systemen eenvoudig integreren met de Sign-API, die een betrouwbare, eenvoudige manier biedt om documenten te uploaden, deze ter ondertekening te verzenden, herinneringen te verzenden en e-handtekeningen te verzamelen.
 
 ## Wat je kunt leren
 
-In deze praktische zelfstudie wordt uitgelegd hoe ontwikkelaars Sign API kunnen gebruiken om toepassingen en workflows te verbeteren die zijn gemaakt met [!DNL Adobe Acrobat Services]. [!DNL Acrobat Services] include [Adobe PDF Services API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html), [Adobe PDF Embed-API](https://www.adobe.io/apis/documentcloud/viesdk) (gratis), en [Adobe-API voor documentgeneratie](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html).
+In deze praktische zelfstudie wordt uitgelegd hoe ontwikkelaars Sign API kunnen gebruiken om toepassingen en workflows te verbeteren die zijn gemaakt met [!DNL Adobe Acrobat Services] . [!DNL Acrobat Services] omvat [ de Diensten API van Adobe PDF ](https://developer.adobe.com/document-services/apis/pdf-services), [ Adobe PDF bedt API ](https://developer.adobe.com/document-services/apis/pdf-embed/) (vrij) in, en [ de Generatie API van het Document van de Adobe ](https://developer.adobe.com/document-services/apis/doc-generation).
 
-Leer meer bepaald hoe u de Acrobat Sign API in uw toepassing opneemt om handtekeningen en andere informatie te verzamelen, zoals werknemersinformatie op een verzekeringsformulier. Algemene stappen met vereenvoudigde HTTP-aanvragen en -reacties worden gebruikt. U kunt deze verzoeken in uw favoriete taal implementeren. U kunt een PDF maken met een combinatie van [[!DNL Acrobat Services] API&#39;s](https://www.adobe.io/apis/documentcloud/dcsdk/), uploadt u deze naar de Sign-API als een [voorbijgaand](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) documenten te verzenden en handtekeningen van eindgebruikers aan te vragen met de overeenkomst of [widget](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) workflow.
+Leer meer bepaald hoe u de Acrobat Sign API in uw toepassing opneemt om handtekeningen en andere informatie te verzamelen, zoals werknemersinformatie op een verzekeringsformulier. Algemene stappen met vereenvoudigde HTTP-aanvragen en -reacties worden gebruikt. U kunt deze verzoeken in uw favoriete taal implementeren. U kunt een PDF tot stand brengen gebruikend een combinatie [[!DNL Acrobat Services]  APIs ](https://developer.adobe.com/document-services/homepage/), uploadt het aan het Teken API als a [ voorbijgaande ](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/overview/terminology.md) document, en verzoek eindgebruikerhandtekeningen gebruikend de overeenkomst of [ widget ](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/overview/terminology.md) werkschema.
 
 ## Een PDF-document maken
 
-Maak eerst een Microsoft Word-sjabloon en sla deze op als een PDF. U kunt de pijplijn ook automatiseren met de API voor het genereren van documenten om een sjabloon te uploaden dat in Word is gemaakt en vervolgens een PDF-document te genereren. De API voor documentgeneratie maakt deel uit van [!DNL Acrobat Services], [gratis voor zes maanden en vervolgens &#39;pay-as-you-go&#39; voor slechts USD 0,05 per documenttransactie](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html).
+Maak eerst een Microsoft Word-sjabloon en sla deze op als een PDF. U kunt de pijplijn ook automatiseren met de API voor het genereren van documenten om een sjabloon te uploaden dat in Word is gemaakt en vervolgens een PDF-document te genereren. De Generatie API van het document maakt deel uit van [!DNL Acrobat Services], [ vrij voor zes maanden dan betaal-als-u-gaat voor enkel of $0.05 per documenttransactie ](https://developer.adobe.com/document-services/pricing/main).
 
 In dit voorbeeld is de sjabloon slechts een eenvoudig document met een paar ondertekenaarsvelden die u kunt invullen. Geef de velden nu een naam en voeg later de daadwerkelijke velden in deze zelfstudie in.
 
-![Screenshot van het verzekeringsformulier met een paar velden](assets/GSASAPI_1.png)
+![ Schermafbeelding van verzekeringsvorm met een paar gebieden ](assets/GSASAPI_1.png)
 
 ## Het geldige API-toegangspunt detecteren
 
-Voordat u gaat werken met de Sign-API, [een gratis ontwikkelaarsaccount maken](https://acrobat.adobe.com/ca/en/sign/developer-form.html) om de API te openen, test u de documentuitwisseling en -uitvoering en test u de e-mailfunctie.
+Alvorens met Teken API te werken, [ creeer een vrije ontwikkelaarrekening ](https://acrobat.adobe.com/ca/en/sign/developer-form.html) om tot API toegang te hebben, test uw documentuitwisseling en uitvoering, en test de e-maileigenschap.
 
 Adobe verspreidt de Acrobat Sign API over de hele wereld in veel implementaties die ‘shards’ worden genoemd. Elk shard dient de account van een klant, zoals NA1, NA2, NA3, EU1, JP1, AU1, IN1 en andere. De shard-namen komen overeen met geografische locaties. Deze shards vormen de basis-URI (toegangspunten) van de API-eindpunten.
 
@@ -65,7 +65,7 @@ In het bovenstaande voorbeeld is dit een reactie met de waarde als toegangspunt.
 
 Met Adobe Sign kunt u verschillende stromen maken die documenten voorbereiden voor ondertekening of gegevensverzameling. Ongeacht de stroom van uw toepassing, moet u eerst een document uploaden, dat slechts zeven dagen beschikbaar blijft. De volgende API-aanroepen moeten dan verwijzen naar dit tijdelijke document.
 
-Het document wordt met een verzoek van een POST geüpload naar de `/transientDocuments` eindpunt. De multipart-aanvraag bestaat uit de bestandsnaam, een bestandsstroom en het MIME-type (media) van het documentbestand. De eindpuntreactie bevat een id die het document identificeert.
+Het document wordt met een verzoek van de POST geüpload naar het eindpunt van `/transientDocuments` . De multipart-aanvraag bestaat uit de bestandsnaam, een bestandsstroom en het MIME-type (media) van het documentbestand. De eindpuntreactie bevat een id die het document identificeert.
 
 Bovendien kan uw toepassing een callback-URL opgeven die door Acrobat Sign wordt gepingeld, zodat de toepassing op de hoogte wordt gesteld wanneer het ondertekeningsproces is voltooid.
 
@@ -91,9 +91,9 @@ Bovendien kan uw toepassing een callback-URL opgeven die door Acrobat Sign wordt
 
 Webformulieren (voorheen ondertekeningswidgets genoemd) zijn gehoste documenten die iedereen die toegang heeft, kan ondertekenen. Voorbeelden van webformulieren zijn aanmeldingsformulieren, afstandsverklaringen en andere documenten die veel mensen online openen en ondertekenen.
 
-Als u een nieuw webformulier wilt maken met de Sign-API, moet u eerst een tijdelijk document uploaden. Het verzoek van de POST aan `/widgets` het eindpunt gebruikt het teruggekeerde `transientDocumentId` .
+Als u een nieuw webformulier wilt maken met de Sign-API, moet u eerst een tijdelijk document uploaden. Het verzoek van de POST aan het `/widgets` eindpunt gebruikt het teruggekeerde `transientDocumentId`.
 
-In dit voorbeeld is het webformulier `ACTIVE`, maar u kunt het maken in een van de volgende drie statussen:
+In dit voorbeeld is het webformulier `ACTIVE` , maar u kunt het maken in een van de volgende drie statussen:
 
 * CONCEPT — het webformulier stapsgewijs samenstellen
 
@@ -101,7 +101,7 @@ In dit voorbeeld is het webformulier `ACTIVE`, maar u kunt het maken in een van 
 
 * ACTIEF — om het webformulier direct te hosten
 
-De informatie over de deelnemers van het formulier moet ook worden gedefinieerd. De `memberInfos` eigenschap bevat gegevens over de deelnemers, zoals e-mail. Momenteel ondersteunt deze set niet meer dan één lid. Maar omdat de e-mail van de webformulierondertekenaar onbekend is op het moment dat u een webformulier maakt, moet de e-mail leeg blijven, zoals in het volgende voorbeeld. De `role` eigenschap definieert de rol die de leden in `memberInfos` (zoals de ONDERTEKENAAR en DE GOEDKEURER).
+De informatie over de deelnemers van het formulier moet ook worden gedefinieerd. De eigenschap `memberInfos` bevat gegevens over de deelnemers, zoals e-mail. Momenteel ondersteunt deze set niet meer dan één lid. Maar omdat de e-mail van de webformulierondertekenaar onbekend is op het moment dat u een webformulier maakt, moet de e-mail leeg blijven, zoals in het volgende voorbeeld. De eigenschap `role` definieert de rol die de leden in `memberInfos` (zoals SIGNER en APPROVER) hebben overgenomen.
 
 ```
   POST /api/rest/v6/widgets HTTP/1.1
@@ -135,13 +135,13 @@ De informatie over de deelnemers van het formulier moet ook worden gedefinieerd.
   }
 ```
 
-U kunt een webformulier maken als `DRAFT` of `AUTHORING`wijzigt u vervolgens de status wanneer het formulier door de toepassingspijplijn stroomt. Als u de status van een webformulier wilt wijzigen, raadpleegt u de [PUT/widgets/{widgetId}/state](https://secure.na4.adobesign.com/public/docs/restapi/v6#!/widgets/updateWidgetState) eindpunt.
+U kunt een webformulier maken als `DRAFT` of `AUTHORING` en vervolgens de status ervan wijzigen terwijl het formulier door de toepassingspijplijn loopt. Om een staat van de Vorm van het Web te veranderen, verwijs naar het [ PUT /widgets/{widgetId} /state ](https://secure.na4.adobesign.com/public/docs/restapi/v6#!/widgets/updateWidgetState) eindpunt.
 
 ## De webformulier-host-URL lezen
 
 De volgende stap bestaat uit het zoeken naar de URL die als host fungeert voor het webformulier. Het /widgets eindpunt wint een lijst van de gegevens van de Vorm van het Web, met inbegrip van ontvangen URL van de Vorm van het Web terug die u aan uw gebruikers door:sturen, om handtekeningen en andere vormgegevens te verzamelen.
 
-Dit eindpunt retourneert een lijst, zodat u het specifieke formulier kunt vinden op basis van de id in het dialoogvenster `userWidgetList` voordat u de URL ophaalt die als host fungeert voor het webformulier:
+Dit eindpunt retourneert een lijst, zodat u de specifieke vorm kunt vinden aan de hand van de id in de `userWidgetList` voordat u de URL ophaalt die als host fungeert voor de webvorm:
 
 ```
   GET /api/rest/v6/widgets HTTP/1.1
@@ -184,33 +184,33 @@ Dit eindpunt retourneert een lijst, zodat u het specifieke formulier kunt vinden
 
 Dit formulier is een PDF-document dat gebruikers kunnen invullen. U moet de editor van het formulier echter wel vertellen welke velden gebruikers moeten invullen en waar ze zich in het document bevinden:
 
-![Screenshot van het verzekeringsformulier met een paar velden](assets/GSASAPI_1.png)
+![ Schermafbeelding van verzekeringsvorm met een paar gebieden ](assets/GSASAPI_1.png)
 
 In het document hierboven worden de velden nog niet weergegeven. Ze worden toegevoegd tijdens het definiëren van de velden die de informatie van de ondertekenaar en hun grootte en positie verzamelen.
 
-Ga nu naar de [Webformulieren](https://secure.na4.adobesign.com/public/agreements/#agreement_type=webform) op de pagina &quot;Uw overeenkomsten&quot; en het formulier dat u hebt gemaakt.
+Nu, ga naar het [ lusje van de Vormen van het Web ](https://secure.na4.adobesign.com/public/agreements/#agreement_type=webform) op de &quot;Uw pagina van overeenkomsten&quot;en vind de vorm u creeerde.
 
-![Screenshot van het Acrobat Sign-beheertabblad](assets/GSASAPI_2.png)
+![ Screenshot van het Acrobat Sign leidt lusje ](assets/GSASAPI_2.png)
 
-![Screenshot van het Acrobat Sign-tabblad Beheren met webformulieren geselecteerd](assets/GSASAPI_3.png)
+![ Screenshot van het Acrobat Sign leidt geselecteerde lusje met de Vormen van het Web ](assets/GSASAPI_3.png)
 
-Klikken **Bewerken** om de documentbewerkingspagina te openen. De beschikbare vooraf gedefinieerde velden staan in het rechterdeelvenster.
+Klik **uitgeven** om het document te openen dat pagina uitgeeft. De beschikbare vooraf gedefinieerde velden staan in het rechterdeelvenster.
 
-![Screenshot van de Acrobat Sign-formulierontwerpomgeving](assets/GSASAPI_4.png)
+![ Schermafbeelding van het Acrobat Sign-formulierontwerpomgeving ](assets/GSASAPI_4.png)
 
-Met de editor kunt u tekst- en handtekeningvelden slepen en neerzetten. Nadat u alle vereiste velden hebt toegevoegd, kunt u deze vergroten, verkleinen en uitlijnen om het formulier te perfectioneren. Tot slot klikt u op **Opslaan** om het formulier te maken.
+Met de editor kunt u tekst- en handtekeningvelden slepen en neerzetten. Nadat u alle vereiste velden hebt toegevoegd, kunt u deze vergroten, verkleinen en uitlijnen om het formulier te perfectioneren. Tot slot klik **sparen** om de vorm tot stand te brengen.
 
-![Screenshot van de Acrobat Sign-formulierontwerpomgeving met toegevoegde formuliervelden](assets/GSASAPI_5.png)
+![ Schermafbeelding van de Acrobat Sign-formulierontwerpomgeving met toegevoegde formuliervelden ](assets/GSASAPI_5.png)
 
 ## Een webformulier verzenden voor ondertekening
 
 Nadat u het webformulier hebt voltooid, moet u het verzenden, zodat gebruikers het kunnen invullen en ondertekenen. Nadat u het formulier hebt opgeslagen, kunt u de URL en de ingesloten code weergeven en kopiëren.
 
-**URL van webformulier kopiëren**: gebruik deze URL om gebruikers naar een gehoste versie van deze overeenkomst te sturen voor revisie en ondertekening. Bijvoorbeeld:
+**Vorm URL van het Web van het Exemplaar**: gebruik dit URL om gebruikers naar een ontvangen versie van deze overeenkomst voor overzicht en handtekening te verzenden. Bijvoorbeeld:
 
 [https://secure.na4.adobesign.com/public/esignWidget?wid=CBFCIBAA3...babw\*](https://secure.na4.adobesign.com/public/esignWidget?wid=CBFCIBAA3AAABLblqZhCndYscuKcDMPiVfQlpaGPb-5D7ebE9NUTQ6x6jK7PIs8HCtTzr3HOx8U6D5qqbabw*)
 
-**Insluitcode webformulier kopiëren**: voeg de overeenkomst toe aan uw website door deze code te kopiëren en in uw HTML te plakken.
+**de Vorm van het Web van het Exemplaar bedt code** in: voeg de overeenkomst aan uw website toe door deze code te kopiëren en het in uw HTML te kleven.
 
 Bijvoorbeeld:
 
@@ -222,35 +222,35 @@ style="border: 0;
 overflow: hidden; min-height: 500px; min-width: 600px;"></iframe>
 ```
 
-![Screenshot van het definitieve webformulier](assets/GSASAPI_6.png)
+![ Screenshot van definitieve Vorm van het Web ](assets/GSASAPI_6.png)
 
 Wanneer uw gebruikers toegang krijgen tot de gehoste versie van uw formulier, bekijken ze het tijdelijke document dat eerst is geüpload met de velden die op de opgegeven positie staan.
 
-![Screenshot van het definitieve webformulier](assets/GSASAPI_7.png)
+![ Screenshot van definitieve Vorm van het Web ](assets/GSASAPI_7.png)
 
 De gebruiker vult vervolgens de velden in en ondertekent het formulier.
 
-![Screenshot van gebruiker die handtekeningveld selecteert](assets/GSASAPI_8.png)
+![ Schermafbeelding van gebruiker die het gebied van de Handtekening ](assets/GSASAPI_8.png) selecteert
 
 Vervolgens ondertekent uw gebruiker het document met een eerder opgeslagen handtekening of met een nieuwe handtekening.
 
-![Screenshot van ondertekeningservaring](assets/GSASAPI_9.png)
+![ Schermafbeelding van het ondertekenen ervaring ](assets/GSASAPI_9.png)
 
-![Schermafbeelding van handtekening](assets/GSASAPI_10.png)
+![ Schermafbeelding van handtekening ](assets/GSASAPI_10.png)
 
-Wanneer de gebruiker klikt **Toepassen**, geeft de Adobe hun de opdracht hun e-mail te openen en de handtekening te bevestigen. De handtekening blijft in behandeling totdat de bevestiging is ontvangen.
+Wanneer de gebruiker **** van toepassing is, instrueert de Adobe hen om hun e-mail te openen en de handtekening te bevestigen. De handtekening blijft in behandeling totdat de bevestiging is ontvangen.
 
-![Screenshot van nog een stap](assets/GSASAPI_11.png)
+![ Screenshot van Slechts één meer stap ](assets/GSASAPI_11.png)
 
 Deze verificatie voegt meervoudige verificatie toe en versterkt de beveiliging van het ondertekeningsproces.
 
-![Screenshot van bevestigingsbericht](assets/GSASAPI_12.png)
+![ Screenshot van bevestigingsbericht ](assets/GSASAPI_12.png)
 
-![Screenshot van bericht van voltooiing](assets/GSASAPI_13.png)
+![ Screenshot van voltooiingsbericht ](assets/GSASAPI_13.png)
 
 ## Voltooide webformulieren lezen
 
-Nu is het tijd om de formuliergegevens op te halen die gebruikers hebben ingevuld. De `/widgets/{widgetId}/formData` Hiermee haalt u gegevens op die de gebruiker in een interactief formulier heeft ingevoerd bij de ondertekening van het formulier.
+Nu is het tijd om de formuliergegevens op te halen die gebruikers hebben ingevuld. Met het eindpunt van `/widgets/{widgetId}/formData` haalt u de gegevens op die de gebruiker in een interactief formulier heeft ingevoerd bij de ondertekening van het formulier.
 
 ```
 GET /api/rest/v6/widgets/{widgetId}/formData HTTP/1.1
@@ -276,7 +276,7 @@ Als alternatief voor webformulieren kunt u overeenkomsten maken. In de volgende 
 
 Als u een document ter ondertekening of goedkeuring naar opgegeven ontvangers verzendt, wordt er een overeenkomst gemaakt. U kunt de status en voltooiing van een overeenkomst volgen met behulp van API&#39;s.
 
-U kunt een overeenkomst maken met een [tijdelijk document](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html), [bibliotheekdocument](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md), of URL. In dit voorbeeld is de overeenkomst gebaseerd op de `transientDocumentId`, net als het webformulier dat eerder is gemaakt.
+U kunt een overeenkomst tot stand brengen gebruikend a [ voorbijgaand document ](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html), [ bibliotheekdocument ](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md), of URL. In dit voorbeeld is de overeenkomst gebaseerd op de `transientDocumentId` , net als het eerder gemaakte webformulier.
 
 ```
 POST /api/rest/v6/agreements HTTP/1.1
@@ -317,7 +317,7 @@ In dit voorbeeld wordt de overeenkomst gemaakt als IN_PROCESS, maar u kunt de ov
 
 * IN_PROCESS — om de overeenkomst onmiddellijk te verzenden
 
-Als u een overeenkomststatus wilt wijzigen, gebruikt u de opdracht `PUT /agreements/{agreementId}/state` om een van de toegestane statusovergangen hieronder uit te voeren:
+Als u een overeenkomststatus wilt wijzigen, gebruikt u het eindpunt `PUT /agreements/{agreementId}/state` om een van de toegestane statusovergangen hieronder uit te voeren:
 
 * CONCEPT NAAR ONTWERPEN
 
@@ -325,7 +325,7 @@ Als u een overeenkomststatus wilt wijzigen, gebruikt u de opdracht `PUT /agreeme
 
 * IN_PROCES NAAR GEANNULEERD
 
-De `participantSetsInfo` eigenschap hierboven bevat e-mails van personen die geacht worden deel te nemen aan de overeenkomst en welke actie zij uitvoeren (ondertekenen, goedkeuren, erkennen, enzovoort). In het bovenstaande voorbeeld is er slechts één deelnemer: de ondertekenaar. Schriftelijke handtekeningen zijn beperkt tot vier per document.
+De eigenschap `participantSetsInfo` hierboven bevat e-mails van personen die geacht worden deel te nemen aan de overeenkomst en welke actie zij uitvoeren (ondertekenen, goedkeuren, erkennen, enzovoort). In het bovenstaande voorbeeld is er slechts één deelnemer: de ondertekenaar. Schriftelijke handtekeningen zijn beperkt tot vier per document.
 
 Wanneer u een overeenkomst maakt, verzendt de Adobe deze, in tegenstelling tot webformulieren, automatisch ter ondertekening. Het eindpunt retourneert de unieke id van de overeenkomst.
 
@@ -340,7 +340,7 @@ Wanneer u een overeenkomst maakt, verzendt de Adobe deze, in tegenstelling tot w
 
 ## Informatie over overeenkomstleden ophalen
 
-Als u een overeenkomst hebt gemaakt, kunt u de opdracht `/agreements/{agreementId}/members` eindpunt om informatie over leden van de overeenkomst op te halen. U kunt bijvoorbeeld controleren of een deelnemer de overeenkomst heeft ondertekend.
+Als u een overeenkomst hebt gemaakt, kunt u het eindpunt van `/agreements/{agreementId}/members` gebruiken om informatie over de leden van de overeenkomst op te halen. U kunt bijvoorbeeld controleren of een deelnemer de overeenkomst heeft ondertekend.
 
 ```
 GET /api/rest/v6/agreements/{agreementId}/members HTTP/1.1
@@ -383,9 +383,9 @@ De resulterende JSON-responsstructuur bevat informatie over de deelnemers.
 
 Afhankelijk van de bedrijfsregels kan een deadline deelnemers verhinderen de overeenkomst na een bepaalde datum te ondertekenen. Als de overeenkomst een vervaldatum heeft, kunt u deelnemers eraan herinneren dat die datum nadert.
 
-Gebaseerd op de informatie van de leden van de overeenkomst die u hebt ontvangen na de oproep aan de `/agreements/{agreementId}/members` in de laatste sectie kunt u e-mailherinneringen versturen aan alle deelnemers die de overeenkomst nog niet hebben ondertekend.
+Op basis van de informatie van de overeenkomstleden die u hebt ontvangen na het aanroepen van het `/agreements/{agreementId}/members` -eindpunt in de laatste sectie, kunt u e-mailherinneringen verzenden aan alle deelnemers die de overeenkomst nog steeds niet hebben ondertekend.
 
-Een verzoek van de POST aan de `/agreements/{agreementId}/reminders` Hiermee wordt een herinnering gemaakt voor de opgegeven deelnemers aan een overeenkomst die door de `agreementId` parameter.
+Een verzoek van de POST aan het `/agreements/{agreementId}/reminders` eindpunt leidt tot een herinnering voor de gespecificeerde deelnemers van een overeenkomst die door de `agreementId` parameter wordt geïdentificeerd.
 
 ```
 POST /agreements/{agreementId}/reminders HTTP/1.1
@@ -413,11 +413,11 @@ Accept: application/json
 
 Nadat u de herinnering hebt geplaatst, ontvangen de gebruikers een e-mail met de gegevens van de overeenkomst en een koppeling naar de overeenkomst.
 
-![Schermafbeelding van Herinneringsbericht](assets/GSASAPI_14.png)
+![ Schermafbeelding van Herinneringsbericht ](assets/GSASAPI_14.png)
 
 ## Voltooide overeenkomsten lezen
 
-Net als webformulieren kunt u gegevens lezen over overeenkomsten die de ontvangers hebben ondertekend. De `/agreements/{agreementId}/formData` het eindpunt wint gegevens terug die door de gebruiker werden ingegaan toen zij de Vorm van het Web ondertekenden.
+Net als webformulieren kunt u gegevens lezen over overeenkomsten die de ontvangers hebben ondertekend. Het `/agreements/{agreementId}/formData` eindpunt wint gegevens terug die door de gebruiker waren ingegaan toen zij de Vorm van het Web ondertekenden.
 
 ```
 GET /api/rest/v6/agreements/{agreementId}/formData HTTP/1.1
@@ -434,10 +434,10 @@ Company Name","CBJCHBCAABAA5Z84zy69q_Ilpuy5DzUAahVfcNZillDt"
 
 Met de Acrobat Sign API kunt u documenten, webformulieren en overeenkomsten beheren. De vereenvoudigde maar volledige workflows die zijn gemaakt met webformulieren en -overeenkomsten, worden op een algemene manier uitgevoerd, zodat ontwikkelaars ze in elke taal kunnen implementeren.
 
-Voor een overzicht van de werking van de Sign-API vindt u voorbeelden in het [Handleiding voor ontwikkelaars van API-gebruik](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/api_usage.md). Deze documentatie bevat korte artikelen over veel van de stappen die in het hele artikel worden gevolgd en andere gerelateerde onderwerpen.
+Voor een overzicht van hoe het Teken API werkt, kunt u voorbeelden in de [ Gids van de Ontwikkelaar van het Gebruik API van het Gebruik ](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/api_usage.md) vinden. Deze documentatie bevat korte artikelen over veel van de stappen die in het hele artikel worden gevolgd en andere gerelateerde onderwerpen.
 
-Acrobat Sign API is beschikbaar via verschillende lagen van [lidmaatschappen voor één en meerdere gebruikers voor elektronische ondertekening](https://acrobat.adobe.com/nl/nl/sign/pricing/plans.html), zodat je een prijsmodel kunt kiezen dat het best aansluit bij je behoeften. Nu je weet hoe eenvoudig het is om Sign API in je apps op te nemen, kun je geïnteresseerd zijn in andere functies zoals [Acrobat Sign Webhooks](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md), een op push-gebaseerd programmeermodel. In plaats van te vereisen dat uw app frequente controles uitvoert in Acrobat Sign-gebeurtenissen, kunt u met Webhooks een HTTP-URL registreren waarvoor de Sign-API een callback-aanvraag voor POSTEN uitvoert wanneer een gebeurtenis plaatsvindt. Webhooks bieden krachtige programmeermogelijkheden door uw toepassing te voorzien van real-time en onmiddellijke updates.
+Acrobat Sign API is beschikbaar door verscheidene lagen van [ enig en multiuser e-handtekeningsplannen ](https://acrobat.adobe.com/nl/nl/sign/pricing/plans.html), zodat kunt u een het tarief model kiezen dat het beste uw behoeften aanpast. Nu u weet hoe gemakkelijk het Sign API in uw apps moet opnemen, kunt u in andere eigenschappen zoals [ Acrobat Sign Webhooks ](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/webhooks.md), een op duw-gebaseerd programmeringsmodel geinteresseerd zijn. In plaats van te vereisen dat uw app frequente controles uitvoert in Acrobat Sign-gebeurtenissen, kunt u met Webhooks een HTTP-URL registreren waarvoor de Sign-API een callback-aanvraag voor POSTEN uitvoert wanneer een gebeurtenis plaatsvindt. Webhooks bieden krachtige programmeermogelijkheden door uw toepassing te voorzien van real-time en onmiddellijke updates.
 
-Bekijk de [pay-as-you-go-pricing](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html), voor wanneer uw gratis proefversie van de Adobe PDF Services API van zes maanden eindigt en de gratis Adobe PDF Embed-API.
+Controle uit [ betaal-als-u-gaat tarifering ](https://developer.adobe.com/document-services/pricing/main), voor wanneer uw zes maanden vrije API van de Diensten van Adobe PDF proef beëindigt, en vrije Adobe PDF Embed API.
 
-Ga aan de slag met [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html).
+Ga aan de slag met [[!DNL Adobe Acrobat Services] ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) als u geweldige functies wilt toevoegen, zoals het automatisch maken van documenten en het ondertekenen van documenten in uw app.

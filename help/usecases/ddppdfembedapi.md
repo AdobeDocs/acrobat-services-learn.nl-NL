@@ -8,41 +8,41 @@ type: Tutorial
 jira: KT-8090
 thumbnail: KT-8090.jpg
 exl-id: 3aa9aa40-a23c-409c-bc0b-31645fa01b40
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
-source-wordcount: '1903'
+source-wordcount: '1722'
 ht-degree: 0%
 
 ---
 
 # Digitale publicatie van documenten
 
-![Hoofdlettergebruik hoofdbanner gebruiken](assets/UseCaseDigitalHero.jpg)
+![ Hoofdletterbanner van het Gebruik ](assets/UseCaseDigitalHero.jpg)
 
-Elektronische documenten zijn overal — er zijn waarschijnlijk [biljoenen PDF](https://itextpdf.com/en/blog/technical-notes/do-you-know-how-many-pdf-documents-exist-world) wereldwijd, en dat aantal stijgt elke dag. Door een PDF-viewer in uw webpagina&#39;s in te sluiten, kunnen gebruikers documenten weergeven zonder uw HTML en CSS opnieuw te ontwerpen of de toegang tot uw website te belemmeren.
+Elektronische documenten zijn overal - in feite, zijn er waarschijnlijk [ biljoenen PDF ](https://itextpdf.com/en/blog/technical-notes/do-you-know-how-many-pdf-documents-exist-world) globaal, en dat aantal stijgt elke dag. Door een PDF-viewer in uw webpagina&#39;s in te sluiten, kunnen gebruikers documenten weergeven zonder uw HTML en CSS opnieuw te ontwerpen of de toegang tot uw website te belemmeren.
 
-Laten we een populair scenario onderzoeken. Een bedrijfspost [whitepapers op hun website](https://www.adobe.io/apis/documentcloud/dcsdk/digital-content-publishing.html)
-om context te bieden voor hun apps en services. De marketeer van de website wil beter begrijpen hoe gebruikers omgaan met hun op PDF gebaseerde content en deze integreren met hun webpagina en merk. Ze hebben besloten de whitepapers te publiceren als [gekleurde inhoud](https://whatis.techtarget.com/definition/gated-content-ungated-content#:~:text=Gated%20content%20is%20online%20materials,about%20their%20jobs%20and%20organizations.), bepaalt wie ze kan downloaden.
+Laten we een populair scenario onderzoeken. Een bedrijf post [ whitepapers op hun website ](https://developer.adobe.com/document-services/use-cases/content-publishing/digital-content-publishing)
+om context te bieden voor hun apps en services. De marketeer van de website wil beter begrijpen hoe gebruikers omgaan met hun op PDF gebaseerde content en deze integreren met hun webpagina en merk. Zij hebben beslist om de whitepapers als [ vergate inhoud ](https://whatis.techtarget.com/definition/gated-content-ungated-content#:~:text=Gated%20content%20is%20online%20materials,about%20their%20jobs%20and%20organizations.) te publiceren, die controleert wie hen kan downloaden.
 
 ## Wat je kunt leren
 
-Leer in deze praktische zelfstudie hoe u ingesloten PDF-documenten op webpagina&#39;s kunt weergeven met [Adobe PDF Embed-API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html), die gratis en gebruiksvriendelijk is. Deze voorbeelden maken gebruik van JavaScript, Node.js, Express.js, HTML en CSS. U kunt de volledige projectcode bekijken op [GitHub](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1).
+In dit hands-on leerprogramma, leer hoe te om ingebedde PDF documenten binnen Web-pagina&#39;s te tonen gebruikend [ Adobe PDF Embed API ](https://developer.adobe.com/document-services/apis/pdf-embed), die vrij en gemakkelijk is te gebruiken. Deze voorbeelden maken gebruik van JavaScript, Node.js, Express.js, HTML en CSS. U kunt de volledige projectcode op [ GitHub ](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1) bekijken.
 
 ## Relevante API&#39;s en bronnen
 
-* [PDF Embed-API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [ PDF bedt API ](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html) in
 
-* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [ de Diensten API van de PDF ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [Projectcode](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1)
+* [ code van het Project ](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1)
 
 ## Een Node Web-app maken
 
 Laten we beginnen met het maken van een site met Node.js en Express die een mooi uitziende sjabloon gebruikt en verschillende PDF voor downloaden biedt.
 
-Eerste, [Node.js downloaden en installeren](https://nodejs.org/en/download/).
+Eerst, [ download en installeer Node.js ](https://nodejs.org/en/download/).
 
-Om een project Node.js met een minimale structuur van de Webtoepassing gemakkelijk te creëren, installeer het hulpmiddel van de toepassingsgenerator `` `express-generator` ``.
+Als u een Node.js-project eenvoudig wilt maken met een minimale webtoepassingsstructuur, installeert u het hulpprogramma voor het genereren van de toepassing `` `express-generator` `` .
 
 ```
 npm install express-generator -g
@@ -67,41 +67,41 @@ Start vervolgens de lokale webserver en voer de toepassing uit.
 npm start
 ```
 
-Ten slotte opent u de website op <http://localhost:3000>.
+Ten slotte opent u de website op <http://localhost:3000> .
 
-![Schermafbeelding van basiswebsite](assets/ddp_1.png)
+![ Schermafbeelding van basiswebsite ](assets/ddp_1.png)
 
 U hebt nu een basiswebsite.
 
 ## Whitepaper-gegevens renderen
 
-Als u een whitepaper op de website wilt plaatsen, worden de gegevens van het whitepaper gedefinieerd en voorbereid op de website om deze documenten weer te geven. Maak eerst een nieuwe \\data-map in de hoofdmap van het project. De informatie over de beschikbare whitepapers is afkomstig uit een nieuw bestand met de naam [data.json](https://github.com/marcelooliveira/EmbedPDF/blob/main/pdf-app/data/data.json), die in de gegevensmap wordt geplaatst.
+Als u een whitepaper op de website wilt plaatsen, worden de gegevens van het whitepaper gedefinieerd en voorbereid op de website om deze documenten weer te geven. Maak eerst een nieuwe \\data-map in de hoofdmap van het project. De informatie over beschikbare whitepapers komt uit een nieuw dossier genoemd [ data.json ](https://github.com/marcelooliveira/EmbedPDF/blob/main/pdf-app/data/data.json), dat in de gegevensomslag wordt gezet.
 
-Installeer de [Bootstrap](https://getbootstrap.com/) en [Font Awesome](https://fontawesome.com/) front-end bibliotheken.
+Om Web app een aardig, verfijnd blik te geven, installeer de [ Bootstrap ](https://getbootstrap.com/) en [ Font Awesome ](https://fontawesome.com/) front-end bibliotheken.
 
 ```
 npm install bootstrap
 npm install font-awesome
 ```
 
-Open het bestand app.js en neem deze directory&#39;s op als bronnen voor statische bestanden, waarna ze na de bestaande `` `express.static` `` lijn.
+Open het bestand app.js en neem deze mappen op als bronnen voor statische bestanden, waarna ze na de bestaande `` `express.static` `` -regel komen te staan.
 
 ```
 app.use(express.static(path.join(__dirname, '/node_modules/bootstrap/dist')));
 app.use(express.static(path.join(__dirname, '/node_modules/font-awesome')));
 ```
 
-Als u de PDF-documenten wilt opnemen, maakt u een map met de naam \\pdfs onder de openbare map \\nvan het project. In plaats van de PDF en de miniaturen zelf te maken, kunt u ze vanuit deze [GitHub-opslagmap](https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app/public) naar de mappen \\pdfs en \\image.
+Als u de PDF-documenten wilt opnemen, maakt u een map met de naam \\pdfs onder de openbare map \\nvan het project. In plaats van het creëren van de PDF en de duimnagels door zich, kunt u hen van deze [ omslag van de bewaarplaats GitHub ](https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app/public) aan \ \ pdfs en \ \ \ beeldomslagen kopiëren.
 
 De map \\public\\pdfs bevat nu de PDF-documenten:
 
-![Schermafbeelding van PDF-bestandspictogrammen](assets/ddp_2.png)
+![ Schermafbeelding van de pictogrammen van het PDF-bestand ](assets/ddp_2.png)
 
 De map \\public\\images moet de miniaturen bevatten voor elk van de PDF-documenten:
 
-![Screenshot van PDF miniaturen](assets/ddp_3.png)
+![ Schermafbeelding van de miniaturen van PDF ](assets/ddp_3.png)
 
-Open nu het bestand \\routes\\index.js dat de logica voor het routeren van de startpagina bevat. Als u de whitepaper-gegevens uit het bestand data.json wilt gebruiken, moet u de module Node.js laden die verantwoordelijk is voor de toegang tot en interactie met het bestandssysteem. Vervolgens declareert u de `fs` constante in de eerste regel van het bestand \\routes\\index.js, als volgt:
+Open nu het bestand \\routes\\index.js dat de logica voor het routeren van de startpagina bevat. Als u de whitepaper-gegevens uit het bestand data.json wilt gebruiken, moet u de module Node.js laden die verantwoordelijk is voor de toegang tot en interactie met het bestandssysteem. Declareer vervolgens als volgt de `fs` -constante in de eerste regel van het bestand \\routes\\index.js:
 
 ```
 const fs = require('fs');
@@ -120,31 +120,31 @@ Pas nu de regel aan om de rendermethode voor de indexweergave aan te roepen, waa
 res.render('index', { title: 'Embedding PDF', papers: papers });
 ```
 
-Als u de verzameling whitepapers op de startpagina wilt renderen, opent u het bestand \\views\\index.ejs en vervangt u de bestaande code door de code van het project [indexbestand](https://github.com/marcelooliveira/EmbedPDF/blob/main/pdf-app/views/index.ejs).
+Om de inzameling van whitepapers op de homepage terug te geven, open het \ \ \ meningen \ \ \ index.ejs- dossier en vervang de bestaande code met de code van het 0} {indexdossier van uw project ](https://github.com/marcelooliveira/EmbedPDF/blob/main/pdf-app/views/index.ejs).[
 
-Start en open npm opnieuw <http://localhost:3000> om uw verzameling beschikbare whitepapers te bekijken.
+Start en open <http://localhost:3000> nogmaals om uw verzameling beschikbare whitepapers weer te geven.
 
-![Screenshot van miniaturen voor whitepapers](assets/ddp_4.png)
+![ Schermafbeelding van duimnagels voor whitepapers ](assets/ddp_4.png)
 
-In de volgende secties wordt de website verbeterd en wordt [PDF Embed-API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) om de PDF-documenten op de webpagina weer te geven. PDF Embed API is gratis te gebruiken — je hoeft alleen maar een API-referentie te verkrijgen.
+In de volgende secties impliceren het verbeteren van de website en het gebruiken van [ PDF bed API ](https://developer.adobe.com/document-services/apis/pdf-embed) in om de documenten van de PDF te tonen de Web-pagina. PDF Embed API is gratis te gebruiken — je hoeft alleen maar een API-referentie te verkrijgen.
 
 ## Een PDF Embed API-referentie ophalen
 
-Ga voor een gratis PDF Embed API-referentie naar het [Aan de slag](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) pagina na aanmelding voor een nieuwe account of aanmelden bij uw bestaande account.
+Om een vrije PDF te krijgen bedt API geloofsbrieven in, bezoek de [ Begonnen ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) pagina na het registreren voor een nieuwe rekening of het programma openen aan uw bestaand rekening.
 
-Klikken **Nieuwe referenties maken** en dan **Aan de slag:**
+Klik **creëren Nieuwe Geloofsbrieven** en dan **begin:**
 
-![Screenshot van hoe u nieuwe referenties kunt maken](assets/ddp_5.png)
+![ Screenshot van hoe te om nieuwe geloofsbrieven ](assets/ddp_5.png) te creëren
 
 U wordt nu gevraagd u in te schrijven voor een gratis account als u er geen hebt.
 
-Selecteren **PDF Embed-API** en typ vervolgens uw aanmeldingsnaam en toepassingsdomein. Gebruik de **localhost** domein omdat de webtoepassing lokaal is getest.
+Selecteer **PDF bed API** in, dan typ uw geloofsbrieven naam en toepassingsdomein. Gebruik het **localhost** domein wegens het testen van Webtoepassing plaatselijk.
 
-![Screenshot van het maken van nieuwe referenties voor PDF Embed API](assets/ddp_6.png)
+![ Screenshot van het creëren van nieuwe geloofsbrieven voor PDF bed API ](assets/ddp_6.png) in
 
-Klik op de knop **Referenties maken** om uw aanmeldingsgegevens voor de PDF te openen en de client-id (API KEY) op te halen.
+Klik **creeer Referenties** knoop om tot uw geloofsbrieven van de PDF toegang te hebben en identiteitskaart van de Cliënt (SLEUTEL API) te krijgen.
 
-![Screenshot van hoe u nieuwe referenties kopieert](assets/ddp_7.png)
+![ Screenshot van hoe te om nieuwe geloofsbrieven te kopiëren ](assets/ddp_7.png)
 
 Maak in uw Node.js-project een bestand met de naam .ENV in de hoofdmap van de toepassing en declareer de omgevingsvariabele voor uw PDF Embed Client ID met de waarde van de API KEY-referentie uit de vorige stap.
 
@@ -166,19 +166,19 @@ require('dotenv').config();
 
 ## PDF weergeven in de webapp
 
-Gebruik nu PDF Embed API om PDF op de site weer te geven. Live openen [Demo van PDF Embed-API](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf).
+Gebruik nu PDF Embed API om PDF op de site weer te geven. Open de levende [ PDF bed API Demo ](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) in.
 
-![Screenshot van live PDF Embed API-demo](assets/ddp_8.png)
+![ Screenshot van live PDF Embed API Demo ](assets/ddp_8.png)
 
 In het linkerdeelvenster kunt u de insluitmodus kiezen die het best aansluit bij de behoeften van uw website:
 
-* **Volledig venster**: de PDF bestrijkt alle webpaginaruimte
+* **Volledig Venster**: de PDF behandelt al Web-pagina ruimte
 
-* **Container in grootte**: de PDF wordt weergegeven binnen de webpagina, één pagina tegelijk, in een div met beperkte grootte
+* **Geplaatste Container**: de vertoningen van de PDF binnen webpage, één pagina tegelijkertijd, in div met beperkte grootte
 
-* **In-line**: de volledige PDF wordt weergegeven in een div-element binnen de webpagina
+* **in-lijn**: de volledige vertoningen van de PDF in div binnen webpage
 
-* **Lichtbak**: de PDF wordt weergegeven als een laag boven op uw webpagina
+* **Lichtbak**: de PDF toont als laag bovenop uw webpage
 
 Het wordt aanbevolen de insluitmodus in de regel te gebruiken voor witboeken en de codegenerator later om een PDF in de toepassing in te sluiten.
 
@@ -293,15 +293,15 @@ res.render('in-line', { title: paper.title, paper: paper });
 module.exports = router;
 ```
 
-Kijk opnieuw naar de [live demo](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) om PDF Embed-API-code automatisch te genereren. Klikken **In-line** in het linkerdeelvenster:
+Bekijk opnieuw de [ levende demo ](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) om PDF te produceren sluit API code automatisch in. Klik **in-Lijn** van het linkerpaneel:
 
-![Screenshot van live PDF Embed API-demo](assets/ddp_8.png)
+![ Screenshot van live PDF Embed API Demo ](assets/ddp_8.png)
 
-Klikken **Code genereren** om de HTML-code te zien die is vereist voor het weergeven van een viewer voor de PDF van een container in grootte.
+Klik **produceer Code** om de code te zien van de HTML die wordt vereist om een Geschikte kijker van de PDF van de Container te tonen.
 
-![Screenshot van codevoorvertoning](assets/ddp_9.png)
+![ Screenshot van codevoorproef ](assets/ddp_9.png)
 
-Klikken **Code kopiëren** en plak de code in het bestand in line.ejs.
+Klik **Code van het Exemplaar** en kleef de code in het in-line.ejs- dossier.
 
 ```
 <div>
@@ -341,17 +341,17 @@ embedMode: "IN_LINE"
 </script>
 ```
 
-Voer de toepassing nu uit met de opdracht voor het starten van de npm en open de website op <http://localhost:3000>.
+Voer de toepassing nu uit met de npm-startopdracht en open de website op <http://localhost:3000> .
 
-![Schermafbeelding van miniaturen van PDF-wit papier](assets/ddp_10.png)
+![ Schermafbeelding van PDF witte papierminiaturen ](assets/ddp_10.png)
 
-Tot slot kiest u één witboek en klikt u op **Document weergeven** om een nieuwe pagina te openen met de inline ingesloten PDF:
+Tot slot kies één wit document en klik **Document van de Mening** om een nieuwe pagina met de in-lijn ingebedde PDF te openen:
 
-![Screenshot van PDF whitepaper ](assets/ddp_11.png)
+![ Screenshot van PDF whitepaper ](assets/ddp_11.png)
 
 Houd er rekening mee dat de opties Download PDF en Print PDF nu beschikbaar zijn.
 
-![Screenshot van download- en afdrukopties](assets/ddp_12.png)
+![ Schermafbeelding van download en drukopties ](assets/ddp_12.png)
 
 Je wilt deze vlaggen aan de achterkant controleren. Later kunt u vergunningscontroles uitvoeren die op gebruikersidentiteit worden gebaseerd en toegang beperken volgens uw bedrijfsregels. Die complexiteit is hier niet nodig. Laten we \\routes\\in-line.js aanpassen om de geverifieerde eigenschappen en machtigingseigenschappen op te nemen in het modelobject.
 
@@ -386,7 +386,7 @@ showFullScreen: false
 
 Voer vervolgens de toepassing opnieuw uit om te zien hoe deze wijziging wordt weergegeven in de PDF Viewer.
 
-![Schermafbeelding van PDF-bestand](assets/ddp_13.png)
+![ Screenshot van het dossier van PDF ](assets/ddp_13.png)
 
 ## Gated-inhoud maken
 
@@ -522,11 +522,11 @@ showFullScreen: <%= permissions.showFullScreen %>
 </html>
 ```
 
-![Schermafbeelding van inhoud vastzetten](assets/ddp_14.png)
+![ Screenshot van het opmaken van inhoud ](assets/ddp_14.png)
 
 Site-bezoekers hebben nu alleen toegang tot PDF nadat ze hun gegevens hebben verzonden:
 
-![Screenshot van PDF-inhoud in ingesloten viewer](assets/ddp_15.png)
+![ Schermafbeelding van de inhoud van de PDF in ingebedde kijker ](assets/ddp_15.png)
 
 ## Gebeurtenissen inschakelen
 
@@ -545,18 +545,18 @@ console.log(event);
 
 Voer nu de toepassing opnieuw uit en open de ontwikkelprogramma&#39;s van uw webbrowser om de gebeurtenisgegevens te zien.
 
-![Schermafbeelding van code](assets/ddp_16.png)
+![ Screenshot van code ](assets/ddp_16.png)
 
-U kunt deze gegevens verzenden naar [Adobe Analytics](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=view) of andere analytics-tools.
+U kunt deze gegevens naar [ Adobe Analytics ](https://developer.adobe.com/document-services/docs/overview/pdf-embed-api) of andere analytics hulpmiddelen verzenden.
 
 ## Volgende stappen
 
-[!DNL Acrobat Services] API’s helpen ontwikkelaars om eenvoudig digitale-publicatieproblemen op te lossen met behulp van een op PDF gerichte workflow. U hebt gezien hoe u een voorbeeldNode-webapp kunt maken om een verzameling whitepapers weer te geven. Vervolgens verwerft u een [gratis API-referentie](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) en de ingebouwde beperkte toegang tot de whitepapers, die in één van vier kan worden getoond [insluitmodi](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf).
+Met API&#39;s van [!DNL Acrobat Services] kunnen ontwikkelaars eenvoudig digitale-publicatieproblemen oplossen met behulp van een workflow op basis van PDF. U hebt gezien hoe u een voorbeeldNode-webapp kunt maken om een verzameling whitepapers weer te geven. Dan, verkrijg a [ vrije API referentie ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) en bouwde beperkte toegang tot de whitepapers, die in één van vier [ kan worden getoond bedt wijzen ](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) in.
 
-Als u deze workflow samenbrengt, helpt het [hypothetische marketeer](https://www.adobe.io/apis/documentcloud/dcsdk/digital-content-publishing.html) contactgegevens voor leads verzamelen in ruil voor downloads voor artikelen en statistieken bekijken over wie met de PDF communiceert. U kunt deze functies in uw website opnemen om de betrokkenheid van gebruikers te stimuleren en te controleren.
+Het samenbrengen van dit werkschema helpt de [ hypothetische marketeer ](https://developer.adobe.com/document-services/use-cases/content-publishing/digital-content-publishing) leadcontactinformatie in ruil voor whitepaper downloads verzamelen en statistieken bekijken over wie met de PDF in wisselwerking staat. U kunt deze functies in uw website opnemen om de betrokkenheid van gebruikers te stimuleren en te controleren.
 
-Als je een Angular of React ontwikkelaar bent, kun je je best doen [extra monsters](https://github.com/adobe/pdf-embed-api-samples) PDF Embed API integreren met React- en Angular-projecten.
+Als u een Angular of React ontwikkelaar bent, zou u van het proberen [ extra steekproeven ](https://github.com/adobe/pdf-embed-api-samples) kunnen genieten die hoe te om PDF inbedden API met React en de projecten van de Angular te integreren.
 
-Met Adobe kun je je complete klantervaring opbouwen met innovatieve oplossingen. Uitchecken [Adobe PDF Embed-API](https://www.adobe.io/apis/documentcloud/viesdk) gratis. Om te ontdekken wat je nog meer kunt doen, probeer je de Adobe PDF Services API met [pay-as-you-gopr](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)[ijsvorming](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html).
+Met Adobe kun je je complete klantervaring opbouwen met innovatieve oplossingen. Controle uit [ Adobe PDF bedt API ](https://developer.adobe.com/document-services/apis/pdf-embed/) gratis in. Om te onderzoeken wat anders u kunt doen, probeer de Diensten API van Adobe PDF met [ betaal-als-u-gopr ](https://developer.adobe.com/document-services/pricing/main) [ icing ](https://developer.adobe.com/document-services/pricing/main).
 
-[Aan de slag](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) met [!DNL Adobe Acrobat Services] API&#39;s van vandaag.
+[ begin ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) met [!DNL Adobe Acrobat Services] APIs vandaag.

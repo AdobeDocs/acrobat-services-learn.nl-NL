@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8093
 thumbnail: KT-8093.jpg
 exl-id: 2f2bf1c2-1b33-4eee-9fd2-5d0b77e6b0a9
-source-git-commit: c74a36116349490af29e66fd81ad59c93174c258
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 0%
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 Financiële, educatieve, marketing- en andere industrieën gebruiken PDF om data te delen met hun klanten en stakeholders. Met PDF kun je eenvoudig rijke documenten met tabellen, afbeeldingen en interactieve content delen in een indeling die iedereen kan bekijken. Met API&#39;s van [!DNL Adobe Acrobat Services] kunnen deze bedrijven deelbare PDF-rapporten genereren vanuit Microsoft Word, Microsoft Excel, afbeeldingen en andere verschillende documentindelingen.
 
-Zeg u [ in werking stelt een sociaal media volgend bedrijf ](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html). Je klanten melden zich aan bij een met een wachtwoord beveiligd deel van je site om hun campagneanalytics te bekijken. Vaak willen ze deze statistieken delen met hun leidinggevenden, aandeelhouders, donoren of andere belanghebbenden. Downloadbare PDF-documenten zijn een fantastische manier voor je klanten om getallen, grafieken en meer te delen.
+Zeg u [ in werking stelt een sociaal media volgend bedrijf ](https://developer.adobe.com/document-services/use-cases/content-publishing/on-demand-report-creation). Je klanten melden zich aan bij een met een wachtwoord beveiligd deel van je site om hun campagneanalytics te bekijken. Vaak willen ze deze statistieken delen met hun leidinggevenden, aandeelhouders, donoren of andere belanghebbenden. Downloadbare PDF-documenten zijn een fantastische manier voor je klanten om getallen, grafieken en meer te delen.
 
-Door [ de Diensten API van de PDF ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) in uw website op te nemen, kunt u PDF rapporten voor elke klant onderweg produceren. Je kunt PDF maken en deze vervolgens combineren in één handig rapport dat je klanten kunnen downloaden en doorgeven aan hun stakeholders.
+Door [ de Diensten API van de PDF ](https://developer.adobe.com/document-services/apis/pdf-services) in uw website op te nemen, kunt u PDF rapporten voor elke klant onderweg produceren. Je kunt PDF maken en deze vervolgens combineren in één handig rapport dat je klanten kunnen downloaden en doorgeven aan hun stakeholders.
 
 ## Wat je kunt leren
 
@@ -92,7 +92,7 @@ Gebruik de PDF Services SDK om de PDF-rapporten te maken op basis van uw gegeven
 $ npm install --save @adobe/documentservices-pdftools-node-sdk
 ```
 
-Alvorens te beginnen, moet u API geloofsbrieven hebben, [ vrij van Adobe ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred). Gebruik uw [!DNL Acrobat Services] rekening [ vrij voor zes maanden dan betaal-als-u-gaat ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) voor enkel \$0.05 per documenttransactie.
+Alvorens te beginnen, moet u API geloofsbrieven hebben, [ vrij van Adobe ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred). Gebruik uw [!DNL Acrobat Services] rekening [ vrij voor zes maanden dan betaal-als-u-gaat ](https://developer.adobe.com/document-services/pricing/main) voor enkel \$0.05 per documenttransactie.
 
 Download het archiefbestand en extraheer het JSON-bestand voor referenties en de persoonlijke sleutel. In het voorbeeldproject plaatst u het bestand in de map src.
 
@@ -217,6 +217,6 @@ Je klanten van het dashboard voor social media kunnen nu relevante rapporten van
 
 Deze hands=on tutorial ging door hoe te om PDF Services API te gebruiken om klanten te helpen relevante rapporten als makkelijk te delen PDF downloaden. U hebt een Node.js-toepassing gemaakt om de kracht van de PDF Services-API voor PDF-rapportage en -leesservices weer te geven. De toepassing laat zien hoe uw klanten één rapportdocument downloaden of meerdere documenten combineren en samenvoegen tot één PDF-rapport.
 
-Deze Adobe-aangedreven toepassing helpt uw [ klanten van het sociale media dashboard ](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html) en deelt de rapporten die zij hebben nodig, zonder zich het zorgen te maken als de ontvangers allemaal Microsoft Office of andere software hebben die op hun apparaat wordt geïnstalleerd. U kunt dezelfde technieken gebruiken in uw eigen toepassing om uw gebruikers te helpen documenten weer te geven, te combineren en te downloaden. Of bekijk de vele andere API’s van de Adobe om handtekeningen toe te voegen en bij te houden, en nog veel meer.
+Deze Adobe-aangedreven toepassing helpt uw [ klanten van het sociale media dashboard ](https://developer.adobe.com/document-services/use-cases/content-publishing/on-demand-report-creation) en deelt de rapporten die zij hebben nodig, zonder zich het zorgen te maken als de ontvangers allemaal Microsoft Office of andere software hebben die op hun apparaat wordt geïnstalleerd. U kunt dezelfde technieken gebruiken in uw eigen toepassing om uw gebruikers te helpen documenten weer te geven, te combineren en te downloaden. Of bekijk de vele andere API’s van de Adobe om handtekeningen toe te voegen en bij te houden, en nog veel meer.
 
-Om aan de slag te gaan, claimt u uw gratis [[!DNL Adobe Acrobat Services] ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) -account en creëert u vervolgens aansprekende rapportage-ervaringen voor uw werknemers en klanten. Geniet van uw rekening voor zes maanden toen [ betaal-als-u-gaat ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) aangezien uw marketinginspanningen, enkel \$0.05 per documenttransactie uitbreiden.
+Om aan de slag te gaan, claimt u uw gratis [[!DNL Adobe Acrobat Services] ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) -account en creëert u vervolgens aansprekende rapportage-ervaringen voor uw werknemers en klanten. Geniet van uw rekening voor zes maanden toen [ betaal-als-u-gaat ](https://developer.adobe.com/document-services/pricing/main) aangezien uw marketinginspanningen, enkel \$0.05 per documenttransactie uitbreiden.

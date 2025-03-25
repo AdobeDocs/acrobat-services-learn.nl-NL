@@ -8,40 +8,40 @@ type: Tutorial
 jira: KT-8095
 thumbnail: KT-8095.jpg
 exl-id: a22230b5-1ff2-4870-84da-f06a904c99e1
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
-source-wordcount: '1364'
-ht-degree: 1%
+source-wordcount: '1298'
+ht-degree: 0%
 
 ---
 
 # Zoeken en indexeren
 
-![Hoofdlettergebruik hoofdbanner gebruiken](assets/UseCaseSearchingHero.jpg)
+![ Hoofdletterbanner van het Gebruik ](assets/UseCaseSearchingHero.jpg)
 
-Organisaties moeten hun papieren documenten en gescande bestanden vaak digitaliseren. Overweeg dit [scenario](https://docs.google.com/document/d/11jZdVQAw-3fyE3Y-sIqFFTlZ4m02LsCC/edit). Een advocatenkantoor heeft duizenden juridische contracten die ze hebben gescand om digitale bestanden te maken. Zij willen bepalen of een van deze juridische overeenkomsten een bepaalde clausule bevat of een aanvulling vormt op de bepalingen die zij moeten herzien. Nauwkeurigheid is noodzakelijk voor nalevingsdoeleinden. De oplossing is het inventariseren van de digitale documenten, het doorzoeken van de tekst en het maken van een index om deze informatie te vinden.
+Organisaties moeten hun papieren documenten en gescande bestanden vaak digitaliseren. Overweeg dit [ scenario ](https://docs.google.com/document/d/11jZdVQAw-3fyE3Y-sIqFFTlZ4m02LsCC/edit). Een advocatenkantoor heeft duizenden juridische contracten die ze hebben gescand om digitale bestanden te maken. Zij willen bepalen of een van deze juridische overeenkomsten een bepaalde clausule bevat of een aanvulling vormt op de bepalingen die zij moeten herzien. Nauwkeurigheid is noodzakelijk voor nalevingsdoeleinden. De oplossing is het inventariseren van de digitale documenten, het doorzoeken van de tekst en het maken van een index om deze informatie te vinden.
 
 De uitdaging om digitale archieven te creëren om informatie voor het uitgeven of stroomafwaartse verrichtingen terug te winnen is een nachtmerrie voor de meeste organisaties.
 
 ## Wat je kunt leren
 
-In deze praktische zelfstudie wordt uitgelegd hoe [!DNL Adobe Acrobat Services] API&#39;s zijn functies en kunnen gemakkelijk worden gebruikt om documenten te archiveren en te digitaliseren. U verkent deze functies door een Express NodeJS-toepassing te ontwikkelen en vervolgens [!DNL Acrobat Services] API&#39;s voor archivering, digitalisering en documenttransformatie.
+In deze praktische zelfstudie wordt uitgelegd hoe de functies van [!DNL Adobe Acrobat Services] API&#39;s werken en eenvoudig kunnen worden gebruikt om documenten te archiveren en te digitaliseren. U verkent deze functies door een Express NodeJS-toepassing te maken en vervolgens [!DNL Acrobat Services] -API&#39;s te integreren voor archivering, digitalisering en documenttransformatie.
 
-Om te volgen, moet je [Node.js](https://nodejs.org/) geïnstalleerd en een basiskennis van Node.js en [ES6-syntaxis](https://www.w3schools.com/js/js_es6.asp).
+Om te volgen, hebt u ](https://nodejs.org/) geïnstalleerd 0} Node.js en een basisbegrip van Node.js en [ ES6 syntaxis ](https://www.w3schools.com/js/js_es6.asp) nodig.[
 
 ## Relevante API&#39;s en bronnen
 
-* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [ de Diensten API van de PDF ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [Projectcode](https://github.com/agavitalis/AdobeDocumentServicesAPIs.git)
+* [ code van het Project ](https://github.com/agavitalis/AdobeDocumentServicesAPIs.git)
 
 ## Projectinstelling
 
-Stel eerst de mapstructuur voor de toepassing in. U kunt de broncode ophalen [hier](https://github.com/agavitalis/AdobeDocumentAPI.git).
+Stel eerst de mapstructuur voor de toepassing in. U kunt de broncode [ hier terugwinnen ](https://github.com/agavitalis/AdobeDocumentAPI.git).
 
 ## Directorystructuur
 
-Maak een map met de naam AdobeDocumentServicesAPI&#39;s en open deze in een editor naar keuze. Maak een basistoepassing van NodeJS met de `npm init` gebruiken met deze mapstructuur:
+Maak een map met de naam AdobeDocumentServicesAPI&#39;s en open deze in een editor naar keuze. Maak een basisNodeJS-toepassing met de opdracht `npm init` aan de hand van deze mapstructuur:
 
 ```
 AdobeDocumentServicesAPIs
@@ -123,7 +123,7 @@ Ensure that the content of your package.json file is similar to this code snippe
 
 Deze codefragmenten installeren de toepassingsgebiedsdelen, met inbegrip van de de sjabloonmotor van Handlebars voor de mening. In de scripttag configureert u de runtimeparameters van de toepassing.
 
-## Integreren [!DNL Acrobat Services] API&#39;s
+## [!DNL Acrobat Services] API&#39;s integreren
 
 [!DNL Acrobat Services] bevat drie API&#39;s:
 
@@ -135,21 +135,21 @@ Deze codefragmenten installeren de toepassingsgebiedsdelen, met inbegrip van de 
 
 Deze API&#39;s automatiseren het genereren, manipuleren en transformeren van PDF-inhoud via een set cloudgebaseerde webservices.
 
-Om de referenties te verkrijgen, moet u [registreren](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) en voltooi de workflow. PDF Insluiter-API is gratis. De PDF Services API en de Document Generation API zijn zes maanden gratis. Wanneer je proefperiode eindigt, kun je [pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) bij slechts USD 0,05 per documenttransactie. Je betaalt alleen als je bedrijf groeit en meer contracten verwerkt.
+Om de geloofsbrieven te krijgen moet u [ registreren ](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) en het werkschema voltooien. PDF Insluiter-API is gratis. De PDF Services API en de Document Generation API zijn zes maanden gratis. Wanneer uw proef beëindigt, kunt u [ betalen-als-u-gaat ](https://developer.adobe.com/document-services/pricing/main) bij slechts $0.05 per documenttransactie. Je betaalt alleen als je bedrijf groeit en meer contracten verwerkt.
 
-![Screenshot van het maken van referenties](assets/searching_1.png)
+![ Screenshot van het creëren van geloofsbrieven ](assets/searching_1.png)
 
 Nadat u de aanmelding hebt voltooid, wordt er een codevoorbeeld gedownload naar uw pc met uw API-referenties. Extraheer dit codevoorbeeld en plaats de bestanden private.key en pdftools-api-credentials.json in de hoofdmap van uw toepassing.
 
-Nu installeren [PDF Services Node.js SDK](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk) door de ` npm install --save @adobe/documentservices-pdftools-node-sdk ` gebruiken in de hoofdmap van de toepassing.
+Nu, installeer [ PDF Services Node.js SDK ](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk) door het ` npm install --save @adobe/documentservices-pdftools-node-sdk ` bevel in werking te stellen gebruikend de terminal in de wortelfolder van de toepassing.
 
 ## Een PDF maken
 
-[!DNL Acrobat Services] ondersteunt het maken van PDF uit Microsoft Office-documenten (Word, Excel en PowerPoint) en andere [ondersteunde bestandsindelingen](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf) zoals .txt, .rtf, .bmp, .jpg, .gif, .tiff en .png.
+[!DNL Acrobat Services] steunt de verwezenlijking van PDF van de documenten van Microsoft Office (Word, Excel, en PowerPoint) en andere [ gesteunde dossierformaten ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf) zoals .txt, .rtf, .bmp, .jpg, .gif, .tiff, en .png.
 
-Als u PDF-documenten wilt maken van de ondersteunde bestandsindelingen, gebruikt u dit formulier om de documenten te uploaden. U hebt toegang tot de HTML- en CSS-bestanden voor het formulier op [GitHub](https://github.com/agavitalis/AdobeDocumentServicesAPIs.git).
+Als u PDF-documenten wilt maken van de ondersteunde bestandsindelingen, gebruikt u dit formulier om de documenten te uploaden. U kunt tot de HTML en CSS dossiers voor de vorm op [ GitHub ](https://github.com/agavitalis/AdobeDocumentServicesAPIs.git) toegang hebben.
 
-![Screenshot van het webformulier](assets/searching_2.png)
+![ Screenshot van de Webvorm ](assets/searching_2.png)
 
 Voeg nu de volgende codefragmenten toe aan het bestand controllers/createPDFController.js. Met deze code wordt het document opgehaald en omgezet in een PDF.
 
@@ -209,7 +209,7 @@ console.log('Exception encountered while executing operation', err);
 module.exports = { createPDF, createPDFPost };
 ```
 
-Dit codefragment vereist [PDF Services Node.js SDK](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk). Gebruik de functies:
+Dit codefragment vereist [ PDF Services Node.js SDK ](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk). Gebruik de functies:
 
 * createPDF, waarin het geüploade documentformulier wordt weergegeven
 
@@ -219,7 +219,7 @@ De getransformeerde PDF-documenten worden opgeslagen in de uitvoermap, terwijl h
 
 ## Tekstherkenning gebruiken
 
-OCR (optische tekenherkenning) converteert afbeeldingen en gescande documenten naar doorzoekbare bestanden. U kunt [!DNL Acrobat Services] API&#39;s, afbeeldingen en gescande documenten naar doorzoekbare PDF. Nadat u een OCR-bewerking hebt uitgevoerd, kunt u het bestand bewerken en doorzoeken. U kunt de inhoud van het bestand opslaan in een gegevensopslagruimte voor indexering en andere toepassingen.
+OCR (optische tekenherkenning) converteert afbeeldingen en gescande documenten naar doorzoekbare bestanden. U kunt API&#39;s, afbeeldingen en gescande documenten van [!DNL Acrobat Services] omzetten in doorzoekbare PDF. Nadat u een OCR-bewerking hebt uitgevoerd, kunt u het bestand bewerken en doorzoeken. U kunt de inhoud van het bestand opslaan in een gegevensopslagruimte voor indexering en andere toepassingen.
 
 Herinneren dat het zoeken en indexeren van gescande documenten essentieel is voor veel organisaties waar bestandsbeheer en informatieverwerking essentieel zijn. De OCR-functie elimineert deze uitdagingen.
 
@@ -227,7 +227,7 @@ Om deze functie te implementeren, moet u een uploadformulier ontwerpen dat verge
 
 Hier is het uploadformulier voor dit voorbeeld:
 
-![Schermafbeelding van formulier om bestanden te uploaden](assets/searching_3.png)
+![ Schermafbeelding van formulier om bestanden te uploaden ](assets/searching_3.png)
 
 Als u nu de geüploade PDF wilt bewerken en enkele OCR-bewerkingen wilt uitvoeren, voegt u het codefragment hieronder toe aan het bestand controllers/makeOCRController.js. Deze code implementeert het OCR-proces op een geüpload bestand en slaat het bestand vervolgens op in het bestandssysteem van uw toepassing.
 
@@ -317,11 +317,11 @@ console.log('Exception encountered while executing operation', err);
 module.exports = { makeOCR, makeOCRPost };
 ```
 
-Je hebt de [!DNL Acrobat Services] Node SDK en de modules mongans, pdf-parse en fs en uw documentmodelschema. Deze modules zijn nodig om de inhoud van het getransformeerde bestand op te slaan in een MongoDB-database.
+U hebt de SDK van [!DNL Acrobat Services] Node en de modules mongans, pdf-parse en fs en het schema van uw documentmodel nodig. Deze modules zijn nodig om de inhoud van het getransformeerde bestand op te slaan in een MongoDB-database.
 
 Maak nu twee functies: maak OCR om het geüploade formulier weer te geven en maak vervolgens OCRPost om het geüploade document te verwerken. Sla het oorspronkelijke formulier op in een database en sla het getransformeerde formulier vervolgens op in de uitvoermap van uw toepassing.
 
-De door Adobe verschafte gegevens uit het bestand pdftools-api-credentials.json worden in elk geval geladen voordat het bestand wordt getransformeerd.
+De door de Adobe verschafte gegevens uit het bestand pdftools-api-credentials.json worden in elk geval geladen voordat het bestand wordt getransformeerd.
 
 >[!NOTE]
 >
@@ -361,11 +361,11 @@ module.exports = mongoose.model("document", DocumentSchema);
 
 Nu implementeert u een eenvoudige zoekfunctie waarmee gebruikers eenvoudige tekstzoekopdrachten kunnen uitvoeren. U kunt ook downloadfuncties toevoegen om het downloaden van PDF-bestanden mogelijk te maken.
 
-Voor deze functionaliteit zijn een eenvoudig formulier en eenvoudige kaarten nodig om het zoekresultaat weer te geven. U vindt de ontwerpen voor het formulier en de kaarten op [GitHub](https://github.com/agavitalis/AdobeDocumentServicesAPIs.git).
+Voor deze functionaliteit zijn een eenvoudig formulier en eenvoudige kaarten nodig om het zoekresultaat weer te geven. U kunt de ontwerpen voor de vorm en de kaarten op [ GitHub ](https://github.com/agavitalis/AdobeDocumentServicesAPIs.git) vinden.
 
 De onderstaande schermafbeelding illustreert de zoekfunctie en de zoekresultaten. U kunt alle zoekresultaten downloaden.
 
-![Screenshot van zoekfuncties](assets/searching_4.png)
+![ Schermafbeelding van onderzoekseigenschappen ](assets/searching_4.png)
 
 Als u de zoekfunctie wilt implementeren, maakt u een bestand searchController.js in de controllermap van uw toepassing en plakt u het onderstaande codefragment:
 
@@ -422,13 +422,13 @@ res.download(download.link);
 
 ## Volgende stappen
 
-In deze praktische zelfstudie integreerde je [!DNL Acrobat Services] API&#39;s veranderen in een Node.js-toepassing en gebruiken de API ook om een documenttransformatie te implementeren waarmee bestanden worden omgezet in PDF. U hebt een OCR-functie toegevoegd waarmee afbeeldingen en gescande bestanden doorzoekbaar zijn. Vervolgens hebt u de bestanden in een map opgeslagen zodat ze kunnen worden gedownload.
+In deze praktische zelfstudie integreerde u [!DNL Acrobat Services] API&#39;s in een Node.js-toepassing en gebruikte u de API ook om een documenttransformatie te implementeren waarmee bestanden worden omgezet in PDF. U hebt een OCR-functie toegevoegd waarmee afbeeldingen en gescande bestanden doorzoekbaar zijn. Vervolgens hebt u de bestanden in een map opgeslagen zodat ze kunnen worden gedownload.
 
 Vervolgens hebt u een zoekfunctie toegevoegd om de documenten die zijn geconverteerd naar tekst te doorzoeken op OCR. Tot slot hebt u een downloadfunctie geïmplementeerd waarmee u deze bestanden gemakkelijk kunt downloaden. Met uw voltooide toepassing kan een juridisch bedrijf veel gemakkelijker specifieke tekst zoeken en verwerken.
 
-Gebruiken [!DNL Acrobat Services] voor documenttransformatie wordt sterk aanbevolen vanwege de robuustheid en gebruiksgemak in vergelijking met andere services. U kunt snel een account maken om te kunnen genieten van de functies van [!DNL Acrobat Services] API&#39;s voor documenttransformatie en -beheer.
+Het gebruik van [!DNL Acrobat Services] voor documenttransformatie wordt ten zeerste aanbevolen vanwege de robuustheid en gebruiksvriendelijkheid in vergelijking met andere services. U kunt snel een account maken waarmee u kunt profiteren van de functies van [!DNL Acrobat Services] API&#39;s voor documenttransformatie en -beheer.
 
-Nu je een goed begrip hebt van hoe je kunt gebruiken [!DNL Acrobat Services] API’s, kun je met oefening je vaardigheden verder ontwikkelen. U kunt de opslagplaats klonen die in deze zelfstudie wordt gebruikt en experimenteren met enkele van de vaardigheden die u zojuist hebt geleerd. Nog beter: u kunt proberen deze toepassing opnieuw samen te stellen terwijl u de onbeperkte mogelijkheden van [!DNL Acrobat Services] API&#39;s.
+Nu u een goed inzicht hebt in het gebruik van [!DNL Acrobat Services] API&#39;s, kunt u uw vaardigheden verder ontwikkelen met oefening. U kunt de opslagplaats klonen die in deze zelfstudie wordt gebruikt en experimenteren met enkele van de vaardigheden die u zojuist hebt geleerd. Nog beter, u kunt proberen om deze toepassing opnieuw op te bouwen terwijl u de onbeperkte mogelijkheden van [!DNL Acrobat Services] API&#39;s onderzoekt.
 
-Klaar om het delen en reviseren van documenten in uw eigen app in te schakelen? Meld u aan voor uw [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
-ontwikkelaarsaccount. Geniet van een gratis proefversie van zes maanden, en [pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) voor slechts \$0,05 per documenttransactie wanneer uw bedrijf groeit.
+Klaar om het delen en reviseren van documenten in uw eigen app in te schakelen? Meld u aan voor uw [[!DNL Adobe Acrobat Services] ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
+ontwikkelaarsaccount. Geniet van een zes maanden vrije proef, dan [ betaal-als-u-gaat ](https://developer.adobe.com/document-services/pricing/main) voor enkel \$0.05 per documenttransactie aangezien uw zaken groeit.

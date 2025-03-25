@@ -8,16 +8,16 @@ type: Tutorial
 jira: KT-8098
 thumbnail: KT-8098.jpg
 exl-id: f4ec0182-a46e-43aa-aea3-bf1d19f1a4ec
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 3%
+source-wordcount: '1072'
+ht-degree: 0%
 
 ---
 
 # Een NDA maken
 
-![Hoofdlettergebruik hoofdbanner gebruiken](assets/UseCaseNDAHero.jpg)
+![ Hoofdletterbanner van het Gebruik ](assets/UseCaseNDAHero.jpg)
 
 Organisaties werken samen met externe medewerkers om hun services en producten te bouwen. Een geheimhoudingsovereenkomst (NDA) is een belangrijk onderdeel van deze samenwerking. Het verplicht alle partijen om vertrouwelijke informatie vrij te geven die een van beide entiteiten zou kunnen schaden.
 
@@ -25,21 +25,21 @@ De meest gebruikte NDA-indeling is een PDF-document. Organisaties stellen een ND
 
 ## Wat je kunt leren
 
-In deze praktische zelfstudie wordt uitgelegd hoe u een speciale Microsoft Word NDA-sjabloon voor uw bedrijf kunt maken. Adobe, invoegtoepassing voor Microsoft [Tagger voor het genereren van Adobe-documenten](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo), voegt &quot;tags&quot; in om de dynamische waarden in te voeren. Leer hoe u de JSON-gegevens aan de sjabloon doorgeeft en een dynamische PDF maakt. De resulterende PDF kan aan uw medewerkers in hun browser worden gemaild of getoond, afhankelijk van uw bedrijfsvereisten en doelstellingen. Als je mee wilt doen, heb je slechts een kleine ervaring nodig met Node.js, JavaScript, Express.js, HTML en CSS.
+In deze praktische zelfstudie wordt uitgelegd hoe u een speciale Microsoft Word NDA-sjabloon voor uw bedrijf kunt maken. De vrije toe:voegen-binnen van de Adobe voor Microsoft Word, {Tagger van de Generatie van het Document van 0}, neemt &quot;markeringen&quot;op om de dynamische waarden in te voeren. [](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo) Leer hoe u de JSON-gegevens aan de sjabloon doorgeeft en een dynamische PDF maakt. De resulterende PDF kan aan uw medewerkers in hun browser worden gemaild of getoond, afhankelijk van uw bedrijfsvereisten en doelstellingen. Als je mee wilt doen, heb je slechts een kleine ervaring nodig met Node.js, JavaScript, Express.js, HTML en CSS.
 
 ## Relevante API&#39;s en bronnen
 
-Met [!DNL Adobe Acrobat Services]kunt u PDF-documenten direct genereren met behulp van dynamische gegevens. [!DNL Acrobat Services] biedt een reeks PDF-tools, waaronder de API voor het genereren van Adobe-documenten om te automatiseren [NDA maken](https://www.adobe.io/apis/documentcloud/dcsdk/nda-creation.html).
+Met [!DNL Adobe Acrobat Services] kunt u direct PDF-documenten genereren met behulp van dynamische gegevens. [!DNL Acrobat Services] biedt een reeks hulpmiddelen van de PDF, met inbegrip van de Generatie API van het Document van de Adobe aan om [ verwezenlijking NDA ](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/nda-creation) te automatiseren.
 
-* [Adobe-API voor documentgeneratie](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
+* [ de Generatie API van het Document van de Adobe ](https://developer.adobe.com/document-services/apis/doc-generation)
 
-* [Adobe Sign-API](https://www.adobe.io/apis/documentcloud/sign.html)
+* [ Adobe Sign API ](https://developer.adobe.com/adobesign-api/)
 
-* [Tagger voor het genereren van Adobe-documenten](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)
+* [ Tagger van de Generatie van het Document van de Adobe ](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)
 
-* [Projectcode](https://github.com/afzaal-ahmad-zeeshan/adobe-docugen-sample)
+* [ code van het Project ](https://github.com/afzaal-ahmad-zeeshan/adobe-docugen-sample)
 
-* [[!DNL Acrobat Services] toetsen](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred)
+* [[!DNL Acrobat Services]  sleutels ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred)
 
 ## Het JSON-model maken
 
@@ -73,31 +73,31 @@ U gebruikt deze structuur in Microsoft Word om een sjabloon te genereren. Deze g
 
 ## De Microsoft Word-sjabloon maken
 
-Maak de NDA-sjabloon in een Microsoft Word-document. Adobe PDF Services API verwacht dat het Microsoft Word-document codes bevat waarin de service waarden uit JSON-documenten kan inspuiten. Hoewel de sjabloon hetzelfde is voor alle aanvragen om Adobe, veranderen de dynamische gegevens in JSON. Deze tags helpen in dit geval bij het maken van PDF-documenten voor elke leverancier, door gebruik te maken van één Microsoft Word-sjabloon en het proces te versnellen door het genereren van NDA-documenten te automatiseren.
+Maak de NDA-sjabloon in een Microsoft Word-document. Adobe PDF Services API verwacht dat het Microsoft Word-document codes bevat waarin de service waarden uit JSON-documenten kan inspuiten. Hoewel de sjabloon hetzelfde is voor alle aanvragen tot Adobe, veranderen de dynamische gegevens in JSON. Deze tags helpen in dit geval bij het maken van PDF-documenten voor elke leverancier, door gebruik te maken van één Microsoft Word-sjabloon en het proces te versnellen door het genereren van NDA-documenten te automatiseren.
 
-U kunt de [gratis invoegtoepassing voor het genereren van documenten](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo) naar Microsoft Word. Als u deel uitmaakt van een organisatie, kunt u uw Microsoft Office-beheerder vragen de gratis invoegtoepassing voor iedereen te installeren.
+U kunt de [ vrije Tagger van de Generatie van het Document toe:voegen-binnen ](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo) aan Microsoft Word installeren. Als u deel uitmaakt van een organisatie, kunt u uw Microsoft Office-beheerder vragen de gratis invoegtoepassing voor iedereen te installeren.
 
-Als u de invoegtoepassing hebt geïnstalleerd, vindt u deze op het tabblad Start onder de categorie Adobe. Als u het tabblad wilt openen, selecteert u **Documenten genereren**:
+Als u de invoegtoepassing hebt geïnstalleerd, vindt u deze op het tabblad Start onder de categorie Adobe. Om het lusje te openen, selecteer **de Generatie van het Document**:
 
-![Schermafbeelding van de invoegtoepassing voor documentgeneratie in Word](assets/nda_1.png)
+![ Schermafbeelding van de invoegtoepassing voor documentgeneratie in Word ](assets/nda_1.png)
 
 Binnen het tabblad kunt u het JSON-voorbeelddocument uploaden. Dit document kan een voorbeeld zijn, omdat u het alleen gebruikt om een Microsoft Word-sjabloon te maken.
 
-![Screenshot van voorbeeldgegevens in Document Generation add-in](assets/nda_2.png)
+![ Schermafbeelding van steekproefgegevens in toe:voegen-binnen de Generatie van het Document ](assets/nda_2.png)
 
-Selecteren **Labels genereren** om items weer te geven die u binnen uw sjabloon kunt gebruiken. Hier volgen de eigenschappen die uit de JSON-structuur zijn geëxtraheerd en klaar zijn voor gebruik in de sjabloon:
+Selecteer **produceer Markeringen** om punten te bekijken u binnen uw malplaatje kunt gebruiken. Hier volgen de eigenschappen die uit de JSON-structuur zijn geëxtraheerd en klaar zijn voor gebruik in de sjabloon:
 
-![Screenshot van tekstlabels in Document Generation add-in](assets/nda_3.png)
+![ Schermafbeelding van tekstmarkeringen in toe:voegen-binnen de Generatie van het Document ](assets/nda_3.png)
 
-Dit zijn de functies van het `authorizedSigner` veld. Andere velden worden omlopen en u kunt de weergave in Microsoft Word uitbreiden. De invoegtoepassing biedt ook geavanceerde gegevensopties, zoals tabellen, lijsten, berekende waarden en meer.
+Dit zijn de functies in het veld `authorizedSigner` . Andere velden worden omlopen en u kunt de weergave in Microsoft Word uitbreiden. De invoegtoepassing biedt ook geavanceerde gegevensopties, zoals tabellen, lijsten, berekende waarden en meer.
 
 ## Tags maken
 
-Maak een sjabloon of importeer een [bestaand sjabloon](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade) naar Microsoft Word. Nadat u het document hebt ingesteld, kunt u codes toevoegen aan elk veld door op de bijbehorende tokens in de invoegtoepassing te klikken.
+Voel vrij om een malplaatje te creëren of een [ bestaand malplaatje ](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade) in Microsoft Word in te voeren. Nadat u het document hebt ingesteld, kunt u codes toevoegen aan elk veld door op de bijbehorende tokens in de invoegtoepassing te klikken.
 
 De volgende sjabloon in een Microsoft Word-bestand:
 
-![Screenshot van voorbeeldsjabloon](assets/nda_4.png)
+![ Screenshot van steekproefmalplaatje ](assets/nda_4.png)
 
 Dit bestand bevat verschillende tags. Wanneer u het programma uitvoert, worden deze velden gevuld met de leveranciersinformatie.
 
@@ -123,7 +123,7 @@ In de voorbeeldtoepassing hebt u mappen voorbereid voor de invoer en uitvoer. Zo
 
 Deze code genereert de volgende gebruikersinterface (UI) in de browser:
 
-![Screenshot van de Create NDA-gebruikersinterface](assets/nda_5.png)
+![ Screenshot van Create NDA gebruikersinterface ](assets/nda_5.png)
 
 Als de beheerder een persoon selecteert, gebruikt de app Adobe PDF Services om onderweg de NDA te genereren.
 
@@ -171,23 +171,23 @@ res.status(500).render("crash", { error: error });
 }
 ```
 
-U kunt [de volledige voorbeeldcode](https://github.com/afzaal-ahmad-zeeshan/adobe-docugen-sample) op GitHub.
+U kunt [ de volledige steekproefcode ](https://github.com/afzaal-ahmad-zeeshan/adobe-docugen-sample) op GitHub bekijken.
 
-Deze code gebruikt een JSON-document en de Microsoft Word-sjabloon in de API-aanroep naar de [!DNL Adobe Acrobat Services] SDK. In het antwoord ontvangt u de uitvoer en slaat u deze op in het bestandssysteem van de app. U kunt het gegenereerde document via e-mail doorsturen naar uw klanten of ze met de gratis [Adobe PDF Embed-API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
+Deze code gebruikt een JSON-document en de Microsoft Word-sjabloon in de API-aanroep naar de [!DNL Adobe Acrobat Services] SDK. In het antwoord ontvangt u de uitvoer en slaat u deze op in het bestandssysteem van de app. U kunt het geproduceerde document door:sturen aan uw cliënten via e-mail of hen een voorproef tonen binnen browser gebruikend vrije [ Adobe PDF inbedt API ](https://developer.adobe.com/document-services/apis/pdf-embed).
 
 Met deze aanroep wordt het volgende NDA-document gemaakt:
 
-![Screenshot van de NDA-documentvoorvertoning](assets/nda_6.png)
+![ Screenshot van de NDA documentvoorproef ](assets/nda_6.png)
 
 [!DNL Adobe Acrobat Services] API&#39;s voegen inhoud in om een PDF-document te maken. Zonder deze hulpmiddelen, zou u de code kunnen moeten schrijven om de documenten van het Bureau te verwerken en met ruwe PDF dossierformaten te werken. Met behulp van Adobe PDF Services kunt u al deze stappen uitvoeren met één API-aanroep.
 
-Nu gebruiken [ADOBE SIGN API](https://www.adobe.io/apis/documentcloud/sign.html) om handtekeningen op te vragen bij de NDA&#39;s en het definitieve, ondertekende document aan alle partijen te leveren. Adobe Sign waarschuwt u [met een webhook](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md). Als u luistert naar deze webhook, kunt u de status van de NDA ophalen.
+Gebruik nu [ Adobe Sign API ](https://developer.adobe.com/adobesign-api/) om handtekeningen op NDAs te verzoeken en het definitieve, ondertekende document aan alle partijen te leveren. Adobe Sign brengt u [ op de hoogte gebruikend een Webhook ](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/webhooks.md). Als u luistert naar deze webhook, kunt u de status van de NDA ophalen.
 
-Voor een nadere uitleg van het Adobe Sign-proces: [raadpleeg de documentatie](https://www.adobe.io/apis/documentcloud/sign/docs.html) of lees dit uitgebreide blogbericht.
+Voor een diepere verklaring van het proces van Adobe Sign, [ raadpleeg de documentatie ](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html) of lees dit diepgaande blogpost.
 
 ## Volgende stappen
 
-In deze praktische zelfstudie werd de Adobe-documentgeneratietag gebruikt om PDF-documenten dynamisch te genereren met Microsoft Word-sjablonen en JSON-gegevensbestanden. Dankzij de invoegtoepassing [automatisch NDA&#39;s maken](https://www.adobe.io/apis/documentcloud/dcsdk/nda-creation.html) worden aangepast voor elke partij en verzamel vervolgens handtekeningen met de Sign-API.
+In deze praktische zelfstudie werd de Adobe voor documentgeneratie gebruikt om PDF-documenten dynamisch te genereren met Microsoft Word-sjablonen en JSON-gegevensbestanden. De toe:voegen-binnen hielp aan [ automatisch NDAs ](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/nda-creation) te creëren die voor elke partij wordt aangepast, dan verzamel handtekeningen gebruikend Teken API.
 
-U kunt deze technieken gebruiken om dynamisch uw eigen NDA&#39;s of andere documenten te maken, waardoor uw team tijd heeft om zich te concentreren op productief werk. Verkennen [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) om API&#39;s en SDK&#39;s voor uw taal en runtime van uw keuze te vinden, zodat u PDF-functies rechtstreeks aan uw toepassingen kunt toevoegen om snel PDF-documenten te maken. [Aan de slag](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) met een gratis proefversie van zes maanden
-[pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) voor slechts USD 0,05 per documenttransactie.
+U kunt deze technieken gebruiken om dynamisch uw eigen NDA&#39;s of andere documenten te maken, waardoor uw team tijd heeft om zich te concentreren op productief werk. Ontdek [[!DNL Adobe Acrobat Services] ](https://developer.adobe.com/document-services/apis/pdf-services) om API&#39;s en SDK&#39;s te zoeken voor uw taal en runtime van uw keuze, zodat u rechtstreeks PDF-functies aan uw toepassingen kunt toevoegen om snel PDF-documenten te maken. [ begin ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) met een zes maanden vrije proef toen
+[ betaal-als-u-gaat ](https://developer.adobe.com/document-services/pricing/main) voor slechts $0.05 per documenttransactie.

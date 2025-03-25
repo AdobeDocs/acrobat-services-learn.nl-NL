@@ -9,7 +9,7 @@ jira: KT-7473
 thumbnail: KT-7473.jpg
 keywords: Aanbevolen
 exl-id: 44a03420-e963-472b-aeb8-290422c8d767
-source-git-commit: f8a31b8f98d99bf1f3787e0f0f19cc9f26e24d8d
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 0%
@@ -32,7 +32,7 @@ In deze praktische zelfstudie leert u hoe u PDF-services kunt toevoegen aan een 
 
 * [ PDF bedt API ](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html) in
 
-* [ Adobe Sign API ](https://www.adobe.io/apis/documentcloud/sign.html)
+* [ Adobe Sign API ](https://developer.adobe.com/adobesign-api/)
 
 * [ code van het Project ](https://github.com/adobe/pdftools-node-sdk-samples)
 
@@ -294,7 +294,7 @@ Voeg op de pagina die de PDF weergeeft een `<div />` -element toe om het documen
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 ```
 
-Het laatste stukje code dat u nodig hebt, is een functie waarmee het document wordt weergegeven nadat de Adobe PDF Embed API JavaScript is geladen. Als u een melding ontvangt dat het script is geladen via een gebeurtenis adobe_dc_view\_sdk.ready, maakt u een nieuw object AdobeDC.View. Voor dit object zijn uw Client-id en de id van het element nodig die u eerder hebt gemaakt. Vind uw cliëntidentiteitskaart in de [ Console van de Ontwikkelaar van Adobe ](https://console.adobe.io/). Wanneer u de instellingen voor de toepassing bekijkt die u eerder hebt gemaakt toen u referenties genereerde, wordt de client-id daar weergegeven.
+Het laatste stukje code dat u nodig hebt, is een functie waarmee het document wordt weergegeven nadat de Adobe PDF Embed API JavaScript is geladen. Als u een melding ontvangt dat het script is geladen via een gebeurtenis adobe_dc_view\_sdk.ready, maakt u een nieuw object AdobeDC.View. Voor dit object zijn uw Client-id en de id van het element nodig die u eerder hebt gemaakt. Vind uw cliëntidentiteitskaart in de [ Console van de Ontwikkelaar van Adobe ](https://developer.adobe.com/console/). Wanneer u de instellingen voor de toepassing bekijkt die u eerder hebt gemaakt toen u referenties genereerde, wordt de client-id daar weergegeven.
 
 ![ Beeld van API Sleutel van de Cliënt ](assets/AWNjs_6.png)
 
@@ -312,7 +312,7 @@ U kunt verschillende opties in- en uitschakelen en direct zien hoe ze worden ger
 
 Zodra een document klaar is, kunt u digitale handtekeningen toevoegen voor goedkeuring met behulp van Adobe Sign. Deze functionaliteit werkt iets anders dan de functionaliteit die u tot nu toe hebt gebruikt. Voor digitale handtekeningen moet een toepassing zijn geconfigureerd om OAuth te gebruiken voor gebruikersverificatie.
 
-De eerste stap in vestiging moet uw toepassing [ uw toepassing ](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md) registreren om OAuth voor Adobe Sign te gebruiken. Zodra ondertekend, navigeer aan het scherm voor het creëren van toepassingen door op *Account* te klikken, dan open de *Adobe Sign API* sectie, en klik *API Toepassingen* om de lijst van geregistreerde toepassingen te openen.
+De eerste stap in vestiging moet uw toepassing [ uw toepassing ](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md) registreren om OAuth voor Adobe Sign te gebruiken. Zodra ondertekend, navigeer aan het scherm voor het creëren van toepassingen door op *Account* te klikken, dan open de *Adobe Sign API* sectie, en klik *API Toepassingen* om de lijst van geregistreerde toepassingen te openen.
 
 ![ Beeld van eerste stap in het registreren van uw toepassing ](assets/AWNjs_9.png)
 
@@ -519,4 +519,4 @@ Zoals u kunt zien aan de snelle start en de meegeleverde code, kunt u eenvoudig 
 
 Om het vereiste werkingsgebied voor een vraag te ontdekken, of te zien hoe de vraag wordt gebouwd, kunt u steekproefvraag van de [ Rest API documentatie ](https://secure.na4.adobesign.com/public/docs/restapi/v6) bouwen. [ QuickStart ](https://github.com/adobe/pdftools-node-sdk-samples) toon ook andere functionaliteit en dossierformaten de [!DNL Adobe Acrobat Services] APIs processen aan.
 
-U kunt een groot aantal PDF-mogelijkheden aan uw toepassingen toevoegen, waardoor uw gebruikers hun documenten snel en eenvoudig kunnen bekijken en ondertekenen, en nog veel meer. Om te beginnen, controleer [[!DNL Adobe Acrobat Services] ](https://www.adobe.io/apis/documentcloud/dcsdk/) vandaag.
+U kunt een groot aantal PDF-mogelijkheden aan uw toepassingen toevoegen, waardoor uw gebruikers hun documenten snel en eenvoudig kunnen bekijken en ondertekenen, en nog veel meer. Om te beginnen, controleer [[!DNL Adobe Acrobat Services] ](https://developer.adobe.com/document-services/homepage/) vandaag.

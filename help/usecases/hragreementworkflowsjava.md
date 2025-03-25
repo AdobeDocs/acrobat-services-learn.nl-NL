@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7474
 thumbnail: KT-7474.jpg
 exl-id: add4cc5c-06e3-4ceb-930b-e8c9eda5ca1f
-source-git-commit: ad13c28a0c218fc0027afc02445e5ed532c2340d
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1777'
 ht-degree: 0%
@@ -29,7 +29,7 @@ In deze praktische zelfstudie leert u hoe u een webgebaseerd HR-formulier implem
 
 * [ de Diensten API van de PDF ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [ Adobe Sign API ](https://www.adobe.io/apis/documentcloud/sign.html)
+* [ Adobe Sign API ](https://developer.adobe.com/adobesign-api/)
 
 * [ code van het Project ](https://github.com/dawidborycki/adobe-sign)
 
@@ -392,9 +392,9 @@ Als u een verificatietoken wilt verkrijgen, moet u verschillende stappen uitvoer
 
 Eerst, registreer a [ ontwikkelaarrekening ](https://acrobat.adobe.com/nl/nl/sign/developer-form.html).
 
-Creeer de toepassing van de CLIENT in het [ portaal van Adobe Sign ](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
+Creeer de toepassing van de CLIENT in het [ portaal van Adobe Sign ](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 
-Vorm OAuth voor de toepassing zoals beschreven [ hier ](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) en [ hier ](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp). Noteer de client-ID en het clientgeheim. Vervolgens kunt u `https://www.google.com` gebruiken als de Redirect URI en de volgende bereiken:
+Vorm OAuth voor de toepassing zoals beschreven [ hier ](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) en [ hier ](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp). Noteer de client-ID en het clientgeheim. Vervolgens kunt u `https://www.google.com` gebruiken als de Redirect URI en de volgende bereiken:
 
 * user_login: self
 
@@ -602,4 +602,4 @@ Zoals u kunt zien, kunt u met de snelstartfunctie een eenvoudig webformulier imp
 
 In het volgende voorbeeld kunt u ontvangers van formulieren maken die op afstand en veilig kunnen ondertekenen. Als je meerdere handtekeningen nodig hebt, kun je zelfs automatisch formulieren doorsturen naar een reeks personen in een workflow. Je werknemersonboarding is verbeterd en je HR-afdeling zal van je houden.
 
-Bekijk [[!DNL Adobe Acrobat Services] ](https://www.adobe.io/apis/documentcloud/dcsdk/) om een groot aantal PDF-mogelijkheden aan uw toepassingen toe te voegen.
+Bekijk [[!DNL Adobe Acrobat Services] ](https://developer.adobe.com/document-services/homepage/) om een groot aantal PDF-mogelijkheden aan uw toepassingen toe te voegen.
