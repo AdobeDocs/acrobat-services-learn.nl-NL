@@ -23,4 +23,4 @@ Leer hoe u een toegangstoken genereert dat kan worden gebruikt met de Acrobat Si
 >
 >Deze zelfstudie is specifiek ontworpen voor OEM-partners die een ondertekeningsproces in hun toepassing bouwen en insluiten.
 
->[!VIDEO](https://video.tv.adobe.com/v/347350?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3444195?hidetitle=true&captions=dut)

@@ -23,4 +23,4 @@ Leer hoe u een toepassing maakt in Acrobat Sign.
 >
 >Deze zelfstudie is specifiek ontworpen voor OEM-partners die een ondertekeningsproces in hun toepassing bouwen en insluiten.
 
->[!VIDEO](https://video.tv.adobe.com/v/347348?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3444584?hidetitle=true&captions=dut)

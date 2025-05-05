@@ -22,4 +22,4 @@ Leer hoe u een tijdelijk document kunt maken dat kan worden gebruikt met de Acro
 >
 >Deze zelfstudie is specifiek ontworpen voor OEM-partners die een ondertekeningsproces in hun toepassing bouwen en insluiten.
 
->[!VIDEO](https://video.tv.adobe.com/v/347351?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3444776?hidetitle=true&captions=dut)

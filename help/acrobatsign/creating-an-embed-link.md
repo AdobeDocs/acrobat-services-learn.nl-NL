@@ -23,4 +23,4 @@ Leer hoe u een insluitkoppeling voor OAuth maakt. Dit is de methode waarmee uw t
 >
 >Deze zelfstudie is specifiek ontworpen voor OEM-partners die een ondertekeningsproces in hun toepassing bouwen en insluiten.
 
->[!VIDEO](https://video.tv.adobe.com/v/347349?hidetitle=true){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445414?hidetitle=true&captions=dut){transcript=true}

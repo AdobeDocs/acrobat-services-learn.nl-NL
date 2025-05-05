@@ -23,4 +23,4 @@ Leer hoe u zich aanmeldt voor een Developer-account voor Acrobat Sign, dat volle
 >
 >Deze zelfstudie is specifiek ontworpen voor OEM-partners die een ondertekeningsproces in hun toepassing bouwen en insluiten.
 
->[!VIDEO](https://video.tv.adobe.com/v/347347?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3445924?hidetitle=true&captions=dut)

@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Leer hoe u automatisch labelt voor toegankelijkheid op schaal met behulp van AI. Dankzij automatische tagging heb je minder tijd en kosten nodig om aan compliance te voldoen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428310?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3446265?hidetitle=true&captions=dut)
