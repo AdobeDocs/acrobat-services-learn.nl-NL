@@ -116,7 +116,7 @@ Zoals aan het begin van deze zelfstudie wordt beschreven, maakt u een nieuwe flo
 
 Zoals het bovenstaande screenshot laat zien, kunt u overschakelen op een werkaccount of een nieuwe organisatieaccount instellen. Als u eenmaal beschikt, kunt u de Adobe PDF Services-actie toevoegen.
 
-Voor een dieper onderzoek naar het creëren van uw eerste Macht van Microsoft automatiseer stroom met [!DNL Adobe Acrobat Services], zie [ uw eerste werkschema in de Macht van Microsoft ](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate) automatiseren.
+Voor een dieper onderzoek naar het creëren van uw eerste Macht van Microsoft automatiseer stroom met [!DNL Adobe Acrobat Services], zie [ uw eerste werkschema in de Macht van Microsoft ](https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate) automatiseren.
 
 ## Extra bronnen
 

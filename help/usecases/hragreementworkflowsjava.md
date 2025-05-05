@@ -422,7 +422,7 @@ https://www.google.com/?code=<YOUR_CODE>&api_access_point=https://api.eu1.adobes
 
 Let op de waarden die worden gegeven voor \&lt;UW_CODE\> en api_access_point.
 
-Als u een HTTP-POST-aanvraag wilt verzenden die u het toegangstoken verschaft, gebruikt u de client-id, de waarden \&lt;UW_CODE\> en api_access_point. U kunt [ Postman ](https://helpx.adobe.com/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html) of cURL gebruiken:
+Als u een HTTP-POST-aanvraag wilt verzenden die u het toegangstoken verschaft, gebruikt u de client-id, de waarden \&lt;UW_CODE\> en api_access_point. U kunt [ Postman ](https://helpx.adobe.com/nl/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html) of cURL gebruiken:
 
 ```
 curl --location --request POST "https://**api.eu1.adobesign.com**/oauth/token"

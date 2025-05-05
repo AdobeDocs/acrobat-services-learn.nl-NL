@@ -28,8 +28,8 @@ Met Acrobat Sign API&#39;s kunt u apps maken en de gebruikersinterface en functi
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/signapi" title="Aan de slag met de Acrobat Sign API" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/media_1ca3c33760cbb93b5a86509edadc116b7b45db0d9.png?width=400&format=webply&optimize=medium" alt="Aan de slag met de Acrobat Sign API"
+                    <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/signapi" title="Aan de slag met de Acrobat Sign API" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/media_1ca3c33760cbb93b5a86509edadc116b7b45db0d9.png?width=400&format=webply&optimize=medium" alt="Aan de slag met de Acrobat Sign API"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -37,11 +37,11 @@ Met Acrobat Sign API&#39;s kunt u apps maken en de gebruikersinterface en functi
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/signapi" target="_self" rel="referrer" title="Aan de slag met de Acrobat Sign API"> Aan de slag met Acrobat Sign API </a>
+                        <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/signapi" target="_self" rel="referrer" title="Aan de slag met de Acrobat Sign API"> Aan de slag met Acrobat Sign API </a>
                     </p>
                     <p class="is-size-6">Leer hoe u de Acrobat Sign API in uw toepassing opneemt om handtekeningen en andere informatie te verzamelen</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/signapi" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/signapi" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Controle </span>
                 </a>
             </div>
@@ -62,8 +62,8 @@ Leer hoe u de OEM-versie van Acrobat Sign gaat insluiten in uw toepassing. Deze 
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/oem/sign-up-developer-account" title="Aanmelden voor een ontwikkelaarsaccount" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/media_14431a4ca78c0891ef03c73c0b0bbc329f0365efa.png?width=400&format=webply&optimize=medium" alt="Aanmelden voor een ontwikkelaarsaccount"
+                    <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/oem/sign-up-developer-account" title="Aanmelden voor een ontwikkelaarsaccount" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/media_14431a4ca78c0891ef03c73c0b0bbc329f0365efa.png?width=400&format=webply&optimize=medium" alt="Aanmelden voor een ontwikkelaarsaccount"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -71,11 +71,11 @@ Leer hoe u de OEM-versie van Acrobat Sign gaat insluiten in uw toepassing. Deze 
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/oem/sign-up-developer-account" target="_self" rel="referrer" title="Aanmelden voor een ontwikkelaarsaccount"> het Ondertekenen voor een Rekening van de Ontwikkelaar </a>
+                        <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/oem/sign-up-developer-account" target="_self" rel="referrer" title="Aanmelden voor een ontwikkelaarsaccount"> het Ondertekenen voor een Rekening van de Ontwikkelaar </a>
                     </p>
                     <p class="is-size-6">Leer hoe u zich aanmeldt voor een Developer-account voor Acrobat Sign, dat volledig is ingeschakeld met Sign- en API-functionaliteit</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/oem/sign-up-developer-account" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/oem/sign-up-developer-account" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Controle </span>
                 </a>
             </div>
@@ -85,8 +85,8 @@ Leer hoe u de OEM-versie van Acrobat Sign gaat insluiten in uw toepassing. Deze 
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-your-application" title="Uw toepassing maken" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/media_14810050de3391dfef0c7b8dda4515598d62a01d2.png?width=400&format=webply&optimize=medium" alt="Uw toepassing maken"
+                    <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-your-application" title="Uw toepassing maken" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/media_14810050de3391dfef0c7b8dda4515598d62a01d2.png?width=400&format=webply&optimize=medium" alt="Uw toepassing maken"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -94,11 +94,11 @@ Leer hoe u de OEM-versie van Acrobat Sign gaat insluiten in uw toepassing. Deze 
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-your-application" target="_self" rel="referrer" title="Uw toepassing maken"> Creërend uw toepassing </a>
+                        <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-your-application" target="_self" rel="referrer" title="Uw toepassing maken"> Creërend uw toepassing </a>
                     </p>
                     <p class="is-size-6">Leer hoe u een toepassing maakt in Acrobat Sign</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-your-application" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-your-application" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Controle </span>
                 </a>
             </div>
@@ -108,8 +108,8 @@ Leer hoe u de OEM-versie van Acrobat Sign gaat insluiten in uw toepassing. Deze 
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-an-embed-link" title="Een ingesloten koppeling maken" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/media_1ead781b06d12087120b0fa080969ebf8f81b3f2a.png?width=400&format=webply&optimize=medium" alt="Een ingesloten koppeling maken"
+                    <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-an-embed-link" title="Een ingesloten koppeling maken" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/media_1ead781b06d12087120b0fa080969ebf8f81b3f2a.png?width=400&format=webply&optimize=medium" alt="Een ingesloten koppeling maken"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -117,11 +117,11 @@ Leer hoe u de OEM-versie van Acrobat Sign gaat insluiten in uw toepassing. Deze 
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-an-embed-link" target="_self" rel="referrer" title="Een ingesloten koppeling maken"> creërend een bedden verbinding </a>
+                        <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-an-embed-link" target="_self" rel="referrer" title="Een ingesloten koppeling maken"> creërend een bedden verbinding </a>
                     </p>
                     <p class="is-size-6">Leer hoe u een insluitkoppeling voor OAuth maakt. Dit is de methode waarvoor uw toepassing rechten voor gebruikers krijgt</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-an-embed-link" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-an-embed-link" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Controle </span>
                 </a>
             </div>
@@ -131,8 +131,8 @@ Leer hoe u de OEM-versie van Acrobat Sign gaat insluiten in uw toepassing. Deze 
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/oem/generating-an-access-token" title="Een toegangstoken genereren" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/media_17f714e34dad24780a4361be8eff9b687bea49f0a.png?width=400&format=webply&optimize=medium" alt="Een toegangstoken genereren"
+                    <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/oem/generating-an-access-token" title="Een toegangstoken genereren" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/media_17f714e34dad24780a4361be8eff9b687bea49f0a.png?width=400&format=webply&optimize=medium" alt="Een toegangstoken genereren"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -140,11 +140,11 @@ Leer hoe u de OEM-versie van Acrobat Sign gaat insluiten in uw toepassing. Deze 
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/oem/generating-an-access-token" target="_self" rel="referrer" title="Een toegangstoken genereren"> producerend een toegangstoken </a>
+                        <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/oem/generating-an-access-token" target="_self" rel="referrer" title="Een toegangstoken genereren"> producerend een toegangstoken </a>
                     </p>
                     <p class="is-size-6">Leer hoe u een toegangstoken genereert die kan worden gebruikt met de Acrobat Sign API</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/oem/generating-an-access-token" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/oem/generating-an-access-token" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Controle </span>
                 </a>
             </div>
@@ -154,8 +154,8 @@ Leer hoe u de OEM-versie van Acrobat Sign gaat insluiten in uw toepassing. Deze 
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-a-transient-document" title="Een tijdelijk document maken" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/media_17e43d161136bc6c0b5ebb77d3516c45f4f12cf13.png?width=400&format=webply&optimize=medium" alt="Een tijdelijk document maken"
+                    <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-a-transient-document" title="Een tijdelijk document maken" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/media_17e43d161136bc6c0b5ebb77d3516c45f4f12cf13.png?width=400&format=webply&optimize=medium" alt="Een tijdelijk document maken"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -163,11 +163,11 @@ Leer hoe u de OEM-versie van Acrobat Sign gaat insluiten in uw toepassing. Deze 
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-a-transient-document" target="_self" rel="referrer" title="Een tijdelijk document maken"> Creërend een transient document </a>
+                        <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-a-transient-document" target="_self" rel="referrer" title="Een tijdelijk document maken"> Creërend een transient document </a>
                     </p>
                     <p class="is-size-6">Leer hoe u een tijdelijk document kunt maken dat kan worden gebruikt met de Acrobat Sign API</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-a-transient-document" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-a-transient-document" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Controle </span>
                 </a>
             </div>

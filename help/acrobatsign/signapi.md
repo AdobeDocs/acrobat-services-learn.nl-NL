@@ -276,7 +276,7 @@ Als alternatief voor webformulieren kunt u overeenkomsten maken. In de volgende 
 
 Als u een document ter ondertekening of goedkeuring naar opgegeven ontvangers verzendt, wordt er een overeenkomst gemaakt. U kunt de status en voltooiing van een overeenkomst volgen met behulp van API&#39;s.
 
-U kunt een overeenkomst tot stand brengen gebruikend a [ voorbijgaand document ](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html), [ bibliotheekdocument ](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md), of URL. In dit voorbeeld is de overeenkomst gebaseerd op de `transientDocumentId` , net als het eerder gemaakte webformulier.
+U kunt een overeenkomst tot stand brengen gebruikend a [ voorbijgaand document ](https://helpx.adobe.com/nl/sign/kb/how-to-send-an-agreement-through-REST-API.html), [ bibliotheekdocument ](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md), of URL. In dit voorbeeld is de overeenkomst gebaseerd op de `transientDocumentId` , net als het eerder gemaakte webformulier.
 
 ```
 POST /api/rest/v6/agreements HTTP/1.1

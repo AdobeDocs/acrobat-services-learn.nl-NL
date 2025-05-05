@@ -18,7 +18,7 @@ Dit project voldoet aan de Adobe [gedragscode](code-of-conduct.md). Door deel te
 
 ## Documentatie handleiding voor bijdragers
 
-Zie de [Bijdragergids](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Zie de [Bijdragergids](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=nl-NL).
 
 ## Heb je een vraag?
 
@@ -44,4 +44,4 @@ We houden van bijdragen van onze gemeenschap! Als u een stap verder wilt gaan da
 
 ## Beveiligingsproblemen
 
-Beveiligingsproblemen moeten niet worden gemeld bij deze probleemoplossing. In plaats daarvan: [een probleem indienen bij onze beveiligingsexperts](https://helpx.adobe.com/security/alertus.html)
+Beveiligingsproblemen moeten niet worden gemeld bij deze probleemoplossing. In plaats daarvan: [een probleem indienen bij onze beveiligingsexperts](https://helpx.adobe.com/nl/security/alertus.html)

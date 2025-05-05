@@ -31,7 +31,7 @@ In deze praktische zelfstudie leert u hoe u:
 ### Wat je nodig hebt
 
 * **Proefings of productiegeloofsbrieven voor de Diensten van Adobe PDF**
-Leer meer over hoe te om geloofsbrieven in de Macht van Microsoft te krijgen en te vormen automatiseer [ hier ](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
+Leer meer over hoe te om geloofsbrieven in de Macht van Microsoft te krijgen en te vormen automatiseer [ hier ](https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
 * **de Macht van Microsoft automatiseert met de schakelaars van de Premium**
 Leer hoe te om het niveau van vergunningen voor Macht te controleren automatiseer [ hier ](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types).
 * **OneDrive**
@@ -46,7 +46,7 @@ Er zijn twee [ steekproefdossiers ](assets/sample-assets.zip) die u aan unzip en
 
 ### Inloggegevens ophalen
 
-Om deze zelfstudie te voltooien, hebt u uw aanmeldingsgegevens nodig die al zijn geconfigureerd in Microsoft Power Automate for Adobe PDF Services. Als u deze stap niet hebt voltooid, zie hier de [ instructies ](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
+Om deze zelfstudie te voltooien, hebt u uw aanmeldingsgegevens nodig die al zijn geconfigureerd in Microsoft Power Automate for Adobe PDF Services. Als u deze stap niet hebt voltooid, zie hier de [ instructies ](https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
 
 ## Deel 1: Nieuwe flow maken en Word converteren naar PDF
 

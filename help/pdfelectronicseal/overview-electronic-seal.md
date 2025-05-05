@@ -21,11 +21,11 @@ De Adobe PDF Electronic Seal API past een elektronische zegel op schaal toe op d
 <!-- Comment -->
 <!-- CARDS
 
-* https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal
+* https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal
   {target = _self}
   {title = Automatically apply an electronic seal}
   {description = Learn how to apply a tamper-evident electronic seal to PDFs at scale}
-  {image = https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/media_1c3d300ec38133fdf7b4f8eb7c16d560e8a776e5c.png?width=400&format=webply&optimize=medium}
+  {image = https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/eseal/media_1c3d300ec38133fdf7b4f8eb7c16d560e8a776e5c.png?width=400&format=webply&optimize=medium}
   {cta = Watch}
 
 -->
@@ -37,8 +37,8 @@ De Adobe PDF Electronic Seal API past een elektronische zegel op schaal toe op d
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal" title="Automatisch een elektronisch zegel toepassen" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/media_1c3d300ec38133fdf7b4f8eb7c16d560e8a776e5c.png?width=400&format=webply&optimize=medium" alt="Automatisch een elektronisch zegel toepassen"
+                    <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal" title="Automatisch een elektronisch zegel toepassen" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/eseal/media_1c3d300ec38133fdf7b4f8eb7c16d560e8a776e5c.png?width=400&format=webply&optimize=medium" alt="Automatisch een elektronisch zegel toepassen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -46,11 +46,11 @@ De Adobe PDF Electronic Seal API past een elektronische zegel op schaal toe op d
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal" target="_self" rel="referrer" title="Automatisch een elektronisch zegel toepassen"> pas automatisch een elektronische verzegeling toe </a>
+                        <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal" target="_self" rel="referrer" title="Automatisch een elektronisch zegel toepassen"> pas automatisch een elektronische verzegeling toe </a>
                     </p>
                     <p class="is-size-6">Leer hoe u een onvervalsbaar elektronisch zegel kunt toepassen op PDF op schaal</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/nl/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Controle </span>
                 </a>
             </div>
