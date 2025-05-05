@@ -25,7 +25,7 @@ De meest gebruikte NDA-indeling is een PDF-document. Organisaties stellen een ND
 
 ## Wat je kunt leren
 
-In deze praktische zelfstudie wordt uitgelegd hoe u een speciale Microsoft Word NDA-sjabloon voor uw bedrijf kunt maken. De vrije toe:voegen-binnen van de Adobe voor Microsoft Word, {Tagger van de Generatie van het Document van 0}, neemt &quot;markeringen&quot;op om de dynamische waarden in te voeren. [](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo) Leer hoe u de JSON-gegevens aan de sjabloon doorgeeft en een dynamische PDF maakt. De resulterende PDF kan aan uw medewerkers in hun browser worden gemaild of getoond, afhankelijk van uw bedrijfsvereisten en doelstellingen. Als je mee wilt doen, heb je slechts een kleine ervaring nodig met Node.js, JavaScript, Express.js, HTML en CSS.
+In deze praktische zelfstudie wordt uitgelegd hoe u een speciale Microsoft Word NDA-sjabloon voor uw bedrijf kunt maken. De vrije toe:voegen-binnen van de Adobe voor Microsoft Word, {Tagger van de Generatie van het Document van 0}, neemt &quot;markeringen&quot;op om de dynamische waarden in te voeren. [&#128279;](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo) Leer hoe u de JSON-gegevens aan de sjabloon doorgeeft en een dynamische PDF maakt. De resulterende PDF kan aan uw medewerkers in hun browser worden gemaild of getoond, afhankelijk van uw bedrijfsvereisten en doelstellingen. Als je mee wilt doen, heb je slechts een kleine ervaring nodig met Node.js, JavaScript, Express.js, HTML en CSS.
 
 ## Relevante API&#39;s en bronnen
 

@@ -238,7 +238,7 @@ Vervolgens ondertekent uw gebruiker het document met een eerder opgeslagen handt
 
 ![ Schermafbeelding van handtekening ](assets/GSASAPI_10.png)
 
-Wanneer de gebruiker **** van toepassing is, instrueert de Adobe hen om hun e-mail te openen en de handtekening te bevestigen. De handtekening blijft in behandeling totdat de bevestiging is ontvangen.
+Wanneer de gebruiker **&#x200B;**&#x200B;van toepassing is, instrueert de Adobe hen om hun e-mail te openen en de handtekening te bevestigen. De handtekening blijft in behandeling totdat de bevestiging is ontvangen.
 
 ![ Screenshot van Slechts één meer stap ](assets/GSASAPI_11.png)
 

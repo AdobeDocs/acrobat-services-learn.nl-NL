@@ -75,7 +75,7 @@ In deel 1 leert u hoe u aan de slag kunt gaan met alles wat u nodig hebt voor on
 
 ### Inloggegevens ophalen
 
-1. Ga naar de {](https://developer.adobe.com/) website 0} Adobe.io.[
+1. Ga naar de {[&#128279;](https://developer.adobe.com/) website 0} Adobe.io.
 1. Klik **[!UICONTROL Leer meer]** onder Bouw aansprekende documentervaringen.
 
    ![ Schermafbeelding van Leren meer knoop ](assets/ControlPDF_1.png)

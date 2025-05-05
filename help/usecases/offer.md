@@ -247,7 +247,7 @@ We bieden je graag een positie voor $X per jaar. De startdatum is X.
 
 Welkom
 
-Sla het document op als &quot;OfferLetter-Template.docx&quot; in een map met de naam &quot;resources&quot; in de hoofdmap van uw project. Let op de drie X&#39;s in het document. Deze Xs zijn tijdelijke plaatsaanduidingen voor uw JSON-gegevens. Hoewel u een speciale syntaxis kunt gebruiken om deze plaatsaanduidingen te vervangen, biedt Adobe een invoegtoepassing voor Word die deze taak vereenvoudigt. Om toe:voegen-binnen te installeren, ga naar de Adobe ](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin) plaats van de Tagger van Word van de Generatie van het Document toe:voegen-binnen.[
+Sla het document op als &quot;OfferLetter-Template.docx&quot; in een map met de naam &quot;resources&quot; in de hoofdmap van uw project. Let op de drie X&#39;s in het document. Deze Xs zijn tijdelijke plaatsaanduidingen voor uw JSON-gegevens. Hoewel u een speciale syntaxis kunt gebruiken om deze plaatsaanduidingen te vervangen, biedt Adobe een invoegtoepassing voor Word die deze taak vereenvoudigt. Om toe:voegen-binnen te installeren, ga naar de Adobe [&#128279;](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin) plaats van de Tagger van Word van de Generatie van het Document toe:voegen-binnen.
 
 In uw OfferLetter-Malplaatje, klik de nieuwe **knoop van de Generatie van het Document**. Er wordt een zijpaneel geopend. Klik **worden begonnen**. U hebt een tekstgebied om in de JSON-voorbeeldgegevens te plakken. Kopieer het &#39;offer-data&#39;-fragment van JSON van boven naar het tekstgebied. Het zou als het volgende moeten kijken:
 

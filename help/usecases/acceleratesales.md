@@ -189,7 +189,7 @@ Met numerieke berekeningen kunt u sommen en andere berekeningen berekenen op bas
 1. Onder *[!UICONTROL Type berekening selecteren]* kiest u **[!UICONTROL Samenvoeging]**.
 1. Onder *[!UICONTROL Tekst selecteren]* kiest u **[!UICONTROL Som]**.
 1. Onder *[!UICONTROL Records selecteren]* kiest u **[!UICONTROL ReferencesOrder]**.
-1. Onder *[!UICONTROL Item selecteren om samenvoeging uit te voeren]**, kies **[!UICONTROL totalPaymentsDue.price]**.
+1. Onder *[!UICONTROL Item selecteren om samenvoeging uit te voeren]&#x200B;**, kies &#x200B;** [!UICONTROL totalPaymentsDue.price]**.
 1. Selecteren **[!UICONTROL Berekening invoegen]**.
 
 Hierbij wordt een berekeningscode ingevoegd die de som van waarden bevat. U kunt geavanceerdere berekeningen maken met behulp van JSONata-berekeningen. Bijvoorbeeld:

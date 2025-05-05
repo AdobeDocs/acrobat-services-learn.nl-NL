@@ -199,7 +199,7 @@ Leer hoe de [!DNL Adobe Acrobat Services] API&#39;s uw bedrijf kunnen veranderen
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        </a> de samenwerking van 0} studenten-Leraar {<a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/educationcollab" target="_self" rel="referrer" title="Samenwerking tussen studenten en docenten">
+                        </a> de samenwerking van 0&rbrace; studenten-Leraar &lbrace;<a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/educationcollab" target="_self" rel="referrer" title="Samenwerking tussen studenten en docenten">
                     </p>
                     <p class="is-size-6">Leer hoe je een online leerplatform creëert waarmee docenten en studenten eenvoudig resources delen in PDF</p>
                 </div>

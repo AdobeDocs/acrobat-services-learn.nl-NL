@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Maak je eerste flow in Microsoft Power Automate
 
-Leer hoe te om uw eerste stroom in [ Macht van Microsoft te creëren automatiseer ](https://flow.microsoft.com) gebruikend de [ 3} schakelaar van de Diensten van Adobe PDF {.](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/)
+Leer hoe te om uw eerste stroom in [ Macht van Microsoft te creëren automatiseer ](https://flow.microsoft.com) gebruikend de [ 3&rbrace; schakelaar van de Diensten van Adobe PDF &lbrace;.](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/)
 
 In deze praktische zelfstudie leert u hoe u:
 
@@ -105,9 +105,9 @@ Nadat het document is gegenereerd, slaat u het bestand weer op in OneDrive.
 1. Zoek *krijgt dossierinhoud* in de onderzoeksbar.
 1. Zoek naar *creeer dossier* in de onderzoeksbar.
 1. Selecteer **[!UICONTROL creeer dossier]**.
-1. In het ]**gebied van de Weg van de Omslag 0}, selecteer het omslagpictogram om te specificeren waar te om het dossier in OneDrive op te slaan.**[!UICONTROL 
+1. In het **gebied van de Weg van de Omslag 0&rbrace;, selecteer het omslagpictogram om te specificeren waar te om het dossier in OneDrive op te slaan.**
 1. In **[!UICONTROL Naam van het Dossier]**, noem uw dossier zoals gewenst maar het moet met *.docx* beëindigen. Deze extensie is nodig voor het converteren van documenten van Word naar PDF.
-1. Op het ]**gebied van de Inhoud van het Dossier**[!UICONTROL , gebruik **[!UICONTROL Dynamische inhoud]** paneel om de de inhoudsvariabele van het Dossier van de PDF op te nemen.
+1. Op het **gebied van de Inhoud van het Dossier**, gebruik **[!UICONTROL Dynamische inhoud]** paneel om de de inhoudsvariabele van het Dossier van de PDF op te nemen.
 
 ### Stroom uitproberen
 
@@ -164,7 +164,7 @@ Als u een document wilt genereren, moet u eerst de bestandsinhoud van de Word-sj
 1. Onderzoek naar *Diensten van Adobe PDF* in de onderzoeksbar.
 1. Selecteer **[!UICONTROL de Diensten van Adobe PDF]**.
 1. Selecteer **[!UICONTROL produceer document van het malplaatje van Word]** actie.
-1. Op het ]**gebied van de Naam van het Dossier van het Malplaatje**[!UICONTROL , noem uw dossier zoals gewenst maar het moet met *.docx* beëindigen.
+1. Op het **gebied van de Naam van het Dossier van het Malplaatje**, noem uw dossier zoals gewenst maar het moet met *.docx* beëindigen.
 
 #### Gegevens samenvoegen
 
@@ -186,7 +186,7 @@ Kopieer de JSON gegevens hieronder in het **gebied van de Gegevens van de Fusie*
    ![ produceer document met gegevensmarkeringen in JSON ](assets/generateDocumentJSONAction.png)
 
 1. Herhaal stappen 7-8 voor de **[!UICONTROL LastName]** en **[!UICONTROL Salary]** gebieden.
-1. In het ]**gebied van de Inhoud van het Dossier van het Malplaatje**[!UICONTROL  Dynamische inhoud ]**paneel gebruiken om de**[!UICONTROL  inhoud van het Dossier ]**waarde van *op te nemen krijg dossierinhoud* stap.**[!UICONTROL 
+1. In het **gebied van de Inhoud van het Dossier van het Malplaatje**&#x200B;[!UICONTROL &#x200B; Dynamische inhoud &#x200B;]&#x200B;**paneel gebruiken om de**&#x200B;[!UICONTROL &#x200B; inhoud van het Dossier &#x200B;]&#x200B;**waarde van *op te nemen krijg dossierinhoud* stap.**
 
 ![ produceer document van het malplaatjeactie van Word in Macht automatiseert met alle voltooide waarden ](assets/generateDocumentJSONActionCompleted.png)
 
@@ -202,14 +202,14 @@ Kopieer de JSON gegevens hieronder in het **gebied van de Gegevens van de Fusie*
 
 Nadat het document is gegenereerd, kunt u het bestand weer opslaan in OneDrive.
 
-1. In Macht automatiseer, selecteer **+ [!UICONTROL  Nieuwe stap]**.
+1. In Macht automatiseer, selecteer **+ [!UICONTROL &#x200B; Nieuwe stap]**.
 1. Onderzoek naar *OneDrive* in de onderzoeksbar.
 1. Kies of uw werk of persoonlijke rekening OneDrive door **[!UICONTROL OneDrive voor Zaken]** te selecteren of **[!UICONTROL OneDrive]**.
 1. Zoek naar *creeer dossier* in de onderzoeksbar.
 1. Selecteer **[!UICONTROL creeer dossier]**.
-1. In het ]**gebied van de Weg van de Omslag 0}, selecteer het omslagpictogram om te specificeren waar te om het dossier in OneDrive op te slaan.**[!UICONTROL 
+1. In het **gebied van de Weg van de Omslag 0&rbrace;, selecteer het omslagpictogram om te specificeren waar te om het dossier in OneDrive op te slaan.**
 1. Op het **[!UICONTROL gebied van de Naam van het Dossier]**, plaats de naam van het dossier. Omdat de uitvoer een PDF is, moet uw bestandsnaam eindigen met de extensie .pdf.
-1. Gebruik het **[!UICONTROL Dynamische inhoudspaneel]** om de variabele van de Inhoud van het Dossier van de PDF in het **[!UICONTROL 3} gebied van de Inhoud van het Dossier op te nemen {.]**
+1. Gebruik het **[!UICONTROL Dynamische inhoudspaneel]** om de variabele van de Inhoud van het Dossier van de PDF in het **[!UICONTROL 3&rbrace; gebied van de Inhoud van het Dossier op te nemen &lbrace;.]**
 
 ### Stroom uitproberen
 
@@ -239,9 +239,9 @@ Nu u een Word-document hebt gegenereerd en omgezet in een PDF, bestaat het volge
 1. Onderzoek naar *Diensten van Adobe PDF* in de onderzoeksbar.
 1. Selecteer **[!UICONTROL de Diensten van Adobe PDF]**.
 1. Selecteer de **[!UICONTROL actie van de PDF van de Fusie]**.
-1. In het ]**gebied van de Naam van het Dossier van de Samenvoeging**[!UICONTROL , ga uw gewenste dossiernaam (d.w.z. in, *combinedDocument.pdf*).
+1. In het **gebied van de Naam van het Dossier van de Samenvoeging**, ga uw gewenste dossiernaam (d.w.z. in, *combinedDocument.pdf*).
 1. In het **[!UICONTROL Inhoud van het Dossier - 1]** gebied, gebruik het **[!UICONTROL Dynamische inhoudspaneel]** om de *waarde van de Inhoud van het Dossier van de PDF* van de **[!UICONTROL Converteer Word in PDF]** stap op te nemen.
-1. Om het volgende document toe te voegen, voeg **+ [!UICONTROL  nieuw punt]** toe.
+1. Om het volgende document toe te voegen, voeg **+ [!UICONTROL &#x200B; nieuw punt]** toe.
 1. In het **[!UICONTROL Inhoud van het Dossier - 2]** gebied, gebruik het **[!UICONTROL Dynamische inhoudspaneel]** om de **[!UICONTROL waarde van de Inhoud van het Dossier van de Output in te voegen]** van *produceer document van het malplaatje van Word* stap.
 
 ![ de actie van de PDF van de Fusie in de Macht van Microsoft automatiseren ](assets/mergePDFAction.png)
@@ -250,14 +250,14 @@ Nu u een Word-document hebt gegenereerd en omgezet in een PDF, bestaat het volge
 
 Nadat het document is gecombineerd, kunt u het weer opslaan in OneDrive.
 
-1. In Macht automatiseer, selecteer **+ [!UICONTROL  Nieuwe stap]**.
+1. In Macht automatiseer, selecteer **+ [!UICONTROL &#x200B; Nieuwe stap]**.
 1. Onderzoek naar *OneDrive* in de onderzoeksbar.
 1. Kies of uw werk of persoonlijke rekening OneDrive door **[!UICONTROL OneDrive voor Zaken]** te selecteren of **[!UICONTROL OneDrive]**.
 1. Zoek naar *creeer dossier* in de onderzoeksbar.
 1. Selecteer **[!UICONTROL creeer dossier]**.
-1. In het ]**gebied van de Weg van de Omslag 0}, selecteer het omslagpictogram om te specificeren waar te om het dossier in OneDrive op te slaan.**[!UICONTROL 
+1. In het **gebied van de Weg van de Omslag 0&rbrace;, selecteer het omslagpictogram om te specificeren waar te om het dossier in OneDrive op te slaan.**
 1. Op het **[!UICONTROL gebied van de Naam van het Dossier]**, plaats de naam van het dossier. Aangezien de uitvoer een PDF is, moet uw bestandsnaam eindigen op .pdf.
-1. Op het ]**gebied van de Inhoud van het Dossier, gebruik**[!UICONTROL  Dynamische inhoud ]**paneel om de *waarde van de Inhoud van het Dossier van de PDF* van de**[!UICONTROL  stap van de PDF ]**van de Fusie op te nemen.**[!UICONTROL 
+1. Op het **gebied van de Inhoud van het Dossier, gebruik**&#x200B;[!UICONTROL &#x200B; Dynamische inhoud &#x200B;]&#x200B;**paneel om de *waarde van de Inhoud van het Dossier van de PDF* van de**&#x200B;[!UICONTROL &#x200B; stap van de PDF &#x200B;]&#x200B;**van de Fusie op te nemen.**
 
    ![ Stroom in Microsoft Power Automate overzicht ](assets/flowOverviewSavedMergedDocument.png)
 
@@ -288,7 +288,7 @@ Nadat u het document hebt gegenereerd, kunt u het beschermen tegen bewerking doo
 1. Selecteer de **[!UICONTROL PDF van Protect van het Bekijken van]** actie.
 1. In het **[!UICONTROL gebied van de Naam van het Dossier]**, plaats de naam aan uw gewenste naam, zolang het met een .pdf uitbreiding beëindigt.
 1. Plaats het **[!UICONTROL gebied van het Wachtwoord]** aan uw gespecificeerd wachtwoord om het document te openen.
-1. Op het ]**gebied van de Inhoud van het Dossier**[!UICONTROL , gebruik het **[!UICONTROL Dynamische 3} paneel van de Inhoud van het Inhoud van het Dossier *PDF* waarde van de**[!UICONTROL  stap van de PDF van de Samenvoeging ]**.]**
+1. Op het **gebied van de Inhoud van het Dossier**, gebruik het **[!UICONTROL Dynamische 3&rbrace; paneel van de Inhoud van het Inhoud van het Dossier *PDF* waarde van de**&#x200B;[!UICONTROL &#x200B; stap van de PDF van de Samenvoeging &#x200B;]&#x200B;**.]**
 
 ### Opslaan naar OneDrive bijwerken
 

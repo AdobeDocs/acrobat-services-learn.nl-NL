@@ -49,7 +49,7 @@ Nu u de gereedschappen hebt geïnstalleerd, kunt u beginnen met het oplossen van
 
 Eerst, creeer een vorm van de gegevensvangst in [ Microsoft Forms ](https://www.office.com/launch/forms?auth=1) (of uw aangewezen vormbouwer). Dit formulier is bedoeld voor de dynamische gegevens van klanten die worden toegevoegd aan een verkoopvoorstel. Vul dit formulier in met vragen om de benodigde gegevens van klanten op te halen, bijvoorbeeld bedrijfsnaam, datum, adres, projectbereik, prijzen en aanvullende opmerkingen. Om uw te bouwen, gebruik deze [ vorm ] (https://forms.office.com/Pages/ShareFormPage.aspx id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA_G5UNEGj5UNEGJGj5UNEGJGJGJGJLTR0PLTR0PLLTR0pLCQCQCQCQ0GGGGGGG0pG2RC4u&amp;sharetoken=1AJeMavBAzzxuISRKmUy). Het doel is dat potentiële klanten het formulier invullen en vervolgens hun reacties exporteren als JSON-bestanden, die worden doorgegeven aan het volgende gedeelte van uw workflow.
 
-In sommige formulierbuilders kunt u gegevens alleen exporteren als CSV-bestanden. Zo, zou u het nuttig kunnen vinden om [ ](http://csvjson.com/csv2json) het geproduceerde dossier CSV in een JSON dossier om te zetten.
+In sommige formulierbuilders kunt u gegevens alleen exporteren als CSV-bestanden. Zo, zou u het nuttig kunnen vinden om [&#128279;](http://csvjson.com/csv2json) het geproduceerde dossier CSV in een JSON dossier om te zetten.
 
 De statische gegevens worden opnieuw gebruikt in elk verkoopvoorstel. Zo, kunt u een malplaatje van het verkoopvoorstel in Microsoft Word gebruiken om de statische tekst te verstrekken. U kunt dit [ malplaatje ](https://1drv.ms/w/s!AiqaN2pp7giKkmhVu2_2pId9MiPa?e=oeqoQ2) gebruiken, maar u kunt uw tot stand brengen of een [ malplaatje van de Adobe ](https://developer.adobe.com/document-services/apis/doc-generation) gebruiken.
 
@@ -59,7 +59,7 @@ U kunt dit doen door tags te gebruiken. Tags zijn gebruiksvriendelijke tekenreek
 
 ## Tags gebruiken
 
-Open uw malplaatje van het verkoopvoorstel en selecteer het **Tussenvoegsel** lusje. In de **toe:voegen-ins** groep, uitgezochte **krijgen toe:voegen-ins**. Dan, selecteer **toe:voegen-binnen de Generatie van het Document van 0} Adobe om het toe te voegen.** Zodra toegevoegd, ziet u Tagger van de Generatie van het Document op het **Huis** lusje in de **Adobe** groep.
+Open uw malplaatje van het verkoopvoorstel en selecteer het **Tussenvoegsel** lusje. In de **toe:voegen-ins** groep, uitgezochte **krijgen toe:voegen-ins**. Dan, selecteer **toe:voegen-binnen de Generatie van het Document van 0&rbrace; Adobe om het toe te voegen.** Zodra toegevoegd, ziet u Tagger van de Generatie van het Document op het **Huis** lusje in de **Adobe** groep.
 
 Op het **Begin** lusje in de **Adobe** groep, selecteer **de Generatie van het Document** om begonnen te worden het document etiketterend. Een nuttige demonstratievideo wordt weergegeven in een deelvenster aan de rechterkant van het venster.
 

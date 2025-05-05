@@ -35,7 +35,7 @@ In deze praktische zelfstudie leert u hoe u een webgebaseerd HR-formulier implem
 
 ## API-referenties genereren
 
-Meld u aan voor de gratis proefversie van de Adobe PDF Services API. Ga naar de [ website van de Adobe ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) [ ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) en klik *krijgen Begonnen* knoop onder *creëren Nieuwe Geloofsbrieven*. De gratis proefversie biedt 1.000 Document Transactions die kunnen worden gebruikt gedurende zes maanden. Kies op de volgende pagina (zie hieronder) de service (PDF Services API), stel de aanmeldingsnaam in (bijvoorbeeld HRDocumentWFCredentials) en voer een beschrijving in.
+Meld u aan voor de gratis proefversie van de Adobe PDF Services API. Ga naar de [ website van de Adobe ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) [&#128279;](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) en klik *krijgen Begonnen* knoop onder *creëren Nieuwe Geloofsbrieven*. De gratis proefversie biedt 1.000 Document Transactions die kunnen worden gebruikt gedurende zes maanden. Kies op de volgende pagina (zie hieronder) de service (PDF Services API), stel de aanmeldingsnaam in (bijvoorbeeld HRDocumentWFCredentials) en voer een beschrijving in.
 
 Selecteer de taal (Java voor dit voorbeeld) en controle *creeer gepersonaliseerde codesteekproeven*. De laatste stap zorgt ervoor dat codevoorbeelden al het vooraf ingevulde bestand pdftools-api-credentials.json bevatten dat u gebruikt, samen met de persoonlijke sleutel voor het verifiëren van uw app binnen de API.
 

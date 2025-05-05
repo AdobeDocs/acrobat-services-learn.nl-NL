@@ -120,7 +120,7 @@ Pas nu de regel aan om de rendermethode voor de indexweergave aan te roepen, waa
 res.render('index', { title: 'Embedding PDF', papers: papers });
 ```
 
-Om de inzameling van whitepapers op de homepage terug te geven, open het \ \ \ meningen \ \ \ index.ejs- dossier en vervang de bestaande code met de code van het 0} {indexdossier van uw project ](https://github.com/marcelooliveira/EmbedPDF/blob/main/pdf-app/views/index.ejs).[
+Om de inzameling van whitepapers op de homepage terug te geven, open het \ \ \ meningen \ \ \ index.ejs- dossier en vervang de bestaande code met de code van het 0&rbrace; &lbrace;indexdossier van uw project [&#128279;](https://github.com/marcelooliveira/EmbedPDF/blob/main/pdf-app/views/index.ejs).
 
 Start en open <http://localhost:3000> nogmaals om uw verzameling beschikbare whitepapers weer te geven.
 

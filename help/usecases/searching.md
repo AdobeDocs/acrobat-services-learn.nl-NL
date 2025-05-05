@@ -27,7 +27,7 @@ De uitdaging om digitale archieven te creëren om informatie voor het uitgeven o
 
 In deze praktische zelfstudie wordt uitgelegd hoe de functies van [!DNL Adobe Acrobat Services] API&#39;s werken en eenvoudig kunnen worden gebruikt om documenten te archiveren en te digitaliseren. U verkent deze functies door een Express NodeJS-toepassing te maken en vervolgens [!DNL Acrobat Services] -API&#39;s te integreren voor archivering, digitalisering en documenttransformatie.
 
-Om te volgen, hebt u ](https://nodejs.org/) geïnstalleerd 0} Node.js en een basisbegrip van Node.js en [ ES6 syntaxis ](https://www.w3schools.com/js/js_es6.asp) nodig.[
+Om te volgen, hebt u [&#128279;](https://nodejs.org/) geïnstalleerd 0&rbrace; Node.js en een basisbegrip van Node.js en [ ES6 syntaxis ](https://www.w3schools.com/js/js_es6.asp) nodig.
 
 ## Relevante API&#39;s en bronnen
 

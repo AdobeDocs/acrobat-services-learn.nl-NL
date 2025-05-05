@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Referenties ophalen voor Microsoft Power Automate
 
-[ de Macht van Microsoft ](https://powerautomate.microsoft.com/nl-nl/) verstrekt een krachtige manier voor burgerontwikkelaars en ontwikkelaars om krachtige geautomatiseerde processen tot stand te brengen om hun ondernemingen te verbeteren zonder code te schrijven. ](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/) schakelaar van de Diensten van 0} Adobe PDF, als deel van [[!DNL Adobe Acrobat Services] ](https://developer.adobe.com/document-services), staat gebruikers toe om het even welke acties uit te voeren beschikbaar in de Diensten API van Adobe PDF binnen de Macht van Microsoft automatiseren.[
+[ de Macht van Microsoft ](https://powerautomate.microsoft.com/nl-nl/) verstrekt een krachtige manier voor burgerontwikkelaars en ontwikkelaars om krachtige geautomatiseerde processen tot stand te brengen om hun ondernemingen te verbeteren zonder code te schrijven. [&#128279;](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/) schakelaar van de Diensten van 0&rbrace; Adobe PDF, als deel van [[!DNL Adobe Acrobat Services] ](https://developer.adobe.com/document-services), staat gebruikers toe om het even welke acties uit te voeren beschikbaar in de Diensten API van Adobe PDF binnen de Macht van Microsoft automatiseren.
 
 In deze zelfstudie leert u hoe u referenties kunt ophalen om Adobe PDF Services te gebruiken of te triggeren. Afhankelijk van het feit of u een proefgebruiker of een bestaande klant bent, wordt in deze zelfstudie stapsgewijs ingegaan op de juiste stappen om referenties op te halen.
 
@@ -70,7 +70,7 @@ Nu u uw aanmeldingsgegevens hebt, kunt u deze gaan gebruiken in Microsoft Power 
 
    ![ het menu van Verbindingen in Microsoft Power Automate plaats ](assets/credentials_4.png)
 
-1. Selecteer **+ [!UICONTROL  Nieuwe Verbinding]**.
+1. Selecteer **+ [!UICONTROL &#x200B; Nieuwe Verbinding]**.
 
 1. In het volgende scherm ziet u een lijst met mogelijke verbindingstypen. Typ &quot;adobe&quot; in de rechterbovenhoek om de opties te filteren:
 

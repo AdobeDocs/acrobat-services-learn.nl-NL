@@ -84,12 +84,12 @@ In de data staat informatie over de klant, zijn of haar naam, zijn of haar onder
 
 ## Basiscodes toevoegen aan uw document
 
-Dit scenario gebruikt een document van de Voorwaarden en van de Voorwaarden, dat [ ](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/Agreement/exercise/TermsAndConditions_Sample.docx?raw=true) kan worden gedownload.
+Dit scenario gebruikt een document van de Voorwaarden en van de Voorwaarden, dat [&#128279;](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/Agreement/exercise/TermsAndConditions_Sample.docx?raw=true) kan worden gedownload.
 
 ![ Schermafbeelding van het document van de Voorwaarden en van de Voorwaarden ](assets/automatelegal_3.png)
 
 1. Open het {*steekproefdocument 0} TermsAndConditions.docx in Microsoft Word.*
-1. Als de ](https://appsource.microsoft.com/en-cy/product/office/WA200002654) stop van de Generatie van het Document [ geïnstalleerd is, selecteer **[!UICONTROL de Generatie van het Document]** in het Lint. Als u het genereren van documenten niet ziet in uw lint, volgt u deze instructies.
+1. Als de [&#128279;](https://appsource.microsoft.com/en-cy/product/office/WA200002654) stop van de Generatie van het Document  geïnstalleerd is, selecteer **[!UICONTROL de Generatie van het Document]** in het Lint. Als u het genereren van documenten niet ziet in uw lint, volgt u deze instructies.
 1. Selecteer **[!UICONTROL worden begonnen]**.
 1. Kopieer de JSON-voorbeeldgegevens die hierboven zijn geschreven naar het veld JSON-gegevens.
 

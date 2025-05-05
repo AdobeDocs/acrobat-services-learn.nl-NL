@@ -25,7 +25,7 @@ In een grote organisatie kan onboarding van werknemers een groot en traag proces
 
 [[!DNL Adobe Acrobat Services] ](https://developer.adobe.com/document-services/homepage) is een reeks APIs verwant met het werken met documenten (en niet alleen PDF). Over het algemeen valt dit pakket services in drie hoofdcategorieën:
 
-* Eerst is de ](https://developer.adobe.com/document-services/apis/pdf-services/) reeks van de Diensten van 0} PDF {van hulpmiddelen. [ Dit zijn hulpmethoden voor het werken met PDF en andere documenten. De services omvatten onder andere het omzetten in en van PDF, het uitvoeren van OCR en optimalisatie, het samenvoegen en splitsen van PDF, enzovoort. Het is de gereedschapset met documentverwerkingsfuncties.
+* Eerst is de [&#128279;](https://developer.adobe.com/document-services/apis/pdf-services/) reeks van de Diensten van 0&rbrace; PDF &lbrace;van hulpmiddelen.  Dit zijn hulpmethoden voor het werken met PDF en andere documenten. De services omvatten onder andere het omzetten in en van PDF, het uitvoeren van OCR en optimalisatie, het samenvoegen en splitsen van PDF, enzovoort. Het is de gereedschapset met documentverwerkingsfuncties.
 * [ PDF verwijder API ](https://developer.adobe.com/document-services/apis/pdf-extract/) gebruikt krachtige AI/ML technieken om een PDF te analyseren en een ongelooflijke hoeveelheid detail over de inhoud terug te keren. Dit omvat de tekst, opmaak en positionele informatie, en kan ook tabelgegevens in CSV/XLS-indeling retourneren en afbeeldingen ophalen.
 * Tot slot [ de Generatie API van het Document ](https://developer.adobe.com/document-services/apis/doc-generation/) laat ontwikkelaars Microsoft Word als &quot;malplaatje&quot;gebruiken, met hun gegevens (uit om het even welke bron) mengen, en dynamische gepersonaliseerde documenten (PDF en Word) produceren.
 
@@ -52,7 +52,7 @@ Laten we nader ingaan op hoe we dit kunnen doen.
 
 ## Dynamische documenten genereren
 
-Adobe ](https://developer.adobe.com/document-services/apis/doc-generation/) API van de Generatie van het Document van 0} laat ontwikkelaars dynamische documenten tot stand brengen door Microsoft Word en een eenvoudige het templating taal te gebruiken, als basis voor het produceren van PDF en de documenten van Word. [ Hier is een voorbeeld van hoe dit werkt.
+Adobe [&#128279;](https://developer.adobe.com/document-services/apis/doc-generation/) API van de Generatie van het Document van 0&rbrace; laat ontwikkelaars dynamische documenten tot stand brengen door Microsoft Word en een eenvoudige het templating taal te gebruiken, als basis voor het produceren van PDF en de documenten van Word.  Hier is een voorbeeld van hoe dit werkt.
 
 Laten we beginnen met een Word-document met hard-gecodeerde waarden. Het document kan op elke gewenste manier worden opgemaakt, zoals afbeeldingen, tabellen, enzovoort. Hier is het eerste document.
 
@@ -206,6 +206,6 @@ De sjabloon kan naar het Acrobat Sign-dashboard worden geüpload en vervolgens v
 
 ## Ervaar het zelf
 
-Alles wat in dit artikel wordt beschreven, kan nu worden getest. De [!DNL Adobe Acrobat Services] API [ vrije proef ](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) geeft u momenteel 1.000 vrije verzoeken over een periode van zes maanden. De vrije proef van Acrobat Sign ](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial) laat u watermerken overeenkomsten voor het testen doeleinden verzenden.[
+Alles wat in dit artikel wordt beschreven, kan nu worden getest. De [!DNL Adobe Acrobat Services] API [ vrije proef ](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) geeft u momenteel 1.000 vrije verzoeken over een periode van zes maanden. De vrije proef van Acrobat Sign [&#128279;](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial) laat u watermerken overeenkomsten voor het testen doeleinden verzenden.
 
 Hebt u vragen? Het [ steunforum ](https://community.adobe.com/t5/acrobat-services-api/ct-p/ct-Document-Cloud-SDK) wordt gecontroleerd door Adobe ontwikkelaars en steunmensen elke dag. Ten slotte, voor meer inspiratie, ben zeker om de volgende [ episode van de Clips van het Document te vangen ](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF). Er zijn regelmatig live vergaderingen met nieuws, demonstraties en gesprekken met klanten.

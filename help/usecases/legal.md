@@ -41,7 +41,7 @@ Deze zelfstudie omvat een beetje programmeren bij het verkennen van de conversie
 
 ## Een sjabloondocument maken
 
-U kunt wettelijke documenten tot stand brengen gebruikend de toepassing van Microsoft Word of door de malplaatjes van Word van de Adobe [ te downloaden ](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade). Nog, is het niet gemakkelijk om input aan te passen en deze documenten digitaal te ondertekenen zonder sommige helperhulpmiddelen zoals ](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin) toe:voegen-binnen de Tagger van de Generatie van het Document van de Adobe [ voor Microsoft Word te gebruiken.
+U kunt wettelijke documenten tot stand brengen gebruikend de toepassing van Microsoft Word of door de malplaatjes van Word van de Adobe [ te downloaden ](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade). Nog, is het niet gemakkelijk om input aan te passen en deze documenten digitaal te ondertekenen zonder sommige helperhulpmiddelen zoals [&#128279;](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin) toe:voegen-binnen de Tagger van de Generatie van het Document van de Adobe  voor Microsoft Word te gebruiken.
 
 Tagger voor het genereren van documenten is een Microsoft Word-invoegtoepassing waarmee u documenten naadloos kunt aanpassen met behulp van codes. Hiermee kunt u dynamische velden in documentsjablonen maken die dynamisch worden gevuld met JSON-gegevens.
 
