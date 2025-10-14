@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Automatiseer juridische workflows
 
-![ Hoofdletterbanner van het Gebruik ](assets/usecaseautomatelegalhero.jpg)
+![&#x200B; Hoofdletterbanner van het Gebruik &#x200B;](assets/usecaseautomatelegalhero.jpg)
 
 In een ideaal scenario worden de overeenkomstvoorwaarden zonder wijzigingen geaccepteerd. Vaak is echter aanpassing van overeenkomsten nodig, die dan juridisch moet worden herzien. Juridische recensies brengen aanzienlijke kosten met zich mee en vertragen het proces van het leveren van overeenkomstvoorwaarden. Met vooraf gedefinieerde sjablonen die worden gewijzigd op basis van goedgekeurde talen, kunnen juridische teams de overeenkomstvoorwaarden beheren en veiliger uitvoeren.
 
@@ -27,20 +27,20 @@ Deze zelfstudie maakt gebruik van een juridische overeenkomst die van staat tot 
 
 Registreer eerst voor gratis Adobe PDF Services-gebruikersgegevens:
 
-1. Navigeer [ hier ](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) om uw geloofsbrieven te registreren.
+1. Navigeer [&#x200B; hier &#x200B;](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) om uw geloofsbrieven te registreren.
 1. Meld u aan met uw Adobe ID.
 1. Stel uw referentie in.
 
-   ![ Screenshot van het plaatsen van uw geloofsbrieven naam ](assets/automatelegal_1.png)
+   ![&#x200B; Screenshot van het plaatsen van uw geloofsbrieven naam &#x200B;](assets/automatelegal_1.png)
 
 1. Kies een taal om uw voorbeeldcode te downloaden (bijvoorbeeld Node.js).
 1. Controle om met **[!UICONTROL ontwikkelaarstermijnen]** akkoord te gaan.
 1. Selecteer **[!UICONTROL creeer geloofsbrieven]**.
 Er wordt een bestand naar uw computer gedownload met een ZIP-bestand met de voorbeeldbestanden pdfservices-api-credentials.json en private.key voor verificatie.
 
-   ![ Scherenshot van geloofsbrieven ](assets/automatelegal_2.png)
+   ![&#x200B; Scherenshot van geloofsbrieven &#x200B;](assets/automatelegal_2.png)
 
-1. Selecteer **[!UICONTROL krijgen toe:voegen-binnen Microsoft Word]** of ga naar [ AppSource ](https://appsource.microsoft.com/en-cy/product/office/WA200002654) om te installeren.
+1. Selecteer **[!UICONTROL krijgen toe:voegen-binnen Microsoft Word]** of ga naar [&#x200B; AppSource &#x200B;](https://appsource.microsoft.com/en-cy/product/office/WA200002654) om te installeren.
 
    >[!NOTE]
    >
@@ -86,14 +86,14 @@ In de data staat informatie over de klant, zijn of haar naam, zijn of haar onder
 
 Dit scenario gebruikt een document van de Voorwaarden en van de Voorwaarden, dat [&#128279;](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/Agreement/exercise/TermsAndConditions_Sample.docx?raw=true) kan worden gedownload.
 
-![ Schermafbeelding van het document van de Voorwaarden en van de Voorwaarden ](assets/automatelegal_3.png)
+![&#x200B; Schermafbeelding van het document van de Voorwaarden en van de Voorwaarden &#x200B;](assets/automatelegal_3.png)
 
 1. Open het {*steekproefdocument 0} TermsAndConditions.docx in Microsoft Word.*
 1. Als de [&#128279;](https://appsource.microsoft.com/en-cy/product/office/WA200002654) stop van de Generatie van het Document  geïnstalleerd is, selecteer **[!UICONTROL de Generatie van het Document]** in het Lint. Als u het genereren van documenten niet ziet in uw lint, volgt u deze instructies.
 1. Selecteer **[!UICONTROL worden begonnen]**.
 1. Kopieer de JSON-voorbeeldgegevens die hierboven zijn geschreven naar het veld JSON-gegevens.
 
-   ![ Screenshot van document en JSON gegevens ](assets/automatelegal_4.png)
+   ![&#x200B; Screenshot van document en JSON gegevens &#x200B;](assets/automatelegal_4.png)
 
 Navigeer aan het *paneel van de Tagger van de Generatie van het Document* om markeringen in het document te plaatsen.
 
@@ -103,7 +103,7 @@ Navigeer aan het *paneel van de Tagger van de Generatie van het Document* om mar
 1. In *Tagger van de Generatie van het Document*, onderzoek naar &quot;naam&quot;.
 1. Onder bedrijf, kies *naam*.
 
-   ![ Screenshot van het zoeken naar naam in Tagger van de Generatie van het Document ](assets/automatelegal_5.png)
+   ![&#x200B; Screenshot van het zoeken naar naam in Tagger van de Generatie van het Document &#x200B;](assets/automatelegal_5.png)
 
 1. Selecteer **[!UICONTROL Tekst van het Tussenvoegsel]**.
 
@@ -125,7 +125,7 @@ Met de API voor het genereren van documenten in de Adobe kunt u ook codes toevoe
 
 Herhaal dit proces opnieuw met **stappen 1-4** voor de BEDRIJF en tekst van de KLANT in de footer.
 
-![ Screenshot van het toevoegen van de markeringen van het BEDRIJF en van de KLANT in footer ](assets/automatelegal_6.png)
+![&#x200B; Screenshot van het toevoegen van de markeringen van het BEDRIJF en van de KLANT in footer &#x200B;](assets/automatelegal_6.png)
 
 Tot slot moet u stappen 1-4 **herhalen** om de NAAM VAN DE EERSTE EN NAAM VAN DE LAST onder de sectie van de Klant van de handtekeningspagina met de markeringen voor `{{customer.signer.firstName}}` en `{{customer.signer.lastName}}` respectievelijk te vervangen. Maak u geen zorgen als de tag lang is en opnieuw doorloopt naar de volgende regel omdat de tag wordt vervangen wanneer het document wordt gegenereerd.
 
@@ -133,15 +133,15 @@ Het begin van uw document en de voettekst moeten er ongeveer als volgt uitzien:
 
 * Begin sectie:
 
-![ Screenshot van het begin sectie ](assets/automatelegal_7.png)
+![&#x200B; Screenshot van het begin sectie &#x200B;](assets/automatelegal_7.png)
 
 * Voettekst:
 
-![ Screenshot van footer ](assets/automatelegal_8.png)
+![&#x200B; Screenshot van footer &#x200B;](assets/automatelegal_8.png)
 
 * Handtekeningspagina:
 
-![ Schermafbeelding van handtekeningspagina ](assets/automatelegal_9.png)
+![&#x200B; Schermafbeelding van handtekeningspagina &#x200B;](assets/automatelegal_9.png)
 
 Nu uw labels in het document zijn geplaatst, kunt u een voorvertoning van de gegenereerde overeenkomst bekijken.
 
@@ -152,27 +152,27 @@ Direct in Microsoft Word kunt u een voorvertoning van het gegenereerde document 
 1. In *Tagger van de Generatie van het Document*, uitgezocht **[!UICONTROL produceer document]**.
 1. De eerste keer dat u wordt gevraagd u aan te melden bij uw Adobe ID. Selecteer **[!UICONTROL Teken binnen]** en voltooi de herinneringen aan login met uw geloofsbrieven.
 
-   ![ Schermafbeelding van het selecteren produceer documentknoop ](assets/automatelegal_10.png)
+   ![&#x200B; Schermafbeelding van het selecteren produceer documentknoop &#x200B;](assets/automatelegal_10.png)
 
 1. Selecteer **[!UICONTROL het document van de Mening]**.
 
-   ![ Screenshot van het documentknoop van de Mening ](assets/automatelegal_11.png)
+   ![&#x200B; Screenshot van het documentknoop van de Mening &#x200B;](assets/automatelegal_11.png)
 
 1. Er wordt een browservenster geopend waarin u een voorvertoning van de documentresultaten kunt bekijken.
 
-   ![ Schermafbeelding van staat-specifieke tekst ](assets/automatelegal_12.png)
+   ![&#x200B; Schermafbeelding van staat-specifieke tekst &#x200B;](assets/automatelegal_12.png)
 
 ## Voorwaardelijke voorwaarden toevoegen voor elk frame
 
 In deze volgende sectie stelt u op basis van bepaalde criteria voor invoergegevens alleen bepaalde secties in die moeten worden opgenomen. In het voorbeelddocument hebben de secties 4 en 5 alleen betrekking op een specifieke status. Voor dit scenario zouden alleen de state-specific termijnen moeten worden opgenomen wanneer een klant in die staat verblijft. Ook de nummering in Microsoft Word mag die sectie niet bevatten als deze wordt verwijderd. Gebruik de voorwaardelijke inhoudsfunctie van de API voor documentgeneratie om dit te coderen.
 
-![ Schermafbeelding van staat-specifieke tekst ](assets/automatelegal_13.png)
+![&#x200B; Schermafbeelding van staat-specifieke tekst &#x200B;](assets/automatelegal_13.png)
 
-![ Screenshot van het selecteren van de Californische sectie van de Bekendmaking ](assets/automatelegal_14.png)
+![&#x200B; Screenshot van het selecteren van de Californische sectie van de Bekendmaking &#x200B;](assets/automatelegal_14.png)
 
 1. Selecteer in het document de sectie California Disclosure en alle subopsommingstekens.
 
-   ![ Screenshot van de voorwaardelijk-sectietag ](assets/automatelegal_15.png)
+   ![&#x200B; Screenshot van de voorwaardelijk-sectietag &#x200B;](assets/automatelegal_15.png)
 
 1. In *[!UICONTROL Tagger van de Generatie van het Document]*, uitgezochte **[!UICONTROL Geavanceerd]**.
 1. Breid **[!UICONTROL Voorwaardelijke inhoud]** uit.
@@ -183,11 +183,11 @@ In deze volgende sectie stelt u op basis van bepaalde criteria voor invoergegeve
 
 De sectie bevat nu enkele tags die voorwaardelijke sectietags worden genoemd. Als u de labels hebt toegevoegd, is mogelijk de code voor de voorwaardelijke sectie toegevoegd als een genummerde regel. U kunt dit verwijderen door een backspacing voor de tag te maken. Als u dit niet doet, worden de items genummerd alsof de tag er niet was toen het document werd gegenereerd. De sectie die voorwaardelijk is, eindigt met de tag `{% end-section %}` .
 
-![ Screenshot van de voorwaardelijk-sectietag ](assets/automatelegal_16.png)
+![&#x200B; Screenshot van de voorwaardelijk-sectietag &#x200B;](assets/automatelegal_16.png)
 
 **herhaal stappen 1-7** voor de *Disclosure van Washington* sectie, die de *waarde van CA* met *WA* vervangt om te vertegenwoordigen dat de sectie slechts wordt getoond als de staat van de klant Washington is.
 
-![ Screenshot van de voorwaardelijk-sectietag voor WA ](assets/automatelegal_17.png)
+![&#x200B; Screenshot van de voorwaardelijk-sectietag voor WA &#x200B;](assets/automatelegal_17.png)
 
 ## Testen met voorwaardelijke secties
 
@@ -195,30 +195,30 @@ Zodra uw voorwaardelijke secties op zijn plaats zijn, kunt u voorproef uw docume
 
 Wanneer u uw document genereert, ziet u dat de opgenomen sectie alleen de sectie is die aan de gegevenscriteria voldoet. In het onderstaande voorbeeld is alleen de sectie Californië opgenomen, omdat de status gelijk was aan CA.
 
-![ Screenshot van de informatie van de Bekendmaking Californië ](assets/automatelegal_18.png)
+![&#x200B; Screenshot van de informatie van de Bekendmaking Californië &#x200B;](assets/automatelegal_18.png)
 
 Een andere opmerkelijke verandering is dat de nummering voor de volgende sectie, Gebruik van Services en Software, het nummer 5 heeft. Dit betekent dat als de sectie Washington wordt weggelaten, de nummering wordt voortgezet.
 
-![ Schermafbeelding van verdere nummering ](assets/automatelegal_19.png)
+![&#x200B; Schermafbeelding van verdere nummering &#x200B;](assets/automatelegal_19.png)
 
 Om te testen of het malplaatje correct gedraagt wanneer de klant in de staat van Washington eerder dan Californië is, verander de steekproefgegevens voor het malplaatje:
 
 1. In *Tagger van de Generatie van het Document*, uitgezocht **[!UICONTROL geef inputgegevens]** uit.
 
-   ![ Schermafbeelding van Tagger van de Generatie van het Document ](assets/automatelegal_20.png)
+   ![&#x200B; Schermafbeelding van Tagger van de Generatie van het Document &#x200B;](assets/automatelegal_20.png)
 
 1. Selecteer **[!UICONTROL geef]** uit.
 
 1. In de gegevens JSON, verander *CA* in *WA*.
 
-   ![ Screenshot van JSON gegevens ](assets/automatelegal_21.png)
+   ![&#x200B; Screenshot van JSON gegevens &#x200B;](assets/automatelegal_21.png)
 
 1. Selecteer **[!UICONTROL produceer Markeringen]**.
 1. Selecteer **[!UICONTROL Genereer document]** om het document opnieuw te genereren.
 
 U ziet dat het document alleen de sectie met de staat Washington bevat.
 
-![ Schermafbeelding van document dat slechts de de staatssectie van Wasington omvat ](assets/automatelegal_22.png)
+![&#x200B; Schermafbeelding van document dat slechts de de staatssectie van Wasington omvat &#x200B;](assets/automatelegal_22.png)
 
 ## Een voorwaardelijke zin toevoegen
 
@@ -235,7 +235,7 @@ Net als voorwaardelijke secties kunt u ook specifieke zinnen hebben die worden o
 
 Hoewel de naam van de tag gelijk is, is het belangrijkste verschil tussen Woorden en Sectie dat de sectie geen nieuwe regels bevat. Het label voor de voorwaardensectie en de sectie -end moeten zich in dezelfde alinea bevinden.
 
-![ Screenshot van woordmarkering ](assets/automatelegal_23.png)
+![&#x200B; Screenshot van woordmarkering &#x200B;](assets/automatelegal_23.png)
 
 ## Tags toevoegen voor Acrobat Sign
 
@@ -244,7 +244,7 @@ Met Acrobat Sign kunt u overeenkomsten ter ondertekening verzenden of insluiten 
 1. Navigeer naar de plaats waar de klant moet ondertekenen.
 1. Plaats de cursor op de plaats waar de handtekening moet komen.
 
-   ![ Screenshot van waar de handtekening moet gaan ](assets/automatelegal_24.png)
+   ![&#x200B; Screenshot van waar de handtekening moet gaan &#x200B;](assets/automatelegal_24.png)
 
 1. In *[!UICONTROL Tagger van de Generatie van het Document]*, uitgezochte **[!UICONTROL Adobe Sign]**.
 1. In *[!UICONTROL specificeer aantal ontvanger]* gebied, plaats het aantal ontvangers (dit voorbeeld gebruikt 2).
@@ -252,7 +252,7 @@ Met Acrobat Sign kunt u overeenkomsten ter ondertekening verzenden of insluiten 
 1. In *[!UICONTROL het type van het Gebied]*, uitgezochte **[!UICONTROL Handtekening]**.
 1. Selecteer **[!UICONTROL markering van de Tekst van Adobe Sign van het Tussenvoegsel]**.
 
-   ![ Screenshot van de Markering van de Tekst van het Tussenvoegsel Adobe Sign in Tagger van de Generatie van het Document ](assets/automatelegal_25.png)
+   ![&#x200B; Screenshot van de Markering van de Tekst van het Tussenvoegsel Adobe Sign in Tagger van de Generatie van het Document &#x200B;](assets/automatelegal_25.png)
 
 >[!NOTE]
 >
@@ -260,13 +260,13 @@ Met Acrobat Sign kunt u overeenkomsten ter ondertekening verzenden of insluiten 
 
 Hiermee wordt een handtekeningveld geplaatst waarin de eerste ondertekenaar moet ondertekenen.
 
-![ Screenshot van handtekeningtekstmarkering ](assets/automatelegal_26.png)
+![&#x200B; Screenshot van handtekeningtekstmarkering &#x200B;](assets/automatelegal_26.png)
 
 Plaats vervolgens een gegevensveld voor de ondertekenaar die automatisch invult wanneer deze ondertekent.
 
 1. Plaats de cursor op de plaats voor de datum.
 
-   ![ Screenshot van waar de datum zou moeten worden gevestigd ](assets/automatelegal_27.png)
+   ![&#x200B; Screenshot van waar de datum zou moeten worden gevestigd &#x200B;](assets/automatelegal_27.png)
 
 1. Stel het veldtype in op Datum.
 1. Selecteer **[!UICONTROL markering van de Tekst van Adobe Sign van het Tussenvoegsel]**.
@@ -362,23 +362,23 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
 
 ## Overeenkomst verzenden ter ondertekening
 
-[ Adobe Acrobat Sign ](https://www.adobe.com/acrobat/business/sign.html) staat u toe om overeenkomsten naar één of vele ontvangers voor hen te verzenden om documenten te bekijken en te ondertekenen. Naast een gebruiksvriendelijke gebruikerservaring om een document ter ondertekening te verzenden, zijn er REST-API&#39;s beschikbaar waarmee u Word, PDF, HTML en andere indelingen kunt gebruiken en ter ondertekening kunt verzenden.
+[&#x200B; Adobe Acrobat Sign &#x200B;](https://www.adobe.com/acrobat/business/sign.html) staat u toe om overeenkomsten naar één of vele ontvangers voor hen te verzenden om documenten te bekijken en te ondertekenen. Naast een gebruiksvriendelijke gebruikerservaring om een document ter ondertekening te verzenden, zijn er REST-API&#39;s beschikbaar waarmee u Word, PDF, HTML en andere indelingen kunt gebruiken en ter ondertekening kunt verzenden.
 
 In het onderstaande voorbeeld wordt uitgelegd hoe u de documentatiepagina van de REST API kunt gebruiken om het eerder gegenereerde document ter ondertekening te verzenden. Leer eerst hoe u dit kunt doen via de Acrobat Sign-webinterface en vervolgens hoe u dit kunt doen met de REST-API.
 
 ## Een Acrobat Sign-account ophalen
 
-Als u geen rekening van Acrobat Sign hebt, teken omhoog voor een ontwikkelaarrekening en herzie de documentatie [ hier ](https://developer.adobe.com/adobesign-api/), en selecteer **de Registratie van de Rekening van de Ontwikkelaar**. U wordt gevraagd een formulier in te vullen en een verificatiebericht te ontvangen. Wanneer u dat doet, wordt u naar een website geleid om uw wachtwoord en account in te stellen, waar u zich vervolgens kunt aanmelden bij Acrobat Sign.
+Als u geen rekening van Acrobat Sign hebt, teken omhoog voor een ontwikkelaarrekening en herzie de documentatie [&#x200B; hier &#x200B;](https://developer.adobe.com/adobesign-api/), en selecteer **de Registratie van de Rekening van de Ontwikkelaar**. U wordt gevraagd een formulier in te vullen en een verificatiebericht te ontvangen. Wanneer u dat doet, wordt u naar een website geleid om uw wachtwoord en account in te stellen, waar u zich vervolgens kunt aanmelden bij Acrobat Sign.
 
 ## Een overeenkomst verzenden vanuit een webinterface
 
 1. Selecteer **[!UICONTROL verzend]** van de navigatiebar.
 
-   ![ Screenshot van Send lusje in Acrobat Sign ](assets/automatelegal_28.png)
+   ![&#x200B; Screenshot van Send lusje in Acrobat Sign &#x200B;](assets/automatelegal_28.png)
 
 1. In *Ontvangers* gebied, specificeer twee e-mailadressen. Het wordt aanbevolen een e-mailadres te gebruiken dat niet aan uw Acrobat Sign-account is gekoppeld.
 
-   ![ Schermafbeelding van Ontvangervelden ](assets/automatelegal_29.png)
+   ![&#x200B; Schermafbeelding van Ontvangervelden &#x200B;](assets/automatelegal_29.png)
 
 1. Plaats een **[!UICONTROL Naam van de Overeenkomst]** en **[!UICONTROL Bericht]**.
 1. Selecteer **[!UICONTROL voeg Dossiers]** toe en upload het geproduceerde dossier van uw computer.
@@ -386,26 +386,26 @@ Als u geen rekening van Acrobat Sign hebt, teken omhoog voor een ontwikkelaarrek
 1. Selecteer **[!UICONTROL Volgende]**.
 1. Wanneer u omlaag schuift naar de handtekeningpagina, ziet u de geplaatste handtekeningvelden op basis van de labels.
 
-   ![ Schermafbeelding van handtekeningsgebieden ](assets/automatelegal_30.png)
+   ![&#x200B; Schermafbeelding van handtekeningsgebieden &#x200B;](assets/automatelegal_30.png)
 
 1. Selecteer **[!UICONTROL Verzenden]**.
 1. In uw e-mail verschijnt een bericht met een koppeling voor weergave en ondertekening.
 
-   ![ Schermafbeelding van e-mailbericht ](assets/automatelegal_31.png)
+   ![&#x200B; Schermafbeelding van e-mailbericht &#x200B;](assets/automatelegal_31.png)
 
 1. Selecteer **[!UICONTROL Overzicht en teken]**.
 1. Selecteer **[!UICONTROL ga]** verder om termijnen van gebruik goed te keuren.
 1. Selecteer **[!UICONTROL Begin]** om aan waar te springen u moet ondertekenen.
 
-   ![ Screenshot van beginmarkering ](assets/automatelegal_32.png)
+   ![&#x200B; Screenshot van beginmarkering &#x200B;](assets/automatelegal_32.png)
 
 1. Selecteer **[!UICONTROL klik hier om te ondertekenen]**.
 
-   ![ Screenshot van Klik hier om te ondertekenen ](assets/automatelegal_33.png)
+   ![&#x200B; Screenshot van Klik hier om te ondertekenen &#x200B;](assets/automatelegal_33.png)
 
 1. Typ uw handtekening.
 
-   ![ Screenshot van het typen van handtekening ](assets/automatelegal_34.png)
+   ![&#x200B; Screenshot van het typen van handtekening &#x200B;](assets/automatelegal_34.png)
 
 1. Selecteer **[!UICONTROL toepassen]**.
 1. Selecteer **[!UICONTROL klik om]** te ondertekenen.
@@ -414,17 +414,17 @@ Er wordt een e-mail verzonden naar de volgende ondertekenaar. Herhaal stap 9-16 
 
 Zodra de overeenkomst is voltooid, wordt een ondertekende kopie van de overeenkomst via e-mail naar elk van de partijen verzonden. Bovendien kan een ondertekende overeenkomst van de het Webinterface van Acrobat Sign in **worden teruggewonnen leidt** pagina.
 
-![ Screenshot van Manage lusje in Acrobat Sign ](assets/automatelegal_35.png)
+![&#x200B; Screenshot van Manage lusje in Acrobat Sign &#x200B;](assets/automatelegal_35.png)
 
 Leer vervolgens hoe u hetzelfde scenario kunt uitvoeren via REST API-documentatie.
 
 ## Referenties ophalen
 
-1. Navigeer aan [ Documentatie van de REST van Acrobat Sign ](https://secure.na1.adobesign.com/public/docs/restapi/v6).
-1. Breid *transientDocuments* en [ POST /transientDocuments ](https://benprojecteddemo.na1.adobesign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument) uit.
+1. Navigeer aan [&#x200B; Documentatie van de REST van Acrobat Sign &#x200B;](https://secure.na1.adobesign.com/public/docs/restapi/v6).
+1. Breid *transientDocuments* en [&#x200B; POST /transientDocuments &#x200B;](https://benprojecteddemo.na1.adobesign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument) uit.
 1. Selecteer **[!UICONTROL OAUTH TOEGANG-TOKEN]**.
 
-   ![ Screenshot van waar te om OAUTH TOEGANG-TOKEN ](assets/automatelegal_36.png) te selecteren
+   ![&#x200B; Screenshot van waar te om OAUTH TOEGANG-TOKEN &#x200B;](assets/automatelegal_36.png) te selecteren
 
 1. Controleer de toestemmingen OAUTH voor *agreement_write*, *agreement_sign*, *widget_write*, en *library_write*.
 1. Selecteer **[!UICONTROL machtigt]**.
@@ -433,7 +433,7 @@ Leer vervolgens hoe u hetzelfde scenario kunt uitvoeren via REST API-documentati
 
 Een dragertoken wordt dan toegevoegd aan het **gebied van de Vergunning**.
 
-Om meer te leren hoe te om een toestemmingstoken voor Acrobat Sign tot stand te brengen, kunt u de stap volgen die [ hier ](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html) wordt geschetst.
+Om meer te leren hoe te om een toestemmingstoken voor Acrobat Sign tot stand te brengen, kunt u de stap volgen die [&#x200B; hier &#x200B;](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html) wordt geschetst.
 
 ## Een tijdelijk document uploaden
 
@@ -441,7 +441,7 @@ Aangezien de machtigingstoken uit de vorige stappen is toegevoegd, moet u een do
 
 1. In *gebied van het Dossier*, upload het document van de PDF dat in vorige stappen werd geproduceerd.
 
-   ![ Screenshot van waar te om PDF ](assets/automatelegal_37.png) te uploaden
+   ![&#x200B; Screenshot van waar te om PDF &#x200B;](assets/automatelegal_37.png) te uploaden
 
 1. Selecteer **[!UICONTROL probeer het uit!]**.
 1. In **[!UICONTROL Hoofdtekst van de Reactie]**, kopieer de *transientDocumentId* waarde.
@@ -552,7 +552,7 @@ Nu heb je informatie over die overeenkomst.
   }
 ```
 
-De efficiëntere methode om berichten te krijgen wanneer de updates worden veranderd is via Webhooks, die u meer over [ hier ](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html) kunt leren.
+De efficiëntere methode om berichten te krijgen wanneer de updates worden veranderd is via Webhooks, die u meer over [&#x200B; hier &#x200B;](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html) kunt leren.
 
 ## Een ondertekend document opslaan
 
@@ -587,8 +587,8 @@ Bovendien biedt Acrobat Sign verschillende extra functies, zoals:
 
 Wil je meer leren? Bekijk enkele aanvullende manieren om [!DNL Adobe Acrobat Services] te gebruiken:
 
-* Leer meer van [ documentatie ](https://developer.adobe.com/document-services/docs/overview/)
+* Leer meer van [&#x200B; documentatie &#x200B;](https://developer.adobe.com/document-services/docs/overview/)
 * Meer zelfstudies op Adobe Experience League bekijken
 * Gebruik de voorbeeldscripts in de map /src om te zien hoe u PDF kunt gebruiken
-* Volg [ Blog van de Technologie van de Adobe ](https://medium.com/adobetech/tagged/adobe-document-cloud) voor recentste uiteinden en trucs
-* Abonneer aan [ Clips van het Papier (de maandelijkse levende stroom) ](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) om over het automatiseren te leren gebruiken [!DNL Adobe Acrobat Services].
+* Volg [&#x200B; Blog van de Technologie van de Adobe &#x200B;](https://medium.com/adobetech/tagged/adobe-document-cloud) voor recentste uiteinden en trucs
+* Abonneer aan [&#x200B; Clips van het Papier (de maandelijkse levende stroom) &#x200B;](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) om over het automatiseren te leren gebruiken [!DNL Adobe Acrobat Services].

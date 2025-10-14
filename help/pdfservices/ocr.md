@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Adobe PDF Services API gebruiken voor OCR-PDF-bestanden
 
-![ creeer PDF hoofdbeeld ](assets/OCR_hero.jpg)
+![&#x200B; creeer PDF hoofdbeeld &#x200B;](assets/OCR_hero.jpg)
 
 Met OCR (Optical Character Recognition) kun je gescande PDF ontgrendelen om tekst te extraheren en doorzoekbare bestanden te maken. Met onze krachtige cloudgebaseerde API’s integreer je OCR in elke documentworkflow voor de perfecte oplossing voor het archiveren, kopiëren van tekst en het creëren van doorzoekbare documentindexen. Maak doorzoekbare archieven vanuit gescande opslagplaatsen voor PDF om belangrijke informatie te ontgrendelen en tijd te besparen dankzij snelle doorzoekbaarheid. Of pas OCR van geüploade scans toe op uw PDF om deze te kunnen bewerken voor gebruik in onboardingworkflows.
 
@@ -37,7 +37,7 @@ Gebruik de onderstaande Aan de slag-zelfstudies om uw API-referenties te maken, 
 
 ## Het OCR-voorbeeld in de voorbeeldbestanden uitvoeren
 
-Onze OCR verrichting staat voor Engelse scène door gebrek toe, maar verleent ook steun voor Duits, Frans, Deens, en [ andere talen ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#ocr-with-explicit-language). De standaardwaarde is &#39;en-us&#39;.
+Onze OCR verrichting staat voor Engelse scène door gebrek toe, maar verleent ook steun voor Duits, Frans, Deens, en [&#x200B; andere talen &#x200B;](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#ocr-with-explicit-language). De standaardwaarde is &#39;en-us&#39;.
 
 Wanneer u opties doorgeeft met OCR-bewerking, inclusief een specifieke landinstelling, accepteert de methode ook de parameter &#39;type&#39; met twee opties:
 
@@ -95,14 +95,14 @@ Met deze eenvoudige stappen in de voorbeeldbestanden hebt u een werkvoorbeeld wa
 
 Vanaf hier kunt u uw invoer- en uitvoerbestanden in het voorbeeld gewoon vervangen om uw eigen PDF te gebruiken om uw concepttest af te ronden voor uw eigen gebruik.
 
-![ Bewijs van Concept ](assets/OCR_poc.png)
+![&#x200B; Bewijs van Concept &#x200B;](assets/OCR_poc.png)
 
 ## Bronnen en volgende stappen
 
-* Voor extra hulp en steun, bezoek het Adobe [[!DNL Acrobat Services]  APIs ](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) communityforum
+* Voor extra hulp en steun, bezoek het Adobe [[!DNL Acrobat Services]  APIs &#x200B;](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&sort=latest_replies&filter=all) communityforum
 
-* PDF Services API [ Documentatie ](https://www.adobe.com/go/pdftoolsapi_doc)
+* PDF Services API [&#x200B; Documentatie &#x200B;](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* [ Veelgestelde vragen ](https://community.adobe.com/t5/contentarchivals/contentarchivedpage/message-uid/10726197) voor de vragen van de Diensten API van PDF
+* [&#x200B; Veelgestelde vragen &#x200B;](https://community.adobe.com/t5/contentarchivals/contentarchivedpage/message-uid/10726197) voor de vragen van de Diensten API van PDF
 
-* [ Contact ons ](https://www.adobe.com/go/pdftoolsapi_requestform) voor vragen over vergunning en tarifering
+* [&#x200B; Contact ons &#x200B;](https://www.adobe.com/go/pdftoolsapi_requestform) voor vragen over vergunning en tarifering

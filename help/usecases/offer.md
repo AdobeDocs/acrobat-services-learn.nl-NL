@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # Brieven van werknemersaanbiedingen beheren
 
-![ Hoofdletterbanner van het Gebruik ](assets/UseCaseOfferHero.jpg)
+![&#x200B; Hoofdletterbanner van het Gebruik &#x200B;](assets/UseCaseOfferHero.jpg)
 
-Aanbiedingsbrieven van werknemers zijn een van de eerste ervaringen die medewerkers hebben met je organisatie. Als gevolg hiervan wil je ervoor zorgen dat je aanbiedingsbrieven onmerkbaar zijn, maar je wilt niet elke keer een letter in je tekstverwerker maken. [!DNL Adobe Acrobat Services] APIs biedt een snelle, gemakkelijke, en efficiënte manier aan om zeer belangrijke delen van [ te behandelen die en aanbiedingsbrieven aan nieuwe werknemers produceren ](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters).
+Aanbiedingsbrieven van werknemers zijn een van de eerste ervaringen die medewerkers hebben met je organisatie. Als gevolg hiervan wil je ervoor zorgen dat je aanbiedingsbrieven onmerkbaar zijn, maar je wilt niet elke keer een letter in je tekstverwerker maken. [!DNL Adobe Acrobat Services] APIs biedt een snelle, gemakkelijke, en efficiënte manier aan om zeer belangrijke delen van [&#x200B; te behandelen die en aanbiedingsbrieven aan nieuwe werknemers produceren &#x200B;](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters).
 
 ## Wat je kunt leren
 
@@ -27,29 +27,29 @@ Dit hands-on leerprogramma loopt door vestiging een Uitdrukkelijke project van d
 
 ## Relevante API&#39;s en bronnen
 
-* [ de Diensten API van de PDF ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [&#x200B; de Diensten API van de PDF &#x200B;](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [ de Generatie API van het Document van de Adobe ](https://developer.adobe.com/document-services/apis/doc-generation)
+* [&#x200B; de Generatie API van het Document van de Adobe &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation)
 
-* [ Adobe Sign API ](https://developer.adobe.com/adobesign-api/)
+* [&#x200B; Adobe Sign API &#x200B;](https://developer.adobe.com/adobesign-api/)
 
-* [ toe:voegen-binnen van de Tagger van de Generatie van het Document ](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin)
+* [&#x200B; toe:voegen-binnen van de Tagger van de Generatie van het Document &#x200B;](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin)
 
-* [ steekproef van het Project ](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters)
+* [&#x200B; steekproef van het Project &#x200B;](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters)
 
 ## Aan de slag
 
-[ Node.js ](https://nodejs.org/) is het programmeringsplatform. Het wordt geleverd met een enorme reeks bibliotheken, zoals de Express-webserver. [ Download Node.js ](https://nodejs.org/en/download/) en volg de stappen om deze grote open-bronontwikkelomgeving te installeren.
+[&#x200B; Node.js &#x200B;](https://nodejs.org/) is het programmeringsplatform. Het wordt geleverd met een enorme reeks bibliotheken, zoals de Express-webserver. [&#x200B; Download Node.js &#x200B;](https://nodejs.org/en/download/) en volg de stappen om deze grote open-bronontwikkelomgeving te installeren.
 
-Om de Generatie API van het Document van de Adobe in Node.js te gebruiken, ga naar de [ Generatie API van het Document ](https://developer.adobe.com/document-services/apis/doc-generation) plaats om tot uw rekening toegang te hebben of omhoog voor nieuwe te ondertekenen. Uw rekening is [ vrij voor zes maanden dan betaal-als-u-gaat ](https://developer.adobe.com/document-services/pricing/main) voor slechts $0.05 per documenttransactie, zodat kunt u het uit risicovrij proberen dan slechts betaal aangezien uw bedrijf groeit.
+Om de Generatie API van het Document van de Adobe in Node.js te gebruiken, ga naar de [&#x200B; Generatie API van het Document &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation) plaats om tot uw rekening toegang te hebben of omhoog voor nieuwe te ondertekenen. Uw rekening is [&#x200B; vrij voor zes maanden dan betaal-als-u-gaat &#x200B;](https://developer.adobe.com/document-services/pricing/main) voor slechts $0.05 per documenttransactie, zodat kunt u het uit risicovrij proberen dan slechts betaal aangezien uw bedrijf groeit.
 
-Na het ondertekenen in de [ Console van de Ontwikkelaar van Adobe ](https://developer.adobe.com/console/), klik **[!UICONTROL Nieuw Project]** creëren. Het project heeft standaard de naam &quot;Project 1&quot;. Klik de **[!UICONTROL Edit knoop van het Project]** en verander de naam in &quot;de Generator van de Brief van de Aanbieding.&quot; In het centrum van het scherm is a **[!UICONTROL wordt begonnen met uw Nieuwe sectie van het Project]**. Ga als volgt te werk om de beveiliging van uw project in te schakelen:
+Na het ondertekenen in de [&#x200B; Console van de Ontwikkelaar van Adobe &#x200B;](https://developer.adobe.com/console/), klik **[!UICONTROL Nieuw Project]** creëren. Het project heeft standaard de naam &quot;Project 1&quot;. Klik de **[!UICONTROL Edit knoop van het Project]** en verander de naam in &quot;de Generator van de Brief van de Aanbieding.&quot; In het centrum van het scherm is a **[!UICONTROL wordt begonnen met uw Nieuwe sectie van het Project]**. Ga als volgt te werk om de beveiliging van uw project in te schakelen:
 
 Klik **voeg API** toe. U ziet een aantal API&#39;s waaruit u kunt kiezen. In de **[!UICONTROL Filter door de sectie van het Product]**, uitgezochte **[!UICONTROL Document Cloud]**, dan klik **[!UICONTROL daarna]**.
 
-Genereer nu aanmeldingsgegevens voor toegang tot de API. De geloofsbrieven zijn in de vorm van een Token van het Web JSON ([ JWT ](https://jwt.io/)): een open norm voor veilige mededeling. Als u bekend bent met JWT en al sleutels hebt gegenereerd, kunt u hier uw openbare sleutel uploaden. Alternatief, ga door **Optie 1 te selecteren** te hebben Adobe produceren de sleutels voor u.
+Genereer nu aanmeldingsgegevens voor toegang tot de API. De geloofsbrieven zijn in de vorm van een Token van het Web JSON ([&#x200B; JWT &#x200B;](https://jwt.io/)): een open norm voor veilige mededeling. Als u bekend bent met JWT en al sleutels hebt gegenereerd, kunt u hier uw openbare sleutel uploaden. Alternatief, ga door **Optie 1 te selecteren** te hebben Adobe produceren de sleutels voor u.
 
-![ Screenshot van het produceren van geloofsbrieven ](assets/offer_1.png)
+![&#x200B; Screenshot van het produceren van geloofsbrieven &#x200B;](assets/offer_1.png)
 
 Klik **[!UICONTROL Genereer keypair]** knoop. U kunt een bestand config.zip downloaden. Pak het archiefbestand uit. Het bevat twee bestanden: certificate_pub.crt en private.key. Zorg ervoor dat deze gegevens beveiligd blijven, aangezien deze uw persoonlijke gegevens bevatten en kunnen worden gebruikt om onbetrouwbare documenten te genereren als u er geen controle over hebt.
 
@@ -57,7 +57,7 @@ Klik op **[!UICONTROL Volgende]**. Nee, hiermee wordt toegang tot de PDF Generat
 
 ## Het project opzetten
 
-Stel een Node-project in om uw code uit te voeren. Dit voorbeeld gebruikt [ Code van Visual Studio ](https://code.visualstudio.com/) (de Code van VS) als redacteur. Maak een map met de naam &quot;letter-generator&quot; en open deze in de VS-code. Van het **[!UICONTROL menu van het Dossier]**, selecteer **[!UICONTROL Eind]** \> **[!UICONTROL Nieuwe Eind]** om shell in deze omslag te openen. Controleer of Node is geïnstalleerd en op uw pad door het volgende in te voeren:
+Stel een Node-project in om uw code uit te voeren. Dit voorbeeld gebruikt [&#x200B; Code van Visual Studio &#x200B;](https://code.visualstudio.com/) (de Code van VS) als redacteur. Maak een map met de naam &quot;letter-generator&quot; en open deze in de VS-code. Van het **[!UICONTROL menu van het Dossier]**, selecteer **[!UICONTROL Eind]** \> **[!UICONTROL Nieuwe Eind]** om shell in deze omslag te openen. Controleer of Node is geïnstalleerd en op uw pad door het volgende in te voeren:
 
 ```
 node -v
@@ -162,7 +162,7 @@ node app.js
 
 Het bericht &#39;Kandidaataanbiedingsbrief-app luistert op poort 8000&#39; moet worden weergegeven. Als u uw browser opent voor <http://localhost:8000/> , moet het formulier er als volgt uitzien:
 
-![ Screenshot van Webvorm ](assets/offer_2.png)
+![&#x200B; Screenshot van Webvorm &#x200B;](assets/offer_2.png)
 
 U ziet dat het formulier zichzelf plaatst. Als u in gegevens invult en **klikt produceer Brief,** u de volgende informatie over de console zou moeten zien:
 
@@ -239,7 +239,7 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-Er moet veel code uitpakken. Laten we eerst het belangrijkste deel nemen: de `documentMergeOperation` . In deze sectie kunt u uw JSON-gegevens samenvoegen met een Word-documentsjabloon. U kunt het [ voorbeeld op de plaats van de Adobe ](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade) als verwijzing gebruiken, maar laten uw eigen eenvoudig voorbeeld maken. Open Word en maak een nieuw, leeg document. Je kunt het zo aanpassen als je wilt, maar in ieder geval iets als dit:
+Er moet veel code uitpakken. Laten we eerst het belangrijkste deel nemen: de `documentMergeOperation` . In deze sectie kunt u uw JSON-gegevens samenvoegen met een Word-documentsjabloon. U kunt het [&#x200B; voorbeeld op de plaats van de Adobe &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade) als verwijzing gebruiken, maar laten uw eigen eenvoudig voorbeeld maken. Open Word en maak een nieuw, leeg document. Je kunt het zo aanpassen als je wilt, maar in ieder geval iets als dit:
 
 Beste X,
 
@@ -251,7 +251,7 @@ Sla het document op als &quot;OfferLetter-Template.docx&quot; in een map met de 
 
 In uw OfferLetter-Malplaatje, klik de nieuwe **knoop van de Generatie van het Document**. Er wordt een zijpaneel geopend. Klik **worden begonnen**. U hebt een tekstgebied om in de JSON-voorbeeldgegevens te plakken. Kopieer het &#39;offer-data&#39;-fragment van JSON van boven naar het tekstgebied. Het zou als het volgende moeten kijken:
 
-![ Screenshot van brief en code ](assets/offer_3.png)
+![&#x200B; Screenshot van brief en code &#x200B;](assets/offer_3.png)
 
 Klik **produceer de knoop van Markeringen**. U krijgt een vervolgkeuzemenu met codes die u in de juiste punten in het document wilt invoegen. Markeer eerste X in het document en selecteer **[!UICONTROL firstname]**. Klik **[!UICONTROL Tekst van het Tussenvoegsel]** en &quot;Beste X,&quot;wordt veranderd in &quot;Beste ```{{`offer_letter`.firstname}}```,&quot;. Dit label is de juiste notatie voor `documentMergeOperation` . Voeg de resterende drie tags toe aan de juiste Xs. Vergeet niet OfferLetter-template.docx op te slaan. Het moet er als volgt uitzien:
 
@@ -263,7 +263,7 @@ Welkom
 
 De Word-sjabloon heeft nu markeringen die overeenkomen met de JSON-indeling. Zo wordt ```{{`offer_letter`.`firstname`}}``` aan het begin van een Word-document vervangen door de waarde in het gedeelte &quot;firstname&quot; van de JSON-gegevens.
 
-Terug naar uw `generateLetter` functie. Om uw REST vraag te beveiligen, maak een nieuw dossier met de naam pdftools-api-credentials.json in de projectwortel. Plak in de volgende JSON- gegevens en pas het met details van de sectie van de Rekening van de Dienst (JWT) van uw [ Console van de Ontwikkelaar ](https://developer.adobe.com/console/) aan.
+Terug naar uw `generateLetter` functie. Om uw REST vraag te beveiligen, maak een nieuw dossier met de naam pdftools-api-credentials.json in de projectwortel. Plak in de volgende JSON- gegevens en pas het met details van de sectie van de Rekening van de Dienst (JWT) van uw [&#x200B; Console van de Ontwikkelaar &#x200B;](https://developer.adobe.com/console/) aan.
 
 ```
 {
@@ -290,9 +290,9 @@ Om een PDF met de gegevens te produceren JSON die binnen worden ingevuld, ga ter
 
 ## Volgende stappen
 
-Dat is het! Dit is nog maar het begin. Als u de geavanceerde sectie van het tabblad Documentgeneratie van de Word-invoegtoepassing bestudeert, ziet u dat niet alle plaatsaanduidingsmarkeringen van de bijbehorende JSON-gegevens afkomstig zijn. U kunt ook handtekeninglabels toevoegen. Deze markeringen staan u toe om het resulterende document te nemen en het te uploaden aan [ Adobe Sign ](https://www.adobe.com/ca/sign.html) voor levering en het ondertekenen aan nieuwe werknemer. Lees Getting Started met Adobe Sign API voor meer informatie over hoe je dit doet. Dit proces is vergelijkbaar omdat u REST-aanroepen gebruikt die zijn beveiligd met een JWT-token.
+Dat is het! Dit is nog maar het begin. Als u de geavanceerde sectie van het tabblad Documentgeneratie van de Word-invoegtoepassing bestudeert, ziet u dat niet alle plaatsaanduidingsmarkeringen van de bijbehorende JSON-gegevens afkomstig zijn. U kunt ook handtekeninglabels toevoegen. Deze markeringen staan u toe om het resulterende document te nemen en het te uploaden aan [&#x200B; Adobe Sign &#x200B;](https://www.adobe.com/ca/sign.html) voor levering en het ondertekenen aan nieuwe werknemer. Lees Getting Started met Adobe Sign API voor meer informatie over hoe je dit doet. Dit proces is vergelijkbaar omdat u REST-aanroepen gebruikt die zijn beveiligd met een JWT-token.
 
-Het enige die documentvoorbeeld hierboven wordt verstrekt kan als basis voor een toepassing worden gebruikt wanneer een organisatie [ omhoog seizoensgebonden het huren ](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters) van werknemers over veelvoudige plaatsen moet opvoeren. Zoals aangetoond, is de belangrijkste stroom gegevens van kandidaten door een online toepassing te nemen. De gegevens worden gebruikt om de velden van een aanbiedingsbrief te vullen en deze ter elektronische ondertekening te verzenden.
+Het enige die documentvoorbeeld hierboven wordt verstrekt kan als basis voor een toepassing worden gebruikt wanneer een organisatie [&#x200B; omhoog seizoensgebonden het huren &#x200B;](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters) van werknemers over veelvoudige plaatsen moet opvoeren. Zoals aangetoond, is de belangrijkste stroom gegevens van kandidaten door een online toepassing te nemen. De gegevens worden gebruikt om de velden van een aanbiedingsbrief te vullen en deze ter elektronische ondertekening te verzenden.
 
-[!DNL Adobe Acrobat Services] is vrij om voor zes maanden te gebruiken, dan [ betaal-als-u-gaat ](https://developer.adobe.com/document-services/pricing/main) bij slechts $0.05 per documenttransactie, zodat kunt u het proberen en uw workflow van de aanbiedingsbrief schalen aangezien uw zaken groeit. Aan [ begin ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
-bouwend uw eigen malplaatjes, [ teken omhoog uw ontwikkelaarsrekening ](https://developer.adobe.com/).
+[!DNL Adobe Acrobat Services] is vrij om voor zes maanden te gebruiken, dan [&#x200B; betaal-als-u-gaat &#x200B;](https://developer.adobe.com/document-services/pricing/main) bij slechts $0.05 per documenttransactie, zodat kunt u het proberen en uw workflow van de aanbiedingsbrief schalen aangezien uw zaken groeit. Aan [&#x200B; begin &#x200B;](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
+bouwend uw eigen malplaatjes, [&#x200B; teken omhoog uw ontwikkelaarsrekening &#x200B;](https://developer.adobe.com/).

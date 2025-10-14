@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Adobe PDF Electronic Seal API-Tutorials
 
-De Adobe PDF Electronic Seal API past een elektronische zegel op schaal toe op documenten met behulp van een certificaat dat door bepaalde TSP&#39;s (Trust Service Providers) is uitgegeven op [ Approved Trust List (AATL) van de Adobe ](https://helpx.adobe.com/nl/acrobat/kb/approved-trust-list1.html). Met de elektronische zegel kunt u de identiteit en integriteit van documenten verifiëren. Dit kan worden gebruikt om documenten op schaal elektronisch te verzegelen en is inbegrepen bij de PDF Services API.
+De Adobe PDF Electronic Seal API past een elektronische zegel op schaal toe op documenten met behulp van een certificaat dat door bepaalde TSP&#39;s (Trust Service Providers) is uitgegeven op [&#x200B; Approved Trust List (AATL) van de Adobe &#x200B;](https://helpx.adobe.com/nl/acrobat/kb/approved-trust-list1.html). Met de elektronische zegel kunt u de identiteit en integriteit van documenten verifiëren. Dit kan worden gebruikt om documenten op schaal elektronisch te verzegelen en is inbegrepen bij de PDF Services API.
 
 <!-- Comment -->
 <!-- CARDS

@@ -62,8 +62,8 @@ In deel 1 leert u hoe u aan de slag kunt gaan met alles wat u nodig hebt voor on
 
 **wat u** nodig hebt
 
-* De middelen van het leerprogramma [ download ](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial)
-* Adobe ID [ krijgt hier ](https://account.adobe.com/)
+* De middelen van het leerprogramma [&#x200B; download &#x200B;](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial)
+* Adobe ID [&#x200B; krijgt hier &#x200B;](https://account.adobe.com/)
 * Webserver (Node JS, PHP, enz.)
 * Werkkennis van HTML / JavaScript / CSS
 
@@ -78,7 +78,7 @@ In deel 1 leert u hoe u aan de slag kunt gaan met alles wat u nodig hebt voor on
 1. Ga naar de {[&#128279;](https://developer.adobe.com/) website 0} Adobe.io.
 1. Klik **[!UICONTROL Leer meer]** onder Bouw aansprekende documentervaringen.
 
-   ![ Schermafbeelding van Leren meer knoop ](assets/ControlPDF_1.png)
+   ![&#x200B; Schermafbeelding van Leren meer knoop &#x200B;](assets/ControlPDF_1.png)
 
    Hiermee gaat u naar de [!DNL Adobe Acrobat Services] -startpagina.
 
@@ -88,7 +88,7 @@ In deel 1 leert u hoe u aan de slag kunt gaan met alles wat u nodig hebt voor on
 
 1. Klik **[!UICONTROL krijgen Begonnen]** knoop onder **[!UICONTROL creëren Nieuwe Geloofsbrieven]**.
 
-   ![ Screenshot van Get Started knoop ](assets/ControlPDF_2.png)
+   ![&#x200B; Screenshot van Get Started knoop &#x200B;](assets/ControlPDF_2.png)
 
 1. Kies de **[!UICONTROL PDF bed API]** radioknoop in en voeg een credentienaam van uw keus en een toepassingsdomein in het volgende venster toe.
 
@@ -96,7 +96,7 @@ In deel 1 leert u hoe u aan de slag kunt gaan met alles wat u nodig hebt voor on
    >
    >Deze referenties kunnen alleen worden gebruikt in het toepassingsdomein dat hier wordt vermeld. U kunt elk gewenst domein gebruiken.
 
-   ![ Scherenshot van geloofsbrieven ](assets/ControlPDF_3.png)
+   ![&#x200B; Scherenshot van geloofsbrieven &#x200B;](assets/ControlPDF_3.png)
 
 1. Klik **[!UICONTROL creeer Referenties]**.
 
@@ -104,7 +104,7 @@ In deel 1 leert u hoe u aan de slag kunt gaan met alles wat u nodig hebt voor on
 
 1. Klik **[!UICONTROL Documentatie van de Mening]** om naar de documentatie met gedetailleerde informatie te gaan over hoe te om deze API te gebruiken.
 
-   ![ Screenshot van creeer geloofsbrieven knoop ](assets/ControlPDF_4.png)
+   ![&#x200B; Screenshot van creeer geloofsbrieven knoop &#x200B;](assets/ControlPDF_4.png)
 
 ## Deel 2: API voor insluiten van PDF toevoegen aan een webpagina {#part2}
 
@@ -112,37 +112,37 @@ In deel 2 leert u hoe u de PDF Embed-API gemakkelijk kunt insluiten in een webpa
 
 ### De oefencode ophalen
 
-We hebben code gemaakt die je kunt gebruiken. Terwijl u uw eigen code kunt gebruiken, zullen de demonstraties plaatsvinden in de context van de leermiddelen. Download steekproefcode [ hier ](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial).
+We hebben code gemaakt die je kunt gebruiken. Terwijl u uw eigen code kunt gebruiken, zullen de demonstraties plaatsvinden in de context van de leermiddelen. Download steekproefcode [&#x200B; hier &#x200B;](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial).
 
-1. Ga naar [[!DNL Adobe Acrobat Services]  website ](https://developer.adobe.com/document-services/homepage/).
+1. Ga naar [[!DNL Adobe Acrobat Services]  website &#x200B;](https://developer.adobe.com/document-services/homepage/).
 
-   ![ Screenshot van [!DNL Adobe Acrobat Services] website ](assets/ControlPDF_6.png)
+   ![&#x200B; Screenshot van [!DNL Adobe Acrobat Services] website &#x200B;](assets/ControlPDF_6.png)
 
 1. Klik **[!UICONTROL APIs]** in de navigatiebar, dan ga naar de **[!UICONTROL PDF bed API]** pagina in de drop-down verbinding in.
 
-   ![ Screenshot van PDF Embed API dropdown ](assets/ControlPDF_7.png)
+   ![&#x200B; Screenshot van PDF Embed API dropdown &#x200B;](assets/ControlPDF_7.png)
 
 1. Klik **[!UICONTROL probeer de demo]**.
 
    Er verschijnt een nieuw venster met de ontwikkelaarssandbox voor PDF Embed API.
 
-   ![ Screenshot van Probeert de demo ](assets/ControlPDF_8.png)
+   ![&#x200B; Screenshot van Probeert de demo &#x200B;](assets/ControlPDF_8.png)
 
    Hier ziet u de opties voor de verschillende weergavemodi.
 
 1. Klik op de verschillende weergavemodi voor Volledig venster, Container met grootte, In-line en Lichtbak.
 
-   ![ Screenshot van het bekijken wijzen ](assets/ControlPDF_9.png)
+   ![&#x200B; Screenshot van het bekijken wijzen &#x200B;](assets/ControlPDF_9.png)
 
 1. Klik **[!UICONTROL Volledige het bekijken van het Venster]** wijze, dan klik **[!UICONTROL pas]** knoop aan knevel opties aan en weg.
 
-   ![ Screenshot van Customize knoop ](assets/ControlPDF_10.png)
+   ![&#x200B; Screenshot van Customize knoop &#x200B;](assets/ControlPDF_10.png)
 
 1. Schakel **[!UICONTROL de optie van de Download]** PDF uit.
 1. Klik **[!UICONTROL produceer de knoop van de Code]** om de codevoorproef te zien.
 1. Exemplaar **[!UICONTROL identiteitskaart van de Cliënt]** van het venster van de Referenties van de Cliënt van Deel 1.
 
-   ![ Screenshot van identiteitskaart van de Cliënt ](assets/ControlPDF_11.png)
+   ![&#x200B; Screenshot van identiteitskaart van de Cliënt &#x200B;](assets/ControlPDF_11.png)
 
 1. Open het **[!UICONTROL Web]** -> **[!UICONTROL middelen]** -> **[!UICONTROL js]** -> **[!UICONTROL dc-config.js]** dossier in uw coderedacteur.
 
@@ -158,13 +158,13 @@ We hebben code gemaakt die je kunt gebruiken. Terwijl u uw eigen code kunt gebru
    <script src=https://documentccloud.adobe.com/view-sdk/main.js></script>
    ```
 
-   ![ Screenshot van manuscript ](assets/ControlPDF_12.png)
+   ![&#x200B; Screenshot van manuscript &#x200B;](assets/ControlPDF_12.png)
 
 1. Ga naar uw coderedacteur en open het **[!UICONTROL Web]** -> **[!UICONTROL oefening]** -> **[!UICONTROL index.html]** dossier.
 
 1. Plak de manuscriptcode in `<head>` van het dossier op lijn 18 onder de commentaar dat zegt: **TODO: EXERCISE 1: TUSSENVOEGSEL API SCRIPT TAG**.
 
-   ![ Screenshot van waar te om manuscriptcode ](assets/ControlPDF_13.png) te kleven
+   ![&#x200B; Screenshot van waar te om manuscriptcode &#x200B;](assets/ControlPDF_13.png) te kleven
 
 1. Ga terug naar de codevoorvertoning van de ontwikkelaarssandbox en kopieer de eerste coderegel die het volgende bevat:
 
@@ -172,13 +172,13 @@ We hebben code gemaakt die je kunt gebruiken. Terwijl u uw eigen code kunt gebru
    <div id="adobe-dc-view"></div>
    ```
 
-   ![ Screenshot van waar te om code ](assets/ControlPDF_14.png) te kopiëren
+   ![&#x200B; Screenshot van waar te om code &#x200B;](assets/ControlPDF_14.png) te kopiëren
 
 1. Ga naar uw coderedacteur en open het **[!UICONTROL Web]** -> **[!UICONTROL oefening]** -> **[!UICONTROL index.html]** dossier opnieuw.
 
 1. Plak de `<div>` code in `<body>` van het dossier op lijn 67 onder de commentaar dat **TODO zegt: EXERCISE 1: DE CODE VAN DE PDF EMBED API VAN HET TUSSENVOEGSEL**.
 
-   ![ Screenshot van waar te om code ](assets/ControlPDF_15.png) te kleven
+   ![&#x200B; Screenshot van waar te om code &#x200B;](assets/ControlPDF_15.png) te kleven
 
 1. Ga terug naar de codevoorvertoning van de ontwikkelaarssandbox en kopieer de coderegels voor de onderstaande `<script>` code:
 
@@ -200,7 +200,7 @@ We hebben code gemaakt die je kunt gebruiken. Terwijl u uw eigen code kunt gebru
 
 1. Wijzig lijn 70 van het zelfde **index.html** dossier om de clientID variabele te omvatten die eerder werd gecreeerd.
 
-   ![ Screenshot van lijn 70 ](assets/ControlPDF_16.png)
+   ![&#x200B; Screenshot van lijn 70 &#x200B;](assets/ControlPDF_16.png)
 
 1. Wijzig lijn 72 van het zelfde **index.html** dossier om de plaats van het dossier van de PDF bij te werken om een lokaal dossier te gebruiken.
 
@@ -218,16 +218,16 @@ Nu u een webpagina hebt gemaakt met PDF Embed API-rendering voor een PDF, kunt u
 
 Er zijn veel verschillende JavaScript-gebeurtenissen beschikbaar als onderdeel van de PDF Embed-API. U kunt ze openen vanuit de [!DNL Adobe Acrobat Services] -documentatie.
 
-1. Navigeer aan de [ documentatieplaats ](https://developer.adobe.com/document-services/docs/overview).
+1. Navigeer aan de [&#x200B; documentatieplaats &#x200B;](https://developer.adobe.com/document-services/docs/overview).
 1. Bekijk de verschillende gebeurtenistypen die beschikbaar zijn als onderdeel van de API. Deze zijn handig als referentie en zijn ook handig voor toekomstige projecten.
 
-   ![ Schermafbeelding van verwijzingsgids ](assets/ControlPDF_17.png)
+   ![&#x200B; Schermafbeelding van verwijzingsgids &#x200B;](assets/ControlPDF_17.png)
 
 1. Kopieer de voorbeeldcode die op de website staat.
 
    Gebruik dit als basis voor onze code en wijzig deze.
 
-   ![ Screenshot van waar te om steekproefcode ](assets/ControlPDF_18.png) te kopiëren
+   ![&#x200B; Screenshot van waar te om steekproefcode &#x200B;](assets/ControlPDF_18.png) te kopiëren
 
    ```
    const eventOptions = {
@@ -249,13 +249,13 @@ Er zijn veel verschillende JavaScript-gebeurtenissen beschikbaar als onderdeel v
 
 1. Vind de codesectie u vroeger toevoegde die als hieronder kijkt en voeg de code hierboven na deze code in **index.html** toe:
 
-   ![ Screenshot van waar te om code ](assets/ControlPDF_19.png) te kleven
+   ![&#x200B; Screenshot van waar te om code &#x200B;](assets/ControlPDF_19.png) te kleven
 
 1. Laad de pagina in uw webbrowser en open de Console om de consoleuitvoer van de verschillende gebeurtenissen te bekijken terwijl u met de PDF viewer werkt.
 
-   ![ Screenshot van het laden van de pagina ](assets/ControlPDF_20.png)
+   ![&#x200B; Screenshot van het laden van de pagina &#x200B;](assets/ControlPDF_20.png)
 
-   ![ Screenshot van de code voor het laden van de pagina ](assets/ControlPDF_21.png)
+   ![&#x200B; Screenshot van de code voor het laden van de pagina &#x200B;](assets/ControlPDF_21.png)
 
 ### Schakel toevoegen voor het vastleggen van gebeurtenissen
 
@@ -263,11 +263,11 @@ Nu u de gebeurtenissen hebt die aan console.log worden uitgevoerd, laten we het 
 
 1. Navigeer aan **snippets/eventsSwitch.js** en kopieer de inhoud van het dossier in de zelfstudiecode.
 
-   ![ Screenshot van waar te om code ](assets/ControlPDF_22.png) te kopiëren
+   ![&#x200B; Screenshot van waar te om code &#x200B;](assets/ControlPDF_22.png) te kopiëren
 
 1. Plak de code in de gebeurtenislistenerfunctie.
 
-   ![ Screenshot van waar te om code ](assets/ControlPDF_23.png) te kleven
+   ![&#x200B; Screenshot van waar te om code &#x200B;](assets/ControlPDF_23.png) te kleven
 
 1. Bevestig dat de consoleoutput correct wanneer de pagina wordt geladen en u met de PDF Kijker in wisselwerking staat.
 
@@ -279,18 +279,18 @@ Als u Adobe Analytics-ondersteuning wilt toevoegen aan uw viewer, kunt u de inst
 >
 >Adobe Analytics moet al op de pagina in de koptekst zijn geladen.
 
-Navigeer aan de [ documentatie van Adobe Analytics ](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtodata.html#adobe-analytics) en overzicht als u Adobe Analytics reeds hebt toegelaten op uw webpagina. Volg de instructies om een rapportsuite in te stellen.
+Navigeer aan de [&#x200B; documentatie van Adobe Analytics &#x200B;](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtodata.html#adobe-analytics) en overzicht als u Adobe Analytics reeds hebt toegelaten op uw webpagina. Volg de instructies om een rapportsuite in te stellen.
 
 ### Googles Analytics
 
-![ Screenshot van hoe te met Googles Analytics te integreren ](assets/ControlPDF_24.png)
+![&#x200B; Screenshot van hoe te met Googles Analytics te integreren &#x200B;](assets/ControlPDF_24.png)
 
 Adobe PDF Embed API biedt kant-en-klare integratie met Adobe Analytics. Omdat alle gebeurtenissen echter beschikbaar zijn als JavaScript-gebeurtenissen, is het mogelijk om met Googles Analytics te integreren door PDF-gebeurtenissen vast te leggen en de functie ga() te gebruiken om de gebeurtenis toe te voegen aan Adobe Analytics.
 
 1. Navigeer aan **snippets/eventsSwitchGA.js** om te zien hoe u met Googles Analytics kunt integreren.
 1. Bekijk en gebruik deze code als voorbeeld als uw webpagina wordt bijgehouden met Adobe Analytics en al is ingesloten op de webpagina.
 
-   ![ Screenshot van Adobe Analytics code ](assets/ControlPDF_25.png)
+   ![&#x200B; Screenshot van Adobe Analytics code &#x200B;](assets/ControlPDF_25.png)
 
 ## Deel 4: Interactiviteit toevoegen op basis van gebeurtenissen {#part4}
 
@@ -298,19 +298,19 @@ In deel 4 gaat u door hoe u boven op uw PDF-viewer een paywall kunt toevoegen di
 
 ### Paywall-voorbeeld
 
-Ga aan dit [ voorbeeld van een PDF achter een paywall ](https://www3.technologyevaluation.com/research/white-paper/the-forrester-wave-digital-decisioning-platforms-q4-2020.html). In dit voorbeeld leert u interactiviteit toevoegen boven op een PDF-kijkervaring.
+Ga aan dit [&#x200B; voorbeeld van een PDF achter een paywall &#x200B;](https://www3.technologyevaluation.com/research/white-paper/the-forrester-wave-digital-decisioning-platforms-q4-2020.html). In dit voorbeeld leert u interactiviteit toevoegen boven op een PDF-kijkervaring.
 
 ### paywall-code toevoegen
 
 1. Ga naar snippets/paywallCode.html en kopieer de inhoud.
 1. Zoek naar `<!-- TODO: EXERCISE 3: INSERT PAYWALL CODE -->` in exercise/index.html.
 
-   ![ Screenshot van waar te om code ](assets/ControlPDF_26.png) te kopiëren
+   ![&#x200B; Screenshot van waar te om code &#x200B;](assets/ControlPDF_26.png) te kopiëren
 
 1. Plak de gekopieerde code na de opmerking.
 1. Ga naar **snippets/paywallCode.js** en kopieer de inhoud.
 
-   ![ Screenshot van waar te om code ](assets/ControlPDF_27.png) te kleven
+   ![&#x200B; Screenshot van waar te om code &#x200B;](assets/ControlPDF_27.png) te kleven
 
 1. Plak de code op die locatie.
 
@@ -322,8 +322,8 @@ Nu kunt u de demo bekijken.
 1. Schuif omlaag naar een pagina > 2.
 1. Het dialoogvenster weergeven verschijnt om de gebruiker na de tweede pagina uit te dagen.
 
-   ![ Screenshot van het bekijken van de demo ](assets/ControlPDF_28.png)
+   ![&#x200B; Screenshot van het bekijken van de demo &#x200B;](assets/ControlPDF_28.png)
 
 ## Extra bronnen
 
-De extra middelen kunnen worden gevonden [ hier ](https://developer.adobe.com/document-services/docs/overview).
+De extra middelen kunnen worden gevonden [&#x200B; hier &#x200B;](https://developer.adobe.com/document-services/docs/overview).

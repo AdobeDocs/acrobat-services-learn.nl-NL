@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # PDF Services-API gebruiken om PDF naar Word, PowerPoint en meer te exporteren
 
-![ creeer PDF hoofdbeeld ](assets/ExportPDF_hero.jpg)
+![&#x200B; creeer PDF hoofdbeeld &#x200B;](assets/ExportPDF_hero.jpg)
 
 Adobe PDF Services API converteert PDF-bestanden naar MS Office, tekst en afbeeldingen met behulp van API&#39;s. Er zijn veel veelvoorkomende gebruiksscenario&#39;s om bestaande PDF te ontgrendelen voor contentbewerking en -analyse en met PDF Services API-ontwikkelaars kunnen deze functionaliteit gemakkelijk worden geïntegreerd in bestaande systemen en toepassingen. Converteer PDF-bestanden naar MS Word voor het bewerken van inhoud, goedkeuringen en het later verzenden van handtekeningen om aangepaste contractworkflows te maken. Of exporteer PDF-content naar MS Excel-indeling voor facturen en financiële berekeningen of gegevensanalyse.
 
@@ -101,10 +101,10 @@ Naar een andere indeling.
 
 ## Bronnen en volgende stappen
 
-* Voor extra hulp en steun, bezoek het [[!DNL Adobe Acrobat Services]  APIs ](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) communautaire forum
+* Voor extra hulp en steun, bezoek het [[!DNL Adobe Acrobat Services]  APIs &#x200B;](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&sort=latest_replies&filter=all) communautaire forum
 
-* PDF Services API [ Documentatie ](https://www.adobe.com/go/pdftoolsapi_doc)
+* PDF Services API [&#x200B; Documentatie &#x200B;](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* [ Veelgestelde vragen ](https://community.adobe.com/t5/contentarchivals/contentarchivedpage/message-uid/10726197) voor de vragen van de Diensten API van PDF
+* [&#x200B; Veelgestelde vragen &#x200B;](https://community.adobe.com/t5/contentarchivals/contentarchivedpage/message-uid/10726197) voor de vragen van de Diensten API van PDF
 
-* [ Contact ons ](https://www.adobe.com/go/pdftoolsapi_requestform) voor vragen over vergunning en tarifering
+* [&#x200B; Contact ons &#x200B;](https://www.adobe.com/go/pdftoolsapi_requestform) voor vragen over vergunning en tarifering

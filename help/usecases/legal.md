@@ -17,35 +17,35 @@ ht-degree: 0%
 
 # Juridische contracten beheren
 
-![ Hoofdletterbanner van het Gebruik ](assets/UseCaseLegalHero.jpg)
+![&#x200B; Hoofdletterbanner van het Gebruik &#x200B;](assets/UseCaseLegalHero.jpg)
 
-Met digitalisering komen er uitdagingen. Vandaag, hebben de meeste organisaties vele soorten [ wettelijke contracten ](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/legal-contracts) die zij moeten creëren, uitgeven, goedkeuren, en door verschillende partijen hebben ondertekend. Deze juridische contracten vereisen vaak unieke aanpassingen en branding. Organisaties moeten ze mogelijk ook opslaan in een beveiligde indeling nadat ze zijn ondertekend om ze veilig te houden. Om al deze dingen te doen, hebben ze een krachtige oplossing voor het genereren en beheren van documenten nodig.
+Met digitalisering komen er uitdagingen. Vandaag, hebben de meeste organisaties vele soorten [&#x200B; wettelijke contracten &#x200B;](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/legal-contracts) die zij moeten creëren, uitgeven, goedkeuren, en door verschillende partijen hebben ondertekend. Deze juridische contracten vereisen vaak unieke aanpassingen en branding. Organisaties moeten ze mogelijk ook opslaan in een beveiligde indeling nadat ze zijn ondertekend om ze veilig te houden. Om al deze dingen te doen, hebben ze een krachtige oplossing voor het genereren en beheren van documenten nodig.
 
 Veel oplossingen bieden de mogelijkheid om documenten te genereren, maar kunnen geen gegevensinvoer en voorwaardelijke logica aanpassen, zoals clausules die alleen van toepassing zijn op specifieke scenario&#39;s. Het handmatig bijwerken van de juridische sjablonen van een bedrijf is lastig en vatbaar voor fouten omdat deze documenten steeds uitgebreider worden. De noodzaak om deze processen te automatiseren is aanzienlijk.
 
 ## Wat je kunt leren
 
-In dit hands-on leerprogramma, onderzoek de eigenschappen van [[!DNL Adobe Acrobat Services]  APIs ](https://developer.adobe.com/document-services/apis/doc-generation) in de generatie van de gebieden van de douaneinput in documenten. Ga ook na hoe u deze gegenereerde documenten eenvoudig kunt converteren naar een beveiligde, draagbare documentindeling (PDF) om gegevensmanipulatie te voorkomen.
+In dit hands-on leerprogramma, onderzoek de eigenschappen van [[!DNL Adobe Acrobat Services]  APIs &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation) in de generatie van de gebieden van de douaneinput in documenten. Ga ook na hoe u deze gegenereerde documenten eenvoudig kunt converteren naar een beveiligde, draagbare documentindeling (PDF) om gegevensmanipulatie te voorkomen.
 
-Deze zelfstudie omvat een beetje programmeren bij het verkennen van de conversie van contracten naar PDF. Om langs effectief te volgen, [ Word van Microsoft ](https://www.microsoft.com/en-us/download/office.aspx) en [ Node.js ](https://nodejs.org/) zou op uw PC moeten worden geïnstalleerd. Een basisbegrip van Node.js en [ ES6 syntaxis ](https://www.w3schools.com/js/js_es6.asp) wordt ook geadviseerd.
+Deze zelfstudie omvat een beetje programmeren bij het verkennen van de conversie van contracten naar PDF. Om langs effectief te volgen, [&#x200B; Word van Microsoft &#x200B;](https://www.microsoft.com/en-us/download/office.aspx) en [&#x200B; Node.js &#x200B;](https://nodejs.org/) zou op uw PC moeten worden geïnstalleerd. Een basisbegrip van Node.js en [&#x200B; ES6 syntaxis &#x200B;](https://www.w3schools.com/js/js_es6.asp) wordt ook geadviseerd.
 
 ## Relevante API&#39;s en bronnen
 
-* [ de Generatie API van het Document van de Adobe ](https://developer.adobe.com/document-services/apis/doc-generation)
+* [&#x200B; de Generatie API van het Document van de Adobe &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation)
 
-* [ PDF bedt API ](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html) in
+* [&#x200B; PDF bedt API &#x200B;](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html) in
 
-* [ Adobe Sign API ](https://developer.adobe.com/adobesign-api/)
+* [&#x200B; Adobe Sign API &#x200B;](https://developer.adobe.com/adobesign-api/)
 
-* [ code van het Project ](https://github.com/agavitalis/adobe_legal_contracts.git)
+* [&#x200B; code van het Project &#x200B;](https://github.com/agavitalis/adobe_legal_contracts.git)
 
 ## Een sjabloondocument maken
 
-U kunt wettelijke documenten tot stand brengen gebruikend de toepassing van Microsoft Word of door de malplaatjes van Word van de Adobe [ te downloaden ](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade). Nog, is het niet gemakkelijk om input aan te passen en deze documenten digitaal te ondertekenen zonder sommige helperhulpmiddelen zoals [&#128279;](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin) toe:voegen-binnen de Tagger van de Generatie van het Document van de Adobe  voor Microsoft Word te gebruiken.
+U kunt wettelijke documenten tot stand brengen gebruikend de toepassing van Microsoft Word of door de malplaatjes van Word van de Adobe [&#x200B; te downloaden &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade). Nog, is het niet gemakkelijk om input aan te passen en deze documenten digitaal te ondertekenen zonder sommige helperhulpmiddelen zoals [&#128279;](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin) toe:voegen-binnen de Tagger van de Generatie van het Document van de Adobe  voor Microsoft Word te gebruiken.
 
 Tagger voor het genereren van documenten is een Microsoft Word-invoegtoepassing waarmee u documenten naadloos kunt aanpassen met behulp van codes. Hiermee kunt u dynamische velden in documentsjablonen maken die dynamisch worden gevuld met JSON-gegevens.
 
-![ Screenshot van hoe te om Tagger van de Generatie van het Document van Adobe in Word toe te voegen ](assets/legal_1.png)
+![&#x200B; Screenshot van hoe te om Tagger van de Generatie van het Document van Adobe in Word toe te voegen &#x200B;](assets/legal_1.png)
 
 Als u het gebruik van Document Generation Tagger wilt illustreren, installeert u deze invoegtoepassing en maakt u vervolgens een JSON-gegevensmodel dat wordt gebruikt voor het coderen van een eenvoudig juridisch contractdocument.
 
@@ -73,23 +73,23 @@ Als u verder wilt gaan, opent u een gewenste editor, maakt u een bestand met de 
 
 Nadat u dit JSON-document hebt opgeslagen, importeert u het in de invoegtoepassing Tagger voor documentgeneratie. Importeer het document door **de Generatie van het Document** in de groep van de Adobe op de hogere juiste kant van het scherm van Word te klikken, zoals aangetoond in het hieronder gevangen scherm.
 
-![ Schermafbeelding van de Tagger van de Generatie van het Document van de Adobe toe:voegen-binnen in Word ](assets/legal_2.png)
+![&#x200B; Schermafbeelding van de Tagger van de Generatie van het Document van de Adobe toe:voegen-binnen in Word &#x200B;](assets/legal_2.png)
 
 Hiermee wordt een video weergegeven om u te begeleiden. U kunt op het letten of rechtstreeks naar het etiketterende gebied gaan door **te klikken krijg Begonnen**. Na het klikken **krijg Begonnen**, verschijnt een upload vorm. Klik **upload JSON dossier** en selecteer het JSON dossier u enkel creeerde. Wanneer de invoer volledig is, produceer de klik **Markering** om de markeringen te produceren.
 
 Nadat u tags hebt geïmporteerd en gegenereerd, kunt u deze tags aan uw document toevoegen. Plaats de cursor op de plaats waar u de tag wilt invoegen om de tags toe te voegen. Dan selecteer een markering van de Generatie API van het Document en klik **Tekst van het Tussenvoegsel**. Deze procedure wordt beschreven in de onderstaande schermvastlegging.
 
-![ Screenshot van het toevoegen van markeringen aan document ](assets/legal_3.png)
+![&#x200B; Screenshot van het toevoegen van markeringen aan document &#x200B;](assets/legal_3.png)
 
 Naast de basiscodes die zijn gemaakt met behulp van het geïmporteerde JSON-gegevensmodel, kunt u ook geavanceerde functies gebruiken voor meer opties zoals afbeeldingen, voorwaardelijke logica, berekeningen, herhalende elementen en voorwaardelijke woordgroepen. U kunt tot deze eigenschappen toegang hebben door **Geavanceerd** in het paneel van de Tagger van de Generatie van het Document te klikken. U kunt dit zien in de schermvastlegging hieronder.
 
-![ Screenshot van het Geavanceerde lusje van Tagger van de Generatie van het Document van de Adobe ](assets/legal_4.png)
+![&#x200B; Screenshot van het Geavanceerde lusje van Tagger van de Generatie van het Document van de Adobe &#x200B;](assets/legal_4.png)
 
 Deze geavanceerde functies verschillen niet van de basiscodes. Als u voorwaardelijke logica wilt opnemen, selecteert u het deel van het document dat u wilt invullen. Configureer vervolgens de regel die de invoeging van de tag bepaalt.
 
 Ter illustratie, bijvoorbeeld in de overeenkomst, is er een sectie die u wilt opnemen, alleen voorwaardelijk. Selecteer **Sectie in het veld Inhoudstype selecteren.** Selecteer in het veld Records selecteren de optie die bepaalt of de voorwaardelijke sectie wordt weergegeven. Selecteer de gewenste voorwaardelijke operator en stel de waarde in waarop u wilt testen in het veld Waarde. Dan klik **Voorwaarde van het Tussenvoegsel.** De schermvastlegging hieronder illustreert dit proces.
 
-![ Screenshot van het opnemen van voorwaardelijke inhoud ](assets/legal_5.png)
+![&#x200B; Screenshot van het opnemen van voorwaardelijke inhoud &#x200B;](assets/legal_5.png)
 
 Selecteer voor berekeningen de optie Rekenkundig of Aggregatie en neem vervolgens de relevante eerste record, operator en de tweede record op op op basis van de beschikbare sjabloontags. Dan klik **Berekening van het Tussenvoegsel**.
 
@@ -99,7 +99,7 @@ Sla juridische documenten op in een beveiligde indeling om de gegevensintegritei
 
 ## Projectinstelling
 
-Eerst stelt u de mapstructuur in voor de toepassing Node.js. In dit voorbeeld roept u deze eenvoudige toepassing AdobeLegalContractAPI aan. U kunt de broncode [ hier terugwinnen ](https://github.com/agavitalis/adobe_legal_contracts.git).
+Eerst stelt u de mapstructuur in voor de toepassing Node.js. In dit voorbeeld roept u deze eenvoudige toepassing AdobeLegalContractAPI aan. U kunt de broncode [&#x200B; hier terugwinnen &#x200B;](https://github.com/agavitalis/adobe_legal_contracts.git).
 
 ### Directorystructuur
 
@@ -175,7 +175,7 @@ Nadat u de pakketten hebt geïnstalleerd, controleert u of de inhoud van het bes
 
 In deze codefragmenten, installeerde u de toepassingsgebiedsdelen, met inbegrip van de de sjabloonmotor van Handlebars voor de mening.
 
-De primaire nadruk in dit leerprogramma is op het gebruiken van [[!DNL Acrobat Services]  APIs ](https://developer.adobe.com/document-services/homepage/) om documenten in PDF om te zetten. Er is dus geen stapsgewijs proces voor het bouwen van deze Node.js-toepassing. Nochtans, kunt u de volledige werkende Node.js toepassingscode op [ GitHub ](https://github.com/agavitalis/adobe_legal_contracts.git) terugwinnen.
+De primaire nadruk in dit leerprogramma is op het gebruiken van [[!DNL Acrobat Services]  APIs &#x200B;](https://developer.adobe.com/document-services/homepage/) om documenten in PDF om te zetten. Er is dus geen stapsgewijs proces voor het bouwen van deze Node.js-toepassing. Nochtans, kunt u de volledige werkende Node.js toepassingscode op [&#x200B; GitHub &#x200B;](https://github.com/agavitalis/adobe_legal_contracts.git) terugwinnen.
 
 ## [!DNL Adobe Acrobat Services] API&#39;s integreren in een Node.js-toepassing
 
@@ -187,9 +187,9 @@ De primaire nadruk in dit leerprogramma is op het gebruiken van [[!DNL Acrobat S
 
 * Adobe-API voor documentgeneratie
 
-U hebt referenties nodig om [!DNL Acrobat Services] API&#39;s te gebruiken (anders dan uw PDF Embed API-referenties). Als u geen geldige geloofsbrieven hebt, [ register ](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) en voltooi het werkschema zoals geïllustreerd in het scherm vangen hieronder. Geniet van een a [ vrije proefperiode van zes maanden dan betaal-als-u-gaat ](https://developer.adobe.com/document-services/pricing/main), enkel $0.05 per documenttransactie.
+U hebt referenties nodig om [!DNL Acrobat Services] API&#39;s te gebruiken (anders dan uw PDF Embed API-referenties). Als u geen geldige geloofsbrieven hebt, [&#x200B; register &#x200B;](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) en voltooi het werkschema zoals geïllustreerd in het scherm vangen hieronder. Geniet van een a [&#x200B; vrije proefperiode van zes maanden dan betaal-als-u-gaat &#x200B;](https://developer.adobe.com/document-services/pricing/main), enkel $0.05 per documenttransactie.
 
-![ Screenshot van het creëren van nieuwe geloofsbrieven ](assets/legal_6.png)
+![&#x200B; Screenshot van het creëren van nieuwe geloofsbrieven &#x200B;](assets/legal_6.png)
 
 Als het aanmeldingsproces is voltooid, wordt er automatisch een codevoorbeeld gedownload naar uw pc om u te helpen met starten. U kunt dit codevoorbeeld extraheren en er mee volgen. Vergeet niet de bestanden pdftools-api-credentials.json en private.key uit het geëxtraheerde codevoorbeeld te kopiëren naar de hoofdmap van het project Node.js. De referenties zijn vereist voordat u toegang krijgt tot de API-eindpunten van [!DNL Acrobat Services] . U kunt ook SDK-voorbeelden downloaden met uw persoonlijke gegevens, zodat u de sleutel in de voorbeeldcode niet hoeft bij te werken.
 
@@ -197,15 +197,15 @@ Installeer nu de SDK van Adobe PDF Services Node door de opdracht ```npm install
 
 ## Een PDF-document maken
 
-[!DNL Acrobat Services] APIs steunt de verwezenlijking van PDF van de documenten van Microsoft Office (Word, Excel, en PowerPoint) en andere [ gesteunde dossierformaten ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf) zoals .txt, .rtf, .bmp, .jpeg, gif, .tiff, en .png. Je kunt eenvoudig juridische contracten van elke andere bestandsindeling converteren naar PDF met behulp van Acrobat Service API’s.
+[!DNL Acrobat Services] APIs steunt de verwezenlijking van PDF van de documenten van Microsoft Office (Word, Excel, en PowerPoint) en andere [&#x200B; gesteunde dossierformaten &#x200B;](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf) zoals .txt, .rtf, .bmp, .jpeg, gif, .tiff, en .png. Je kunt eenvoudig juridische contracten van elke andere bestandsindeling converteren naar PDF met behulp van Acrobat Service API’s.
 
 Met de API voor het genereren van Adoben kunt u converteren naar een Word-bestand of -PDF. U kunt bijvoorbeeld een Word-sjabloon gebruiken om een contract te genereren, waaronder een redliner om bewerkte tekst te markeren. Converteer het document vervolgens naar een PDF en gebruik de PDF Services-API om het document te beveiligen met een wachtwoord, het ter ondertekening te verzenden, en meer.
 
 Als u het maken van PDF-documenten wilt implementeren op basis van de beschikbare ondersteunde bestandsindelingen, moet u een formulier uploaden om het te transformeren met [!DNL Acrobat Services] .
 
-Ontworpen upload vorm verschijnt in het scherm hieronder vangen, en u kunt tot de HTML en CSS dossiers op [ GitHub ](https://github.com/agavitalis/adobe_legal_contracts.git) toegang hebben.
+Ontworpen upload vorm verschijnt in het scherm hieronder vangen, en u kunt tot de HTML en CSS dossiers op [&#x200B; GitHub &#x200B;](https://github.com/agavitalis/adobe_legal_contracts.git) toegang hebben.
 
-![ Schermafbeelding van formulierupload ](assets/legal_7.png)
+![&#x200B; Schermafbeelding van formulierupload &#x200B;](assets/legal_7.png)
 
 Voeg nu de volgende codefragmenten toe aan het bestand controllers /createPDFController.js. Met deze code wordt het geüploade document opgehaald en omgezet in PDF. [!DNL Acrobat Services] slaat het oorspronkelijke geüploade bestand en het getransformeerde bestand in verschillende mappen op.
 
@@ -284,7 +284,7 @@ Voor het bovenstaande codefragment waren het documentmodel en de [!DNL Acrobat S
 
 De functies slaan de getransformeerde PDF-documenten op in de map views/output, waar u ze kunt downloaden naar uw pc.
 
-U kunt ook een voorvertoning van het getransformeerde PDF-bestand weergeven met de gratis PDF Embed-API. Gebruikend PDF bedt API, kunt u Adobe geloofsbrieven [ hier ](https://www.adobe.com/go/dcsdks_credentials) (verschillend van uw [!DNL Acrobat Services] geloofsbrieven) produceren en toegelaten domeinen registreren om tot API toegang te hebben. Volg het proces en genereer PDF Embed API-referenties voor uw toepassing. U kunt de demonstratie [ hier ](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) ook controleren, waarvan u gemakkelijk codes kunt produceren om u snel begonnen te krijgen.
+U kunt ook een voorvertoning van het getransformeerde PDF-bestand weergeven met de gratis PDF Embed-API. Gebruikend PDF bedt API, kunt u Adobe geloofsbrieven [&#x200B; hier &#x200B;](https://www.adobe.com/go/dcsdks_credentials) (verschillend van uw [!DNL Acrobat Services] geloofsbrieven) produceren en toegelaten domeinen registreren om tot API toegang te hebben. Volg het proces en genereer PDF Embed API-referenties voor uw toepassing. U kunt de demonstratie [&#x200B; hier &#x200B;](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) ook controleren, waarvan u gemakkelijk codes kunt produceren om u snel begonnen te krijgen.
 
 Maak list.hbs- en preview.hbs-bestanden in de weergavemap van uw toepassing en plak het codefragment hieronder in respectievelijk de bestanden list.hbs en preview.hbs.
 
@@ -417,15 +417,15 @@ module.exports = {listFiles, previewPDF, downloadPDF };
 
 Het controllerbestand hierboven bevat drie functies: listFiles, previewPDF en downloadPDF. De listFiles-functie geeft een overzicht van alle PDF-bestanden die tot nu toe zijn gegenereerd met [!DNL Acrobat Services] API&#39;s. Met de functie previewPDF kunt u PDF-bestanden voorvertonen met de PDF Embed-API, terwijl u met de functie downloadPDF het gegenereerde PDF-bestand naar uw pc kunt downloaden. Hieronder ziet u een voorbeeld van de PDF-voorvertoning met de PDF Embed-API.
 
-![ Screenshot van PDF voorproef ](assets/legal_8.png)
+![&#x200B; Screenshot van PDF voorproef &#x200B;](assets/legal_8.png)
 
 ## Samenvatting
 
 In deze praktische zelfstudie hebt u een document gelabeld met gebruik van de invoegtoepassing Microsoft Word Tagger voor documentgeneratie. Vervolgens integreerde u [!DNL Acrobat Services] API&#39;s in een Node.js-toepassing en
 een gelabeld document is omgezet in een downloadbare PDF-indeling, hoewel u het juridische contract ook rechtstreeks naar PDF had kunnen maken. Tot slot hebt u de Adobe PDF Embed API gebruikt om een voorvertoning van de gegenereerde PDF te bekijken voor verificatie en ondertekening.
 
-De voltooide toepassing maakt het veel gemakkelijker om [ wettelijke contractmalplaatjes ](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/legal-contracts) met dynamische gebieden te etiketteren, hen om te zetten in PDF, hen voor te vertonen, en hen te ondertekenen gebruikend [!DNL Acrobat Services] APIs. In plaats van tijd te besteden aan het creëren van een uniek contract, kan je team automatisch het juiste contract naar elke klant sturen en dan meer tijd besteden aan het kweken van je bedrijf.
+De voltooide toepassing maakt het veel gemakkelijker om [&#x200B; wettelijke contractmalplaatjes &#x200B;](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/legal-contracts) met dynamische gebieden te etiketteren, hen om te zetten in PDF, hen voor te vertonen, en hen te ondertekenen gebruikend [!DNL Acrobat Services] APIs. In plaats van tijd te besteden aan het creëren van een uniek contract, kan je team automatisch het juiste contract naar elke klant sturen en dan meer tijd besteden aan het kweken van je bedrijf.
 
-Organisaties gebruiken [!DNL Adobe Acrobat Services] API&#39;s voor hun volledigheid en gebruiksgemak. Het beste van allen, kunt u van a [ zes maanden vrije proef genieten dan betaal-als-u-gaat ](https://developer.adobe.com/document-services/pricing/main). Je betaalt alleen voor wat je gebruikt. Bovendien is de API voor insluiten van PDF altijd gratis.
+Organisaties gebruiken [!DNL Adobe Acrobat Services] API&#39;s voor hun volledigheid en gebruiksgemak. Het beste van allen, kunt u van a [&#x200B; zes maanden vrije proef genieten dan betaal-als-u-gaat &#x200B;](https://developer.adobe.com/document-services/pricing/main). Je betaalt alleen voor wat je gebruikt. Bovendien is de API voor insluiten van PDF altijd gratis.
 
-Wilt u de productiviteit verhogen door uw documentstroom te verbeteren? [ begin ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) vandaag.
+Wilt u de productiviteit verhogen door uw documentstroom te verbeteren? [&#x200B; begin &#x200B;](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) vandaag.

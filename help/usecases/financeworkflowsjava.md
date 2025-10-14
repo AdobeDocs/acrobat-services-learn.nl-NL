@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Workflows voor financiële documenten beheren in Java
 
-![ Hoofdletterbanner van het Gebruik ](assets/UseCaseFinancialHero.jpg)
+![&#x200B; Hoofdletterbanner van het Gebruik &#x200B;](assets/UseCaseFinancialHero.jpg)
 
 De financiële sector gebruikt veel PDF-bestanden om gegevens uit te wisselen, omdat hierdoor de indeling, het ontwerp en de structuur van documenten beter behouden blijven. Dankzij deze krachtige indeling kunnen financiële analisten en adviseurs hun cliënten helpen met kennis van zaken beslissingen te nemen.
 
@@ -25,19 +25,19 @@ De PDF-indeling kan echter lastig zijn om te verwerken en te automatiseren, voor
 
 ## Wat je kunt leren
 
-Leer in deze praktische zelfstudie hoe u [!DNL Adobe Acrobat Services] API&#39;s kunt gebruiken voor [!DNL Java Spring Boot] -toepassingen. U maakt een MVC-app (model-view-controller) die inhoud uit PDF-documenten extraheert, deze omzet in andere gegevensindelingen zoals Excel, meerdere PDF combineert en de bronnen beschermt met een wachtwoord. Dit leerprogramma verklaart hoe te om de documenten van de PDF te verwerken en hen te tonen op uw websites gebruikend Adobe [ PDF bed API ](https://developer.adobe.com/document-services/apis/pdf-embed) in.
+Leer in deze praktische zelfstudie hoe u [!DNL Adobe Acrobat Services] API&#39;s kunt gebruiken voor [!DNL Java Spring Boot] -toepassingen. U maakt een MVC-app (model-view-controller) die inhoud uit PDF-documenten extraheert, deze omzet in andere gegevensindelingen zoals Excel, meerdere PDF combineert en de bronnen beschermt met een wachtwoord. Dit leerprogramma verklaart hoe te om de documenten van de PDF te verwerken en hen te tonen op uw websites gebruikend Adobe [&#x200B; PDF bed API &#x200B;](https://developer.adobe.com/document-services/apis/pdf-embed) in.
 
 ## Relevante API&#39;s en bronnen
 
-* [ de Diensten API van de PDF ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [&#x200B; de Diensten API van de PDF &#x200B;](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [ PDF bedt API ](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html) in
+* [&#x200B; PDF bedt API &#x200B;](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html) in
 
-* [ steekproeven van het Project ](https://github.com/adobe/pdftools-java-sdk-samples)
+* [&#x200B; steekproeven van het Project &#x200B;](https://github.com/adobe/pdftools-java-sdk-samples)
 
 ## Instellen
 
-[!DNL Adobe Acrobat Services] gebruikt een verificatiesysteem om de toegang tot bronnen te beheren. Als u toegang wilt tot de services, moet u een API-sleutel aanvragen bij de Adobe voor uw organisatie of toepassing. Als u een API-sleutel hebt, gaat u verder naar de volgende sectie. Om een nieuwe API sleutel tot stand te brengen, bezoek [ het Beginnen ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) in de [!DNL Acrobat Services] plaats. U kunt een sleutel maken met behulp van hun gratis proefversie, die 1000 documenttransacties biedt die u maximaal zes maanden kunt gebruiken.
+[!DNL Adobe Acrobat Services] gebruikt een verificatiesysteem om de toegang tot bronnen te beheren. Als u toegang wilt tot de services, moet u een API-sleutel aanvragen bij de Adobe voor uw organisatie of toepassing. Als u een API-sleutel hebt, gaat u verder naar de volgende sectie. Om een nieuwe API sleutel tot stand te brengen, bezoek [&#x200B; het Beginnen &#x200B;](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) in de [!DNL Acrobat Services] plaats. U kunt een sleutel maken met behulp van hun gratis proefversie, die 1000 documenttransacties biedt die u maximaal zes maanden kunt gebruiken.
 
 Als u deze zelfstudie wilt volgen, hebt u twee sets API-sleutels nodig:
 
@@ -45,11 +45,11 @@ Als u deze zelfstudie wilt volgen, hebt u twee sets API-sleutels nodig:
 
 * Adobe PDF Embed-API
 
-Nadat u de referenties hebt gemaakt, kopieert u de API-referenties voor PDF Services en de persoonlijke sleutel naar de [!DNL Spring Boot] -toepassing in de sectie Bronnen. Leer meer over de [ Gemaakt en de bibliotheken van de Gradle en gebiedsdelen ](https://developer.adobe.com/document-services/docs/overview/pdf-services-api) op de [!DNL Adobe Acrobat Services] website. Zorg dat u alle benodigde pakketten en bibliotheken hebt ingesteld voordat u verdergaat.
+Nadat u de referenties hebt gemaakt, kopieert u de API-referenties voor PDF Services en de persoonlijke sleutel naar de [!DNL Spring Boot] -toepassing in de sectie Bronnen. Leer meer over de [&#x200B; Gemaakt en de bibliotheken van de Gradle en gebiedsdelen &#x200B;](https://developer.adobe.com/document-services/docs/overview/pdf-services-api) op de [!DNL Adobe Acrobat Services] website. Zorg dat u alle benodigde pakketten en bibliotheken hebt ingesteld voordat u verdergaat.
 
-![ Screenshot van de folderplaats voor de geloofsbrieven van de Diensten API van de PDF ](assets/FAWJ_1.png)
+![&#x200B; Screenshot van de folderplaats voor de geloofsbrieven van de Diensten API van de PDF &#x200B;](assets/FAWJ_1.png)
 
-Om de logboekdiensten te vormen, bezoek [ documentatie van de Adobe ](https://developer.adobe.com/document-services/docs/overview/pdf-services-api) en rol aan de het Registreren sectie.
+Om de logboekdiensten te vormen, bezoek [&#x200B; documentatie van de Adobe &#x200B;](https://developer.adobe.com/document-services/docs/overview/pdf-services-api) en rol aan de het Registreren sectie.
 
 >[!NOTE]
 >
@@ -81,9 +81,9 @@ Vervolgens kunt u de context ophalen voor het verwerken van de PDF-documenten. H
 
 * De PDF-documenten optimaliseren voor levering op netwerken
 
-Al deze steekproeven zijn beschikbaar in de [ GitHub steekproeven ](https://github.com/adobe/pdfservices-java-sdk-samples/tree/master/src/main/java/com/adobe/pdfservices/operation/samples) bewaarplaats.
+Al deze steekproeven zijn beschikbaar in de [&#x200B; GitHub steekproeven &#x200B;](https://github.com/adobe/pdfservices-java-sdk-samples/tree/master/src/main/java/com/adobe/pdfservices/operation/samples) bewaarplaats.
 
-Vervolgens kunt u in [!DNL Spring Boot] een bestand ophalen met behulp van het tekenreekspad of de stream waarin het bestand wordt geüpload. Elke bewerking die u uitvoert, moet worden geïnitialiseerd en er moet een invoerbestandspad worden ingesteld. Voor dit leerprogramma, gebruikt u de openbaar beschikbare rapporten van de PDF van [ Blackrock ](https://www.blackrock.com/us/individual/products/investment-funds). U kunt elke andere bron gebruiken, inclusief uw eigen rapporten.
+Vervolgens kunt u in [!DNL Spring Boot] een bestand ophalen met behulp van het tekenreekspad of de stream waarin het bestand wordt geüpload. Elke bewerking die u uitvoert, moet worden geïnitialiseerd en er moet een invoerbestandspad worden ingesteld. Voor dit leerprogramma, gebruikt u de openbaar beschikbare rapporten van de PDF van [&#x200B; Blackrock &#x200B;](https://www.blackrock.com/us/individual/products/investment-funds). U kunt elke andere bron gebruiken, inclusief uw eigen rapporten.
 
 Eerst legt u het FileRef-object van het bestand vast. Voor het gemak, concentreer op de dossiers door weg van het Koord. Hieronder maakt u een bewerking voor het omzetten van een bestand in uw pad van PDF naar Excel:
 
@@ -113,7 +113,7 @@ Bij dit scenario wordt slechts één PDF-bestand afgehandeld. U kunt ook beginne
 
 [!DNL Adobe Acrobat Services] biedt geen ondersteuning voor het verwerken van Excel-documenten vanuit het vak, maar u kunt wel communityframeworks en bibliotheken gebruiken om de inhoud te verwerken.
 
-Bijvoorbeeld, kunt u [ Apache POI ](https://poi.apache.org/) gebruiken om Excel (of andere documenten van Microsoft) in uw [!DNL Java Spring Boot] app te verwerken, of u zou andere handmatige of geautomatiseerde taken op het dossier van Excel kunnen uitvoeren.
+Bijvoorbeeld, kunt u [&#x200B; Apache POI &#x200B;](https://poi.apache.org/) gebruiken om Excel (of andere documenten van Microsoft) in uw [!DNL Java Spring Boot] app te verwerken, of u zou andere handmatige of geautomatiseerde taken op het dossier van Excel kunnen uitvoeren.
 
 In dit voorbeeld, om te beginnen met uw PDF-documenten, extraheert u de intrinsieke waarde voor uw drie fondsen en toont u deze in een tabel. U kunt ook andere informatie ophalen, zoals grafieken en tabellen, op basis van uw vereisten en de beschikbare gegevens. Je kunt zelfs data uit andere bronnen inbrengen.
 
@@ -189,14 +189,14 @@ Voeg in de [!DNL Spring Boot] -toepassing het volgende HTML-fragment toe waar u 
 
 Met dit script wordt het PDF-document geladen en kunnen gebruikers notities toevoegen aan en opmerkingen toevoegen aan de documenten. Hier ziet u de weergave van deze API voor insluiten, zoals getoond in Firefox:
 
-![ Screenshot van een document van PDF in Firefox ](assets/FAWJ_2.png)
+![&#x200B; Screenshot van een document van PDF in Firefox &#x200B;](assets/FAWJ_2.png)
 
 De PDF Embed API biedt alle gereedschappen die nodig zijn om een voorvertoning van de PDF te bekijken en om notities toe te voegen aan het rapport.
 
 ## Volgende stappen
 
-Deze hands-on zelfstudie verkende [[!DNL Adobe Acrobat Services] ](https://developer.adobe.com/document-services/homepage/) APIs en besprak hoe te om deze diensten te gebruiken om PDF gegevens te verwerken en rapporten voor financiële besluiten te produceren. Hierin werd getoond hoe u de API&#39;s in uw systemen kunt integreren, met behulp van [!DNL Java Spring Boot] als voorbeeldframework, om te tonen hoe eenvoudig het is om snel PDF-documenten te verwerken.
+Deze hands-on zelfstudie verkende [[!DNL Adobe Acrobat Services] &#x200B;](https://developer.adobe.com/document-services/homepage/) APIs en besprak hoe te om deze diensten te gebruiken om PDF gegevens te verwerken en rapporten voor financiële besluiten te produceren. Hierin werd getoond hoe u de API&#39;s in uw systemen kunt integreren, met behulp van [!DNL Java Spring Boot] als voorbeeldframework, om te tonen hoe eenvoudig het is om snel PDF-documenten te verwerken.
 
-Ontdek [[!DNL Adobe Acrobat Services] ](https://developer.adobe.com/document-services/homepage/) en bekijk wat Adobe PDF Services voor uw bedrijf kan betekenen. Om over meer eigenschappen te leren beschikbaar in SDK, raadpleeg de [ bewaarplaats GitHub ](https://github.com/adobe/pdftools-java-sdk-samples) voor de steekproeven, en onderzoek hoe [ PDF inbedt API ](https://developer.adobe.com/document-services/apis/pdf-embed) u snel kan helpen PDF binnen uw toepassingen tonen.
+Ontdek [[!DNL Adobe Acrobat Services] &#x200B;](https://developer.adobe.com/document-services/homepage/) en bekijk wat Adobe PDF Services voor uw bedrijf kan betekenen. Om over meer eigenschappen te leren beschikbaar in SDK, raadpleeg de [&#x200B; bewaarplaats GitHub &#x200B;](https://github.com/adobe/pdftools-java-sdk-samples) voor de steekproeven, en onderzoek hoe [&#x200B; PDF inbedt API &#x200B;](https://developer.adobe.com/document-services/apis/pdf-embed) u snel kan helpen PDF binnen uw toepassingen tonen.
 
-Om documenten gemakkelijk te combineren en te manipuleren, creërend nuttige PDF rapporten voor uw financiële cliënten, begin door omhoog voor uw vrije [ rekening van de ontwikkelaar van de Adobe ](https://developer.adobe.com/document-services/homepage/) vandaag te ondertekenen.
+Om documenten gemakkelijk te combineren en te manipuleren, creërend nuttige PDF rapporten voor uw financiële cliënten, begin door omhoog voor uw vrije [&#x200B; rekening van de ontwikkelaar van de Adobe &#x200B;](https://developer.adobe.com/document-services/homepage/) vandaag te ondertekenen.

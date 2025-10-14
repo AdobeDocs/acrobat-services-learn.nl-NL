@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # HR-documentworkflows in Java
 
-![ Hoofdletterbanner van het Gebruik ](assets/UseCaseHRHero.jpg)
+![&#x200B; Hoofdletterbanner van het Gebruik &#x200B;](assets/UseCaseHRHero.jpg)
 
 Vele ondernemingen vereisen documentatie rond een nieuwe huur, zoals werkplekovereenkomsten voor werk-van-huis werknemers. Traditioneel beheerden bedrijven deze documenten fysiek in formulieren die moeilijk te beheren en op te slaan zijn. Bij het overschakelen op elektronische documenten zijn PDF-bestanden een ideale keuze, omdat ze veiliger en minder aanpasbaar zijn dan andere bestandstypen. Bovendien ondersteunen ze digitale handtekeningen.
 
@@ -27,21 +27,21 @@ In deze praktische zelfstudie leert u hoe u een webgebaseerd HR-formulier implem
 
 ## Relevante API&#39;s en bronnen
 
-* [ de Diensten API van de PDF ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [&#x200B; de Diensten API van de PDF &#x200B;](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [ Adobe Sign API ](https://developer.adobe.com/adobesign-api/)
+* [&#x200B; Adobe Sign API &#x200B;](https://developer.adobe.com/adobesign-api/)
 
-* [ code van het Project ](https://github.com/dawidborycki/adobe-sign)
+* [&#x200B; code van het Project &#x200B;](https://github.com/dawidborycki/adobe-sign)
 
 ## API-referenties genereren
 
-Meld u aan voor de gratis proefversie van de Adobe PDF Services API. Ga naar de [ website van de Adobe ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) [&#128279;](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) en klik *krijgen Begonnen* knoop onder *creëren Nieuwe Geloofsbrieven*. De gratis proefversie biedt 1.000 Document Transactions die kunnen worden gebruikt gedurende zes maanden. Kies op de volgende pagina (zie hieronder) de service (PDF Services API), stel de aanmeldingsnaam in (bijvoorbeeld HRDocumentWFCredentials) en voer een beschrijving in.
+Meld u aan voor de gratis proefversie van de Adobe PDF Services API. Ga naar de [&#x200B; website van de Adobe &#x200B;](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) [&#128279;](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) en klik *krijgen Begonnen* knoop onder *creëren Nieuwe Geloofsbrieven*. De gratis proefversie biedt 1.000 Document Transactions die kunnen worden gebruikt gedurende zes maanden. Kies op de volgende pagina (zie hieronder) de service (PDF Services API), stel de aanmeldingsnaam in (bijvoorbeeld HRDocumentWFCredentials) en voer een beschrijving in.
 
 Selecteer de taal (Java voor dit voorbeeld) en controle *creeer gepersonaliseerde codesteekproeven*. De laatste stap zorgt ervoor dat codevoorbeelden al het vooraf ingevulde bestand pdftools-api-credentials.json bevatten dat u gebruikt, samen met de persoonlijke sleutel voor het verifiëren van uw app binnen de API.
 
 Tot slot klik *creeer Referenties* knoop. Hiermee worden de referenties gegenereerd en wordt automatisch begonnen met het downloaden van de samples.
 
-![ creeer het Nieuwe Screenshot van Referenties ](assets/HRWJ_1.png)
+![&#x200B; creeer het Nieuwe Screenshot van Referenties &#x200B;](assets/HRWJ_1.png)
 
 Open de gedownloade samples om er zeker van te zijn dat de referenties werken. Hier gebruik je IntelliJ IDEA. Wanneer u de broncode opent, vraagt de geïntegreerde ontwikkelomgeving (winde) om de bouwstijlmotor. Maven wordt gebruikt in dit voorbeeld, maar u kunt ook werken met Gradle, afhankelijk van uw voorkeuren.
 
@@ -49,7 +49,7 @@ Vervolgens voert u het doel `mvn clean install` Maven uit om de potbestanden sam
 
 Voer tot slot het voorbeeld CombinePDF uit, zoals hieronder weergegeven. De code genereert de PDF in de uitvoermap.
 
-![ Menu om het CombinePDF steekproefscreenshot ](assets/HRWJ_2.png) in werking te stellen
+![&#x200B; Menu om het CombinePDF steekproefscreenshot &#x200B;](assets/HRWJ_2.png) in werking te stellen
 
 ## De Spring MVC-toepassing maken
 
@@ -57,11 +57,11 @@ Op basis van de referenties maakt u de toepassing. In dit voorbeeld wordt Spring
 
 Configureer eerst de projectinstellingen om de Java 8-taal en het Jar-pakket te gebruiken (zie onderstaande schermafbeelding).
 
-![ Screenshot voor de Initialisator van de Lente ](assets/HRWJ_3.png)
+![&#x200B; Screenshot voor de Initialisator van de Lente &#x200B;](assets/HRWJ_3.png)
 
 Ten tweede voegt u Veer Web (van web) en Thymeleaf (van Sjabloonmotoren) toe:
 
-![ Screenshot om het Web van de Lente en Thymeleaf ](assets/HRWJ_4.png) toe te voegen
+![&#x200B; Screenshot om het Web van de Lente en Thymeleaf &#x200B;](assets/HRWJ_4.png) toe te voegen
 
 Nadat u het project hebt gemaakt, gaat u naar het bestand pom.xml en vult u de sectie Afhankelijkheden aan met pdftools-sdk en log4j-slf4j-impl:
 
@@ -196,7 +196,7 @@ De controller heeft slechts één methode: showForm. Het is verantwoordelijk voo
 
 Voor het renderen van dynamische inhoud wordt de Thymeleaf-engine voor sjabloonrendering gebruikt. Nadat u de toepassing hebt uitgevoerd, ziet u het volgende:
 
-![ Schermafbeelding van gerenderde inhoud ](assets/HRWJ_5.png)
+![&#x200B; Schermafbeelding van gerenderde inhoud &#x200B;](assets/HRWJ_5.png)
 
 ## De PDF genereren met dynamische inhoud
 
@@ -204,7 +204,7 @@ Genereer nu het PDF-document met het virtuele contract door geselecteerde velden
 
 Voor het gemak hebt u hier alleen een koptekst, een subkoptekst en een tekenreeksconstante die leest: &quot;Dit contract is voorbereid voor \&lt;volledige naam van de persoon\>&quot;.
 
-Om dit doel te bereiken, begin met Adobe [ creeer een PDF van Dynamische HTML ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-dynamic-html) voorbeeld. Door die voorbeeldcode te analyseren, zie je dat het proces van dynamische veldpopulatie van HTML als volgt werkt.
+Om dit doel te bereiken, begin met Adobe [&#x200B; creeer een PDF van Dynamische HTML &#x200B;](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-dynamic-html) voorbeeld. Door die voorbeeldcode te analyseren, zie je dat het proces van dynamische veldpopulatie van HTML als volgt werkt.
 
 Eerst moet u de pagina HTML voorbereiden, die statische en dynamische inhoud bevat. Het dynamische deel wordt bijgewerkt met behulp van JavaScript. Met de PDF Services-API wordt het JSON-object in uw HTML ingebracht.
 
@@ -325,7 +325,7 @@ private static void setCustomOptionsAndPersonData(
 }
 ```
 
-Wanneer u het contract genereert, kunt u ook de dynamische, persoonspecifieke gegevens samenvoegen met vaste contractvoorwaarden. Om dit te doen, volg [ creeer een PDF van statische HTML ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-dynamic-html) voorbeeld. Alternatief, kunt u [ twee PDF ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-static-html) samenvoegen.
+Wanneer u het contract genereert, kunt u ook de dynamische, persoonspecifieke gegevens samenvoegen met vaste contractvoorwaarden. Om dit te doen, volg [&#x200B; creeer een PDF van statische HTML &#x200B;](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-dynamic-html) voorbeeld. Alternatief, kunt u [&#x200B; twee PDF &#x200B;](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-static-html) samenvoegen.
 
 ## Het PDF-bestand voor downloaden presenteren
 
@@ -374,15 +374,15 @@ public void downloadContract(HttpServletResponse response)
 
 Nadat u de app hebt uitgevoerd, krijgt u de volgende flow. Het eerste scherm toont het formulier voor persoonlijke gegevens. Vul de tekst met waarden tussen twee en 30 tekens om deze te testen:
 
-![ Screenshot van gegevenswaarden ](assets/HRWJ_6.png)
+![&#x200B; Screenshot van gegevenswaarden &#x200B;](assets/HRWJ_6.png)
 
 Na het klikken van *verzend* knoop, bevestigt de vorm en de PDF produceert gebaseerd op de HTML (resources/contract/index.html). De toepassing geeft een andere weergave (contractdetails) weer, waarin u de PDF kunt downloaden:
 
-![ Schermafbeelding waar u de PDF kunt downloaden ](assets/HRWJ_7.png)
+![&#x200B; Schermafbeelding waar u de PDF kunt downloaden &#x200B;](assets/HRWJ_7.png)
 
 De PDF ziet er na rendering in de webbrowser als volgt uit. De ingevoerde persoonsgegevens worden doorgegeven aan de PDF:
 
-![ Schermafbeelding van PDF die met persoonlijke gegevens ](assets/HRWJ_8.png) wordt teruggegeven
+![&#x200B; Schermafbeelding van PDF die met persoonlijke gegevens &#x200B;](assets/HRWJ_8.png) wordt teruggegeven
 
 ## Handtekeningen en beveiliging inschakelen
 
@@ -390,11 +390,11 @@ Als de overeenkomst klaar is, kan Adobe Sign digitale handtekeningen toevoegen d
 
 Als u een verificatietoken wilt verkrijgen, moet u verschillende stappen uitvoeren:
 
-Eerst, registreer a [ ontwikkelaarrekening ](https://acrobat.adobe.com/nl/nl/sign/developer-form.html).
+Eerst, registreer a [&#x200B; ontwikkelaarrekening &#x200B;](https://acrobat.adobe.com/nl/nl/sign/developer-form.html).
 
-Creeer de toepassing van de CLIENT in het [ portaal van Adobe Sign ](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
+Creeer de toepassing van de CLIENT in het [&#x200B; portaal van Adobe Sign &#x200B;](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 
-Vorm OAuth voor de toepassing zoals beschreven [ hier ](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) en [ hier ](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp). Noteer de client-ID en het clientgeheim. Vervolgens kunt u `https://www.google.com` gebruiken als de Redirect URI en de volgende bereiken:
+Vorm OAuth voor de toepassing zoals beschreven [&#x200B; hier &#x200B;](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) en [&#x200B; hier &#x200B;](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp). Noteer de client-ID en het clientgeheim. Vervolgens kunt u `https://www.google.com` gebruiken als de Redirect URI en de volgende bereiken:
 
 * user_login: self
 
@@ -422,7 +422,7 @@ https://www.google.com/?code=<YOUR_CODE>&api_access_point=https://api.eu1.adobes
 
 Let op de waarden die worden gegeven voor \&lt;UW_CODE\> en api_access_point.
 
-Als u een HTTP-POST-aanvraag wilt verzenden die u het toegangstoken verschaft, gebruikt u de client-id, de waarden \&lt;UW_CODE\> en api_access_point. U kunt [ Postman ](https://helpx.adobe.com/nl/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html) of cURL gebruiken:
+Als u een HTTP-POST-aanvraag wilt verzenden die u het toegangstoken verschaft, gebruikt u de client-id, de waarden \&lt;UW_CODE\> en api_access_point. U kunt [&#x200B; Postman &#x200B;](https://helpx.adobe.com/nl/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html) of cURL gebruiken:
 
 ```
 curl --location --request POST "https://**api.eu1.adobesign.com**/oauth/token"
@@ -454,7 +454,7 @@ Noteer je access_token. U hebt deze nodig om uw clientcode te autoriseren.
 
 ## De Adobe Sign Java SDK gebruiken
 
-Zodra u het toegangstoken hebt, kunt u REST API-aanroepen naar Adobe Sign verzenden. Gebruik de Adobe Sign Java SDK om dit proces te vereenvoudigen. De broncode is beschikbaar bij de [ bewaarplaats GitHub van de Adobe ](https://github.com/adobe-sign/AdobeSignJavaSdk).
+Zodra u het toegangstoken hebt, kunt u REST API-aanroepen naar Adobe Sign verzenden. Gebruik de Adobe Sign Java SDK om dit proces te vereenvoudigen. De broncode is beschikbaar bij de [&#x200B; bewaarplaats GitHub van de Adobe &#x200B;](https://github.com/adobe-sign/AdobeSignJavaSdk).
 
 Als u dit pakket wilt integreren met uw toepassing, moet u de code klonen. Maak vervolgens het Maven-pakket (mvn-pakket) en installeer de volgende bestanden in het project (u vindt ze in de bijbehorende code in de map adobe-sign-sdk):
 
@@ -590,11 +590,11 @@ AgreementCreationResponse agreementCreationResponse = agreementsApi.createAgreem
 System.out.println("Agreement sent, ID: " + agreementCreationResponse.getId());
 ```
 
-Nadat u deze code hebt uitgevoerd, ontvangt u een e-mail (naar het adres dat in de code is opgegeven als `<email_address>)` met de aanvraag voor de ondertekening van de overeenkomst. De e-mail bevat de hyperlink, waarmee ontvangers naar de Adobe Sign-portal worden gestuurd om het ondertekenen uit te voeren. U ziet het document in uw Portaal van de Ontwikkelaar van Adobe Sign (zie hieronder figuur) en u kunt het handtekeningproces programmatically ook volgen gebruikend de [ getAgreementInfo ](https://github.com/adobe-sign/AdobeSignJavaSdk/blob/master/docs/AgreementsApi.md#getAgreementInfo) methode.
+Nadat u deze code hebt uitgevoerd, ontvangt u een e-mail (naar het adres dat in de code is opgegeven als `<email_address>)` met de aanvraag voor de ondertekening van de overeenkomst. De e-mail bevat de hyperlink, waarmee ontvangers naar de Adobe Sign-portal worden gestuurd om het ondertekenen uit te voeren. U ziet het document in uw Portaal van de Ontwikkelaar van Adobe Sign (zie hieronder figuur) en u kunt het handtekeningproces programmatically ook volgen gebruikend de [&#x200B; getAgreementInfo &#x200B;](https://github.com/adobe-sign/AdobeSignJavaSdk/blob/master/docs/AgreementsApi.md#getAgreementInfo) methode.
 
-Tot slot kunt u uw PDF ook wachtwoord-beschermen gebruikend de Diensten API van de PDF zoals aangetoond in deze [ voorbeelden ](https://github.com/adobe/pdfservices-java-sdk-samples/tree/master/src/main/java/com/adobe/pdfservices/operation/samples/protectpdf).
+Tot slot kunt u uw PDF ook wachtwoord-beschermen gebruikend de Diensten API van de PDF zoals aangetoond in deze [&#x200B; voorbeelden &#x200B;](https://github.com/adobe/pdfservices-java-sdk-samples/tree/master/src/main/java/com/adobe/pdfservices/operation/samples/protectpdf).
 
-![ Schermafbeelding van contractdetails ](assets/HRWJ_9.png)
+![&#x200B; Schermafbeelding van contractdetails &#x200B;](assets/HRWJ_9.png)
 
 ## Volgende stappen
 
@@ -602,4 +602,4 @@ Zoals u kunt zien, kunt u met de snelstartfunctie een eenvoudig webformulier imp
 
 In het volgende voorbeeld kunt u ontvangers van formulieren maken die op afstand en veilig kunnen ondertekenen. Als je meerdere handtekeningen nodig hebt, kun je zelfs automatisch formulieren doorsturen naar een reeks personen in een workflow. Je werknemersonboarding is verbeterd en je HR-afdeling zal van je houden.
 
-Bekijk [[!DNL Adobe Acrobat Services] ](https://developer.adobe.com/document-services/homepage/) om een groot aantal PDF-mogelijkheden aan uw toepassingen toe te voegen.
+Bekijk [[!DNL Adobe Acrobat Services] &#x200B;](https://developer.adobe.com/document-services/homepage/) om een groot aantal PDF-mogelijkheden aan uw toepassingen toe te voegen.

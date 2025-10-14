@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Overeenkomstworkflows in Node.js
 
-![ Hoofdletterbanner van het Gebruik ](assets/UseCaseAgreementHero.jpg)
+![&#x200B; Hoofdletterbanner van het Gebruik &#x200B;](assets/UseCaseAgreementHero.jpg)
 
 Veel bedrijfstoepassingen en -processen vereisen documentatie zoals voorstellen en overeenkomsten. PDF-documenten zorgen ervoor dat bestanden veiliger en minder wijzigbaar zijn. Ze bieden ook ondersteuning voor digitale handtekeningen, zodat je klanten hun documenten snel en eenvoudig kunnen voltooien. API&#39;s van [!DNL Adobe Acrobat Services] integreren eenvoudig PDF-mogelijkheden in uw webtoepassingen.
 
@@ -28,21 +28,21 @@ In deze praktische zelfstudie leert u hoe u PDF-services kunt toevoegen aan een 
 
 ## Relevante API&#39;s en bronnen
 
-* [ de Diensten API van de PDF ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [&#x200B; de Diensten API van de PDF &#x200B;](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [ PDF bedt API ](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html) in
+* [&#x200B; PDF bedt API &#x200B;](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html) in
 
-* [ Adobe Sign API ](https://developer.adobe.com/adobesign-api/)
+* [&#x200B; Adobe Sign API &#x200B;](https://developer.adobe.com/adobesign-api/)
 
-* [ code van het Project ](https://github.com/adobe/pdftools-node-sdk-samples)
+* [&#x200B; code van het Project &#x200B;](https://github.com/adobe/pdftools-node-sdk-samples)
 
 ## Instellen [!DNL Adobe Acrobat Services]
 
-Stel gebruikersgegevens in voor gebruik van [!DNL Adobe Acrobat Services] om aan de slag te gaan. Registreer een rekening en gebruik [ Node.js Quickstart ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#node-js) om uw geloofsbrieven te verifiëren werk alvorens de functionaliteit in een grotere toepassing te integreren.
+Stel gebruikersgegevens in voor gebruik van [!DNL Adobe Acrobat Services] om aan de slag te gaan. Registreer een rekening en gebruik [&#x200B; Node.js Quickstart &#x200B;](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#node-js) om uw geloofsbrieven te verifiëren werk alvorens de functionaliteit in een grotere toepassing te integreren.
 
-Kies eerst een Adobe-ontwikkelaarsaccount. Dan, op [ krijg Begonnen ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) pagina, selecteer *krijgen Begonnen* optie onder Create Nieuwe Geloofsbrieven. U kunt zich aanmelden voor een gratis proefversie met 1000 Document Transactions die u in zes maanden kunt gebruiken.
+Kies eerst een Adobe-ontwikkelaarsaccount. Dan, op [&#x200B; krijg Begonnen &#x200B;](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) pagina, selecteer *krijgen Begonnen* optie onder Create Nieuwe Geloofsbrieven. U kunt zich aanmelden voor een gratis proefversie met 1000 Document Transactions die u in zes maanden kunt gebruiken.
 
-![ Beeld van het Creëren van Nieuwe Geloofsbrieven ](assets/AWNjs_1.png)
+![&#x200B; Beeld van het Creëren van Nieuwe Geloofsbrieven &#x200B;](assets/AWNjs_1.png)
 
 Op de volgende pagina Nieuwe referenties maken wordt u gevraagd te beslissen tussen de PDF Embed-API en de PDF Services-API.
 
@@ -54,13 +54,13 @@ Selecteer *Node.js* voor het toepassingstype en klik *creeer Referenties*.
 
 Een paar minuten later begint een .zip-bestand te downloaden met een voorbeeldproject met uw referenties. Het pakket Node.js voor [!DNL Acrobat Services] is reeds inbegrepen als deel van de code van het steekproefproject.
 
-![ Beeld van het Selecteren van de Server API Geloofsbrieven ](assets/AWNjs_2.png)
+![&#x200B; Beeld van het Selecteren van de Server API Geloofsbrieven &#x200B;](assets/AWNjs_2.png)
 
 ## Handmatig het voorbeeldproject configureren
 
 Als u ervoor kiest om geen voorbeeldproject te downloaden van de pagina Nieuwe referenties maken, kunt u het project ook handmatig instellen.
 
-Download de code (zonder uw ingebedde geloofsbrieven) van [ GitHub ](https://github.com/adobe/pdftools-node-sdk-samples). Als u deze versie van de code gebruikt, moet u uw referenties toevoegen aan het bestand pdftools-api-credentials.json voordat u het kunt gebruiken:
+Download de code (zonder uw ingebedde geloofsbrieven) van [&#x200B; GitHub &#x200B;](https://github.com/adobe/pdftools-node-sdk-samples). Als u deze versie van de code gebruikt, moet u uw referenties toevoegen aan het bestand pdftools-api-credentials.json voordat u het kunt gebruiken:
 
 ```
 {
@@ -250,15 +250,15 @@ const setCustomOptions = (htmlToPDFOperation) => {
 
 Wanneer u een HTML-document met bepaalde termen opent, ziet u het volgende in de browser:
 
-![ Beeld van de Termen van de Computer ](assets/AWNjs_3.png)
+![&#x200B; Beeld van de Termen van de Computer &#x200B;](assets/AWNjs_3.png)
 
 De bron voor dit document bestaat uit een CSS-bestand en een HTML-bestand:
 
-![ Beeld van CSS en het dossier van de HTML ](assets/AWNjs_4.png)
+![&#x200B; Beeld van CSS en het dossier van de HTML &#x200B;](assets/AWNjs_4.png)
 
 Na het verwerken van het HTML-bestand hebt u dezelfde tekst in de PDF-indeling:
 
-![ PDF dossier van de Termen van de Computer ](assets/AWNjs_5.png)
+![&#x200B; PDF dossier van de Termen van de Computer &#x200B;](assets/AWNjs_5.png)
 
 ## Pagina&#39;s toevoegen
 
@@ -294,35 +294,35 @@ Voeg op de pagina die de PDF weergeeft een `<div />` -element toe om het documen
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 ```
 
-Het laatste stukje code dat u nodig hebt, is een functie waarmee het document wordt weergegeven nadat de Adobe PDF Embed API JavaScript is geladen. Als u een melding ontvangt dat het script is geladen via een gebeurtenis adobe_dc_view\_sdk.ready, maakt u een nieuw object AdobeDC.View. Voor dit object zijn uw Client-id en de id van het element nodig die u eerder hebt gemaakt. Vind uw cliëntidentiteitskaart in de [ Console van de Ontwikkelaar van Adobe ](https://developer.adobe.com/console/). Wanneer u de instellingen voor de toepassing bekijkt die u eerder hebt gemaakt toen u referenties genereerde, wordt de client-id daar weergegeven.
+Het laatste stukje code dat u nodig hebt, is een functie waarmee het document wordt weergegeven nadat de Adobe PDF Embed API JavaScript is geladen. Als u een melding ontvangt dat het script is geladen via een gebeurtenis adobe_dc_view\_sdk.ready, maakt u een nieuw object AdobeDC.View. Voor dit object zijn uw Client-id en de id van het element nodig die u eerder hebt gemaakt. Vind uw cliëntidentiteitskaart in de [&#x200B; Console van de Ontwikkelaar van Adobe &#x200B;](https://developer.adobe.com/console/). Wanneer u de instellingen voor de toepassing bekijkt die u eerder hebt gemaakt toen u referenties genereerde, wordt de client-id daar weergegeven.
 
-![ Beeld van API Sleutel van de Cliënt ](assets/AWNjs_6.png)
+![&#x200B; Beeld van API Sleutel van de Cliënt &#x200B;](assets/AWNjs_6.png)
 
 ## Andere PDF-opties
 
-De [ Adobe PDF bedt API demo ](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) laat u toe om de diverse andere opties voor het inbedden van de documenten van de PDF te tonen.
+De [&#x200B; Adobe PDF bedt API demo &#x200B;](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) laat u toe om de diverse andere opties voor het inbedden van de documenten van de PDF te tonen.
 
-![ Afbeelding van opties voor het insluiten van PDF ](assets/AWNjs_7.png)
+![&#x200B; Afbeelding van opties voor het insluiten van PDF &#x200B;](assets/AWNjs_7.png)
 
 U kunt verschillende opties in- en uitschakelen en direct zien hoe ze worden gerenderd. Als u een gewenste combinatie vindt, klikt u op de knop *\&lt;/\> Code genereren* om de werkelijke HTML-code te genereren met behulp van deze opties.
 
-![ Beeld van de Voorproef van de Code ](assets/AWNjs_8.png)
+![&#x200B; Beeld van de Voorproef van de Code &#x200B;](assets/AWNjs_8.png)
 
 ## Digitale handtekeningen en beveiliging toevoegen
 
 Zodra een document klaar is, kunt u digitale handtekeningen toevoegen voor goedkeuring met behulp van Adobe Sign. Deze functionaliteit werkt iets anders dan de functionaliteit die u tot nu toe hebt gebruikt. Voor digitale handtekeningen moet een toepassing zijn geconfigureerd om OAuth te gebruiken voor gebruikersverificatie.
 
-De eerste stap in vestiging moet uw toepassing [ uw toepassing ](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md) registreren om OAuth voor Adobe Sign te gebruiken. Zodra ondertekend, navigeer aan het scherm voor het creëren van toepassingen door op *Account* te klikken, dan open de *Adobe Sign API* sectie, en klik *API Toepassingen* om de lijst van geregistreerde toepassingen te openen.
+De eerste stap in vestiging moet uw toepassing [&#x200B; uw toepassing &#x200B;](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md) registreren om OAuth voor Adobe Sign te gebruiken. Zodra ondertekend, navigeer aan het scherm voor het creëren van toepassingen door op *Account* te klikken, dan open de *Adobe Sign API* sectie, en klik *API Toepassingen* om de lijst van geregistreerde toepassingen te openen.
 
-![ Beeld van eerste stap in het registreren van uw toepassing ](assets/AWNjs_9.png)
+![&#x200B; Beeld van eerste stap in het registreren van uw toepassing &#x200B;](assets/AWNjs_9.png)
 
 Als u een nieuwe toepassingsvermelding wilt maken, klikt u op het plusteken in de rechterbovenhoek.
 
-![ Beeld van het plusteken in hoger-juiste hoek van het scherm ](assets/AWNjs_10.png)
+![&#x200B; Beeld van het plusteken in hoger-juiste hoek van het scherm &#x200B;](assets/AWNjs_10.png)
 
 Voer in het venster dat wordt geopend een toepassingsnaam en weergavenaam in. Selecteer *Klant* voor het domein, dan klik *sparen*.
 
-![ Beeld van waar te om toepassingsnaam en vertoningsnaam in te gaan ](assets/AWNjs_11.png)
+![&#x200B; Beeld van waar te om toepassingsnaam en vertoningsnaam in te gaan &#x200B;](assets/AWNjs_11.png)
 
 Nadat de toepassing wordt gecreeerd, kunt u het van de lijst selecteren en op *klikken vormt OAuth voor Toepassing*. Selecteer de opties. Voer in de URL omleiden de URL voor uw toepassing in. U kunt hier meerdere URL&#39;s invoeren. Voor de toepassing die u test, is de waarde:
 
@@ -347,7 +347,7 @@ https://secure.adobesign.com/public/oauth?
 
 De gebruiker wordt gevraagd zich aan te melden bij zijn/haar id voor Adobe Sign. Nadat u zich hebt aangemeld, wordt hen gevraagd of zij machtigingen voor de toepassing moeten verlenen.
 
-![ Beeld van bevestig toegangsscherm ](assets/AWNjs_12.png)
+![&#x200B; Beeld van bevestig toegangsscherm &#x200B;](assets/AWNjs_12.png)
 
 Als de gebruiker *klikt sta Toegang* op redirect URL toe, gaat een vraagparameter genoemd code de vergunningscode over:
 
@@ -466,13 +466,13 @@ request(reminderRequest, function (error, response) {
 
 En dat is alles wat nodig is om een herinneringsverzoek te verzenden.
 
-![ Beeld van de Vorm van het Web ](assets/AWNjs_13.png)
+![&#x200B; Beeld van de Vorm van het Web &#x200B;](assets/AWNjs_13.png)
 
 ## Webformulieren maken
 
 U kunt ook de Adobe Sign API gebruiken om webformulieren te maken. Met webformulieren kunt u een formulier insluiten in een webpagina of er rechtstreeks een koppeling naar maken. Zodra een Vorm van het Web wordt gecreeerd, toont het ook onder de Vormen van het Web in uw console van Adobe Sign. U kunt webformulieren met de status CONCEPT maken voor stapsgewijze opbouw, voor het bewerken van de webformuliervelden en voor de status ACTIEF als u het formulier direct wilt hosten.
 
-![ Beeld van de Vorm van het Web in Adobe Sign leidt scherm ](assets/AWNjs_14.png)
+![&#x200B; Beeld van de Vorm van het Web in Adobe Sign leidt scherm &#x200B;](assets/AWNjs_14.png)
 
 Als u een webformulier wilt maken, gebruikt u het formulier `transientDocumentId` . Bepaal de titel van het formulier en de status om het te initialiseren.
 
@@ -517,6 +517,6 @@ U kunt nu uw document insluiten of koppelen.
 
 Zoals u kunt zien aan de snelle start en de meegeleverde code, kunt u eenvoudig PDF- en digitale processen voor documentgoedkeuring implementeren met Node met de API&#39;s van [!DNL Adobe Acrobat Services] . De API&#39;s van Adobe integreren naadloos in uw bestaande clienttoepassingen.
 
-Om het vereiste werkingsgebied voor een vraag te ontdekken, of te zien hoe de vraag wordt gebouwd, kunt u steekproefvraag van de [ Rest API documentatie ](https://secure.na4.adobesign.com/public/docs/restapi/v6) bouwen. [ QuickStart ](https://github.com/adobe/pdftools-node-sdk-samples) toon ook andere functionaliteit en dossierformaten de [!DNL Adobe Acrobat Services] APIs processen aan.
+Om het vereiste werkingsgebied voor een vraag te ontdekken, of te zien hoe de vraag wordt gebouwd, kunt u steekproefvraag van de [&#x200B; Rest API documentatie &#x200B;](https://secure.na4.adobesign.com/public/docs/restapi/v6) bouwen. [&#x200B; QuickStart &#x200B;](https://github.com/adobe/pdftools-node-sdk-samples) toon ook andere functionaliteit en dossierformaten de [!DNL Adobe Acrobat Services] APIs processen aan.
 
-U kunt een groot aantal PDF-mogelijkheden aan uw toepassingen toevoegen, waardoor uw gebruikers hun documenten snel en eenvoudig kunnen bekijken en ondertekenen, en nog veel meer. Om te beginnen, controleer [[!DNL Adobe Acrobat Services] ](https://developer.adobe.com/document-services/homepage/) vandaag.
+U kunt een groot aantal PDF-mogelijkheden aan uw toepassingen toevoegen, waardoor uw gebruikers hun documenten snel en eenvoudig kunnen bekijken en ondertekenen, en nog veel meer. Om te beginnen, controleer [[!DNL Adobe Acrobat Services] &#x200B;](https://developer.adobe.com/document-services/homepage/) vandaag.
