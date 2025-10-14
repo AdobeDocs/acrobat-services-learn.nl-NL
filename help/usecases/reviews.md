@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # Revisies en goedkeuringen
 
-![ Hoofdletterbanner van het Gebruik ](assets/UseCaseReviewsHero.jpg)
+![&#x200B; Hoofdletterbanner van het Gebruik &#x200B;](assets/UseCaseReviewsHero.jpg)
 
-De verre cross-teamsamenwerking werd noodzakelijk voor vele bedrijven tijdens de pandemie COVID-19, [ delend en het herzien digitale documenten ](https://developer.adobe.com/document-services/use-cases/collaboration/review-and-approval) stelt een reeks uitdagingen voor teams en dwars-functionele middelen voor.
+De verre cross-teamsamenwerking werd noodzakelijk voor vele bedrijven tijdens de pandemie COVID-19, [&#x200B; delend en het herzien digitale documenten &#x200B;](https://developer.adobe.com/document-services/use-cases/collaboration/review-and-approval) stelt een reeks uitdagingen voor teams en dwars-functionele middelen voor.
 
 Deze uitdagingen omvatten het delen van documenten in verschillende bestandsindelingen, het effectief bekijken van en opmerkingen maken over de inhoud en het synchroniseren met de meest recente bewerkingen. [!DNL Adobe Acrobat Services] API&#39;s zijn ontworpen om toepassingsontwikkelaars in staat te stellen deze uitdagingen voor hun gebruikers op te lossen.
 
@@ -43,21 +43,21 @@ De toepassing heeft de volgende functies:
 
 ## Relevante API&#39;s en bronnen
 
-* [ de Diensten API van de PDF ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [&#x200B; de Diensten API van de PDF &#x200B;](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [ PDF bedt API ](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html) in
+* [&#x200B; PDF bedt API &#x200B;](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html) in
 
-* [ Code van het Project ](https://github.com/contentlab-io/adobe_reviews_and_approvals)
+* [&#x200B; Code van het Project &#x200B;](https://github.com/contentlab-io/adobe_reviews_and_approvals)
 
 ## API-referenties voor Adobe maken
 
-Alvorens de code te beginnen, moet u [ geloofsbrieven ](https://www.adobe.com/go/dcsdks_credentials) voor Adobe PDF creëren Embed API en de Diensten API van Adobe PDF. PDF Insluiter-API is gratis. De Diensten API van PDF is vrij om voor zes maanden te gebruiken, dan kunt u aan a [ betaal-aangezien-u-go plan ](https://developer.adobe.com/document-services/pricing/main) bij enkel \$0.05 per documenttransactie schakelen.
+Alvorens de code te beginnen, moet u [&#x200B; geloofsbrieven &#x200B;](https://www.adobe.com/go/dcsdks_credentials) voor Adobe PDF creëren Embed API en de Diensten API van Adobe PDF. PDF Insluiter-API is gratis. De Diensten API van PDF is vrij om voor zes maanden te gebruiken, dan kunt u aan a [&#x200B; betaal-aangezien-u-go plan &#x200B;](https://developer.adobe.com/document-services/pricing/main) bij enkel \$0.05 per documenttransactie schakelen.
 
 Wanneer het creëren van geloofsbrieven voor de Diensten API van de PDF, selecteer **creeer gepersonaliseerde codesteekproef** optie en selecteer Node.js voor de taal. Sla het ZIP-bestand op en extraheer pdftools-api-credentials.json en private.key naar de hoofdmap van uw Node.js Express-project.
 
 ## Een project en afhankelijkheden instellen
 
-Stel uw Node.js- en Express-project in om statische bestanden te leveren vanuit een map met de naam &quot;public&quot;. U kunt projectmanieren instellen, afhankelijk van uw voorkeuren. Om snel omhoog en lopend te worden, kunt u de [ Uitdrukkelijke app generator ](https://expressjs.com/en/starter/generator.html) gebruiken. Of als u dingen eenvoudig wilt houden, kunt u [ begin van kras ](https://expressjs.com/en/starter/hello-world.html) en uw code in één enkel dossier houden JavaScript. In het voorbeeldproject dat hierboven is gekoppeld, gebruikt u de één-bestandsbenadering en bewaart u al uw code in index.js.
+Stel uw Node.js- en Express-project in om statische bestanden te leveren vanuit een map met de naam &quot;public&quot;. U kunt projectmanieren instellen, afhankelijk van uw voorkeuren. Om snel omhoog en lopend te worden, kunt u de [&#x200B; Uitdrukkelijke app generator &#x200B;](https://expressjs.com/en/starter/generator.html) gebruiken. Of als u dingen eenvoudig wilt houden, kunt u [&#x200B; begin van kras &#x200B;](https://expressjs.com/en/starter/hello-world.html) en uw code in één enkel dossier houden JavaScript. In het voorbeeldproject dat hierboven is gekoppeld, gebruikt u de één-bestandsbenadering en bewaart u al uw code in index.js.
 
 Kopieer de `pdftools-api-credentials.json` - en `private.key` -bestanden van het gepersonaliseerde codevoorbeeld naar de hoofdmap van het project. U kunt ze ook toevoegen aan het .gitignore-bestand, als u er een hebt, zodat uw aanmeldingsbestanden niet per ongeluk naar een opslagplaats worden verzonden.
 
@@ -101,7 +101,7 @@ U kunt nu werken met [!DNL Acrobat Services] -API&#39;s.
 
 Voor het eerste deel van de documentworkflow moet de eindgebruiker documenten uploaden om te delen. Om dit mogelijk te maken, voegt u een uploadfunctie toe en consolideert u de verschillende documentbestandsindelingen in PDF om ze voor te bereiden op het revisieproces.
 
-Begin door een functie te creëren om documenten in PDF om te zetten die op het [ voorbeeldfragment voor de Diensten API van PDF ](https://developer.adobe.com/document-services/apis/pdf-services) wordt gebaseerd. In dit voorbeeld worden ook fragmenten weergegeven voor vele andere essentiële functies, zoals OCR (optische tekenherkenning), wachtwoordbeveiliging en -verwijdering, en compressie.
+Begin door een functie te creëren om documenten in PDF om te zetten die op het [&#x200B; voorbeeldfragment voor de Diensten API van PDF &#x200B;](https://developer.adobe.com/document-services/apis/pdf-services) wordt gebaseerd. In dit voorbeeld worden ook fragmenten weergegeven voor vele andere essentiële functies, zoals OCR (optische tekenherkenning), wachtwoordbeveiliging en -verwijdering, en compressie.
 
 ```
 function fileToPDF( filename, outputFilename, callback ) {
@@ -178,7 +178,7 @@ Als u nu bestanden wilt uploaden vanuit de webtoepassing, maakt u een `index.htm
   </form>
 ```
 
-![ Schermafbeelding van uploadmogelijkheden op Web-pagina ](assets/reviews_1.png)
+![&#x200B; Schermafbeelding van uploadmogelijkheden op Web-pagina &#x200B;](assets/reviews_1.png)
 
 U kunt nu documenten uploaden naar de Node.js-server. De server slaat het bestand op in de map Uploads/Concepts en maakt er een versie van de PDF-indeling naast.
 
@@ -254,7 +254,7 @@ Werk de pagina index.html bij met een bestandenlijstelement dat tijdens het lade
   </script>
 ```
 
-![ Screenshot van het selecteren van een dossier voor overzicht ](assets/reviews_2.png)
+![&#x200B; Screenshot van het selecteren van een dossier voor overzicht &#x200B;](assets/reviews_2.png)
 
 ## Een PDF insluiten
 
@@ -383,7 +383,7 @@ Registreer een callback van de weergave PDF voor SAVE_API die de inhoud uploadt 
   );
 ```
 
-Opmerkingen en annotaties op de conceptdocumenten worden nu opgeslagen op de server. U kunt [ meer over lezen hoe callbacks ](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows) in uw werkschema past. Bijvoorbeeld, [ statuscallbacks ](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback) help handvatdossierconflicten als de veelvoudige mensen op het zelfde document gelijktijdig willen herzien en becommentariëren.
+Opmerkingen en annotaties op de conceptdocumenten worden nu opgeslagen op de server. U kunt [&#x200B; meer over lezen hoe callbacks &#x200B;](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows) in uw werkschema past. Bijvoorbeeld, [&#x200B; statuscallbacks &#x200B;](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback) help handvatdossierconflicten als de veelvoudige mensen op het zelfde document gelijktijdig willen herzien en becommentariëren.
 
 In de laatste stap combineert u alle bewerkte documenten in één PDF-bestand met behulp van de PDF Services API.
 
@@ -439,12 +439,12 @@ Tot slot voeg een verbinding in de belangrijkste index.html Web-pagina aan dit /
 <a href="/finalize">Download final PDF</a>
 ```
 
-![ Screenshot van het downloaden van definitief document ](assets/reviews_3.png)
+![&#x200B; Screenshot van het downloaden van definitief document &#x200B;](assets/reviews_3.png)
 
 ## Volgende stappen
 
-Dit hands-on leerprogramma toonde aan hoe [!DNL Acrobat Services] APIs a [ document-delend en overzichtswerkschema ](https://developer.adobe.com/document-services/use-cases/collaboration/review-and-approval) in een Webtoepassing integreert. De toepassing stelt externe workers in staat bestanden te delen en samen te werken met hun teamgenoten. Dit is vooral handig voor werknemers en contractanten die thuis werken.
+Dit hands-on leerprogramma toonde aan hoe [!DNL Acrobat Services] APIs a [&#x200B; document-delend en overzichtswerkschema &#x200B;](https://developer.adobe.com/document-services/use-cases/collaboration/review-and-approval) in een Webtoepassing integreert. De toepassing stelt externe workers in staat bestanden te delen en samen te werken met hun teamgenoten. Dit is vooral handig voor werknemers en contractanten die thuis werken.
 
-U kunt deze technieken gebruiken om samenwerking in uw app toe te laten of {de Steekproeven van SDK van de Knoop van de Diensten van 0} te onderzoeken [ en ](https://github.com/adobe/pdftools-node-sdk-samples) PDF bedt API Steekproeven [ op GitHub voor inspiratie op hoe anders om Adobe APIs te gebruiken.](https://github.com/adobe/pdf-embed-api-samples)
+U kunt deze technieken gebruiken om samenwerking in uw app toe te laten of {de Steekproeven van SDK van de Knoop van de Diensten van 0} te onderzoeken [&#x200B; en &#x200B;](https://github.com/adobe/pdftools-node-sdk-samples) PDF bedt API Steekproeven [&#x200B; op GitHub voor inspiratie op hoe anders om Adobe APIs te gebruiken.](https://github.com/adobe/pdf-embed-api-samples)
 
-Klaar om het delen en reviseren van documenten in uw eigen app in te schakelen? Meld u aan bij uw [[!DNL Adobe Acrobat Services] ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) -ontwikkelaarsaccount. Toegang tot Adobe PDF Embed gratis en geniet van een gratis proefversie van zes maanden van de andere API&#39;s. Na uw proef, kunt u [ betalen-als-u-gaat ](https://developer.adobe.com/document-services/pricing/main) voor enkel \$0.05 per documenttransactie aangezien uw zaken groeit.
+Klaar om het delen en reviseren van documenten in uw eigen app in te schakelen? Meld u aan bij uw [[!DNL Adobe Acrobat Services] &#x200B;](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) -ontwikkelaarsaccount. Toegang tot Adobe PDF Embed gratis en geniet van een gratis proefversie van zes maanden van de andere API&#39;s. Na uw proef, kunt u [&#x200B; betalen-als-u-gaat &#x200B;](https://developer.adobe.com/document-services/pricing/main) voor enkel \$0.05 per documenttransactie aangezien uw zaken groeit.

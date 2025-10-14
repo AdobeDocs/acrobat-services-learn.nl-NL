@@ -17,34 +17,34 @@ ht-degree: 0%
 
 # Versnel je verkoopproces
 
-![ Hoofdletterbanner van het Gebruik ](assets/UseCaseAccelerateSalesHero.jpg)
+![&#x200B; Hoofdletterbanner van het Gebruik &#x200B;](assets/UseCaseAccelerateSalesHero.jpg)
 
-Van whitepapers tot contracten en overeenkomsten, tijdens het aankooptraject zijn veel documenten nodig. In deze zelfstudie leert u hoe [[!DNL Adobe Acrobat Services] ](https://developer.adobe.com/document-services/) documentervaringen tijdens dit traject kan integreren om de verkoop te versnellen.
+Van whitepapers tot contracten en overeenkomsten, tijdens het aankooptraject zijn veel documenten nodig. In deze zelfstudie leert u hoe [[!DNL Adobe Acrobat Services] &#x200B;](https://developer.adobe.com/document-services/) documentervaringen tijdens dit traject kan integreren om de verkoop te versnellen.
 
 ## Overeenkomsten en verkooporders genereren op basis van gegevens
 
 Verkoopovereenkomsten, contracten en andere documenten kunnen sterk variëren op basis van specifieke criteria. Een verkoopovereenkomst kan bijvoorbeeld alleen bepaalde voorwaarden bevatten die op een uniek criterium zijn gebaseerd, zoals in een bepaald land of een bepaalde staat, of bepaalde producten als onderdeel van de overeenkomst opnemen. Door deze documenten handmatig te maken of veel verschillende sjabloonvariaties te behouden, kunnen de juridische kosten voor het handmatig controleren van wijzigingen aanzienlijk toenemen.
 
-[ de Generatie API van het Document van de Adobe ](https://developer.adobe.com/document-services/apis/doc-generation/) staat u toe om gegevens van uw CRM of ander gegevenssysteem te nemen om verkoopdocumenten dynamisch te produceren die op die gegevens worden gebaseerd.
+[&#x200B; de Generatie API van het Document van de Adobe &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation/) staat u toe om gegevens van uw CRM of ander gegevenssysteem te nemen om verkoopdocumenten dynamisch te produceren die op die gegevens worden gebaseerd.
 
 ## Referenties ophalen
 
 Registreer eerst voor gratis Adobe PDF Services-gebruikersgegevens:
 
-1. Navigeer [ hier ](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) om uw geloofsbrieven te registreren.
+1. Navigeer [&#x200B; hier &#x200B;](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) om uw geloofsbrieven te registreren.
 1. Meld u aan met uw Adobe ID.
 1. Stel uw aanmeldingsnaam in (bijv. Verkoopovereenkomsten demo).
 
-   ![ Screenshot van het plaatsen van uw geloofsbrieven naam ](assets/accsales_1.png)
+   ![&#x200B; Screenshot van het plaatsen van uw geloofsbrieven naam &#x200B;](assets/accsales_1.png)
 
 1. Kies een taal om uw voorbeeldcode te downloaden (bijvoorbeeld Node.js).
 1. Controle om met **[!UICONTROL ontwikkelaarstermijnen]** akkoord te gaan.
 1. Selecteer **[!UICONTROL creeer geloofsbrieven]**.
 Er wordt een bestand naar uw computer gedownload met een ZIP-bestand met de voorbeeldbestanden pdfservices-api-credentials.json en private.key voor verificatie.
 
-   ![ Scherenshot van geloofsbrieven ](assets/accsales_2.png)
+   ![&#x200B; Scherenshot van geloofsbrieven &#x200B;](assets/accsales_2.png)
 
-1. Selecteer **[!UICONTROL krijgen toe:voegen-binnen Microsoft Word]** of ga naar [ AppSource ](https://appsource.microsoft.com/en-cy/product/office/WA200002654) om te installeren.
+1. Selecteer **[!UICONTROL krijgen toe:voegen-binnen Microsoft Word]** of ga naar [&#x200B; AppSource &#x200B;](https://appsource.microsoft.com/en-cy/product/office/WA200002654) om te installeren.
 
    >[!NOTE]
    >
@@ -110,16 +110,16 @@ Als u gegevens uit een specifiek gegevenssysteem haalt, moet u die gegevens uitv
 
 ## Basiscodes toevoegen aan uw document
 
-Dit scenario gebruikt een document van de Orde van de Verkoop, dat [ hier ](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/SalesOrder/Exercise/SalesOrder_Base.docx?raw=true) kan worden gedownload.
+Dit scenario gebruikt een document van de Orde van de Verkoop, dat [&#x200B; hier &#x200B;](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/SalesOrder/Exercise/SalesOrder_Base.docx?raw=true) kan worden gedownload.
 
-![ Schermafbeelding van document van de steekproefverkooporde ](assets/accsales_3.png)
+![&#x200B; Schermafbeelding van document van de steekproefverkooporde &#x200B;](assets/accsales_3.png)
 
 1. Open het {*steekproefdocument 0} SalesOrder.docx in Microsoft Word.*
 1. Als uw stop van de Generatie van het Document geïnstalleerd is, selecteer **[!UICONTROL de Generatie van het Document]** in het Lint. Als u het genereren van documenten niet ziet in uw lint, volgt u deze instructies.
 1. Selecteer **[!UICONTROL worden begonnen]**.
 1. Kopieer de JSON steekproefgegevens hierboven in het *JSON gebied van Gegevens* worden geschreven dat.
 
-   ![ Screenshot van het kopiëren van JSON- gegevens ](assets/accsales_4.png)
+   ![&#x200B; Screenshot van het kopiëren van JSON- gegevens &#x200B;](assets/accsales_4.png)
 
 Navigeer vervolgens naar het deelvenster Tags voor het genereren van documenten om codes in het document te plaatsen.
 
@@ -128,7 +128,7 @@ Navigeer vervolgens naar het deelvenster Tags voor het genereren van documenten 
 1. Selecteer een naam onder Bedrijf in de lijst met tags.
 1. Selecteer **[!UICONTROL Tekst van het Tussenvoegsel]**.
 
-   ![ Screenshot van het opnemen van markering ](assets/accsales_5.png)
+   ![&#x200B; Screenshot van het opnemen van markering &#x200B;](assets/accsales_5.png)
 
    Tijdens dit proces wordt een tag met de naam `{{company.name}}` geplaatst, omdat de tag zich onder het pad in de JSON bevindt.
 
@@ -151,19 +151,19 @@ Direct in Microsoft Word kunt u een voorvertoning van het gegenereerde document 
 
 1. In het *paneel van de Tagger van de Generatie van het Document*, uitgezocht **[!UICONTROL produceer document]**. De eerste keer dat u wordt gevraagd u aan te melden bij uw Adobe ID. Selecteer **[!UICONTROL Teken binnen]** en voltooi de herinneringen aan login met uw geloofsbrieven.
 
-   ![ Screenshot van hoe te om geproduceerd document ](assets/accsales_6.png) voor te vertonen
+   ![&#x200B; Screenshot van hoe te om geproduceerd document &#x200B;](assets/accsales_6.png) voor te vertonen
 
 1. Selecteer **[!UICONTROL het document van de Mening]**.
 
-   ![ Screenshot van het documentknoop van de Mening ](assets/accsales_7.png)
+   ![&#x200B; Screenshot van het documentknoop van de Mening &#x200B;](assets/accsales_7.png)
 
 1. Er wordt een browservenster geopend waarin u een voorvertoning van de documentresultaten kunt bekijken.
 
-   ![ Schermafbeelding van document in browser venster ](assets/accsales_8.png)
+   ![&#x200B; Schermafbeelding van document in browser venster &#x200B;](assets/accsales_8.png)
 
 U kunt de labels in het document zien die zijn vervangen door de gegevens uit de oorspronkelijke voorbeeldgegevens.
 
-![ Schermafbeelding van markeringen die met gegevens worden vervangen ](assets/accsales_9.png)
+![&#x200B; Schermafbeelding van markeringen die met gegevens worden vervangen &#x200B;](assets/accsales_9.png)
 
 ## Een tabel toevoegen aan een sjabloon
 
@@ -176,7 +176,7 @@ In dit volgende scenario voegt u een lijst met producten toe aan een tabel in he
 1. In het Uitgezochte gebied van kolomverslagen, type om *beschrijving* en *totalPaymentDue.price* gebied te omvatten.
 1. Selecteer **[!UICONTROL lijst van het Tussenvoegsel]**.
 
-   ![ Screenshot van het opnemen van lijst ](assets/accsales_10.png)
+   ![&#x200B; Screenshot van het opnemen van lijst &#x200B;](assets/accsales_10.png)
 
 Bewerk de tabel om deze aan te passen aan stijlen, grootten en andere parameters, net als elke andere tabel in Microsoft Word.
 
@@ -185,11 +185,11 @@ Bewerk de tabel om deze aan te passen aan stijlen, grootten en andere parameters
 Met numerieke berekeningen kunt u sommen en andere berekeningen berekenen op basis van een verzameling gegevens, zoals een array. In dit scenario voegt u een veld toe om het subtotaal te berekenen.
 
 1. Selecteer *$0.00* naast de titel van het subtotaal.
-1. In het *[!UICONTROL paneel van de Tagger van de Generatie van het 0} Document, breid]* Numerieke berekeningen **[!UICONTROL uit.]**
+1. In het *[!UICONTROL paneel van de Tagger van de Generatie van het 0&rbrace; Document, breid]* Numerieke berekeningen **[!UICONTROL uit.]**
 1. Onder *[!UICONTROL Uitgezochte berekeningstype]*, kies **[!UICONTROL Samenvoeging]**.
 1. Onder *[!UICONTROL Uitgezochte type]*, kies **[!UICONTROL Som]**.
 1. Onder *[!UICONTROL Uitgezochte verslagen]*, kies **[!UICONTROL ReferencesOrder]**.
-1. Onder *[!UICONTROL  Uitgezochte punt om samenvoeging ] ** uit te voeren, kies **[!UICONTROL totalPaymentsDue.price]**.
+1. Onder *[!UICONTROL &#x200B; Uitgezochte punt om samenvoeging &#x200B;] **&#x200B; uit te voeren, kies &#x200B;** [!UICONTROL totalPaymentsDue.price]**.
 1. Selecteer **[!UICONTROL Berekening van het Tussenvoegsel]**.
 
 Hierbij wordt een berekeningscode ingevoegd die de som van waarden bevat. U kunt geavanceerdere berekeningen maken met behulp van JSONata-berekeningen. Bijvoorbeeld:
@@ -210,7 +210,7 @@ Met voorwaardelijke secties kunt u alleen een zin of alinea opnemen als aan een 
 1. In het document, vind de sectie genoemd *CALIFORNIA PRIVACY VERKLARINGEN*.
 1. Selecteer de sectie met de cursor.
 
-   ![ Schermafbeelding van selectie ](assets/accsales_11.png)
+   ![&#x200B; Schermafbeelding van selectie &#x200B;](assets/accsales_11.png)
 
 1. In de *[!UICONTROL Tagger van de Generatie van het Document]*, uitgezochte **[!UICONTROL Geavanceerd]**.
 1. Breid **[!UICONTROL Voorwaardelijke inhoud]** uit.
@@ -235,20 +235,20 @@ Afbeeldingen kunnen via een URL worden doorgegeven in de gegevens- of base64-inh
 1. Op het *[!UICONTROL Uitgezochte markeringen]* gebied, kies **[!UICONTROL embleem]**.
 1. Op het *[!UICONTROL Facultatieve afwisselende tekstgebied]*, verstrek een beschrijving (d.w.z., embleem). Hierbij wordt een tijdelijke aanduiding voor afbeeldingen ingevoegd die er als volgt uitziet:
 
-   ![ Screenshot van placeholder beeld ](assets/accsales_12.png)
+   ![&#x200B; Screenshot van placeholder beeld &#x200B;](assets/accsales_12.png)
 
 U wilt de afbeelding echter dynamisch instellen voor een afbeelding die zich al in de lay-out bevindt. Dat kunt u als volgt doen:
 
 1. Klik met de rechtermuisknop op de ingevoegde voorlopige afbeelding.
 
-   ![ Screenshot van placeholder beeld ](assets/accsales_13.png)
+   ![&#x200B; Screenshot van placeholder beeld &#x200B;](assets/accsales_13.png)
 
 1. Selecteer **[!UICONTROL uitgeven de Tekst van Alt]**.
 1. Kopieer in het deelvenster de tekst die er als volgt uitziet:
    `{ "location-path": "logo", "image-props": { "alt-text": "Logo" }}`
 1. Selecteer een andere afbeelding in het document dat u dynamisch wilt maken.
 
-   ![ Screenshot van nieuw beeld in document ](assets/accsales_14.png)
+   ![&#x200B; Screenshot van nieuw beeld in document &#x200B;](assets/accsales_14.png)
 
 1. Klik op het beeld met de rechtermuisknop aan en selecteer **[!UICONTROL uitgeven de Tekst van Alt]**.
 1. Plak de waarde in het deelvenster.
@@ -269,7 +269,7 @@ Met Adobe Acrobat Sign kunt u elektronische handtekeningen vastleggen op uw docu
 
 Er wordt een label in het document ingevoegd.
 
-![ Screenshot van handtekeningmarkering in document ](assets/accsales_15.png)
+![&#x200B; Screenshot van handtekeningmarkering in document &#x200B;](assets/accsales_15.png)
 
 Acrobat Sign biedt verschillende andere typen velden die u kunt plaatsen, zoals datumvelden.
 
@@ -277,7 +277,7 @@ Acrobat Sign biedt verschillende andere typen velden die u kunt plaatsen, zoals 
 1. Plaats de cursor boven de datumlocatie in het document.
 1. Selecteer **[!UICONTROL markering van de Tekst van Adobe Sign van het Tussenvoegsel]**.
 
-![ Screenshot van datummarkering in document ](assets/accsales_16.png)
+![&#x200B; Screenshot van datummarkering in document &#x200B;](assets/accsales_16.png)
 
 ## Uw overeenkomst genereren
 
@@ -365,14 +365,14 @@ Met de workflows voor digitale documenten van [!DNL Adobe Acrobat Services] kunt
 
 Wil je meer leren? Bekijk enkele aanvullende manieren om [!DNL Adobe Acrobat Services] te gebruiken:
 
-* Leer meer van [ documentatie ](https://developer.adobe.com/document-services/docs/overview/)
+* Leer meer van [&#x200B; documentatie &#x200B;](https://developer.adobe.com/document-services/docs/overview/)
 * Meer zelfstudies op Adobe Experience League bekijken
 * Gebruik de voorbeeldscripts in de map /src om te zien hoe u PDF kunt gebruiken
-* Volg [ Blog van de Technologie van de Adobe ](https://medium.com/adobetech/tagged/adobe-document-cloud) voor recentste uiteinden en trucs
-* Abonneer aan [ Clips van het Papier (de maandelijkse levende stroom) ](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) om over het automatiseren te leren gebruiken [!DNL Adobe Acrobat Services].
+* Volg [&#x200B; Blog van de Technologie van de Adobe &#x200B;](https://medium.com/adobetech/tagged/adobe-document-cloud) voor recentste uiteinden en trucs
+* Abonneer aan [&#x200B; Clips van het Papier (de maandelijkse levende stroom) &#x200B;](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) om over het automatiseren te leren gebruiken [!DNL Adobe Acrobat Services].
 ======
-* Leer meer van [ documentatie ](https://developer.adobe.com/document-services/docs/overview/)
+* Leer meer van [&#x200B; documentatie &#x200B;](https://developer.adobe.com/document-services/docs/overview/)
 * Meer zelfstudies op Adobe Experience League bekijken
 * Gebruik de voorbeeldscripts in de map /src om te zien hoe u PDF kunt gebruiken
-* Volg [ Blog van de Technologie van de Adobe ](https://medium.com/adobetech/tagged/adobe-document-cloud) voor recentste uiteinden en trucs
-* Abonneren op [ Clips van het Document (de maandelijkse levende stroom) ](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) om over het automatiseren te leren gebruikend [!DNL Adobe Acrobat Services]
+* Volg [&#x200B; Blog van de Technologie van de Adobe &#x200B;](https://medium.com/adobetech/tagged/adobe-document-cloud) voor recentste uiteinden en trucs
+* Abonneren op [&#x200B; Clips van het Document (de maandelijkse levende stroom) &#x200B;](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) om over het automatiseren te leren gebruikend [!DNL Adobe Acrobat Services]
