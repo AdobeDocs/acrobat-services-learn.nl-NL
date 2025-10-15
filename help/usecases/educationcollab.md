@@ -197,7 +197,7 @@ Hier volgt een schermvastlegging van webbrowserconsole:
 
 Deze schermopname toont dat de student het toewijzingsbestand heeft geopend, de eerste pagina heeft gelezen — ze hebben niet naar extra pagina&#39;s geschoven of het document heeft maar één pagina — en vervolgens heeft het bestand gedownload. Je kunt deze metrics verzamelen om analyses uit te voeren en het gedrag van je studenten te bestuderen.
 
-Ook, [&#x200B; Adobe Analytics &#x200B;](https://business.adobe.com/products/adobe-analytics.html) is geïntegreerd met PDF Embed API, zodat als u een abonnement op de suite van Adobe Analytics hebt, kunt u uw metriek in uw abonnement publiceren. Als u de metrics in Adobe Analytics wilt publiceren, hoeft u uw suite-id alleen door te geven aan de PDF Embed API-constructor. (Let op: u moet uw PDF Embed API-referenties gebruiken, niet uw PDF Services API-referenties).
+Ook, [&#x200B; Adobe Analytics &#x200B;](https://business.adobe.com/nl/products/adobe-analytics.html) is geïntegreerd met PDF Embed API, zodat als u een abonnement op de suite van Adobe Analytics hebt, kunt u uw metriek in uw abonnement publiceren. Als u de metrics in Adobe Analytics wilt publiceren, hoeft u uw suite-id alleen door te geven aan de PDF Embed API-constructor. (Let op: u moet uw PDF Embed API-referenties gebruiken, niet uw PDF Services API-referenties).
 
 Hier volgt een voorbeeldcode die laat zien hoe u de suite-id doorgeeft aan de PDF Embed API-constructor:
 
